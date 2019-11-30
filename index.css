@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Prosto+One');
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #16a085;
+  color: #fff;
+}
+
+h1 {
+  font-family: 'Prosto One', cursive;
+  font-size: 3rem;
+}
+
+p {
+  font-size: 2rem;
+  font-family: 'Arial', sans-serif;
+}
