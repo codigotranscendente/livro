@@ -121,10 +121,32 @@ body > nav + .container {
 
 .giant {
   font-size: 75px;
-  /* text-decoration: underline; */
   font-style: oblique;
   color: #2a3138;
   font-family: "Roboto", arial, helvetica, sans-serif;
+  text-align: left;
+}
+
+@media screen and (max-width : 1204px)
+{
+  .giant {
+    font-size: 55px;
+    font-style: oblique;
+    color: #2a3138;
+    font-family: "Roboto", arial, helvetica, sans-serif;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width : 600px)
+{
+  .giant {
+    font-size: 35px;
+    font-style: oblique;
+    color: #2a3138;
+    font-family: "Roboto", arial, helvetica, sans-serif;
+    text-align: left;
+  }
 }
 
 .giant > span {
