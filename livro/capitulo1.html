@@ -1,0 +1,712 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>OCT: Capitulo 1</title>
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="../css/bookonline.css" rel="stylesheet">
+</head>
+<body>
+  <div id="page-container">
+    <div id="content-wrap">
+      <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="mainNav">
+        <div class="container justify-content-center">
+          <a class="navbar-brand" href="../index.html">O CÓDIGO TRANSCENDENTE</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse align-items-center" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto nav-masthead align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="../book.html">Livro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../about.html">Autor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../faq.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../livro/lindex.html">Online</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="wrapper" class="toggled">
+        <div id="sidebar-wrapper">
+          <ul class="sidebar-nav">
+            <li class="sidebar-brand"></li>
+            <li><a href="lindex.html">LIVRO</a></li>
+            <li><a href="dedicatoria.html">DEDICATÓRIA</a></li>
+            <li><a href="sumario.html">SUMÁRIO</a></li>
+            <li><a href="cartaprefacio.html">CARTA-PREFÁCIO</a></li>
+            <li><a href="agradecimentos.html">AGRADECIMENTOS</a></li>
+            <li><a href="prefacio.html">PREFÁCIO</a></li>
+            <li><a href="introducao.html">INTRODUÇÃO</a></li>
+            <li><a href="parte1.html">I. ORIGEM</a></li>
+            <li><a class="ind" href="capitulo1.html">1. PRIMEIROS PASSOS</a></li>
+            <li><a class="ind" href="capitulo2.html">2. A ARTE DA PROGRAMAÇÃO</a></li>
+            <li><a href="parte2.html">II. EVOLUÇÃO</a></li>
+            <li><a class="ind" href="capitulo3.html">3. CAOS</a></li>
+            <li><a class="ind" href="capitulo4.html">4. ORDEM</a></li>
+            <li><a class="ind" href="capitulo5.html">5. ILUSÕES</a></li>
+            <li><a href="parte3.html">III. TRANSCENDÊNCIA</a></li>
+            <li><a class="ind" href="capitulo6.html">6. FRACTAIS</a></li>
+            <li><a class="ind" href="capitulo7.html">7. EMERGÊNCIA</a></li>
+            <li><a class="ind" href="capitulo8.html">8. O CÓDIGO TRANSCENDENTE</a></li>
+            <li><a href="final.html">O PROCESSO FINAL</a></li>
+            <li><a href="indicea.html">ÍNDICE</a></li>
+          </ul>
+        </div>
+        <div class="container-book vertical-book">
+<div class="custom-container">
+<div class="row">
+<div class="col-xl-12">
+
+<p><span class="capnbr">[ CAPÍTULO 1 ]</span><br><span class="capname">Primeiros Passos</span><br><span class="capnbrbot">Olá Mundo!</span><br></p>
+<p>O início de toda jornada começa com aquela sensação de que a caminhada será longa, mas que ao final terá valido a pena. É com esta mentalidade que você deve perseguir cada uma das folhas que ler. Ao terminar o livro você terá dominado conceitos que transcendem a arte gerativa, podendo ser usados tanto no desenvolvimento de aplicativos para fins artísticos quanto em programas com objetivos científicos. Grande parte desse conhecimento está inserido nas entrelinhas da lógica e do pensamento computacional, por essa razão você deve sempre se perguntar como pode usar o que é apresentado para impulsionar seu lado criativo e engenhoso.</p>
+<p>Neste capítulo começaremos com uma breve introdução sobre a arte gerativa e trabalhos que marcaram sua origem, sua história e suas excitantes aplicações na atualidade. Em seguida será justificado o uso da linguagem de programação central deste livro, o Processing. A partir desse ponto você será direcionado rapidamente para a parte prática da computação e em pouco tempo estará criando seus próprios programas.</p>
+<p>Boa leitura e mãos à obra!</p>
+<p><span class="sec">1.1 Uma breve história da arte gerativa</span> <a id="seccap1-histcomput" class="labup"></a></p>
+<p>A prática da arte gerativa, assim como o próprio termo que é usado para descrevê-la, surgiu<a id="artegerativa%origens"></a> em meados de 1960 e até hoje está em constante mutação e redefinição. Sua origem formal pode, muito provavelmente, ser traçada a uma exibição em 1965 batizada de <i>Generative Computergraphik</i> <sup><a class="linkref" id="fnote-1" href="#footnote-1" title="Rodapé.">[1]</a></sup> que mostrou o trabalho de um dos pioneiros da arte digital, o acadêmico alemão Georg Nees<a id="NeesGeorg"></a>. Uma das obras apresentadas por ele, <i>23-Ecke</i>, figura <a class="linkref" href="capitulo1.html#figcap1-obras0">1.1</a>, era composta por uma matriz de polígonos formados por vértices posicionados aleatoriamente em um pequeno espaço, em cada um confirmando-se as raízes do gerativo. A década de 1960 representou uma época especial para a arte digital como um todo devido ao rápido desenvolvimento dos computadores e da computação. É curioso notar que os precursores desse tipo de prática foram cientistas e acadêmicos, fato justificável uma vez que eram essas pessoas que estavam inseridas em um meio que possuía as ferramentas para o trabalho e exploração da lógica e padrões formados por regras ordenadas ou pelo caos. Além de Nees (fig. <a class="linkref" href="capitulo1.html#figcap1-obras2">1.2</a>), outros importantes nomes que podemos citar são o do matemático Frieder Nake (fig. <a class="linkref" href="capitulo1.html#figcap1-obras3">1.3</a>), dos artistas Manfred Mohr (fig. <a class="linkref" href="capitulo1.html#figcap1-obras5">1.4</a>) e Vera Molnár (fig. <a class="linkref" href="capitulo1.html#figcap1-obras1b">1.5</a>) e do engenheiro Michael Noll (fig. <a class="linkref" href="capitulo1.html#figcap1-obras1a">1.6</a>). O ponto de marco, o computador, também é um dos motivos pelo qual muitas vezes os termos arte gerativa e arte computacional são utilizados quase como sinônimos, de maneira intercambiáveis. Rigorosamente, a arte gerativa<a id="artegerativa%vsartecomputacional"></a> é singular uma vez que não exige o meio computador e sim um processo com algum grau de autonomia. Por exemplo, um robô vibratório com um lápis em sua base constitui a fundação para formar uma peça gerativa, assim como reações químicas em uma placa de Petri, peças musicais em um sintetizador eletrônico ou até mesmo alterações atmosféricas em um ambiente fechado<sup><a class="linkref" id="fnote-2" href="#footnote-2" title="Rodapé.">[2]</a></sup>.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+  <div class="col-md-12 imgMax12"> 
+  <div class="pop"> 
+ <img class="img-fluid imgborder" id="figcap1-obras0" src="img/pdfCap1-GeorgNees-23Ecke.png"> 
+ </div> 
+ <figcaption> Figura 1.1 - Georg Nees, <i>23 Ecke</i>, reproduzido utilizando o Processing.</figcaption> 
+  </div> 
+  </div> 
+ <div class="row justify-content-center align-items-center text-center imgspc"> 
+  <div class="col-md-6"> 
+  <div class="pop imgMax6"> 
+ <img class="img-fluid imgborder" id="figcap1-obras2" src="img/pdfCap1-GeorgNees-Schotter 2.png"> 
+ </div> 
+ <figcaption> Figura 1.2 - Georg Nees, <i>Schotter</i>.</figcaption> 
+  </div> 
+  <div class="col-md-6"> 
+  <div class="pop imgMax6"> 
+ <img class="img-fluid imgborder" id="figcap1-obras3" src="img/pdfCap1-FriederNake-RandomWalkThroughRaster.png"> 
+ </div> 
+ <figcaption> Figura 1.3 - Frieder Nake, <i>Random Walk Through Raster</i>.</figcaption> 
+  </div> 
+  <div id="figcap1-13" class="col-md-12 text-center"> 
+  Figura - 1.17 - Reinterpretação de obras clássicas do movimento gerativo utilizando o Processing. </div> 
+  </div> 
+ <div class="row justify-content-center align-items-center text-center imgspc"> 
+  <div class="col-md-12 imgMax12"> 
+  <div class="pop"> 
+ <img class="img-fluid imgborder" id="figcap1-obras5" src="img/pdfCap1-ManfredMohr-P122Plus2.png"> 
+ </div> 
+ <figcaption> Figura 1.4 - Manfred Mohr, <i>P122+</i>, reproduzido utilizando o Processing.</figcaption> 
+  </div> 
+  </div> 
+ <div class="row justify-content-center align-items-center text-center imgspc"> 
+  <div class="col-md-6"> 
+  <div class="pop imgMax6"> 
+ <img class="img-fluid imgborder" id="figcap1-obras1b" src="img/pdfCap1-VeraMolnar-144Trapezes.png"> 
+ </div> 
+ <figcaption> Figura 1.5 - Vera Molnár, <i>144 Trapèzes</i>.</figcaption> 
+  </div> 
+  <div class="col-md-6"> 
+  <div class="pop imgMax6"> 
+ <img class="img-fluid imgborder" id="figcap1-obras1a" src="img/pdfCap1-MichaelNoll-ComputerCompositionWithLines.png"> 
+ </div> 
+ <figcaption> Figura 1.6 - Michael Noll, <i>Computer Composition With Lines</i>.</figcaption> 
+  </div> 
+  <div id="figcap1-obras1" class="col-md-12 text-center"> 
+  Figura - 1.18 - Reinterpretação de obras clássicas do movimento gerativo utilizando o Processing. </div> 
+  </div> 
+ <div class="row">
+ <div class="col-xl-12">
+ <p></p>
+ </div>
+ </div>
+<div class="row">
+<div class="col-xl-12">
+<p>No Brasil, é possível que o nome mais conhecido quando citamos a arte computacional seja o de Waldemar Cordeiro<a id="CordeiroWaldemar"></a>, artista plástico e teórico do movimento da arte concreta e do popcreto. Seus trabalhos com sólida base teórica, tantos nos anos 50 com o concretismo quanto nos anos 60 com o popcreto, assim como sua experiência social como paisagista e urbanista mostraram-se ideais para a experimentação da arte com computadores. Em 1968 Cordeiro iniciou uma parceria com o físico Giorgio Moscati, na qual investigaram como técnicas do domínio da matemática, física, psicologia e arte poderiam ser fundidas na expressão artística. Uma das obras da dupla, considerada a primeira obra de <i>computer art</i> da América Latina e dotada de uma originalidade que repercutiu internacionalmente, <i>Derivadas de uma Imagem</i> (figura <a class="linkref" href="capitulo1.html#figcap1-derivadasimagem">1.7</a>), consistia em derivar numericamente uma imagem, repetindo o processo em até três vezes sobre a digitalização manual realizada por Cordeiro. Segundo Moscati, "Cordeiro insistiu muito em usar uma imagem com forte conteúdo humano e emotivo para ser transformada por uma "maquina fria e calculista"." <sup><a class="linkref" id="fnote-3" href="#footnote-3" title="Rodapé.">[3]</a></sup>. Um dos pontos que chama a atenção em Cordeiro é a sua preocupação com questões que ultrapassam a pura expressão da arte; suas obras, como a citada anteriormente, provocaram discussões acerca da natureza e validade social e estética da arte <i>pelo</i> computador, autoria em produções digitais e até sobre o princípio visual da interpretação de estímulos sensoriais<sup><a class="linkref" id="fnote-4" href="#footnote-4" title="Rodapé.">[4]</a></sup>.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+  <div class="col-md-4"> 
+  <div class="pop imgMax4"> 
+ <img class="img-fluid imgborder" id="figcap1-ddi0" src="img/figCap1-DDI0.png"> 
+ </div> 
+ <figcaption> Figura 1.19 - <i>Astronaut Michael Gernhardt during extravehicular activity (EVA)</i> <sup>a</sup>, cortesia da NASA.<br><span class="imgsubcaption"><sup>a</sup>  Todos os direitos reservados pela instituição.</span></figcaption> 
+  </div> 
+  <div class="col-md-4"> 
+  <div class="pop imgMax4"> 
+ <img class="img-fluid imgborder" id="pdfcap1-ddi1" src="img/pdfCap1-DDI1.png"> 
+ </div> 
+ <figcaption> Figura 1.20 - Imagem reduzida.</figcaption> 
+  </div> 
+  <div class="col-md-4"> 
+  <div class="pop imgMax4"> 
+ <img class="img-fluid imgborder" id="pdfcap1-ddi2" src="img/pdfCap1-DDI2.png"> 
+ </div> 
+ <figcaption> Figura 1.21 - Quantização de cores.</figcaption> 
+  </div> 
+  </div> 
+  <div class="row justify-content-center align-items-center text-center imgspc"> 
+  <div class="col-md-4"> 
+  <div class="pop imgMax4"> 
+ <img class="img-fluid imgborder" id="pdfcap1-ddi3" src="img/pdfCap1-DDI3.png"> 
+ </div> 
+ <figcaption> Figura 1.22 - Derivada de ordem zero.</figcaption> 
+  </div> 
+  <div class="col-md-4"> 
+  <div class="pop imgMax4"> 
+ <img class="img-fluid imgborder" id="pdfcap1-ddi4" src="img/pdfCap1-DDI4.png"> 
+ </div> 
+ <figcaption> Figura 1.23 - Derivada de ordem um.</figcaption> 
+  </div> 
+  <div class="col-md-4"> 
+  <div class="pop imgMax4"> 
+ <img class="img-fluid imgborder" id="pdfcap1-ddi5" src="img/pdfCap1-DDI5.png"> 
+ </div> 
+ <figcaption> Figura 1.24 - Derivada de ordem dois.</figcaption> 
+  </div> 
+  <div id="figcap1-derivadasimagem" class="col-md-12 text-center"> 
+  Figura - 1.7 - Reinterpretação<sup><a class="linkref" id="fnote-14" href="#footnote-14" title="Rodapé.">[14]</a></sup> da obra <i>Derivadas de uma imagem</i>, de Waldemar Cordeiro, utilizando o Processing. </div> 
+  </div> 
+<div class="row">
+  <div class="col-xl-12">
+<p>Inserida em um meio de característica naturalmente permissível, a arte gerativa possibilita que sua história seja enriquecida com teorias daqueles que defendem que a mesma surgiu consideravelmente antes de 1960. Na arquitetura de civilizações antigas são evidentes as leis<a id="padroesmatematicos%naarquitetura"></a> que permeavam escolhas de design em instalações importantes. Templos hindus, como o Kandariya Mahadeva (fig. <a class="linkref" href="capitulo1.html#figcap1-kandariyatemple">1.8</a>), exibem repetições fractais em sua estrutura<sup><a class="linkref" id="fnote-5" href="#footnote-5" title="Rodapé.">[5]</a></sup> que refletem a própria crença de um cosmos autossimilar. Padrões geométricos presentes em construções islâmicas, particularmente o complexo histórico Shah Nematollah Vali ou a praça do Resgistan (fig. <a class="linkref" href="capitulo1.html#figcap1-registan">1.9</a>), podem ser estratificados em regras geométricas bem definidas, e simultaneamente permutáveis, para formar infinitas variações como argumentado pelo artista Roman Verostko. A matemática como geradora de padrões por meio de simetrias, ciclos, repetições, combinações, transformações espaciais e sequências numéricas é encontrada em uma imensa quantidade de artefatos e pinturas das mais diversas culturas<a id="padroesmatematicos%emobjetos"></a> como a egípcia (fig. <a class="linkref" href="capitulo1.html#figcap1-egyptian">1.10</a>), céltica (fig. <a class="linkref" href="capitulo1.html#figcap1-celtic">1.11</a>), grega (fig. <a class="linkref" href="capitulo1.html#figcap1-greek">1.12</a>), anglo-saxônica (fig. <a class="linkref" href="capitulo1.html#figcap1-anglosaxon">1.13</a>) e outras distribuídas espacialmente e temporalmente ao longo da história humana.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+  <div class="col-md-6"> 
+  <div class="pop imgMax6"> 
+ <img class="img-fluid imgborder" id="figcap1-kandariyatemple" src="img/figCap1-KandariyaTemple.jpg"> 
+ </div> 
+ <figcaption> Figura 1.8 - Templo de Kandariya Mahadeva<sup>b</sup>, Índia. Cortesia do fotógrafo Fernando de la Torre<br><span class="imgsubcaption"><sup>b</sup>  Todos os direitos reservados pelo fotógrafo original.</span></figcaption> 
+  </div> 
+  <div class="col-md-6"> 
+  <div class="pop imgMax6"> 
+ <img class="img-fluid imgborder" id="figcap1-registan" src="img/figCap1-Registan.jpg"> 
+ </div> 
+ <figcaption> Figura 1.9 - Praça do Registan<sup>c</sup>, Uzbequistão. Cortesia da fotógrafa Janet Marshall.<br><span class="imgsubcaption"><sup>c</sup>  Todos os direitos reservados pela fotógrafa original.</span></figcaption> 
+  </div> 
+  <div id="figcap1-854" class="col-md-12 text-center"> 
+  Figura - 1.25 - Padrões em estruturas arquitetônicas. </div> 
+  </div> 
+ <div class="row justify-content-center align-items-center text-center imgspc"> 
+  <div class="col-md-6"> 
+  <div class="pop imgMax6"> 
+ <img class="img-fluid imgborder" id="figcap1-egyptian" src="img/figCap1-Egyptian.jpg"> 
+ </div> 
+ <figcaption> Figura 1.10 - Escaravelho, egípcio, 1458-1479 a.C.</figcaption> 
+  </div> 
+  <div class="col-md-6"> 
+  <div class="pop imgMax6"> 
+ <img class="img-fluid imgborder" id="figcap1-celtic" src="img/figCap1-Celtic.jpg"> 
+ </div> 
+ <figcaption> Figura 1.11 - Anel, céltico, 500-400 a.C.</figcaption> 
+  </div> 
+  </div> 
+  <div class="row justify-content-center align-items-center text-center imgspc"> 
+  <div class="col-md-6"> 
+  <div class="pop imgMax6"> 
+ <img class="img-fluid imgborder" id="figcap1-greek" src="img/figCap1-Greek.jpg"> 
+ </div> 
+ <figcaption> Figura 1.12 - Tigela de libação, grega, 400-300 a.C.</figcaption> 
+  </div> 
+  <div class="col-md-6"> 
+  <div class="pop imgMax6"> 
+ <img class="img-fluid imgborder" id="figcap1-anglosaxon" src="img/figCap1-AngloSaxon.jpg"> 
+ </div> 
+ <figcaption> Figura 1.13 - Pingente, anglo-saxão, início de 600 d.C.</figcaption> 
+  </div> 
+  <div id="figcap1-710" class="col-md-12 text-center"> 
+  Figura - 1.26 - Padrões em objetos culturais, cortesia<sup>d</sup> do Metropolitan Museum of Art, New York<br><span class="imgsubcaption"><sup>d</sup>  Todos os direitos reservados pela instituição.</span> </div> 
+  </div> 
+<div class="row">
+  <div class="col-xl-12">
+<p>Presente também na música, o gerativo pode ser rastreado ao <i>Musikalisches Würfelspiel</i> <a id="musicagerativa%MusikalischesWurfelspiel"></a>, figura <a class="linkref" href="capitulo1.html#figcap1-obras4">1.14</a>, atribuído ao compositor clássico Mozart<sup><a class="linkref" id="fnote-6" href="#footnote-6" title="Rodapé.">[6]</a></sup>. Esta peça era sintetizada através do jogar de dados, no qual cada número representava uma pequena seção musical que, posteriormente, eram costuradas sequencialmente formando uma espécie de música do acaso. Uma abordagem similar seria o do artista Marcel Duchamp<a id="DuchampMarcel"></a> que, entre 1912 e 1915 , criou duas<sup><a class="linkref" id="fnote-7" href="#footnote-7" title="Rodapé.">[7]</a></sup> peças musicais baseadas na chance. Em <i>Erratum Musica</i> <a id="musicagerativa%ErratumMusica"></a> Duchamp retirava, aleatoriamente, cartas de um chapéu que continham vozes musicais, formando uma composição completamente inesperada.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+  <div class="col-md-12 imgMax12"> 
+  <div class="pop"> 
+ <img class="img-fluid imgborder" id="figcap1-obras4" src="img/pdfCap1-MozartDice.png"> 
+ </div> 
+ <figcaption> Figura 1.14 - Mozart, <i>Musikalisches Würfelspiel</i>.</figcaption> 
+  </div> 
+  </div> 
+<div class="row">
+  <div class="col-xl-12">
+<p>Na classe dos sistemas citados, parte deles estão sujeitos a críticas, em especial aqueles que utilizam completamente de etapas predefinidas (padrões geométricos, fórmulas matemáticas ou regras determinísticas). Margaret Boden e Ernest Edmonds<a id="EdmondsErnest"></a> evidenciam que a comunidade artística possui certa objeção quanto a esses tipos de trabalhos por não existem surpresas, e que eles estariam ligados muito mais a visualizações matemáticas, arte algoritmica ou arte computacional <i>programada</i> do que à arte gerativa em si. A justificativa seria que um processo definido passo a passo é inteiramente conhecido em qualquer instante de tempo, não havendo nenhum tipo de decisão <i>autônoma</i> pelo agente gerador. Em outras palavras, a arte gerativa é formada quando existem regras que limitam ações ao invés de impô-las, e sempre deve existir algum tipo de elemento não controlado durante sua execução<sup><a class="linkref" id="fnote-8" href="#footnote-8" title="Rodapé.">[8]</a></sup>. Boden e Edmonds propõem uma conclusão para esse assunto de maneira sucinta e clara: atualmente, tanto os programas que literalmente seguem regras quanto aqueles que apenas as interpretam, costumam ser tão complexos que não possuem distinção no nível mais fundamental, sendo improdutivo insistir em esclarecer tecnicamente a segregação entre arte gerativa e algorítmica. As diferenças entre as duas estariam ligadas mais ao "sentimento" de falta de controle sobre o resultado gerado do que ao controle em si, já que esses dois tipos de prática são capazes de formar obras completamente imprevisíveis pelo autor na etapa de concepção.</p>
+<p>No que concerne a nova geração de artistas gerativos, pós 1990, pode-se observar o mesmo comportamento experimental de seus precursores, mas em um espectro de abrangência muito maior. Nos anos que se seguem os computadores e ferramentas digitais começaram a ser atualizados a uma velocidade espetacular que, somados a popularização da Internet, facilitaram o processamento, compartilhamento e acesso a dados, originando a Era da Informação. Essa nova casta de artistas, armada com poderosas ferramentas tecnológicas, está focada em mesclar especialidades da engenharia e computação com a estética e forma da arte. Casey Reas<a id="ReasCasey"></a> e Benjamin Fry<a id="FryBenjamin"></a>, criadores do Processing, são programadores e artistas com trabalhos (fig. <a class="linkref" href="capitulo1.html#figcap1-signals">1.15</a>) relacionados à visualização de dados e exploração da estética através do código, tornando a linha divisória entre o técnico e o artístico cada vez mais tênue. Jared Tarbell, Marius Waltz e Joshua Davis são outros exemplos de artistas que combinam algoritmos, design e estilos únicos para criar belíssimas peças gerativas. Muitos outros casos similares podem ser citados: Patrick Tresset<a id="TressetPatrick"></a> construiu um braço robótico<sup><a class="linkref" id="fnote-9" href="#footnote-9" title="Rodapé.">[9]</a></sup> e o programou para rascunhar ilustrações estilizadas de si. Jon McCormack<a id="McCormackJon"></a> desenvolveu um algoritmo capaz de sintetizar imagens de plantas evoluídas artificialmente por algoritmos genéticos formadas pelos <i>logos</i> de companhias de petróleo e derivados<sup><a class="linkref" id="fnote-10" href="#footnote-10" title="Rodapé.">[10]</a></sup>. LIA<a id="LIA"></a> (fig. <a class="linkref" href="capitulo1.html#figcap1-filamentsculptures">1.16</a>) utilizou de uma impressora 3D para explorar o comportamento de esculturas<sup><a class="linkref" id="fnote-11" href="#footnote-11" title="Rodapé.">[11]</a></sup> constituídas por filamentos de ABS<sup><a class="linkref" id="fnote-12" href="#footnote-12" title="Rodapé.">[12]</a></sup>. Em adição aos tipos passivos de obras, a computação permite também a arte interativa, em que se usam de periféricos poderosos como o <i>Kinect</i>, o <i>Leap Motion</i> ou o óculos de realidade virtual (VR), para impulsionar uma interação muito mais pessoal e próxima ao espectador. A arte, ou o produto final dependendo do ponto de vista, se torna uma colaboração triádica do artista/programador, do computador e também do usuário. A empresa Nike explorou essa ideia em uma instalação que utilizava de um <i>Knect</i> e sensores conectados a uma esteira ergométrica para transformar uma pessoa que corria sobre ela em um fluxo de partículas animadas<sup><a class="linkref" id="fnote-13" href="#footnote-13" title="Rodapé.">[13]</a></sup>.</p>
+<p>Esta pequena introdução teve o objetivo de prover uma visão holística sobre as origens e aplicações da arte gerativa. É desafiador traçar uma linha histórica detalhada de um campo que foi formalizado recentemente, na ordem de décadas, mas cuja essência experimental está presente na própria natureza humana. O que se pode observar é que a cada ano aumenta-se a demanda e o interesse por exibições que combinem o artístico e o científico, essencialmente reforçando a ânsia de uma simbiose orgânica entre forças duais, seja do caos e a ordem ou do homem e a máquina.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap1-signals" src="img/figCap1-Signals.jpg"> 
+</div> 
+<figcaption> Figura 1.15 - <i>Signals</i> <sup>e</sup>, cortesia dos próprios autores, Casey Reas e Benjamin Fry.<br><span class="imgsubcaption"><sup>e</sup>  Todos os direitos reservados pelos artistas originais.</span></figcaption> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap1-filamentsculptures" src="img/figCap1-FilamentSculptures.jpg"> 
+</div> 
+<figcaption> Figura 1.16 - <i>Filament Sculptures</i> <sup>f</sup>, cortesia da própria artista, LIA.<br><span class="imgsubcaption"><sup>f</sup>  Todos os direitos reservados pela artista original.</span></figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p><span class="sec">1.2 Processing</span> <a id="seccap1-processing" class="labup"></a></p>
+<p>A partir desta seção você mergulhará no vasto oceano da programação voltada para a arte gerativa. O primeiro passo será aprender conceitos universais relacionados à programação e suas aplicações. Sempre que possível foram utilizados exemplos com foco visual para que você possa entender melhor a teoria, afinal, como o livro trata de arte computacional, espera-se pelo menos algum tipo de imagem gerada. O agente responsável por quaisquer desenhos será o computador que, como bem sabemos, não entende diretamente a linguagem humana. Consequentemente você deverá aprender uma linguagem de programação que é um método padronizado para passar instruções para um computador. Posteriormente essas instruções são compiladas, significando que elas serão convertidas para uma linguagem de máquina para serem executadas pelo hardware que compõe o computador físico. Esse processamento gera, a nível de software, uma saída que pode ser um texto, vídeo, música ou, como em nosso caso, uma imagem ou animação.</p>
+<p>Em geral, a programação pode ser feita em qualquer linguagem, mas a sua escolha pode ser direcionada para maximizar a velocidade e eficiência do processo técnico e criativo. Existem certas linguagens de programação que se sobressaem devido a recursos nativos para trabalhar com meios que contenham muitos elementos áudio visuais, como é o caso da arte computacional. A maioria desses recursos estão relacionados com instruções que simplificam justamente a produção desses resultados. As opções para quem trabalha nesse campo vem crescendo ao longo dos anos e inclui linguagens, programas e bibliotecas, sendo algumas evidenciadas abaixo:</p>
+</div>
+</div>
+<ul>
+ <li> <b>Nodebox</b> <a id="Nodebox"></a>: Software composto por uma família de ferramentas desenvolvidas para facilitar o trabalho com design e arte gerativa. Existem duas variações, uma baseada na linguagem Python e outra utilizando uma interface nodal de programação visual<sup><a class="linkref" id="fnote-15" href="#footnote-15" title="Rodapé.">[15]</a></sup>. </li>
+ <li> <b>VVVV</b> <a id="VVVV"></a>: Ambiente de programação visual com interface nodal. Especializada na síntese de vídeos, imagens e áudio em tempo real. </li>
+ <li> <b>Cinder</b> <a id="Cinder"></a>: Biblioteca aberta escrita em C++ voltada para a programação gerativa. </li>
+ <li> <b>OpenFrameworks</b> <a id="OpenFrameworks"></a>: Conjunto de ferramentas abertas desenvolvidas em C++ para auxiliar no processo criativo. É composto por uma série de outras bibliotecas relacionadas a aplicações específicas como geração e processamento de vídeo e imagens, visão computacional e modelagem 3D. </li>
+ <li> <b>StructureSynth</b> <a id="StructureSynth"></a>: Aplicação desenvolvida especialmente para gerar estruturas tridimensionais a partir de uma linguagem própria. </li>
+ <li> <b>AdobeFlash</b> <a id="AdobeFlash"></a>: Plataforma comumente utilizada por web designers para criar imagens, animações e visualizações. Utiliza a linguagem de programação <i>Action Script</i>. </li>
+ <li> <b>Processing</b> <a id="Processing"></a>: Desenvolvido no MIT<sup><a class="linkref" id="fnote-15" href="#footnote-15" title="Rodapé.">[15]</a></sup>, é um software e uma linguagem de programação baseada em Java e idealizada para ensinar os fundamentos relacionados a trabalhos envolvendo artes visuais. </li>
+ </ul>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="figcap1-ide_pde" src="img/figCap1-IDE_PDE.png"> 
+</div> 
+<figcaption> Figura 1.28 - Processing.</figcaption> 
+ </div> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="figcap1-ide_vs" src="img/figCap1-IDE_VS.png"> 
+</div> 
+<figcaption> Figura 1.29 - Visual Studio.</figcaption> 
+ </div> 
+ <div id="figcap1-ambdesenvolvexemp" class="col-md-12 text-center"> 
+ Figura - 1.30 - Ambiente de desenvolvimento. </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Cada uma dessas opções possuem suas vantagens e desvantagens dependendo do tipo de arte e meio em que se deseja trabalhar. Algumas delas podem se tornar muito específicas ao fazer o uso de linguagens próprias ou focar em um único tipo de aplicação. Por motivos que serão explicados ao longo desta seção, iremos trabalhar exclusivamente com a linguagem Processing.</p>
+<p>Processing<a id="Processing70"></a> é uma linguagem de programação cujo desenvolvimento iniciou com Ben Fry e Casey Reas em 2001, no <i>MIT Media Lab</i>. Aos poucos foi crescendo a agregando mais e mais entusiastas devido a sua interface simples, sintaxe amigável e grande variedade de funcionalidades. Em 2012 foi criada a Processing Foundation junto com Daniel Shiffman que aumentou a equipe como terceiro líder do projeto. A linguagem em si é baseada em Java que, por sua vez, tem um gigantesco histórico de aplicações em desktop, web e dispositivos móveis como smartphones e tablets.</p>
+<p>A premissa do Processing é ser uma linguagem de programação inclusiva, tanto para iniciantes quanto veteranos da programação, cujo o foco é no ensino direcionado à programação criativa e arte gerativa. Seu ambiente de programação é minimalista<sup><a class="linkref" id="fnote-16" href="#footnote-16" title="Rodapé.">[16]</a></sup> e limpo para que o programador ou artista possa expressar suas ideias de maneira direta, passando para as etapas de prototipagem, experimentação e prova de conceito o mais rápido possível. Os próprios criadores da linguagem batizaram o ambiente do Processing como um <i>sketch book</i>, ou "livro de rascunhos". Esta maneira de idealiza-lo foi pensada propositadamente para aproximar a arte e a programação de tal forma que o rascunho, o processo de expressar uma ideia, é tão importante quanto o produto final em si.</p>
+<p>Em comparação com outras linguagens de programação<a id="Processing%vsoutraslinguagens"></a>, como C++ ou Rust, Processing geralmente produz um software com velocidade de execução menor, porém suas vantagens se sobressaem. A linguagem é composta por uma sintaxe simples e amigável com menos regras específicas e estruturais da programação, permitindo um foco maior no processo criativo. Ela também possui uma diversa gama de ferramentas próprias que permitem explorar grande parte das áreas que compõem a computação artística. Em relação a linguagens de programação visual, como as usadas no Nodebox ou VVVV, o Processing transfere mais poder ao usuário através da linguagem escrita, permitindo uma customização cirúrgica das ideias que o programador deseja expressar. Em projetos com maior volume de código a linguagem escrita também é mais fácil de ser gerenciada, organizada e compreendida.</p>
+<p>A compatibilidade é outro ponto forte do Processing. O seu ambiente de desenvolvimento compila executáveis para plataformas Windows, Mac OS X e Linux. Somando as suas vantagens, ela também é uma linguagem aberta (<i>open source</i>) em que os usuários podem ajudar a corrigir problemas ou <i>bugs</i> assim como sugerir novas funcionalidades. Sua popularização encorajou programadores a criar variantes adaptadas para linguagens específicas como o p5.js (JavaScript), Processing.py (Python) e Quil (Clojure). Igualmente relevante, é que Processing é distribuído de graça, sendo mantido por doações.</p>
+<p>Em se tratando de ferramentas externas à linguagem, existe uma quantidade respeitável de bibliotecas desenvolvidas por usuários, tanto para Processing quanto para Java, que podem ser instaladas. Bibliotecas são um conjunto de funções e estruturas de dados não nativas à linguagem que, quando adicionadas ao programa, ampliam ou estendem suas funcionalidades. Essa prática tem um potencial realmente impressionante nas mais diversas aplicações. Algumas dessas bibliotecas habilitam compatibilidade com periféricos como os detectores de posição Kinect da Microsoft, o LMC da Leap Motion e o microcontrolador Arduino. Outras facilitam o trabalho com especialidades que abrangem a visão computacional, visualização de dados e até mesmo motores de física (<i>physics engine</i>) em simulações e jogos.</p>
+<p>Todos esses fatores contribuem fortemente na escolha do Processing como a linguagem adotada neste livro para a programação artística. Nada impede que você siga todo o texto utilizando outras linguagens uma vez que, conforme dito, os conceitos ensinados são universais, porém a sintaxe não será a mesma e você terá que realizar as devidas adaptações.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="figcap1-pdeex1 - cópia" src="img/figCap1-PDEEx1 - Cópia.png"> 
+</div> 
+<figcaption> Figura 1.31 - Escrita.</figcaption> 
+ </div> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="figcap1-nodeboxex1" src="img/figCap1-NodeBoxEx1.png"> 
+</div> 
+<figcaption> Figura 1.32 - Interface nodal.</figcaption> 
+ </div> 
+ </div> 
+ <div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="pdfcap1-nodeboxex1_result" src="img/pdfCap1-NodeBoxEx1_Result.png"> 
+</div> 
+<figcaption> Figura 1.33 - Resultado dos códigos nodal e escrito.</figcaption> 
+ </div> 
+ <div id="figcap1-langcomp" class="col-md-12 text-center"> 
+ Figura - 1.27 - Linguagens de programação. </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p><span class="sec">1.3 Ambiente Processing</span> <a id="seccap1-processingamb" class="labup"></a></p>
+<p>O ambiente<a id="Processing%ambiente"></a> de desenvolvimento Processing (<i>PDE - Processing Development Environment</i>) é o programa que você irá utilizar para escrever seus códigos, assim como executá-los. No momento em que este livro foi escrito o Processing encontra-se na sua terceira grande versão, mais especificamente a 3.5.3. Você pode obtê-lo no endereço web <a target="_blank" href="https://processing.org/" class="linkref">processing.org</a>, na seção de download. O arquivo estará compactado e será necessário extrair o conteúdo para um local do seu computador. Este livro foi baseado na versão do Windows e para abrir o programa basta executar o aplicativo <i>Processing.exe</i>. A aplicação será executada em qualquer máquina que suportar o Ambiente de Execução Java<sup><a class="linkref" id="fnote-17" href="#footnote-17" title="Rodapé.">[17]</a></sup>, sendo que o Java está incluído no download. O PDE é composto pela interface e itens conforme mostrados na figura <a class="linkref" href="capitulo1.html#figcap1-pde">1.34</a>.</p>
+<p>Abaixo é feita uma descrição sucinta de cada ponto relevante desse ambiente:</p>
+</div>
+</div>
+<ul>
+ <li> [1]<b>Barra de menus</b>: Contém os menus da aplicação que permitem criar, salvar e carregar projetos, além de consultar exemplos, importar bibliotecas e customizar a interface do PDE. </li>
+ <li> [2]<b>Executar</b>: Compila o código escrito na seção do editor de texto e mostra seu resultado na janela de exibição e/ou no console. </li>
+ <li> [3]<b>Parar</b>: Termina a execução do código, fechando a janela de exibição. </li>
+ <li> [4]<b>Abas</b>: Permite criar novas abas para escrever o código. Utilizado principalmente em programas extensos ou para organizá-los em seções, classes e funcionalidades. </li>
+ <li> [5]<b>Editor de texto</b>: É o espaço reservado para escrever o código em si. </li>
+ <li> [6]<b>Área de mensagem</b>: Mostra algumas mensagens do sistema e breves mensagens de erro que possam existir durante ou até mesmo antes da execução do programa. </li>
+ <li> [7]<b>Console</b>: É onde são exibidos os textos de saída do Processing, como aqueles gerados por algumas funções. Também pode conter eventuais descrições mais detalhadas de certos tipos de erros detectados na execução do código. </li>
+ <li> [8]<b>Erros</b>: Exibe os erros (em vermelho - figura <a class="linkref" href="capitulo1.html#figcap1-pdeerror">1.35</a>) ou mensagens de aviso (em laranja - figura <a class="linkref" href="capitulo1.html#figcap1-pdealert">1.36</a>) do código. Erros são classificados como fatais e impedem ou terminam a execução do código. Alguns deles são a sintaxe incorreta, falta de argumentos nas funções ou tipos incorretos de variáveis. As mensagens de aviso estão ligadas a problemas leves como, por exemplo, o não uso de uma variável declarada, e não impedem a execução do programa. </li>
+ <li> [9]<b>Debug</b>: Ferramenta adicionada no Processing 3.0 que permite executar o seu programa passo a passo. Essa funcionalidade é muito útil quando se deseja conferir valores de variáveis ou comportamentos de algoritmos. </li>
+ <li> [10]<b>Modo</b>: Seleciona o modo de programação para o Processing que, por padrão, é a linguagem Java. Modos para JavaScript, Python ou Android podem ser adicionados através desse mesmo botão, na seta lateral, na opção <i>Adicionar modo...</i>. </li>
+ </ul>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap1-pde" src="img/pdfCap1-IDE_Num - Copia.png"> 
+</div> 
+<figcaption> Figura 1.34 - PDE Processing para Windows com as principais funcionalidades.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Bibliotecas<a id="Processing%bibliotecasno"></a>, como aquelas citadas na seção passada, não fazem parte da versão original do programa e para usá-las é preciso fazer seu download e instalação. Esse processo é automatizado pelo próprio PDE ao acessarmos a barra de menus, <i>Sketch</i> seguido por <i>Importar Biblioteca...</i> e <i>Adicionar Biblioteca...</i>. Na janela que se abrirá, figura <a class="linkref" href="capitulo1.html#figcap1-pdebib1">1.37</a>, você pode filtrar os módulos por funcionalidades e adicioná-los através do botão <i>Install</i>. Outros recursos a serem carregados ou usados nos seus programas, tais como arquivos de imagens<a id="Processing%arquivosdeimagemno"></a> (.gif, .jpg, .tga, .png), texto<a id="Processing%arquivosdetextono"></a> (.txt, .csv) ou áudio<a id="Processing%arquivosdeaudiono"></a> (.wav, .au, .aif, .snd, .mp3) também devem ser explicitamente adicionados através do menu <i>Sketch</i> e <i>Adicionar Ficheiro...</i>. Selecione o arquivo desejado na interface e pressione o botão de <i>Abrir</i> para completar o processo.</p>
+<p>Você pode salvar os seus códigos para futuras consultas ou reestruturações através do menu <i>Arquivo</i> e depois <i>Guardar como...</i>, que fará com que o computador crie uma pasta com o nome do seu programa contendo todos os arquivos de código, cuja extensão é <i>.pde</i>. Por último, uma vez que sua aplicação estiver completa, você pode exportá-la em forma de um executável, firmando que o código que você escreveu foi transformado em um software <b>seu</b> <sup><a class="linkref" id="fnote-18" href="#footnote-18" title="Rodapé.">[18]</a></sup>, livre para o compartilhamento com qualquer público. Ao selecionar no menu <i>Arquivo</i> o item <i>Exportar Aplicação...</i> você verá uma janela, <a class="linkref" href="capitulo1.html#figcap1-exportapp">1.38</a>, com opções para seleção do sistema operacional da aplicação e se você quer ou não incluir o Java para o Windows. Esta seleção aumenta o tamanho final da aplicação, mas também sua probabilidade de funcionar em plataformas que não tenham o Java instalado. O executável criado estará na própria pasta da aplicação. A interface minimalista do PDE mantém o foco direcionado para a programação, evitando preocupações com configurações desnecessárias. Mantenha o Processing aberto, pois na próxima seção você irá escrever seu primeiro programa.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap1-pdeerror" src="img/figCap1-PDEError.png"> 
+</div> 
+<figcaption> Figura 1.35 - Erro - Ausência de ponto e vírgula no final de uma instrução.</figcaption> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap1-pdealert" src="img/figCap1-PDEAlert.png"> 
+</div> 
+<figcaption> Figura 1.36 - Alerta - Variável declarada, mas não utilizada no código.</figcaption> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap1-pdebib1" src="img/figCap1-PDEBib2.png"> 
+</div> 
+<figcaption> Figura 1.37 - Janela de importação de bibliotecas.</figcaption> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap1-exportapp" src="img/figCap1-ExportApp.png"> 
+</div> 
+<figcaption> Figura 1.38 - Janela de exportação de aplicação.</figcaption> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap1-exportapp1" src="img/figCap1-ExportAppPath.png"> 
+</div> 
+<figcaption> Figura 1.39 - Aplicação exportada como um arquivo executável.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p><span class="sec">1.4 Conversando com a máquina</span> <a id="seccap1-olamundo" class="labup"></a></p>
+<p>Em virtude da sociedade frenética na qual vivemos, é tentador que qualquer um de nós comece a ler os parágrafos que se seguem utilizando a leitura dinâmica. Eu aconselho que você faça exatamente o contrário e diminua a velocidade do seu raciocínio. Pegue um papel, uma caneta e faça anotações do que julgar importante. Execute os códigos usando o Processing e, ainda mais importante, estude-os com calma. Aprender uma linguagem de programação pode ser intimidador a princípio, mas com o tempo você aprenderá a associar as palavras e comandos. Acima de tudo, seja persistente e você será recompensado com uma moeda muito valiosa, o <i>conhecimento</i>. Pronto? Então vamos começar.</p>
+<p>Uma das maneiras mais tradicionais de se iniciar na programação é escrevendo um programa que seja capaz de exibir a frase "Ola Mundo!" <a id="OlaMundo"></a>. No entanto iremos escrever códigos no contexto de arte visual e nada mais pertinente do que exibir um desenho em vez de uma palavra. Sua primeira tarefa será justamente essa. Você pode começar digitando (ou copiando - processo ilustrado na figura <a class="linkref" href="capitulo1.html#figcap1-ctrlcv">1.40</a>) a linha de código abaixo no editor de texto do PDE:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 1.1 - Olá Mundo! - <button class="btnn" onclick="copyDivToClipboard('codcap1-olamundo')">Copiar código</button></h1></header> 
+ <section id="codcap1-olamundo"> <span class="myCodeBro"><span class="m">// Desenha um quadrado:</span></span> <br> 
+ <span class="myCodeBro"><span class="y">rect</span>(25,25,50,50);</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Em seguida pressione o botão de Executar (<i>Run</i> - ou usando o atalho Crtl+R). Após alguns segundos você verá uma pequena janela como a da figura <a class="linkref" href="capitulo1.html#figcap1-olamundo">1.41</a>. Ela é chamada de janela de saída<a id="janeladesaida"></a> ou de exibição e mostrará o resultado de tudo que você programar no editor de texto do PDE. Você pode perceber que o computador "desenhou" uma figura (um quadrado), que é o equivalente a exibir um "Olá Mundo!" em uma linguagem de programação tradicional. Saboreie este instante, você está no caminho de se tornar um programador!</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap1-olamundo" src="img/figCap1-OlaMundo.png"> 
+</div> 
+<figcaption> Figura 1.41 - "Olá Mundo!" na versão da arte computacional.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Bem, vamos parar por um momento e entender, com mais detalhes, o que as linhas de código <a class="linkref" href="capitulo1.html#codcap1-olamundo">1.1</a>, que você acabou de escrever, realmente significam. A primeira linha começa com duas barras simples (//), definindo um comentário. Comentários<a id="comentarioscodigo"></a> são qualquer tipo de anotações que o programador queira fazer, como indicar o objetivo de um código ou o raciocínio por trás do mesmo. Eles são completamente ignorados pelo programa durante sua execução.</p>
+<p>A segunda linha contém um comando e depois foi terminada com um ponto e vírgula (<a class="codef">;</a>) sinalizando que aquilo que foi escrito antes dele pode ser processado pelo compilador e em seguida interpretado. Essa pontuação é necessária no final de cada uma das instruções que você digitar. Esquecer o ponto e vírgula é uma das principais causas de falhas na compilação do código. A execução dessa segunda linha faz com que o computador trace um quadrado. Isso ocorreu por que você chamou uma função do Processing que desenha um retângulo, <a class="codef">rect()</a> <a id="rectfuncao"></a>. Você pode chamar uma função<a id="funcoes"></a> toda vez que desejar fazer uma ou uma série de tarefas específicas. Os números dentro dos parênteses são os argumentos que passamos a essa função. Funções podem ter zero, um, ou mais parâmetros, ou seja, podem pedir (ou não) alguns argumentos ao serem chamadas. Em alguns casos, a função também pode devolver (ou retornar) valores ou outros dados conforme você irá aprender mais à frente.</p>
+<p>Conhecer um pouco mais das funções que existem no Processing<a id="funcoes%noProcessing"></a> é especialmente importante. Muitas delas executam ações que você irá usar durante todo este livro e sempre que você trabalhar com a programação. Para funções nativas da linguagem você pode consultar a página de referência que contém uma listagem de todas as funções implementadas até o momento com uma descrição sobre cada parâmetro de entrada e saída, e ainda um exemplo. A página de referência<a id="Processing%referencia"></a> pode ser acessada através da barra de menus em <i>Ajuda</i> e depois <i>Referência</i>, veja a figura <a class="linkref" href="capitulo1.html#figcap1-menuref">1.42</a>.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap1-menuref" src="img/figCap1-MenuRef.png"> 
+</div> 
+<figcaption> Figura 1.42 - Como abrir a página de referências do Processing.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>É essencial que você compreenda como consultar e chamar, de maneira eficiente, as funções do Processing. Em vista disso, investigaremos passo a passo todas as informações presentes na página de referência de uma função qualquer. Para manter a consistência, vamos abrir o link referente à função usada no código <a class="linkref" href="capitulo1.html#codcap1-olamundo">1.1</a>, <a class="codef">rect()</a>, que está abaixo da seção <i>2D Primitives</i> (figuras <a class="linkref" href="capitulo1.html#figcap1-refrect1">1.43</a> e <a class="linkref" href="capitulo1.html#figcap1-refrect2">1.44</a>), indicando que essa função cria uma forma bidimensional básica. Ao abrir a página dessa função você perceberá diversos tópicos que contém tudo que você precisa saber a respeito da mesma. A tabela <a class="linkref" href="capitulo1.html#tabcap1-inforef">1.1</a> mostra uma descrição dessas informações, por ordem de importância, para uma função em geral, e para a função <a class="codef">rect()</a>.</p>
+</div>
+</div>
+
+ <table class="table table-striped table-sm"> 
+ <tr class="tabelaHeader"> <td>  </td> <td> <b>Funções em geral</b> </td> <td> <b>Função <a class="codef">rect()</a></b> </td> </tr> 
+ <tr> <td> <b>Name</b> </td> <td> Nome para invocar a função. </td> <td> Para desenhar um retângulo, <a class="codef">rect()</a>. </td> </tr> 
+ <tr> <td> <b>Description</b> </td> <td> Uma descrição da função e das tarefas que ela realiza. </td> <td> Explica o que é um retângulo e, rapidamente, os parâmetros da função <a class="codef">rect()</a>. Também comenta como tornar as bordas dessa figura mais suaves. </td> </tr> 
+ <tr> <td> <b>Syntax</b> </td> <td> Mostra todas as maneiras de chamar a função no editor de texto. </td> <td> Em nosso caso, escolhemos a versão padrão, que é <a class="codef">rect(a,b,c,d)</a>, na qual se especificam apenas posição, comprimento e altura do retângulo. </td> </tr> 
+ <tr> <td> <b>Parameters</b> </td> <td> Exibe uma explicação sobre cada um dos parâmetros a serem passado para a função, assim como o tipo de cada um deles. </td> <td> Para a forma utilizada, os parâmetros são: <br> <a class="codef">a</a>: Coordenada x do retângulo. <br> <a class="codef">b</a>: Coordenada y do retângulo. <br> <a class="codef">c</a>: Comprimento do retângulo. <br> <a class="codef">d</a>: Altura do retângulo. </td> </tr> 
+ <tr> <td> <b>Return</b> </td> <td> Informa qual tipo de variável a função retorna. </td> <td> Um retorno <a class="codef">void</a> indica que a função não devolve nada. </td> </tr> 
+ <tr> <td> <b>Examples</b> </td> <td> Mostra a janela de exibição do Processing ao executar os códigos de exemplo. </td> <td> Você pode ver as diversas maneiras de se desenhar um retângulo. </td> </tr> 
+ <tr> <td> <b>Related</b> </td> <td> Lista funções relacionadas à função pesquisada. </td> <td> <a class="codef">rectMode()</a>: Altera a maneira que <a class="codef">rect()</a> desenha o retângulo. <br> <a class="codef">quad()</a>: Desenha um polígono de quatro lados. </td> </tr> 
+ <caption id="tabcap1-inforef">Tabela 1.1 -  Informações relevantes da página de referência de uma função do Processing.</caption> </table> 
+<div class="row">
+<div class="col-xl-12">
+<p>Com base nessas informações, retorne ao código <a class="linkref" href="capitulo1.html#codcap1-olamundo">1.1</a> e observe que existem números, também chamados de argumentos, entre os parênteses da função <a class="codef">rect()</a>. Os dois primeiros números, (<a class="codef">25,25</a>) compõem o par (x,y) da origem do desenho do retângulo. Neste caso, 25 pixels de distância no eixo x e 25 pixels de distância no eixo y do ponto (<a class="codef">0,0</a>), também conhecido como origem, da janela de exibição. Os demais valores são referentes ao comprimento e a altura do retângulo em pixels que, por possuírem o mesmo número (<a class="codef">50</a>), formam um quadrado em vez de um retângulo. Você aprenderá mais sobre pixels e origem da janela de exibição na próxima seção.</p>
+<p>O intuito de passar pela explicação dessa função com detalhes foi precisamente para evidenciar que toda informação técnica que você precisar sobre as funcionalidades do Processing se encontra na própria referência do programa. Em diversos exemplos ao longo deste livro são usadas inúmeras outras funções cujas explicações são citadas apenas superficialmente. Neste caso, cabe a você, futuro (ou atual) programador artista, consultar as páginas de referências para uma explicação mais detalhada. Você pode começar a exercitar esse hábito explorando algumas das funções básicas que irá utilizar recorrentemente, como desenhar um ponto (<a class="codef">point()</a>), uma linha (<a class="codef">line()</a>), um triângulo (<a class="codef">triangle()</a>) e um círculo ou elipse (<a class="codef">ellipse()</a>).</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap1-linpontell" src="img/pdfCap1-LinPontEll.png"> 
+</div> 
+<figcaption> Figura 1.45 - Figuras comumente desenhadas no Processing.</figcaption> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="figcap1-ctrlcv1" src="img/figCap1-CtrlCV1.png"> 
+</div> 
+<figcaption> Figura 1.46 - Selecionar texto.</figcaption> 
+ </div> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="figcap1-ctrlcv2" src="img/figCap1-CtrlCV2.png"> 
+</div> 
+<figcaption> Figura 1.47 - Copiar texto.</figcaption> 
+ </div> 
+ </div> 
+ <div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="figcap1-ctrlcv3" src="img/figCap1-CtrlCV3.png"> 
+</div> 
+<figcaption> Figura 1.48 - Colar texto.</figcaption> 
+ </div> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="figcap1-ctrlcv4" src="img/figCap1-CtrlCV4.png"> 
+</div> 
+<figcaption> Figura 1.49 - Executar programa.</figcaption> 
+ </div> 
+ <div id="figcap1-ctrlcv" class="col-md-12 text-center"> 
+ Figura - 1.40 - Processo para copiar códigos do livro e executar no Processing. </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap1-refrect1" src="img/figCap1-RefRect1.png"> 
+</div> 
+<figcaption> Figura 1.43 - Documentação do Processing.</figcaption> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap1-refrect2" src="img/figCap1-RefRect2.png"> 
+</div> 
+<figcaption> Figura 1.44 - Referência para a função <a class="codef">rect()</a>.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p><span class="sec">1.5 Elementos de imagens digitais</span> <a id="seccap1-processingjanela" class="labup"></a></p>
+<p>A figura que você desenhou na seção passada, produto da função <a class="codef">rect(25,25,50,50)</a>, ocupava exatamente o centro da janela de exibição. Esse posicionamento certeiro foi fruto da escolha cuidadosa dos argumentos da função, vínculados implicitamente ao conceito de resolução e aos indivisíveis blocos de construção que compõem todas as imagens na computação: os pixels<a id="pixels"></a>. Quando um computador exibe uma foto ou um vídeo através de seu monitor ele cria a ilusão de uma imagem perfeitamente contínua através da manipulação individual de cores de milhares desses elementos. A figura <a class="linkref" href="capitulo1.html#figcap1-monitorzoom">1.50</a> mostra a foto de um monitor magnificado algumas dezenas de vezes, permitindo a visualização do pixel. A resolução<a id="resolucao"></a> de um monitor, e de elementos gráficos digitais, é dada por números que indicam quantos pixels existem, respectivamente, na sua largura e altura. Por exemplo, um monitor com uma resolução de 1280x1024 é formado por 1280 colunas, cada uma com 1024 pixels na vertical, totalizando 1310720 pixels (mais de um milhão de pixels!). Quanto maior a resolução, mais pixels existem para representar os detalhes e melhor é a qualidade de uma imagem digital. A figura <a class="linkref" href="capitulo1.html#figcap1-fotozoom">1.51</a> faz uma comparação de uma mesma imagem com duas resoluções diferentes.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap1-monitorzoom" src="img/figCap1-MonitorZoom.png"> 
+</div> 
+<figcaption> Figura 1.50 - Foto ampliada da tela de um monitor de computador.</figcaption> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="figcap1-fotozoom1" src="img/figCap1-FotoZoom1.JPG"> 
+</div> 
+<figcaption> Figura 1.52 - 770x1015.</figcaption> 
+ </div> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="figcap1-fotozoom2" src="img/figCap1-FotoZoom2.png"> 
+</div> 
+<figcaption> Figura 1.53 - 77x102.</figcaption> 
+ </div> 
+ <div id="figcap1-fotozoom" class="col-md-12 text-center"> 
+ Figura - 1.51 - Imagem com diferentes resoluções. </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>A janela de exibição do Processing pode ser considerada como um <i>pseudo</i>monitor formado por pixels, cuja disposição padrão é de 100 colunas, cada uma com 100 pixels na vertical, gerando uma grade, ou resolução, de 100x100 pixels. Veja que essa janela (figura <a class="linkref" href="capitulo1.html#figcap1-monitordiscreto">1.54</a>) não é nada mais do que um plano cartesiano bidimensional<a id="planobidimensionalcomputacao"></a> (apenas eixos x e y) e discreto (cada pixel é uma possível posição que pode ser preenchida com uma cor).</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap1-monitordiscreto" src="img/pdfCap1-MonitorDiscreto.png"> 
+</div> 
+<figcaption> Figura 1.54 - Representação da janela de exibição como um plano bidimensional discreto de 14 por 14 pixels.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Os desenhos de figuras, textos, ou quaisquer elementos visuais na janela de exibição seguem as mesmas leis de desenhos da matemática. Se você conhecer o ponto da origem cartesiana, par (0,0), da janela de saída, assim como o sentido dos eixos coordenados, qualquer desenho pode ser parametrizado por coordenadas, distâncias e equações. Diferentemente das coordenadas cartesianas, a origem em um computador é localizada no canto superior esquerdo da janela, e os eixos crescem (os valores são positivos) da esquerda para a direita (eixo x - horizontal) e de cima para baixo (eixo y - vertical). Isso é tudo que você precisa saber para localizar e posicionar qualquer tipo de imagem ou figura geométrica. Veja na figura <a class="linkref" href="capitulo1.html#figcap1-planos">1.55</a> a diferença entre o plano usado na matemática e no computador.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="pdfcap1-planosm" src="img/pdfCap1-PlanosM.png"> 
+</div> 
+<figcaption> Figura 1.56 - Matemática.</figcaption> 
+ </div> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="pdfcap1-planosc" src="img/pdfCap1-PlanosC.png"> 
+</div> 
+<figcaption> Figura 1.57 - Computação.</figcaption> 
+ </div> 
+ <div id="figcap1-planos" class="col-md-12 text-center"> 
+ Figura - 1.55 - Plano cartesiano. </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Fundamentados por estes conceitos, vamos voltar ao desenho da figura geométrica. Suponha que você queira desenhar um quadrado de 50 pixels de lado centralizado na sua janela de saída e que a mesma possua uma resolução de 100x100 pixels. Sabemos que uma figura que ocupa exatamente o centro de um espaço é aquela que possuí distâncias iguais da sua forma aos limites desse espaço. Uma ótima maneira de "visualizar" melhor o que deve ser feito e planejar seus passos antes de programar é criando o hábito de rascunhar suas ideias. Observe a figura <a class="linkref" href="capitulo1.html#figcap1-calcolamundo">1.58</a>, um esboço rudimentar de nosso objetivo, e verifique como é possível obter todas as coordenadas dos vértices do quadrado.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap1-calcolamundo" src="img/pdfCap1-CalcOlaMundo.png"> 
+</div> 
+<figcaption> Figura 1.58 - Calculando as coordenadas para um quadrado centralizado.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Uma consulta à referência mostra que o ponto (x,y) que a função <a class="codef">rect()</a> <a id="rectfuncao65"></a> recebe para o posicionamento do retângulo é o seu canto superior esquerdo<sup><a class="linkref" id="fnote-19" href="#footnote-19" title="Rodapé.">[19]</a></sup>. De acordo com a figura <a class="linkref" href="capitulo1.html#figcap1-calcolamundo">1.58</a> é possível determinar que esse ponto é composto pelas coordenadas x igual a 25 e y igual a 25, desta forma a função é chamada como:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 1.2 - <button class="btnn" onclick="copyDivToClipboard('codcap1-742')">Copiar código</button></h1></header> 
+ <section id="codcap1-742"> <span class="myCodeBro"><span class="y">rect</span>(25,25,50,50);</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Este tipo de procedimento para cálculos e determinação de posições de figuras na janela de exibição é rotineiro na arte computacional e no desenvolvimento de jogos ou interfaces de aplicativos para usuários. A melhor maneira de se habituar a ele é encarando exercícios práticos, então busque, sempre que possível, abordar os programas em um panorama visual. Lembre-se apenas que, se você formular o problema de maneira correta, você sempre poderá utilizar o computador como aliado para solucionar este e outros tipos de cálculos mais complexos.</p>
+<p><span class="sec">1.6 Estrutura de um programa em Processing</span> <a id="seccap1-processingestrut" class="labup"></a></p>
+<p>O último ponto antes de transpormos para o cerne da programação é atentar para os elementos da estrutura básica de um programa do Processing. O código <a class="linkref" href="capitulo1.html#codcap1-olamundo">1.1</a> que você escreveu anteriormente é válido, mas raramente ele será tão simplório quanto apenas uma linha de texto. A maneira mais comum de começar a escrever um programa no Processing<a id="Processing%programabasico"></a> é através das seguintes linhas de código:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 1.3 - Estrutura padrão de um programa no Processing - <button class="btnn" onclick="copyDivToClipboard('codcap1-estruturapadrao')">Copiar código</button></h1></header> 
+ <section id="codcap1-estruturapadrao"> <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <span class="myCodeBro"><span class="m">  // Seu código vai aqui.</span></span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="j">void</span> <span class="x">draw</span>() {</span> <br> 
+ <span class="myCodeBro"><span class="m">  // Seu código vai aqui.</span></span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Essa estrutura padrão faz o uso de duas funções primordiais do Processing, <a class="codef">setup()</a> e <a class="codef">draw()</a>, que adicionam uma série de características e funcionalidades na execução de seus programas. O ponto principal é que você entenda qual tipo de código você escreve dentro das chaves de cada uma dessas funções, então vamos por partes.</p>
+<p>A função <a class="codef">setup()</a> <a id="setupfuncao"></a> representa o modo estático da aplicação e, se incluída no programa, é geralmente chamada no começo de cada uma de suas execuções (sempre que você pressionar o botão de executar). Dentro do <a class="codef">setup()</a> são colocadas as funções de configuração do Processing e normalmente são feitas as inicializações de variáveis declaradas anteriormente. Uma função frequentemente encontrada dentro de <a class="codef">setup()</a> é a <a class="codef">size()</a>. Ela permite alterar o tamanho da janela de exibição para uma largura e altura arbitrários. Por exemplo, a função <a class="codef">size(640,480)</a> gera uma janela de saída com resolução<a id="resolucao30"></a> de 640x480 pixels. Outras funções de configuração incluem maneiras de desenhar figuras geométricas, filtros de suavização e mudanças nos espaços de cores.</p>
+<p>A função <a class="codef">draw()</a> <a id="drawfuncao"></a> representa o modo dinâmico da aplicação e é aquela que define a animação da janela de exibição. Todo código que você escrever dentro das chaves dessa função será repetido múltiplas vezes por segundo. O Processing, como qualquer outro sistema de vídeo, cria animações a partir de imagens estáticas exibindo-as a uma alta frequência. Por padrão, temos o valor de 60 quadros por segundo. A progressão rápida através desses frames cria a ilusão de que as imagens estão se movimentando, gerando um vídeo ou animação. Portanto, se você quiser que um objeto se mova em tempo real na janela de exibição será necessário escrever o código dentro da função <a class="codef">draw()</a>. É possível alterar a frequência de repetição ou o número de frames por segundo chamando a função <a class="codef">frameRate()</a> dentro de <a class="codef">setup()</a>.</p>
+<p>Em alguns casos você perceberá essas funções sendo utilizadas individualmente e isso é perfeitamente válido se atender aos objetivos visados. Se você desejar gerar apenas uma imagem estática, um quadro, você pode muito bem fazer isso escrevendo todo código dentro da função <a class="codef">setup()</a> e omitir a função <a class="codef">draw()</a> já que não existirá uma animação. Por outro lado, você pode simplesmente omitir a função <a class="codef">setup()</a> e manter a <a class="codef">draw()</a> se quiser uma animação com as configurações padrão do Processing, porém isto não é muito comum. Existe ainda o caso de você usar uma função nativa do Processing sem o <a class="codef">setup()</a> e o <a class="codef">draw()</a>, como exemplificado na primeira linha de código apresentada neste livro, em que são usadas as configurações padrão e não existem animações.</p>
+<p><span class="sec">1.7 Sumário</span> <a id="seccap1-end" class="labup"></a></p>
+<p>Neste capítulo você conheceu um pouco mais da origem da arte computacional e seu desenvolvimento ao longo dos anos. Em seguida foram apresentadas linguagens de programação, ferramentas e softwares que podem ser usados para trabalhar com a arte computacional e gerativa. Dentre eles o Processing foi escolhido devido as suas inúmeras vantagens, que se estendem desde a interface e sintaxe minimalista até sua filosofia <i>opensource</i>.</p>
+<p>O próximo passo foi se familiarizar com o ambiente Processing, o PDE, que será usado para escrever todos os seus códigos. Abordando esse tema, você escreveu e executou seu primeiro programa para exibir um "Olá Mundo!" no estilo da arte computacional. Esse foi um exercício simples, mas que aludiu a assuntos como sintaxe e funções, bem como consultas as referências do Processing.</p>
+<p>Os últimos temas explicados trataram resolução, grade de pixels e estrutura básica de um programa. Esses três pontos são importantes na medida que permitem, respectivamente, entender a janela de exibição, posicionar meticulosamente figuras nessa janela e configurar/animar seus programas. No próximo capítulo serão introduzidos os alicerces que compõe a programação e como utilizá-los no contexto da computação criativa.</p>
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<hr>
+
+
+<p><a class="linkref" id="footnote-1" href="#fnote-1" title="Voltar ao texto.">[1]</a> Boden, M. A. e Edmonds, E. A. (2009). <i>What is generative art?</i>. Digital Creativity 20(1): pags.21-46.</p>
+<p><a class="linkref" id="footnote-2" href="#fnote-2" title="Voltar ao texto.">[2]</a> Famosa peça do artista Hans Haacke intitulada <i>Condensation Cube</i>.</p>
+<p><a class="linkref" id="footnote-3" href="#fnote-3" title="Voltar ao texto.">[3]</a> Velho L. (1993). "Waldemar Cordeiro". Arteônica - Homenagem a Waldemar Cordeiro. Catálogo da exposição Sibgrapi VI.</p>
+<p><a class="linkref" id="footnote-4" href="#fnote-4" title="Voltar ao texto.">[4]</a> Nunes F. V. (2004). "Waldemar Cordeiro: da arte concreta ao "popcreto"". Universidade Estadual de Campinas. Dissertação de Mestrado</p>
+<p><a class="linkref" id="footnote-5" href="#fnote-5" title="Voltar ao texto.">[5]</a> Rian, I. M. <i>et al</i> (2007). "<i>Fractal geometry as the synthesis of Hindu cosmology in Kandariya Mahadev temple, Khajuraho</i>". Building and Environment 42(12): pags.4093-4107.</p>
+<p><a class="linkref" id="footnote-6" href="#fnote-6" title="Voltar ao texto.">[6]</a> Mozart, W. A. (1796). "<i>Anleitung Walzer oder Schleifer mit zwei Würfeln zu componiren, so viele man will, ohne etwas von der Musik oder Composition zu verstehen</i>". N. Simrock.</p>
+<p><a class="linkref" id="footnote-7" href="#fnote-7" title="Voltar ao texto.">[7]</a> <i>Erratum Musica</i> e <i>La Mariée mise à nu par ses célibataires même. Erratum Musical</i></p>
+<p><a class="linkref" id="footnote-8" href="#fnote-8" title="Voltar ao texto.">[8]</a> Este tipo de discussão deve ser deixada para os acadêmicos no assunto uma vez que existem contra argumentos para ambos os casos. Se um programa que traça um padrão passo a passo é desenvolvido de forma que produza algo tão complexo que seja impossível de ser previsto antes de sua execução, ele pode ser considerado gerativo ou não? Da mesma forma, um sistema composto por agentes autônomos que tomam decisões preestabelecidas (mas não predeterminadas) seria gerativo? Se sim, por que, já que para uma simulação com condições iniciais conhecidas seria possível determinar os estados dos agentes em qualquer tempo? Cabe um questionamento.</p>
+<p><a class="linkref" id="footnote-9" href="#fnote-9" title="Voltar ao texto.">[9]</a> <i>Paul the Robot</i> (2011).</p>
+<p><a class="linkref" id="footnote-10" href="#fnote-10" title="Voltar ao texto.">[10]</a> <i>Fifty Sisters</i> (2012).</p>
+<p><a class="linkref" id="footnote-11" href="#fnote-11" title="Voltar ao texto.">[11]</a> <i>Filament Sculptures</i> (2014).</p>
+<p><a class="linkref" id="footnote-12" href="#fnote-12" title="Voltar ao texto.">[12]</a> <i>Acrylonitrile Butadiene Styrene</i> - Copolímero formador de um material termoplástico rígido e leve.</p>
+<p><a class="linkref" id="footnote-13" href="#fnote-13" title="Voltar ao texto.">[13]</a> <i>Nike: Force of Nature</i> (2015).</p>
+<p><a class="linkref" id="footnote-14" href="#fnote-14" title="Voltar ao texto.">[14]</a> O objetivo do autor é puramente mostrar, de forma visual, o conceito técnico por trás da obra ao ser aplicado em uma imagem qualquer. O processo artístico de Cordeiro em sua obra original, <i>Derivadas de uma imagem</i>, é muito mais complexo, e envolveu escolhas cuidadosas que abrangeram, dentre outros pontos, a seleção da imagem, o método de execução das derivadas e a interpretação final das ilustrações geradas.</p>
+<p><a class="linkref" id="footnote-15" href="#fnote-15" title="Voltar ao texto.">[15]</a> A programação visual é um tipo de linguagem de programação em que se “escreve” o código através blocos funcionais, ao contrário da forma tradicional que é o texto. A figura <a class="linkref" href="capitulo1.html#figcap1-langcomp">1.27</a> mostra uma comparação.</p>
+<p><a class="linkref" id="footnote-16" href="#fnote-16" title="Voltar ao texto.">[16]</a> Veja uma comparação entre o ambiente do Processing e o Visual Studio, uma ferramenta da Microsoft, na imagem <a class="linkref" href="capitulo1.html#figcap1-ambdesenvolvexemp">1.30</a>. Ambos os programas servem a propósitos diferentes, aqui se evidencia apenas as interfaces.</p>
+<p><a class="linkref" id="footnote-17" href="#fnote-17" title="Voltar ao texto.">[17]</a> do ingês, <i>Java Runtime Environment</i> ou JRE</p>
+<p><a class="linkref" id="footnote-18" href="#fnote-18" title="Voltar ao texto.">[18]</a> O Processing puro é licenciado sob a <a target="_blank" href="http://www.gnu.org/licenses/gpl-3.0.html" class="linkref">GNU Lesser General Public License</a>, significando que você pode até comercializar projetos construídos com ele. Mais detalhes sobre ele podem ser encontrados na sua página de <a target="_blank" href="https://github.com/processing/processing/wiki/FAQ" class="linkref">perguntas frequentes</a>.</p>
+<p><a class="linkref" id="footnote-19" href="#fnote-19" title="Voltar ao texto.">[19]</a> Para o modo de desenho padrão de um retângulo. Essa informação está disponível na página de referência da função <a class="codef">rect()</a>.</p>
+
+ <br> 
+
+              <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                      <img src="" class="imagepreview" style="width: 100%;" >
+                    </div>
+                  </div>
+                </div>
+              </div>
+</div>
+</div>
+</div>
+            <div class="custom-container">
+              <div class="row">
+                <div class="col">
+                  <div>
+                    <a href="parte1.html" class="btn btn-sm btn-secondary">&lt;&lt; Parte I</a>
+                    <a href="capitulo2.html" class="btn btn-sm btnright btn-secondary">Capítulo 2 &gt;&gt;</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <button id="menu-toggle" class="btn btn-secondary btn-sm toggled">&#8649;<br>M<br>E<br>N<br>U<br>&#8649;</button>
+          </div>
+          <footer class="page-footer bg-dark text-light meufooter">
+            <div class="footer-copyright py-1">&copy; 2020
+              <a href="mailto:mateuspberruezo@gmail.com"> Mateus Berruezo</a>
+            </div>
+          </footer>
+        </div>
+      </div>
+    <script src="../js/jquery-3.2.1.slim.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/booko.js"></script>
+  </body>
+</html>

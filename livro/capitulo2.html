@@ -1,0 +1,2317 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>OCT: Capitulo 2</title>
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="../css/bookonline.css" rel="stylesheet">
+</head>
+<body>
+  <div id="page-container">
+    <div id="content-wrap">
+      <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="mainNav">
+        <div class="container justify-content-center">
+          <a class="navbar-brand" href="../index.html">O CÓDIGO TRANSCENDENTE</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse align-items-center" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto nav-masthead align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="../book.html">Livro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../about.html">Autor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../faq.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../livro/lindex.html">Online</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="wrapper" class="toggled">
+        <div id="sidebar-wrapper">
+          <ul class="sidebar-nav">
+            <li class="sidebar-brand"></li>
+            <li><a href="lindex.html">LIVRO</a></li>
+            <li><a href="dedicatoria.html">DEDICATÓRIA</a></li>
+            <li><a href="sumario.html">SUMÁRIO</a></li>
+            <li><a href="cartaprefacio.html">CARTA-PREFÁCIO</a></li>
+            <li><a href="agradecimentos.html">AGRADECIMENTOS</a></li>
+            <li><a href="prefacio.html">PREFÁCIO</a></li>
+            <li><a href="introducao.html">INTRODUÇÃO</a></li>
+            <li><a href="parte1.html">I. ORIGEM</a></li>
+            <li><a class="ind" href="capitulo1.html">1. PRIMEIROS PASSOS</a></li>
+            <li><a class="ind" href="capitulo2.html">2. A ARTE DA PROGRAMAÇÃO</a></li>
+            <li><a href="parte2.html">II. EVOLUÇÃO</a></li>
+            <li><a class="ind" href="capitulo3.html">3. CAOS</a></li>
+            <li><a class="ind" href="capitulo4.html">4. ORDEM</a></li>
+            <li><a class="ind" href="capitulo5.html">5. ILUSÕES</a></li>
+            <li><a href="parte3.html">III. TRANSCENDÊNCIA</a></li>
+            <li><a class="ind" href="capitulo6.html">6. FRACTAIS</a></li>
+            <li><a class="ind" href="capitulo7.html">7. EMERGÊNCIA</a></li>
+            <li><a class="ind" href="capitulo8.html">8. O CÓDIGO TRANSCENDENTE</a></li>
+            <li><a href="final.html">O PROCESSO FINAL</a></li>
+            <li><a href="indicea.html">ÍNDICE</a></li>
+          </ul>
+        </div>
+        <div class="container-book vertical-book">
+<div class="custom-container">
+<div class="row">
+<div class="col-xl-12">
+
+<p><span class="capnbr">[ CAPÍTULO 2 ]</span><br><span class="capname">A Arte da Programação</span><br><span class="capnbrbot">No princípio era o Código</span><br></p>
+<p>Quando um pintor se sente impelido a expressar suas ideias em uma tela ele utiliza de seu pincel, paleta e instinto artístico. Ao longo dos anos esse profissional aprendeu a usar, naturalmente, dois conceitos muito importantes em sua carreira artística, o de <i>ferramenta</i> e o de <i>processo</i>. De maneira simplificada, as ferramentas do pintor são o pincel e a paleta. Elas permitem que o artista deposite a tinta com traços longos ou finos, com uma textura leve ou carregada e com cores vibrantes ou brandas que adicionam múltiplas dimensões de riqueza visual. Essas ferramentas são externas ao pintor, mas com o tempo, o treino e a experiência, tornam-se uma extensão dele. O segundo conceito que ele usa é o de processo, constantemente confundido com instinto simplesmente por ser difícil de explicar de uma maneira metódica ou racional. Porém, o processo artístico pode ser decomposto em regras<sup><a class="linkref" id="fnote-1" href="#footnote-1" title="Rodapé.">[1]</a></sup> e padrões internos que o pintor segue (mesmo que criadas inconscientemente por ele) para expor suas ideias. Por exemplo, ele sabe que objetos contra a luz projetam uma sombra que está na mesma direção dessa luz. Sabe também quais cores utilizar para expressar um espectro infinito de emoções e motivações (vermelho para paixão e energia ou azul para razão e serenidade) <sup><a class="linkref" id="fnote-2" href="#footnote-2" title="Rodapé.">[2]</a></sup>.</p>
+<p>Acredite, o programador também utiliza desses mesmos conceitos.</p>
+<p>Todavia, suas ferramentas são as estruturas de dados, como variáveis e classes, e as estruturas de controle da programação, como funções, condicionais e repetições. O seu processo é o algoritmo e os passos lógicos que ele racionaliza para atingir os seus objetivos. As únicas diferenças entre o programador e o artista são a natureza das ferramentas e o detalhamento do processo. O detalhamento é especialmente importante uma vez que o computador não é capaz de expressar conceitos artísticos abstratos sem que um humano o designe para isso. Nesse ponto, o programador não pode ser puramente intuitivo como o artista, pois ele deve explicar para a máquina, em minúcias, como ele deseja que as ferramentas sejam utilizadas. O primeiro passo, portanto, é conhecer bem as ferramentas que estão disponíveis para ele. Algumas delas você já viu, são elas as funções (como <a class="codef">rect()</a>, <a class="codef">setup()</a> e <a class="codef">draw()</a>). Neste capítulo você irá aprender os conceitos básicos da programação, sempre regados a exemplos que visam demonstrar suas aplicações na prática artística.</p>
+<p><span class="sec">2.1 Variáveis</span> <a id="seccap2-var" class="labup"></a></p>
+<p>Vamos começar pelo conceito de variáveis<a id="variaveis%introducaoa"></a> que basicamente são estruturas para armazenamento e consulta de dados, tais como números, letras e símbolos. Elas permitem guardar essas informações e usá-las quando for proveitoso, sendo regularmente aplicadas na parametrização de elementos de código. Por exemplo, suponha que você deseje desenhar um quadrado através de quatro retas em vez de usar diretamente a função <a class="codef">rect()</a> do Processing. Para facilitar essa ação vamos definir que seu vértice superior esquerdo esteja no ponto (25,25) e que ele possua 50 pixels de lado. Com essas informações você poderia escrever o seguinte código para desenhar um quadrado como o da figura <a class="linkref" href="capitulo2.html#figcap2-quadlinhas">2.1</a>.</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.1 - Desenhando um quadrado - <button class="btnn" onclick="copyDivToClipboard('codcap2-quadlinhas')">Copiar código</button></h1></header> 
+ <section id="codcap2-quadlinhas"> <span class="myCodeBro"><span class="m">// Desenha um quadrado formado por quatro arestas (linhas):</span></span> <br> 
+ <span class="myCodeBro"><span class="y">line</span>(25,25,75,25);</span> <br> 
+ <span class="myCodeBro"><span class="y">line</span>(75,25,75,75);</span> <br> 
+ <span class="myCodeBro"><span class="y">line</span>(75,75,25,75);</span> <br> 
+ <span class="myCodeBro"><span class="y">line</span>(25,75,25,25);</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="pdfcap2-quadlinhasproj" src="img/pdfCap2-QuadLinhasProj.png"> 
+</div> 
+<figcaption> Figura 2.2 - Coordenadas das linhas.</figcaption> 
+ </div> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="pdfcap2-quadlinhas" src="img/pdfCap2-QuadLinhas.png"> 
+</div> 
+<figcaption> Figura 2.3 - Janela de saída.</figcaption> 
+ </div> 
+ <div id="figcap2-quadlinhas" class="col-md-12 text-center"> 
+ Figura - 2.1 - Quadrado formado por quatro linhas. </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Agora imagine que a posição inicial, ou até mesmo do tamanho do lado desse quadrado não ficou como você esperava, e que você gostaria de experimentar outros valores. Para isso você terá de recalcular todos os pontos que compõem essas linhas, além de reescrever os dezesseis números nas chamadas das funções <a class="codef">line()</a>. Se você quiser testar apenas um ou outro caso você pode até optar por esse caminho, mas e se quiser testar dez, ou vinte, ou cem outras combinações? Isso se torna rapidamente inviável. Felizmente as variáveis nos permitem armazenar e parametrizar valores que estão continuamente mudando e sendo usados no código, como a posição do quadrado ou o tamanho de seu lado.</p>
+<p>Uma variável necessita de ser criada ou, no jargão da computação, declarada<a id="variaveis%declaracaode"></a>, que é feito escrevendo o tipo da variável seguido pelo seu nome. A inicialização<a id="variavel%inicializacao"></a> da variável, que significa definir uma valor para ela, é feita escrevendo o nome da variável seguido por um sinal de igual (<a class="codef">=</a>) e o valor que se deseja que ela adquira. Veja os exemplos:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.2 - <button class="btnn" onclick="copyDivToClipboard('codcap2-63')">Copiar código</button></h1></header> 
+ <section id="codcap2-63"> <span class="myCodeBro"><span class="m">// Declaração de uma variável do tipo float, batizada de numero:</span></span> <br> 
+ <span class="myCodeBro"><span class="v">float </span>numero;</span> <br> 
+ <span class="myCodeBro"><span class="m">// Inicialização arbitrária da variável numero:</span></span> <br> 
+ <span class="myCodeBro">numero = 10;</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Também é possível fazer uma declaração de variável que incorpore sua inicialização através da combinação dos dois métodos:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.3 - <button class="btnn" onclick="copyDivToClipboard('codcap2-222')">Copiar código</button></h1></header> 
+ <section id="codcap2-222"> <span class="myCodeBro"><span class="m">// Declara a variável numero, e a inicializa com o valor 10:</span></span> <br> 
+ <span class="myCodeBro"><span class="v">float </span>numero = 10;</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Múltiplas variáveis de um mesmo tipo podem ser declaradas desde que separadas por vírgula e, após a última, finalizadas com um ponto e vírgula:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.4 - <button class="btnn" onclick="copyDivToClipboard('codcap2-83')">Copiar código</button></h1></header> 
+ <section id="codcap2-83"> <span class="myCodeBro"><span class="m">// Declaradas três variáveis do tipo float e inicializada apenas uma:</span></span> <br> 
+ <span class="myCodeBro"><span class="v">float </span>variavel_1, variavel_2 = 10, variavel_3;</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>O tipo da variável indica se ela é um número, letra, ou um dado de outra natureza. Você pode consultar os principais tipos de variáveis primitivas do Processing na tabela <a class="linkref" href="capitulo2.html#tabcap2-tipovar">2.1</a>. No exemplo acima, a palavra <a class="codef">float</a> firma que a variável é do tipo ponto flutuante, podendo armazenar qualquer valor numérico, inclusive aqueles que possuam casas decimais.</p>
+</div>
+</div>
+
+ <table class="table table-striped table-sm"> 
+ <tr class="tabelaHeader"> <td> <b>Nome</b> </td> <td> <b>Tipo</b> </td> <td> <b>Exemplo</b> </td> <td> <b>Descrição</b> </td> </tr> 
+ <tr> <td> Inteiro<a id="estruturasdedados%int"></a> </td> <td> <a class="codef">int</a> </td> <td> <a class="codef">int num = 2;</a> </td> <td> Define um número inteiro, sem casas decimais. </td> </tr> 
+ <tr> <td> Ponto <br> flutuante<a id="estruturasdedados%float"></a> </td> <td> <a class="codef">float</a> </td> <td> <a class="codef">float num = 2.1;</a> </td> <td> Define um número de ponto flutuante, que pode ter casas decimais. </td> </tr> 
+ <tr> <td> Booleano<a id="estruturasdedados%boolean"></a> </td> <td> <a class="codef">boolean</a> </td> <td> <a class="codef">boolean cond = true;</a> </td> <td> Define uma variável booleana, que pode ser verdadeira (<i>true</i>) ou falsa (<i>false</i>). É utilizada em operações lógicas, condicionais e repetições. </td> </tr> 
+ <tr> <td> Caractere<a id="estruturasdedados%char"></a> </td> <td> <a class="codef">char</a> </td> <td> <a class="codef">char carac = 'b';</a> </td> <td> Define um caractere Unicode como letras, números e símbolos. Note que um caractere com um número Unicode ainda é um caractere e não pode participar de operações matemáticas no sentido convencional. Um caractere deve ser único (só um) e declarado entre aspas simples. </td> </tr> 
+ <tr> <td> Palavra<a id="estruturasdedados%string"></a> </td> <td> <a class="codef">String</a> </td> <td> <a class="codef">String frase = "Olá Mundo!";</a> </td> <td> Define uma palavra que é, efetivamente, uma sequência linear de caracteres. Diferentemente do caractere, pode possuir uma quantidade arbitrária de letras, números e símbolos. O declarador String deve ser escrito com um "S" maiúsculo e a palavra deve estar entre aspas duplas. </td> </tr> 
+ <caption id="tabcap2-tipovar">Tabela 2.1 -  Tipos de variáveis no Processing.</caption> </table> 
+<div class="row">
+<div class="col-xl-12">
+<p>O nome<a id="variaveis%nomeando"></a> da variável é aquele que será usado sempre que você pretender consultar o valor dela, podendo ser qualquer frase, palavra ou letra que você quiser, desde que siga as seguintes regras:</p>
+</div>
+</div>
+<ul>
+ <li> Pode começar com subtraço (_), cifrão ($) ou qualquer letra (A - Z ou a - z), porém não pode começar com números. </li>
+ <li> O restante do nome pode conter qualquer uma das condições anteriores e ainda números (0 - 9). </li>
+ <li> Não pode conter caracteres acentuados, espaços, operadores ou qualquer outro símbolo ou palavra reservada da linguagem. </li>
+ <li> Os nomes são sensíveis a letras maiúsculas e minúsculas, implicando que <a class="codef">var1</a> é diferente de <a class="codef">Var1</a> ou de <a class="codef">vAr1</a>. </li>
+ </ul>
+<div class="row">
+<div class="col-xl-12">
+<p>Em geral, o nome da variável é uma abreviação ou referência ao propósito dela. Por exemplo, se você quiser guardar a posição x de um objeto em uma variável você poderia usar alguns nomes como <a class="codef">posicaoX</a>, <a class="codef">posicao_X</a> ou <a class="codef">posX</a>. Este último é especialmente interessante, pois nomes curtos e explicativos reduzem o código e tornam sua leitura mais rápida e eficiente.</p>
+<p>Utilizando o conceito de variáveis você pode reescrever o código <a class="linkref" href="capitulo2.html#codcap2-quadlinhas">2.1</a> de maneira parametrizada. Agora as coordenadas do quadrado não são mais números fixos, veja a figura <a class="linkref" href="capitulo2.html#figcap2-quadpar">2.4</a>.</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.5 - Desenhando um quadrado parametrizado - <button class="btnn" onclick="copyDivToClipboard('codcap2-quadlinhasparam')">Copiar código</button></h1></header> 
+ <section id="codcap2-quadlinhasparam"> <span class="myCodeBro"><span class="m">// Declaração e inicialização das variáveis:</span></span> <br> 
+ <span class="myCodeBro"><span class="v">float </span>posX = 25;</span> <br> 
+ <span class="myCodeBro"><span class="v">float </span>posY = 25;</span> <br> 
+ <span class="myCodeBro"><span class="v">float </span>ladoQ = 50;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="y">line</span>(posX, posY, posX + ladoQ, posY);</span> <br> 
+ <span class="myCodeBro"><span class="y">line</span>(posX + ladoQ, posY, posX + ladoQ, posY + ladoQ);</span> <br> 
+ <span class="myCodeBro"><span class="y">line</span>(posX + ladoQ, posY + ladoQ, posX, posY + ladoQ);</span> <br> 
+ <span class="myCodeBro"><span class="y">line</span>(posX, posY + ladoQ, posX, posY);</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap2-quadpar" src="img/pdfCap2-QuadPar.png"> 
+</div> 
+<figcaption> Figura 2.4 - Desenhando um quadrado usando variáveis.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Desta forma, se você decidir que o lado de 50 pixels do quadrado não é mais apropriado, basta alterar o valor da variável <a class="codef">ladoQ</a> que todas as posições das retas serão recalculadas automaticamente, sem a necessidade de reescrever uma a uma.</p>
+<p><span class="secsub">2.1.1 Variáveis do sistema</span> <a id="seccap2-varsist" class="labup"></a></p>
+<p>A linguagem Processing conta com variáveis<a id="variaveis%dosistema"></a> nativas que possuem informações úteis sobre a janela de saída e o programa em execução. Essas variáveis podem ser diretamente acessadas a qualquer momento através de seu nome, sem a necessidade de um declaração prévia. Algumas delas podem ser consultadas na tabela <a class="linkref" href="capitulo2.html#tabcap2-varsist">2.2</a>. Elas se sobressaem na medida em que você escrever códigos que dependam do seu ambiente de programação. Por exemplo, se você desejar desenhar um ponto centralizado na tela, poderá encontrar suas coordenadas x e y através das operações <a class="codef">width/2</a> e <a class="codef">height/2</a> independente do tamanho da janela de exibição.</p>
+</div>
+</div>
+
+ <table class="table table-striped table-sm"> 
+ <tr class="tabelaHeader"> <td> <b>Nome</b> </td> <td> <b>Tipo</b> </td> <td> <b>Descrição</b> </td> </tr> 
+ <tr> <td> <a class="codef">width</a> </td> <td> <a class="codef">int</a> </td> <td> Armazena o comprimento atual, em pixels, da janela de exibição. </td> </tr> 
+ <tr> <td> <a class="codef">height</a> </td> <td> <a class="codef">int</a> </td> <td> Armazena a altura atual, em pixels, da janela de exibição. </td> </tr> 
+ <tr> <td> <a class="codef">mouseX</a> </td> <td> <a class="codef">float</a> </td> <td> Fornece a posição X (horizontal) do mouse na janela de exibição. </td> </tr> 
+ <tr> <td> <a class="codef">mouseY</a> </td> <td> <a class="codef">float</a> </td> <td> Fornece a posição Y (vertical) do mouse na janela de exibição. </td> </tr> 
+ <tr> <td> <a class="codef">pmouseX</a> </td> <td> <a class="codef">float</a> </td> <td> Fornece a posição X do mouse na janela de exibição no frame anterior. </td> </tr> 
+ <tr> <td> <a class="codef">pmouseY</a> </td> <td> <a class="codef">float</a> </td> <td> Fornece a posição Y do mouse na janela de exibição no frame anterior. </td> </tr> 
+ <tr> <td> <a class="codef">mousePressed</a> </td> <td> <a class="codef">boolean</a> </td> <td> Retorna verdadeiro se o mouse estiver pressionado, ou falso caso contrário. </td> </tr> 
+ <tr> <td> <a class="codef">keyPressed</a> </td> <td> <a class="codef">boolean</a> </td> <td> Retorna verdadeiro se se alguma tecla estiver pressionada, ou falso caso contrário. </td> </tr> 
+ <tr> <td> <a class="codef">frameCount</a> </td> <td> <a class="codef">int</a> </td> <td> Armazena o número de frames que foram exibidos desde o início da execução do código. Esta variável é automaticamente incrementada a cada quadro. </td> </tr> 
+ <caption id="tabcap2-varsist">Tabela 2.2 -  Variáveis de sistema do Processing.</caption> </table> 
+<div class="row">
+<div class="col-xl-12">
+<p>No tópico de exibição de variáveis, além da maneira gráfica de visualizá-las, como tamanho e posição de uma figura, você pode consultar o conteúdo delas através do console do PDE. Para isto se usa a função <a class="codef">println()</a> <a id="printlnfuncao"></a> como mostrado no código abaixo:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.6 - <button class="btnn" onclick="copyDivToClipboard('codcap2-364')">Copiar código</button></h1></header> 
+ <section id="codcap2-364"> <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">size</span>(150,150);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="j">void</span> <span class="x">draw</span>() {</span> <br> 
+ <span class="myCodeBro"><span class="m">  // Exibe, no console, o comprimento e altura da janela de saída:</span></span> <br> 
+ <span class="myCodeBro">  <span class="y">println</span>(<span class="s">width</span>); </span> <br> 
+ <span class="myCodeBro">  <span class="y">println</span>(<span class="s">height</span>);</span> <br> 
+ <span class="myCodeBro">  </span> <br> 
+ <span class="myCodeBro"><span class="m">  // Exibe, no console, a posição (x,y) do mouse:</span></span> <br> 
+ <span class="myCodeBro">  <span class="y">println</span>(&quot;Posição x do mouse:&quot;, <span class="s">mouseX</span>);</span> <br> 
+ <span class="myCodeBro">  <span class="y">println</span>(&quot;Posição y do mouse:&quot;, <span class="s">mouseY</span>);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap2-varsiscons" src="img/figCap2-VarSisConsA.png"> 
+</div> 
+<figcaption> Figura 2.5 - Valores da posição do mouse sendo mostrados no console.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p><span class="secsub">2.1.2 Vetores de variáveis</span> <a id="seccap2-vararray" class="labup"></a></p>
+<p>A declaração de variáveis uma a uma, como feito nas seções passadas, é uma prática costumeira que satisfaz boa parte dos programas. Contudo, à medida que você adicionar complexidade em seus códigos, você perceberá que existem casos que requerem um número elevado de elementos. Eventualmente manter a estratégia de declará-las individualmente não será mais satisfatório, pois você terá de memorizar muitos nomes de diferentes variáveis, além de digitar consideravelmente mais. A solução para esses problemas está na possibilidade de agrupar variáveis de um mesmo tipo e, em vez de armazenar apenas um valor por estrutura, você pode armazenar diversos se esta for um vetor<a id="vetoresdevariaveis%introducaoa"></a> (ou do ingês, um <i>array</i>). A figura <a class="linkref" href="capitulo2.html#figcap2-array1">2.6</a> ilustra esse conceito.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="pdfcap2-array11" src="img/pdfCap2-Array11.png"> 
+</div> 
+<figcaption> Figura 2.7 - Variáveis individuais.</figcaption> 
+ </div> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="pdfcap2-array12" src="img/pdfCap2-Array12.png"> 
+</div> 
+<figcaption> Figura 2.8 - Vetor de variáveis.</figcaption> 
+ </div> 
+ <div id="figcap2-array1" class="col-md-12 text-center"> 
+ Figura - 2.6 - Armazenamento de dados. </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Um vetor de variáveis pode ser de qualquer tipo, como os relatados anteriormente na tabela <a class="linkref" href="capitulo2.html#tabcap2-varsist">2.2</a>, e é declarado<a id="vetoresdevariaveis%declaracaode"></a> da seguinte maneira:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.7 - <button class="btnn" onclick="copyDivToClipboard('codcap2-446')">Copiar código</button></h1></header> 
+ <section id="codcap2-446"> <span class="myCodeBro">tipoDoVetor[] nomeDoVetor = <span class="j">new</span> tipoDoVetor[quantidadeDeValoresArmazenados];</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Por exemplo:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.8 - <button class="btnn" onclick="copyDivToClipboard('codcap2-57')">Copiar código</button></h1></header> 
+ <section id="codcap2-57"> <span class="myCodeBro"><span class="m">// Cria um vetor de variáveis que pode armazenar até 10 valores do tipo &quot;float&quot;:</span></span> <br> 
+ <span class="myCodeBro"><span class="v">float</span>[] numeros = <span class="j">new</span> <span class="v">float</span>[10];</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Você pode perceber que essa estrutura é bem semelhante à declaração de uma variável normal. No lado esquerdo da declaração você só precisa adicionar os colchetes após o tipo, e no lado direito usar a palavra <a class="codef">new</a> (indicando que gostaria de criar um novo vetor) e o tipo da variável seguido de colchetes com a quantidade de elementos que se deseja armazenar. A atribuição<a id="vetoresdevariaveis%atribuicaoporelemento"></a> de valores em um vetor deve ser feito individualmente por posição, sendo esta referenciada dentro dos colchetes:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.9 - <button class="btnn" onclick="copyDivToClipboard('codcap2-882')">Copiar código</button></h1></header> 
+ <section id="codcap2-882"> <span class="myCodeBro">nomeDoVetor[indice] = valorDaVariavel;</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>E para acessá-los:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.10 - <button class="btnn" onclick="copyDivToClipboard('codcap2-852')">Copiar código</button></h1></header> 
+ <section id="codcap2-852"> <span class="myCodeBro">nomeDoVetor[indice];</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Tais como:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.11 - <button class="btnn" onclick="copyDivToClipboard('codcap2-571')">Copiar código</button></h1></header> 
+ <section id="codcap2-571"> <span class="myCodeBro"><span class="m">// Cria um vetor de variáveis que pode armazenar até 10 valores do tipo &quot;float&quot;:</span></span> <br> 
+ <span class="myCodeBro"><span class="v">float</span>[] numeros = <span class="j">new</span> <span class="v">float</span>[10];</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">// Atribuição do valor de 4.998 para o índice 2 da variável numeros:</span></span> <br> 
+ <span class="myCodeBro">numeros[2] = 4.998;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">// Acesso - Imprime 4.998 no console do PDE:</span></span> <br> 
+ <span class="myCodeBro"><span class="y">println</span>(numeros[2]);</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>A seguir é realizada uma comparação de declarações e atribuições entre o método convencional e utilizando vetores. Também é mostrado que é possível declarar um vetor preenchido com valores, sem a necessidade de usar o qualificador <a class="codef">new</a>. Observe que todos os códigos abaixo são equivalentes:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.12 - <button class="btnn" onclick="copyDivToClipboard('codcap2-847')">Copiar código</button></h1></header> 
+ <section id="codcap2-847"> <span class="myCodeBro"><span class="m">// Método convencional:</span></span> <br> 
+ <span class="myCodeBro"><span class="v">float </span>num1 = 1;</span> <br> 
+ <span class="myCodeBro"><span class="v">float </span>num2 = 10;</span> <br> 
+ <span class="myCodeBro"><span class="v">float </span>num3 = 5;</span> <br> 
+ <span class="myCodeBro"><span class="v">float </span>num4 = 22;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">// Vetores - Declaração separada da atribuição:</span></span> <br> 
+ <span class="myCodeBro"><span class="v">float</span>[] num = <span class="j">new</span> <span class="v">float</span>[4];</span> <br> 
+ <span class="myCodeBro">num[0] = 1;</span> <br> 
+ <span class="myCodeBro">num[1] = 10;</span> <br> 
+ <span class="myCodeBro">num[2] = 5;</span> <br> 
+ <span class="myCodeBro">num[3] = 22;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">// Vetores - Declaração já com a atribuição:</span></span> <br> 
+ <span class="myCodeBro"><span class="v">float</span>[] nums = {1,10,5,22};</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Um ponto que deve ser evidenciado é que o índice<a id="vetoresdevariaveis%indicesem"></a> do valor a ser acessado sempre começa do zero. Logo, se você declarar um vetor de 4 posições, os índices válidos serão 0, 1, 2 e 3, sempre indo de zero até o tamanho total do vetor subtraído de um. Acessar um índice que não seja válido (menor que zero, fracionário ou acima do tamanho total) irá causar uma falha durante a execução do seu programa:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.13 - <button class="btnn" onclick="copyDivToClipboard('codcap2-963')">Copiar código</button></h1></header> 
+ <section id="codcap2-963"> <span class="myCodeBro"><span class="m">// Cria um vetor de quatro posições e inicializa apenas a primeira delas:</span></span> <br> 
+ <span class="myCodeBro"><span class="v">float</span>[] nums = <span class="j">new</span> <span class="v">float</span>[4];</span> <br> 
+ <span class="myCodeBro">nums[0] = 1;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">// Erro - Tentar acessar um índice maior que o tamanho do vetor:</span></span> <br> 
+ <span class="myCodeBro"><span class="y">println</span>(nums[4]);</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Por que você deve fazer o uso de vetores? O principal motivo é o fato de eles serem uma ótima forma de organizar e simplificar o seu código. Vamos a um caso concreto, imagine que você possua 50 figuras, todas com posições x e y na tela, e que você queira armazenar essas posições. Se você for declarar todas essas variáveis, somente para a posição x, terá:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.14 - <button class="btnn" onclick="copyDivToClipboard('codcap2-190')">Copiar código</button></h1></header> 
+ <section id="codcap2-190"> <span class="myCodeBro"><span class="v">float </span>posX01, posX02, posX03, posX04, posX05, posX06, posX07, posX08, posX09, posX10;</span> <br> 
+ <span class="myCodeBro"><span class="v">float </span>posX11, posX12, posX13, posX14, posX15, posX16, posX17, posX18, posX19, posX20;</span> <br> 
+ <span class="myCodeBro"><span class="v">float </span>posX21, posX22, posX23, posX24, posX25, posX26, posX27, posX28, posX29, posX30;</span> <br> 
+ <span class="myCodeBro"><span class="v">float </span>posX31, posX32, posX33, posX34, posX35, posX36, posX37, posX38, posX39, posX40;</span> <br> 
+ <span class="myCodeBro"><span class="v">float </span>posX41, posX42, posX43, posX44, posX45, posX46, posX47, posX48, posX49, posX50;</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Agora, para as mesmas 50 figuras, mas incluindo ambas as posições, você pode declarar as variáveis usando vetores:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.15 - <button class="btnn" onclick="copyDivToClipboard('codcap2-794')">Copiar código</button></h1></header> 
+ <section id="codcap2-794"> <span class="myCodeBro"><span class="v">float</span>[] posX = <span class="j">new</span> <span class="v">float</span>[50];</span> <br> 
+ <span class="myCodeBro"><span class="v">float</span>[] posY = <span class="j">new</span> <span class="v">float</span>[50];</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>É bem clara a vantagem de se utilizar vetores. Conforme você verá em diversos exemplos deste livro, eles são empregados estrategicamente para reduzir e estruturar o código. Antes de finalizar este tópico você deve saber que é possível consultar o número total de variáveis que um vetor previamente declarado pode armazenar. Isso é feito escrevendo o nome do vetor, seguido de um ponto e a palavra <a class="codef">length</a>. Veja essa propriedade no exemplo abaixo:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.16 - <button class="btnn" onclick="copyDivToClipboard('codcap2-71')">Copiar código</button></h1></header> 
+ <section id="codcap2-71"> <span class="myCodeBro"><span class="v">float</span>[] posX = <span class="j">new</span> <span class="v">float</span>[50];</span> <br> 
+ <span class="myCodeBro"><span class="v">float</span>[] posY = <span class="j">new</span> <span class="v">float</span>[50];</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">// Exibe o tamanho do vetor (50) no console do PDE:</span></span> <br> 
+ <span class="myCodeBro"><span class="y">println</span>(&quot;O tamanho de posX é:&quot;, posX.<span class="j">length</span>);</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p><span class="secsub">2.1.3 Cores</span> <a id="seccap2-varcolor" class="labup"></a></p>
+<p>Cores<a id="cores"></a> são elementos primordiais quando se almeja a elaborar mensagens visuais. Suas combinações podem causar sentimentos e emoções, e sua ausência pode ser capaz de transmitir mensagens através de contrastes acentuados. No Processing as cores são igualmente significativas e possuem um tipo próprio de variável chamada de <a class="codef">color</a> <a id="estruturasdedados%color%colorvariavel"></a> <a id="colorvariavel"></a>.</p>
+<p>Cabe lembrar que computadores lidam apenas com números e não sabem o que é a cor vermelha ou azul, então como eles interpretam informações sobre elas? Eles trabalham com o que é especificado de canais de cores<a id="cores%canaisde"></a> que são estruturas dedicadas ao armazenamento de uma imagem, definindo se ela é ou não colorida e se ela possui ou não transparência. O Processing permite dividir imagens em até quatro canais:</p>
+</div>
+</div>
+<ul>
+ <li> <b>1 Canal</b>: Imagens formadas pelo preto, branco e tons de cinza. </li>
+ <li> <b>2 Canais</b>: Imagens formadas pelo preto, branco, tons de cinza e com suporte para transparência. </li>
+ <li> <b>3 Canais</b>: Imagens coloridas. </li>
+ <li> <b>4 Canais</b>: Imagens coloridas e com suporte para transparência. </li>
+ </ul>
+<div class="row">
+<div class="col-xl-12">
+<p>Um computador constrói uma imagem digital<a id="imagemdigital"></a> colorida básica como três grandes matrizes de cores, em que cada uma é uma cópia da imagem original, mas somente com valores referentes a uma das cores primárias: Vermelho, Verde ou Azul (Espaço RGB - <i>Red, Green, Blue</i>) <sup><a class="linkref" id="fnote-3" href="#footnote-3" title="Rodapé.">[3]</a></sup>. Quando os canais são unidos ocorre a sobreposição das cores, revelando uma imagem colorida, veja a figura <a class="linkref" href="capitulo2.html#figcap2-fotorgb">2.9</a>. Uma imagem em tons de cinza possui os mesmos valores RGB nos três canais e, portanto, um canal é o bastante para representá-la. A variável <a class="codef">color</a> do Processing armazena as cores com uma filosofia muito similar ao que acabamos de discutir. Ela pode ser declarada da seguinte maneira:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.17 - <button class="btnn" onclick="copyDivToClipboard('codcap2-36')">Copiar código</button></h1></header> 
+ <section id="codcap2-36"> <span class="myCodeBro"><span class="m">// Declaração de uma variável &quot;color&quot;, RGBA, genérica:</span></span> <br> 
+ <span class="myCodeBro">r = 100; <span class="m">// r = Canal R: Vermelho;</span></span> <br> 
+ <span class="myCodeBro">g = 220; <span class="m">// g = Canal G: Verde;</span></span> <br> 
+ <span class="myCodeBro">b = 220; <span class="m">// b = Canal B: Azul;</span></span> <br> 
+ <span class="myCodeBro">a = 255; <span class="m">// a = Canal A: Transparência.</span></span> <br> 
+ <span class="myCodeBro"><span class="v">color </span>cor = <span class="y">color</span>(r,g,b,a);</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap2-fotorgb" src="img/pdfCap2-FotoRGB.png"> 
+</div> 
+<figcaption> Figura 2.9 - Foto decomposta nos canais RGB.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Cada um dos argumentos<a id="colorvariavel%argumentos"></a> da variável <a class="codef">color</a> emula um canal de cor (vermelho, verde e azul) cujo valor é um número inteiro que varia entre 0 e 255<sup><a class="linkref" id="fnote-4" href="#footnote-4" title="Rodapé.">[4]</a></sup>. O número 0 indica a completa ausência da cor enquanto o número 255 indica uma total presença dela, podendo ser vistos na figura <a class="linkref" href="capitulo2.html#figcap2-colorgrad">2.10</a>. Todas as outras cores são formadas através da combinação<a id="cores%combinacaode"></a> dessas três cores primárias que, no Processing, é um sistema aditivo de cores, ilustrado na figura <a class="linkref" href="capitulo2.html#figcap2-aditivorgb">2.11</a>. Uma cor RGB com valores <a class="codef">color(255,0,0)</a> indica o vermelho puro, e <a class="codef">color(255,0,255)</a> é a combinação do vermelho com azul, formando o violeta. As cores monocromáticas seguem essas mesmas regras, mas você pode especificar a cor em apenas um canal. Por exemplo, o preto é dado por <a class="codef">color(0)</a>, o branco por <a class="codef">color(255)</a> e o cinza por qualquer valor entre eles, como <a class="codef">color(127)</a>. Você pode usar a ferramenta seletora de cores<a id="seletordecores"></a> do próprio Processing para identificar qual combinação de RGB leva a sua cor desejada. Ela pode ser acessada através do menu <i>Ferramentas</i> e depois <i>Seletor de Côr...</i>, e sua janela é mostrada na figura <a class="linkref" href="capitulo2.html#figcap2-colorpick">2.12</a>.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap2-colorgrad" src="img/pdfCap2-ColorGrad.png"> 
+</div> 
+<figcaption> Figura 2.10 - Representação das cores de acordo com seus valores.</figcaption> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="figcap2-aditivorgb" src="img/pdfCap2-AditivoRGB.png"> 
+</div> 
+<figcaption> Figura 2.11 - Aditivo.</figcaption> 
+ </div> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="figcap2-subrgb" src="img/pdfCap2-SubRGB.png"> 
+</div> 
+<figcaption> Figura 2.13 - Subtrativo.</figcaption> 
+ </div> 
+ <div id="figcap2-348" class="col-md-12 text-center"> 
+ Figura - 2.14 - Sistema de cores. </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap2-colorpick" src="img/figCap2-ColorPick.png"> 
+</div> 
+<figcaption> Figura 2.12 - Ferramenta <i>Color Picker</i> do Processing.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p></p>
+<p>O canal relativo à transparência<a id="colorvariavel%transparencia"></a>, muitas vezes chamado de alfa, funciona de maneira invertida. O número 0 indica uma cor completamente transparente (invisível) e 255 indica uma cor totalmente opaca (ou sem transparência). Você pode acompanhar alguns exemplos de como usar a variável do tipo <a class="codef">color</a> no código abaixo:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.18 - <button class="btnn" onclick="copyDivToClipboard('codcap2-140')">Copiar código</button></h1></header> 
+ <section id="codcap2-140"> <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">size</span>(325,175);</span> <br> 
+ <span class="myCodeBro"><span class="m">  // Preenche o fundo da janela de branco:</span></span> <br> 
+ <span class="myCodeBro">  <span class="y">background</span>(255);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Declara a cor vermelha como 255 apenas no canal R:</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">color </span>vermelho = <span class="y">color</span>(255,0,0);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Preenche a figura com a cor vermelha:</span></span> <br> 
+ <span class="myCodeBro">  <span class="y">fill</span>(vermelho);</span> <br> 
+ <span class="myCodeBro">  <span class="y">rect</span>(25,50,75,75);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Declara a cor azul como 255 apenas no canal B:</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">color </span>azul = <span class="y">color</span>(0,0,255);</span> <br> 
+ <span class="myCodeBro">  <span class="y">fill</span>(azul);</span> <br> 
+ <span class="myCodeBro">  <span class="y">rect</span>(125,50,75,75);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Usa diretamente a cor violeta como 255 no canal R e no canal B:</span></span> <br> 
+ <span class="myCodeBro">  <span class="y">fill</span>(255,0,255);</span> <br> 
+ <span class="myCodeBro">  <span class="y">rect</span>(225,50,75,75);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap2-colorcode1" src="img/pdfCap2-ColorCode1.png"> 
+</div> 
+<figcaption> Figura 2.15 - Figuras coloridas usando a variável <a class="codef">color</a>.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Ao incluir um valor de alfa, as figuras desenhadas serão em parte transparentes, permitindo que ocorra a combinação das cores durante a sobreposição de figuras, veja <a class="linkref" href="capitulo2.html#figcap2-colorcode2">2.16</a>:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.19 - <button class="btnn" onclick="copyDivToClipboard('codcap2-162')">Copiar código</button></h1></header> 
+ <section id="codcap2-162"> <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">size</span>(175,175);</span> <br> 
+ <span class="myCodeBro">  <span class="y">background</span>(255);</span> <br> 
+ <span class="myCodeBro"><span class="m">  // Remove a borda das figuras:</span></span> <br> 
+ <span class="myCodeBro">  <span class="y">noStroke</span>();</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Vermelho 50% transparente:</span></span> <br> 
+ <span class="myCodeBro">  <span class="y">fill</span>(255,0,0,127);</span> <br> 
+ <span class="myCodeBro">  <span class="y">rect</span>(25,25,75,75);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Verde 50% transparente:</span></span> <br> 
+ <span class="myCodeBro">  <span class="y">fill</span>(0,255,0,127);</span> <br> 
+ <span class="myCodeBro">  <span class="y">rect</span>(50,50,75,75);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Violeta 50% transparente:</span></span> <br> 
+ <span class="myCodeBro">  <span class="y">fill</span>(255,0,255,127);</span> <br> 
+ <span class="myCodeBro">  <span class="y">rect</span>(75,75,75,75);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap2-colorcode2" src="img/pdfCap2-ColorCode2.png"> 
+</div> 
+<figcaption> Figura 2.16 - Figuras transparentes usando a variável <a class="codef">color</a>.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p><span class="sec">2.2 Operadores</span> <a id="seccap2-oper" class="labup"></a></p>
+<p>O próximo tópico a ser discutido são as operações e operadores<a id="operadores"></a>, ambos utilizados frequentemente na programação. Conforme você viu anteriormente, às vezes é preciso escrever uma variável em função de outras. Em <a class="linkref" href="capitulo2.html#codcap2-quadlinhasparam">2.5</a> você definiu parte do vértice da figura como uma soma, <a class="codef">(posX + ladoQ)</a>, usando o operador da adição, um dos muitos que existem. A maioria dos deles você já conhece do ensino médio e outros você usa no seu dia a dia sem perceber que são formalmente operadores. Eles podem ser divididos em quatro categorias intuitivas.</p>
+<p><span class="secsub">2.2.1 Aritméticos</span> <a id="seccap2-operaritm" class="labup"></a></p>
+<p>Operadores aritméticos<a id="operadores%aritmeticos"></a> são os operadores básicos da matemática que você aprende na escola, como soma, subtração, multiplicação e divisão. Você pode ver uma lista completa na tabela <a class="linkref" href="capitulo2.html#tabcap2-arit">2.3</a>.</p>
+</div>
+</div>
+
+ <table class="table table-striped table-sm"> 
+ <tr class="tabelaHeader"> <td> <b>Nome</b> </td> <td> <b>Operador</b> </td> <td> <b>Exemplo</b> </td> <td> <b>Resultado</b> </td> </tr> 
+ <tr> <td> Adição </td> <td> <a class="codef">+</a> </td> <td> <a class="codef">num = 1+2;</a> </td> <td> <a class="codef">num</a> será 3. </td> </tr> 
+ <tr> <td> Subtração </td> <td> <a class="codef">-</a> </td> <td> <a class="codef">num = 10-3;</a> </td> <td> <a class="codef">num</a> será 7. </td> </tr> 
+ <tr> <td> Multiplicação </td> <td> <a class="codef">*</a> </td> <td> <a class="codef">num = 4*5;</a> </td> <td> <a class="codef">num</a> será 20. </td> </tr> 
+ <tr> <td> Divisão </td> <td> <a class="codef">/</a> </td> <td> <a class="codef">num = 16/8;</a> </td> <td> <a class="codef">num</a> será 2. </td> </tr> 
+ <tr> <td> Módulo </td> <td> <a class="codef">%</a> </td> <td> <a class="codef">num = 8%3;</a> </td> <td> <a class="codef">num</a> será o resto da divisão inteira de 8 por 3, ou seja, 2. </td> </tr> 
+ <tr> <td> Incremento </td> <td> <a class="codef">++</a> </td> <td> <a class="codef">num++;</a> </td> <td> <a class="codef">num</a> terá seu valor aumentado em 1. </td> </tr> 
+ <tr> <td> Decremento </td> <td> <a class="codef">--</a> </td> <td> <a class="codef">num--;</a> </td> <td> <a class="codef">num</a> terá seu valor diminuído em 1. </td> </tr> 
+ <tr> <td> Negação </td> <td> <a class="codef">-</a> </td> <td> <a class="codef">num = -num;</a> </td> <td> <a class="codef">num</a> terá seu valor multiplicado por -1. </td> </tr> 
+ <caption id="tabcap2-arit">Tabela 2.3 -  Operadores aritméticos no Processing.</caption> </table> 
+<div class="row">
+<div class="col-xl-12">
+<p>Ao escrever operações com números ou variáveis é possível usar parênteses para controlar a precedência<a id="operadores%precedenciade"></a> de todos os tipos de avaliações. Veja alguns exemplos:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.20 - <button class="btnn" onclick="copyDivToClipboard('codcap2-937')">Copiar código</button></h1></header> 
+ <section id="codcap2-937"> <span class="myCodeBro"><span class="v">int </span>num1 = 10, num2 = 5, num3 = 3;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="v">int </span>result1 = (num1 + num2) * num3;</span> <br> 
+ <span class="myCodeBro"><span class="y">println</span>(result1); <span class="m">// Será igual a 15*3, ou 45.</span></span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="v">int </span>result2 = (num1 * num3) / (num2 * num3);</span> <br> 
+ <span class="myCodeBro"><span class="y">println</span>(result2); <span class="m">// Será igual a 30/15, ou 2.</span></span> <br> 
+ <br> 
+ <span class="myCodeBro">num1++;</span> <br> 
+ <span class="myCodeBro"><span class="y">println</span>(num1); <span class="m">// Exibirá 11, que é o resultado de 10 + 1.</span></span> <br> 
+ <br> 
+ <span class="myCodeBro">num2--;</span> <br> 
+ <span class="myCodeBro"><span class="y">println</span>(num2); <span class="m">// Exibirá 4, que é o resultado de 5 - 1.</span></span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="y">println</span>(-num3); <span class="m">// Exibirá -3, que é o resultado de -1*3.</span></span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p><span class="secsub">2.2.2 Atribuição</span> <a id="seccap2-operatrib" class="labup"></a></p>
+<p>O segundo tipo, operadores de atribuição<a id="operadores%deatribuicao"></a>, são aqueles em que também são realizadas operações matemáticas, mas o sujeito da operação é a própria variável em que foi chamado o operador. Sendo assim, a atribuição do resultado é imediata. Estes operadores estão listados na tabela <a class="linkref" href="capitulo2.html#tabcap2-atrib">2.4</a>.</p>
+</div>
+</div>
+
+ <table class="table table-striped table-sm"> 
+ <tr class="tabelaHeader"> <td> <b>Nome</b> </td> <td> <b>Operador</b> </td> <td> <b>Exemplo</b> </td> <td> <b>Resultado</b> </td> </tr> 
+ <tr> <td> Atribuição </td> <td> <a class="codef">=</a> </td> <td> <a class="codef">num = 1;</a> </td> <td> <a class="codef">num</a> terá seu valor alterado para 1. </td> </tr> 
+ <tr> <td> Atribuição por Adição </td> <td> <a class="codef">+=</a> </td> <td> <a class="codef">num += 5;</a> </td> <td> <a class="codef">num</a> terá seu valor aumentado em 5. </td> </tr> 
+ <tr> <td> Atribuição por Subtração </td> <td> <a class="codef">-=</a> </td> <td> <a class="codef">num -= 5;</a> </td> <td> <a class="codef">num</a> terá seu valor subtraído em 5. </td> </tr> 
+ <tr> <td> Atribuição por Multiplicação </td> <td> <a class="codef">*=</a> </td> <td> <a class="codef">num *= 5;</a> </td> <td> <a class="codef">num</a> terá seu valor multiplicado por 5. </td> </tr> 
+ <tr> <td> Atribuição por Divisão </td> <td> <a class="codef">/=</a> </td> <td> <a class="codef">num /= 5;</a> </td> <td> <a class="codef">num</a> terá seu valor dividido por 5. </td> </tr> 
+ <caption id="tabcap2-atrib">Tabela 2.4 -  Operadores de atribuição no Processing.</caption> </table> 
+<div class="row">
+<div class="col-xl-12">
+<p>Sempre que se faz uma operação de atribuição é importante ter em mente que o valor da variável irá mudar, afetando qualquer operação futura. Veja o exemplo abaixo:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.21 - <button class="btnn" onclick="copyDivToClipboard('codcap2-760')">Copiar código</button></h1></header> 
+ <section id="codcap2-760"> <span class="myCodeBro"><span class="v">int </span>num1 = 2;</span> <br> 
+ <span class="myCodeBro"><span class="y">println</span>(num1 += 3); <span class="m">// num1 = (2 + 3) = 5</span></span> <br> 
+ <span class="myCodeBro"><span class="y">println</span>(num1 *= 4); <span class="m">// num1 = (5 * 4) = 20</span></span> <br> 
+ <span class="myCodeBro"><span class="y">println</span>(num1 /= 10); <span class="m">// num1 = (20/10) = 2</span></span> <br> 
+ <span class="myCodeBro"><span class="y">println</span>(num1 -= 2); <span class="m">// num1 = (2 - 2) = 0</span></span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p><span class="secsub">2.2.3 Relação</span> <a id="seccap2-operrel" class="labup"></a></p>
+<p>Os operadores de relação<a id="operadores%derelacao"></a> são os responsáveis por comparar variáveis. Ao utilizá-los, você poderá dizer se uma variável é maior, menor, igual ou diferente de outra. O resultado de uma operação de relação será sempre verdadeiro (<i>true</i>) ou falso (<i>false</i>), ou seja, uma variável do tipo booleana. A lista completa está na tabela <a class="linkref" href="capitulo2.html#tabcap2-rel">2.5</a>.</p>
+</div>
+</div>
+
+ <table class="table table-striped table-sm"> 
+ <tr class="tabelaHeader"> <td> <b>Nome</b> </td> <td> <b>Operador</b> </td> <td> <b>Exemplo</b> </td> <td> <b>Resultado</b> </td> </tr> 
+ <tr> <td> Maior </td> <td> <a class="codef">></a> </td> <td> <a class="codef">println(4 > 5);</a> </td> <td> <a class="codef">False</a>. O número 4 não é maior que o número 5. </td> </tr> 
+ <tr> <td> Menor </td> <td> <a class="codef"><</a> </td> <td> <a class="codef">println(4 < 5);</a> </td> <td> <a class="codef">True</a>. O número 4 é menor que o número 5. </td> </tr> 
+ <tr> <td> Igual a </td> <td> <a class="codef">==</a> </td> <td> <a class="codef">println(4 == 4);</a> </td> <td> <a class="codef">True</a>. O número 4 é igual ao número 4. </td> </tr> 
+ <tr> <td> Diferente de </td> <td> <a class="codef">!=</a> </td> <td> <a class="codef">println(4 != 4);</a> </td> <td> <a class="codef">False</a>. O número 4 não é diferente do número 4. </td> </tr> 
+ <tr> <td> Maior ou Igual </td> <td> <a class="codef">>=</a> </td> <td> <a class="codef">println(4 >= 4);</a> </td> <td> <a class="codef">True</a>. O número 4 não é maior que 4, mas é igual a 4 então a comparação é verdadeira. </td> </tr> 
+ <tr> <td> Menor ou Igual </td> <td> <a class="codef"><=</a> </td> <td> <a class="codef">println(5 <= 4);</a> </td> <td> <a class="codef">False</a>. O número 5 não é menor que 4 nem igual a 4, portanto a comparação é falsa. </td> </tr> 
+ <caption id="tabcap2-rel">Tabela 2.5 -  Operadores de relação no Processing.</caption> </table> 
+<div class="row">
+<div class="col-xl-12">
+<p><span class="secsub">2.2.4 Lógicos</span> <a id="seccap2-operlogicos" class="labup"></a></p>
+<p>Os últimos, mas não menos importantes, são chamados de operadores lógicos<a id="operadores%logicos"></a>, que realizam operações sobre variáveis booleanas. Na prática eles serão utilizados para concatenar diversas operações relacionais. Isso será muito bem vindo nos condicionais e estruturas de repetição conforme você verá mais adiante. Estes operadores podem ser consultados na tabela <a class="linkref" href="capitulo2.html#tabcap2-log">2.6</a>.</p>
+</div>
+</div>
+
+ <table class="table table-striped table-sm"> 
+ <tr class="tabelaHeader"> <td> <b>Nome</b> </td> <td> <b>Operador</b> </td> <td> <b>Exemplo</b> </td> <td> <b>Resultado</b> </td> </tr> 
+ <tr> <td> E (<i>AND</i>) </td> <td> <a class="codef">&amp;&amp;</a> </td> <td> <a class="codef">println((4<5) &amp;&amp; (5>1));</a> </td> <td> <a class="codef">True</a>. O operador E retorna verdadeiro se, e somente se, todas as condições forem simultaneamente verdadeiras. </td> </tr> 
+ <tr> <td> OU (<i>OR</i>) </td> <td> <a class="codef">||</a> </td> <td> <a class="codef">println((4<5) || (5>6));</a> </td> <td> <a class="codef">True</a>. O operador OU retorna verdadeiro se pelo menos uma de todas as condições forem verdadeiras. </td> </tr> 
+ <tr> <td> NÃO (<i>NOT</i>) </td> <td> <a class="codef">!</a> </td> <td> <a class="codef">println(!(4>5));</a> </td> <td> <a class="codef">True</a>. O operador NÃO inverte o resultado booleano. Como 4 não é maior que 5, o resultado é falso, porém o operador NÃO inverte esse resultado tornando-o verdadeiro. </td> </tr> 
+ <caption id="tabcap2-log">Tabela 2.6 -  Operadores lógicos no Processing.</caption> </table> 
+<div class="row">
+<div class="col-xl-12">
+<p>Um exemplo contendo múltiplas comparações:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.22 - <button class="btnn" onclick="copyDivToClipboard('codcap2-898')">Copiar código</button></h1></header> 
+ <section id="codcap2-898"> <span class="myCodeBro"><span class="v">boolean </span>comp = ((4 &gt; 5) || (5 &lt;= 6)) &amp;&amp; !(10 &lt; 20);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">// Por partes:</span></span> <br> 
+ <span class="myCodeBro"><span class="m">// (4 &gt; 5) -&gt; False</span></span> <br> 
+ <span class="myCodeBro"><span class="m">// (5 &lt;= 6) -&gt; True</span></span> <br> 
+ <span class="myCodeBro"><span class="m">// (False || True) -&gt; True</span></span> <br> 
+ <span class="myCodeBro"><span class="m">// (10 &lt; 20) -&gt; True, mas temos uma negação, logo !(10 &lt; 20) -&gt; False</span></span> <br> 
+ <span class="myCodeBro"><span class="m">// Portanto:</span></span> <br> 
+ <span class="myCodeBro"><span class="m">// (True &amp;&amp; False) -&gt; False</span></span> <br> 
+ <span class="myCodeBro"><span class="y">println</span>(comp);</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p><span class="secsub">2.2.5 Operadores e cores</span> <a id="seccap2-opercores" class="labup"></a></p>
+<p>Um pequeno alerta sobre operadores e a variável <a class="codef">color</a>. Se você quiser aplicar operadores de qualquer natureza sobre esse tipo de variável é importante que você realize as operações individualmente por canal e posteriormente os transforme em argumentos de uma variável <a class="codef">color</a>. Algo do tipo:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.23 - <button class="btnn" onclick="copyDivToClipboard('codcap2-294')">Copiar código</button></h1></header> 
+ <section id="codcap2-294"> <span class="myCodeBro"><span class="v">int </span>r = 2*30;</span> <br> 
+ <span class="myCodeBro"><span class="v">int </span>g = 100;</span> <br> 
+ <span class="myCodeBro"><span class="v">int </span>b = 255/5;</span> <br> 
+ <span class="myCodeBro"><span class="v">color </span>cor = <span class="y">color</span>(r,g,b);</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Realizar as operações diretamente sobre uma variável do tipo <a class="codef">color</a> não é uma violação na programação, mas não faz sentido do ponto de vista da matemática uma vez que ela é composta por outras variáveis (até 4 canais). Além disso, você deve ter em mente que os valores mínimos e máximos por canal são, respectivamente, 0 e 255. Qualquer número fora desse intervalo será reajustado para dentro do mesmo no ato da definição da variável.</p>
+<p><span class="secsub">2.2.6 Funções matemáticas</span> <a id="seccap2-operfuncmat" class="labup"></a></p>
+<p>Os operadores são a base de uma quantidade infinita de algoritmos e operações matemáticas e serão usados em quase todo código que você escrever. No entanto eles não cobrem diretamente algumas funções matemáticas úteis que são recorrentes em algoritmos. O Procesing possui as mais comuns programadas e cabe a você apenas chamá-las. Resta a observação que elas são funções e não operadores, mas foram colocados nesta seção devido à abordagem matemática da mesma. Parte delas podem ser vistas na tabela <a class="linkref" href="capitulo2.html#tabcap2-funcoesmat">2.7</a> e as demais consultadas na referência.</p>
+</div>
+</div>
+
+ <table class="table table-striped table-sm"> 
+ <tr class="tabelaHeader"> <td> <b>Função</b> </td> <td> <b>Descrição</b> </td> </tr> 
+ <tr> <td> <a class="codef">round(num)</a> </td> <td> Arredonda um número do tipo <a class="codef">float</a>, que possui casas decimais, para um número inteiro. Se a parte decimal for menor que 0.5, o número é arredondado para baixo, e se for maior ou igual a 0.5, para cima. </td> </tr> 
+ <tr> <td> <a class="codef">ceil(num)</a> </td> <td> Arredonda o número entre parênteses para cima independente de sua parte decimal. </td> </tr> 
+ <tr> <td> <a class="codef">floor(num)</a> </td> <td> Arredonda o número entre parênteses para baixo independente de sua parte decimal. </td> </tr> 
+ <tr> <td> <a class="codef">max(num1,num2)</a> </td> <td> Retorna o maior número entre os dois fornecidos. </td> </tr> 
+ <tr> <td> <a class="codef">min(num1,num2)</a> </td> <td> Retorna o menor número entre os dois fornecidos. </td> </tr> 
+ <tr> <td> <a class="codef">pow(num1,num2)</a> </td> <td> Realiza a exponenciação de <a class="codef">num1</a> por <a class="codef">num2</a>. </td> </tr> 
+ <tr> <td> <a class="codef">sqrt(num1)</a> </td> <td> Calcula a raiz quadrada do número fornecido. </td> </tr> 
+ <caption id="tabcap2-funcoesmat">Tabela 2.7 -  Funções matemáticas implementadas no Processing.</caption> </table> 
+<div class="row">
+<div class="col-xl-12">
+<p>Existe ainda uma função capaz de converter o valor de uma variável que possua sua escala entre um mínimo e máximo original, para um novo mínimo e máximo. Sua chamada é feita da seguinte maneira:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.24 - <button class="btnn" onclick="copyDivToClipboard('codcap2-565')">Copiar código</button></h1></header> 
+ <section id="codcap2-565"> <span class="myCodeBro"><span class="v">float </span>resultado = <span class="y">map</span>(valor,originalMin,originalMax,novoMin,novoMax);</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>A função <a class="codef">map()</a> é particularmente útil, pois ela permite mapear, ou transformar, um valor em outro, veja a figura <a class="linkref" href="capitulo2.html#figcap2-mapfun">2.17</a> para uma explicação visual. Em uma aplicação concreta, suponha que você queira que, ao movimentar o mouse horizontalmente pela janela de saída, a sua figura mude da cor preta para a vermelha. Neste caso você quer que uma cor seja o resultado de um mapeamento da posição do mouse. A posição horizontal do mouse<a id="mouseposicaodo"></a> (variável <a class="codef">mouseX</a>) possui valores entre zero e o tamanho da janela (variável <a class="codef">width</a>). Simultaneamente, o canal referente a cor vermelha, está contido entre 0 e 255, indicando a completa ausência do vermelho (restando o preto) até o vermelho puro. Sabendo dos máximos e mínimos da escala da variável mapeada (<a class="codef">mouseX</a>) e da variável de saída (canal vermelho), é possível usar a função <a class="codef">map()</a> para causar uma transição de cores na sua figura. Veja o código a seguir:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.25 - <button class="btnn" onclick="copyDivToClipboard('codcap2-942')">Copiar código</button></h1></header> 
+ <section id="codcap2-942"> <span class="myCodeBro"><span class="j">void</span> <span class="x">draw</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">background</span>(255);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Posição do mouse (mouseX) vai de 0 ao tamanho da janela (width).</span></span> <br> 
+ <span class="myCodeBro"><span class="m">  // Cor vermelha vai de 0 (preto) a 255 (vermelho).</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>r = <span class="y">map</span>(<span class="s">mouseX</span>,0,<span class="s">width</span>,0,255);</span> <br> 
+ <span class="myCodeBro">  <span class="v">color </span>cor = <span class="y">color</span>(r,0,0);</span> <br> 
+ <span class="myCodeBro">  <span class="y">fill</span>(cor);</span> <br> 
+ <span class="myCodeBro">  <span class="y">ellipse</span>(50,50,50,50);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap2-mapfun" src="img/pdfCap2-MapFun.png"> 
+</div> 
+<figcaption> Figura 2.17 - Representação visual da função <a class="codef">map()</a>.</figcaption> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap2-mapcolor" src="img/figCap2-MapColor.png"> 
+</div> 
+<figcaption> Figura 2.18 - Resultado do mapeamento do mouse para uma cor.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p><span class="sec">2.3 Funções</span> <a id="seccap2-func" class="labup"></a></p>
+<p>O conceito de função<a id="funcoesintroducaoa"></a> foi explicado superficialmente na seção <a class="linkref" href="capitulo1.html#seccap1-olamundo">1.4</a> e agora será abordada a parte técnica sobre como você pode declarar e usar suas próprias funções. Um função, <i>script</i> ou sub-rotina pode ser definida como um conjunto de instruções agrupadas em um bloco, executadas sempre que você referenciá-la pelo seu nome. Suas vantagens incluem organização e redução de linhas de código, assim como reutilização em programas futuros. Vamos justificar e apreciar o poder das funções através de um estudo de caso. Você usou as linhas de código <a class="linkref" href="capitulo2.html#codcap2-quadlinhasparam">2.5</a>, repetidas aqui por conveniência, para desenhar um único quadrado:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.26 - <button class="btnn" onclick="copyDivToClipboard('codcap2-703')">Copiar código</button></h1></header> 
+ <section id="codcap2-703"> <span class="myCodeBro"><span class="v">float </span>posX = 25;</span> <br> 
+ <span class="myCodeBro"><span class="v">float </span>posY = 25;</span> <br> 
+ <span class="myCodeBro"><span class="v">float </span>ladoQ = 50;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="y">line</span>(posX, posY, posX + ladoQ, posY);</span> <br> 
+ <span class="myCodeBro"><span class="y">line</span>(posX + ladoQ, posY, posX + ladoQ, posY + ladoQ);</span> <br> 
+ <span class="myCodeBro"><span class="y">line</span>(posX + ladoQ, posY + ladoQ, posX, posY + ladoQ);</span> <br> 
+ <span class="myCodeBro"><span class="y">line</span>(posX, posY + ladoQ, posX, posY);</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>E se você quisesse desenhar um número maior, na ordem de dezenas? Seria necessário repetir essas mesmas linhas dezenas de vezes, tornando seu código denso, e sem agregar nenhum valor. Conforme estudado o quadrado é formado por quatro linhas desenhadas de maneira parametrizada caso você possua o ponto de um vértice desse quadrado e o tamanho de seu lado. Seria muito conveniente se você pudesse fornecer apenas esses três dados, posição x, posição y e lado, e o computador desenhasse essa figura para você. As funções servem exatamente para isso, para executar uma série de instruções que são repetidas ao longo do código. Assim como uma variável, uma função precisa ser declarada antes que possa ser usada e isso deverá ser feito fora do <a class="codef">setup()</a>, <a class="codef">draw()</a> ou de qualquer outra função. A declaração de uma função genérica<a id="estruturagenerica"></a> é feita seguindo o modelo abaixo:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.27 - Estrutura de uma função genérica - <button class="btnn" onclick="copyDivToClipboard('codcap2-funcgenerica')">Copiar código</button></h1></header> 
+ <section id="codcap2-funcgenerica"> <span class="myCodeBro">tipoDaVariavelDeRetorno nomeDaFuncao(tipoVar1 var1, tipoVar2 var2, ..., tipoVarN varN) {</span> <br> 
+ <span class="myCodeBro">  </span> <br> 
+ <span class="myCodeBro"><span class="m">  // Corpo da função;</span></span> <br> 
+ <span class="myCodeBro">  </span> <br> 
+ <span class="myCodeBro">  <span class="j">return</span> variavelDeRetorno;</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Elas podem ser usadas no código ao escrevermos o nome da rotina seguido de parênteses contendo todos os argumentos de entrada da mesma:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.28 - <button class="btnn" onclick="copyDivToClipboard('codcap2-656')">Copiar código</button></h1></header> 
+ <section id="codcap2-656"> <span class="myCodeBro">nomeDaFuncao(arg1, arg2, ..., argN);</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>A estrutura completa de uma função pode ser intimidadora em um primeiro momento, mas ela sempre segue essa mesma forma. Uma vez que você aprender sobre cada um dos elementos<a id="funcoes%elementosde"></a> que a compõe, você estará pronto para criar as suas próprias funções. Abaixo você pode consultar, com mais detalhes, cada um deles:</p>
+</div>
+</div>
+<ul>
+ <li> <b>Tipo da variável de retorno</b>: Se uma função realiza tarefas e devolve uma variável qualquer, o tipo de retorno deverá igual ao tipo dessa variável. Por exemplo, se devolver um número inteiro, o tipo de retorno será <a class="codef">int</a>, ponto flutuante, ele será <a class="codef">float</a>, e assim por diante de acordo com as variáveis que você estudou (tabela <a class="linkref" href="capitulo2.html#tabcap2-tipovar">2.1</a>). A função <a class="codef">map()</a> é um exemplo cujo tipo de retorno é <a class="codef">float</a>, já que ela retorna um valor transformado que é o resultado de um cálculo. Por outro lado, se a função não retornar nada, o tipo dela será <a class="codef">void</a> <a id="voidpalavra-chave"></a>. Isso é comum em funções que só exibem algo na tela ou no console, como <a class="codef">rect()</a> e <a class="codef">println()</a>. </li>
+ <li> <b>Nome</b>: É o nome que você usará para chamar a função no programa. Utiliza-se das mesmas regras de nomeação de variáveis. </li>
+ <li> <b>Parâmetros</b>: Muitas vezes as instruções executadas pelas funções dependem de valores que são externos a elas. No ato da declaração da função, as variáveis que fazem a interface entre a parte interna dela e o código principal do programa são chamadas de parâmetros. No ato de chamada da função no código o nome do termo muda e o correto é falar que passamos argumentos para a função. Alguns padrões de escrita de código sugerem que os nomes dos parâmetros sejam precedidos pelo subtraço (_), mas isso não é obrigatório. </li>
+ <li> <b>Corpo</b>: É o código que compõe a função em si. Ele pode ser composto por uma quantidade arbitrária de linhas de código contendo funções pré declaradas (suas e do Processing), variáveis, condicionais, repetições e demais estruturas de programação. Em geral, tudo que você pode usar fora de uma função você pode usar dentro dela, com uma diferença importante, variáveis declaradas dentro de uma função são perdidas após a execução da mesma. </li>
+ <li> <b>Retorno</b>: O campo <a class="codef">return</a> <a id="returnpalavra-chave"></a> permite que a função devolva uma variável ao programa principal. Ele deve estar na última linha do corpo de uma função e é obrigatório apenas se a mesma retornar alguma variável. Neste caso, a variável de retorno deverá ser colocada na frente da palavra <a class="codef">return</a> no corpo da função e seguido de um ponto e vírgula. Funções precedidas da palavra <a class="codef">void</a> não precisam ter esse campo visto que não retornam nenhuma variável. </li>
+ </ul>
+<div class="row">
+<div class="col-xl-12">
+<p>Você pode usar essas informações para construir qualquer função personalizada. Um bom exercício para fixar esse conhecimento é migrar um código que escrevemos previamente, como o <a class="linkref" href="capitulo2.html#codcap2-quadlinhasparam">2.5</a>, referente ao desenho de um quadrado. O fluxo ideal para projetar<a id="funcoes%exemplodeprojetode"></a> uma função é analisar as ações que você quer que ela realize e listá-las em tópicos para um entendimento mais claro dos objetivos. Veja o exemplo:</p>
+<p><b>Projeto de uma função para desenhar um quadrado:</b></p>
+</div>
+</div>
+<ul>
+ <li> <b>A função deve ser autoexplicativa</b>: A função deve ter um nome esclarecedor, que remete ao seu propósito, tal como <a class="codef">quadrado()</a>. </li>
+ <li> <b>A função apenas exibirá um quadrado</b>: O desenho da figura será feito através de quatro instruções <a class="codef">line()</a>. Ela não irá retornar nenhum valor ou variável e, portanto, é precedida pelo tipo <a class="codef">void</a> e não possuirá o campo <a class="codef">return</a>. </li>
+ <li> <b>Sua posição é determinada por um vértice</b>: O desenho do quadrado será a partir do seu canto superior esquerdo, com coordenadas x e y informadas pelo usuário, implicando em dois argumentos de entrada da função. </li>
+ <li> <b>Seus lados não serão fixos</b>: O tamanho dos lados do quadrado também será definido pelo usuário. Como um quadrado possuí todos os lados com o mesmo tamanho, será necessário informar apenas um valor, sendo este o terceiro argumento de entrada da função. </li>
+ </ul>
+<div class="row">
+<div class="col-xl-12">
+<p>Com isso definimos o <i>nome</i> da sub-rotina, suas <i>funcionalidades (corpo)</i> assim como <i>tipo</i> e o <i>retorno</i> e, por fim, os seus <i>argumentos de entrada</i> (ou parâmetros na declaração). Uma vez que todos os pré-requisitos foram satisfeitos, você pode escrevê-la usando modelo apresentado anteriormente. Para chamá-la no programa, basta que você utilize o nome dela e passe a posição e tamanho do lado do quadrado que deseja desenhar:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.15 - <button class="btnn" onclick="copyDivToClipboard('codcap2-794')">Copiar código</button></h1></header> 
+ <section id="codcap2-794"> <span class="myCodeBro"><span class="j">void</span> quadrado(<span class="v">float </span>_posX, <span class="v">float </span>_posY, <span class="v">float </span>_lado) {</span> <br> 
+ <span class="myCodeBro"><span class="m">  // Desenha um quadrado composto por quatro arestas:</span></span> <br> 
+ <span class="myCodeBro">  <span class="y">line</span>(_posX, _posY, _posX + _lado, _posY);</span> <br> 
+ <span class="myCodeBro">  <span class="y">line</span>(_posX + _lado, _posY, _posX + _lado, _posY + _lado);</span> <br> 
+ <span class="myCodeBro">  <span class="y">line</span>(_posX + _lado, _posY + _lado, _posX, _posY + _lado);</span> <br> 
+ <span class="myCodeBro">  <span class="y">line</span>(_posX, _posY + _lado, _posX, _posY);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <span class="myCodeBro"><span class="m">  // Chamada da função:</span></span> <br> 
+ <span class="myCodeBro">  quadrado(25,25,50);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Finalmente, é pertinente citar que você é livre para declarar duas ou mais funções com o mesmo nome<sup><a class="linkref" id="fnote-5" href="#footnote-5" title="Rodapé.">[5]</a></sup> <a id="funcoes%demesmonome"></a>, desde que o número dos argumentos de entrada delas sejam diferentes entre si. O código abaixo demonstra que não ocorrem erros ao executar o programa:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.29 - <button class="btnn" onclick="copyDivToClipboard('codcap2-154')">Copiar código</button></h1></header> 
+ <section id="codcap2-154"> <span class="myCodeBro"><span class="j">void</span> quadrado(<span class="v">float </span>_posX, <span class="v">float </span>_posY, <span class="v">float </span>_lado) {</span> <br> 
+ <span class="myCodeBro"><span class="m">  // Desenha um quadrado composto por quatro arestas:</span></span> <br> 
+ <span class="myCodeBro">  <span class="y">line</span>(_posX, _posY, _posX + _lado, _posY);</span> <br> 
+ <span class="myCodeBro">  <span class="y">line</span>(_posX + _lado, _posY, _posX + _lado, _posY + _lado);</span> <br> 
+ <span class="myCodeBro">  <span class="y">line</span>(_posX + _lado, _posY + _lado, _posX, _posY + _lado);</span> <br> 
+ <span class="myCodeBro">  <span class="y">line</span>(_posX, _posY + _lado, _posX, _posY);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="j">void</span> quadrado(<span class="v">float </span>_posX, <span class="v">float </span>_posY) {</span> <br> 
+ <span class="myCodeBro"><span class="m">  // Exibe as variáveis passadas para a função no console:</span></span> <br> 
+ <span class="myCodeBro">  <span class="y">println</span>(&quot;Variável 1:&quot;, _posX, &quot;Variável 2 Y&quot;, _posY);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="j">void</span> quadrado() {</span> <br> 
+ <span class="myCodeBro"><span class="m">  // Desenha um quadrado de lado e posição fixa:</span></span> <br> 
+ <span class="myCodeBro">  <span class="y">rect</span>(0,0,50,50);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <span class="myCodeBro">  quadrado(25,25,50);</span> <br> 
+ <span class="myCodeBro">  quadrado(25,25);</span> <br> 
+ <span class="myCodeBro">  quadrado();</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p><span class="secsub">2.3.1 Interrupções</span> <a id="seccap2-funcinterrupt" class="labup"></a></p>
+<p>O Processing possui uma grande base de funções que podem ser usadas durante a execução de seus programas. A maioria delas deve ser chamada explicitamente e sequencialmente, significando que elas seguem a ordem de execução em que elas foram escritas no código. Em contrapartida, existe uma outra classe de funções, nomeadas de interrupções<a id="interrupcoes%introducaoa"></a>, que são invocadas assincronamente sempre que um evento específico ocorrer, disparando sua execução. Elas estão usualmente relacionadas a acontecimentos externos ao programa, como intervenções através do clique do mouse ou do pressionar de uma tecla. As interrupções são habituais quando se espera algum tipo de interação com o usuário do programa. No Processing<a id="interrupcoes%noProcessing"></a>, elas se comportam como funções pré-declaradas, mas não executam nenhuma ação. Você pode customizá-las e adicionar instruções que você quer que elas realizem através do incremento do corpo da mesma, assim como você faz com <a class="codef">setup()</a> ou <a class="codef">draw()</a>. Elas podem ser consultadas na tabela <a class="linkref" href="capitulo2.html#tabcap2-funcoesinter">2.8</a>.</p>
+</div>
+</div>
+
+ <table class="table table-striped table-sm"> 
+ <tr class="tabelaHeader"> <td> <b>Função</b> </td> <td> <b>Descrição</b> </td> </tr> 
+ <tr> <td> <a class="codef">mousePressed()</a> </td> <td> Executa a interrupção sempre que algum botão do mouse for pressionado. </td> </tr> 
+ <tr> <td> <a class="codef">mouseReleased()</a> </td> <td> Executa a interrupção sempre que algum botão do mouse for solto. </td> </tr> 
+ <tr> <td> <a class="codef">mouseWheel()</a> </td> <td> Executa a interrupção sempre que a roda do mouse (<i>scroll</i>) for girada. </td> </tr> 
+ <tr> <td> <a class="codef">mouseDragged()</a> </td> <td> Executa a interrupção sempre que o mouse for arrastado e algum botão dele estiver pressionado. </td> </tr> 
+ <tr> <td> <a class="codef">keyPressed()</a> </td> <td> Executa a interrupção sempre que alguma tecla for pressionada. </td> </tr> 
+ <tr> <td> <a class="codef">keyReleased()</a> </td> <td> Executa a interrupção sempre que alguma tecla for solta. </td> </tr> 
+ <caption id="tabcap2-funcoesinter">Tabela 2.8 -  Interrupções nativas do Processing.</caption> </table> 
+<div class="row">
+<div class="col-xl-12">
+<p>O exemplo abaixo mostra como usar interrupções para desenhar figuras na tela sempre que o mouse for arrastado<a id="mouse%arrastedo"></a>, o resultado é mostrado na figura <a class="linkref" href="capitulo2.html#figcap2-funcinterrupt">2.19</a>.</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.30 - <button class="btnn" onclick="copyDivToClipboard('codcap2-685')">Copiar código</button></h1></header> 
+ <section id="codcap2-685"> <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">size</span>(400,200);</span> <br> 
+ <span class="myCodeBro">  <span class="y">background</span>(255);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="j">void</span> <span class="x">draw</span>() {</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">// Interrupção - Mouse pressionado e arrastado:</span></span> <br> 
+ <span class="myCodeBro"><span class="j">void</span> <span class="x">mouseDragged</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>raio = <span class="y">dist</span>(<span class="s">mouseX</span>,<span class="s">mouseY</span>,<span class="s">pmouseX</span>,<span class="s">pmouseY</span>);</span> <br> 
+ <span class="myCodeBro">  <span class="y">ellipse</span>(<span class="s">mouseX</span>,<span class="s">mouseY</span>,raio,raio);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>A linha de código que contém a função <a class="codef">dist()</a> <a id="distfuncao"></a> serve para calcular a distância euclidiana entre dois pontos. Ao usarmos a posição<a id="mouse%posicaodo"></a> do mouse atual e a do frame passado como argumentos de entrada temos como resultado uma medida do quão rápido o mouse foi movimentado entre um frame e outro. Se a velocidade de arraste é elevada, então são desenhados círculos grandes, se não, círculos pequenos. O único ponto que merece maior destaque no código é o fato de ter sido incluída a função <a class="codef">draw()</a> <a id="drawfuncao"></a> vazia. Isso se faz necessário para que o programa entre em modo de animação<a id="animacao"></a>, caso contrário seria gerado apenas um quadro, congelando qualquer interação com o usuário.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap2-funcinterrupt" src="img/pdfCap2-FuncInterrupt.png"> 
+</div> 
+<figcaption> Figura 2.19 - Desenho na janela ao arrastar o mouse.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p><span class="sec">2.4 Condicionais</span> <a id="seccap2-cond" class="labup"></a></p>
+<p>A próxima ferramenta que você irá aprender são os condicionais<a id="condicionais%introducaoa"></a>. Eles são definidos como estruturas de controle de fluxo de um programa que verificam se uma determinada condição é verdadeira ou falsa, e executam linhas de código baseadas nesse julgamento. Sua forma geral<a id="condicionais%estruturabasica"></a> é dada por:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.31 - <button class="btnn" onclick="copyDivToClipboard('codcap2-72')">Copiar código</button></h1></header> 
+ <section id="codcap2-72"> <span class="myCodeBro">se (condição) {</span> <br> 
+ <span class="myCodeBro"><span class="m">  // Se a condição for verdadeira, execute estas linhas de código.</span></span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <br> 
+ <span class="myCodeBro">caso contrário {</span> <br> 
+ <span class="myCodeBro"><span class="m">  // Se a condição for falsa, execute estas linhas de código.</span></span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>No Processing temos o par de palavras chave <a class="codef">if/else</a> <a id="ifelse%condicionaisestruturabasica"></a></p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.32 - <button class="btnn" onclick="copyDivToClipboard('codcap2-631')">Copiar código</button></h1></header> 
+ <section id="codcap2-631"> <span class="myCodeBro"><span class="f">if</span> (condicao) {</span> <br> 
+ <span class="myCodeBro"><span class="m">  // Se condicao for verdadeiro (true), execute estas linhas de código.</span></span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="f">else</span> {</span> <br> 
+ <span class="myCodeBro"><span class="m">  // Se condicao for falso (false), execute estas linhas de código</span></span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>O campo da condição neste tipo de estrutura deve ser, obrigatoriamente, verdadeiro ou falso. Nada impede que ele seja uma variável ou uma série de operações sobre variáveis contanto que, na avaliação final, o campo tenha um resultado do tipo booleano. Você já estudou sobre esse tipo de variável nas seções passadas, então vamos brevemente relembrar algumas condições que são e não válidas para esse campo:</p>
+</div>
+</div>
+<ul>
+ <li> <a class="codef">true</a> ou <a class="codef">false</a>: Válido, essas são variáveis booleanas que indicam verdadeiro ou falso. </li>
+ <li> <a class="codef">(2 + 3)</a>: Não válido, o resultado de uma soma é um número da mesma natureza, por exemplo <a class="codef">float</a> ou <a class="codef">int</a>. </li>
+ <li> <a class="codef">(2 + 3) > 1</a>: Válido, o resultado da comparação 5 > 1 é verdadeiro (<a class="codef">true</a>) que é uma variável booleana. </li>
+ <li> <a class="codef">(2 + 3) > 7</a>: Válido, o resultado da comparação 5 > 7 é falso (<a class="codef">false</a>) que é uma variável booleana. </li>
+ </ul>
+<div class="row">
+<div class="col-xl-12">
+<p>Essa estrutura é bem vinda quando se deseja alterar o comportamento do programa baseado em condições atuais da execução. Considere o caso em que você queira preencher de preto a respectiva metade da janela de exibição de acordo com a posição do seu cursor. Esse cenário é ideal para o uso de uma estrutura <a class="codef">if/else</a> já que é necessária uma condição (mouse do lado direito ou esquerdo da tela) para realizar uma ação (preencher a metade de preto), veja a figura <a class="linkref" href="capitulo2.html#figcap2-teladiv">2.20</a>. Utilizando condicionais você poderia escrever o código abaixo:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.30 - <button class="btnn" onclick="copyDivToClipboard('codcap2-685')">Copiar código</button></h1></header> 
+ <section id="codcap2-685"> <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">size</span>(300,150);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="j">void</span> <span class="x">draw</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">background</span>(210);</span> <br> 
+ <span class="myCodeBro">  <span class="y">fill</span>(0);</span> <br> 
+ <span class="myCodeBro"><span class="m">  // Se o mouse estiver na parte esquerda da janela ela é preenchida com um retângulo</span></span> <br> 
+ <span class="myCodeBro"><span class="m">  // preto. Caso contrário, o mouse estará na parte direita, e ela é preenchida.</span></span> <br> 
+ <span class="myCodeBro">  <span class="f">if</span>(<span class="s">mouseX</span> &lt; <span class="s">width</span>/2) {</span> <br> 
+ <span class="myCodeBro">    <span class="y">rect</span>(0,0,<span class="s">width</span>/2,<span class="s">height</span>);</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">  <span class="f">else</span> {</span> <br> 
+ <span class="myCodeBro">    <span class="y">rect</span>(<span class="s">width</span>/2,0,<span class="s">width</span>/2,<span class="s">height</span>);</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>A condição <a class="codef">if(mouseX < width/2)</a> verifica se a posição<a id="mouseposicaodo97"></a> horizontal do mouse está na metade esquerda da janela. Veja a figura <a class="linkref" href="capitulo2.html#figcap2-teladivexplic">2.21</a> como exemplo.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap2-teladiv" src="img/pdfCap2-TelaDiv.png"> 
+</div> 
+<figcaption> Figura 2.20 - Posição do mouse e preenchimento da janela de exibição.</figcaption> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap2-teladivexplic" src="img/pdfCap2-TelaDivExplic.png"> 
+</div> 
+<figcaption> Figura 2.21 - Divisão da janela de saída e coordenadas do eixo x.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Sempre que você quiser verificar uma condição na direção horizontal da janela (direito/esquerdo) você precisará testar apenas o eixo coordenado na direção x, como foi o caso. Se você quisesse verificar uma condição na direção vertical (cima/baixo), bastaria fazer os testes com o eixo y. Focando na estrutura do condicional, note que só é necessário testar se o cursor está no lado esquerdo da janela pois, caso contrário (<a class="codef">else</a>), ele estará do lado direito. Cabe evidenciar que o computador só avaliará as condições do seu programa dentro dos limites dele, isto é, posições do cursor fora da janela de exibição serão ignoradas. Neste caso, o valor de <a class="codef">mouseX</a> permanecerá congelado na sua última posição conhecida.</p>
+<p><span class="secsub">2.4.1 Múltiplos condicionais</span> <a id="seccap2-switch" class="labup"></a></p>
+<p>Na seção passada você escreveu um código que testava apenas duas condições, atendidas completamente por uma única estrutura <a class="codef">if/else</a>. De maneira equivalente, é possível fazer múltiplos testes inserindo mais condicionais dentro de estruturas desse próprio tipo. Isto é chamado de aninhamento de condicionais<a id="condicionais%aninhamentode"></a> ou <i>nested conditionals</i>. Considere o código em que foi criada uma interrupção que testa qual letra foi pressionada pelo usuário (variável do sistema <a class="codef">key</a> <a id="keyvariavel"></a>) e desenha uma figura baseada nela. Pressionar<a id="teclado%pressionardo"></a> a tecla <a class="codef">'a'</a> desenha um quadrado, <a class="codef">'s'</a> um círculo, <a class="codef">'d'</a> um triângulo, <a class="codef">'f'</a> um losango e qualquer outra tecla limpa a tela, veja a figura <a class="linkref" href="capitulo2.html#figcap2-nestedif1">2.22</a>.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-3"> 
+ <div class="pop imgMax3"> 
+<img class="img-fluid imgborder" id="figcap2-nestedif1a" src="img/figCap2-NestedIf1a.png"> 
+</div> 
+<figcaption> Figura 2.23 - <a class="codef">'a'</a>.</figcaption> 
+ </div> 
+ <div class="col-md-3"> 
+ <div class="pop imgMax3"> 
+<img class="img-fluid imgborder" id="figcap2-nestedif1b" src="img/figCap2-NestedIf1b.png"> 
+</div> 
+<figcaption> Figura 2.24 - <a class="codef">'s'</a>.</figcaption> 
+ </div> 
+ <div class="col-md-3"> 
+ <div class="pop imgMax3"> 
+<img class="img-fluid imgborder" id="figcap2-nestedif1c" src="img/figCap2-NestedIf1c.png"> 
+</div> 
+<figcaption> Figura 2.25 - <a class="codef">'d'</a>.</figcaption> 
+ </div> 
+ <div class="col-md-3"> 
+ <div class="pop imgMax3"> 
+<img class="img-fluid imgborder" id="figcap2-nestedif1d" src="img/figCap2-NestedIf1d.png"> 
+</div> 
+<figcaption> Figura 2.26 - <a class="codef">'f'</a>.</figcaption> 
+ </div> 
+ <div id="figcap2-nestedif1" class="col-md-12 text-center"> 
+ Figura - 2.22 - Comportamento do programa baseado nas teclas pressionadas. </div> 
+ </div> 
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.33 - Aninhamento de condicionais completo - <button class="btnn" onclick="copyDivToClipboard('codcap2-ifnested1')">Copiar código</button></h1></header> 
+ <section id="codcap2-ifnested1"> <span class="myCodeBro"><span class="j">void</span> <span class="x">draw</span>() {</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="j">void</span> <span class="x">keyPressed</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">background</span>(255);</span> <br> 
+ <span class="myCodeBro">  <span class="y">noStroke</span>();</span> <br> 
+ <span class="myCodeBro">  </span> <br> 
+ <span class="myCodeBro">  <span class="f">if</span> (<span class="s">key</span> == &apos;a&apos;) {</span> <br> 
+ <span class="myCodeBro">    <span class="y">fill</span>(255, 0, 0);</span> <br> 
+ <span class="myCodeBro">    <span class="y">rect</span>(25, 25, 50, 50);</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">  <span class="f">else</span> {</span> <br> 
+ <span class="myCodeBro">    <span class="f">if</span> (<span class="s">key</span> == &apos;s&apos;) {</span> <br> 
+ <span class="myCodeBro">      <span class="y">fill</span>(0, 255, 0);</span> <br> 
+ <span class="myCodeBro">      <span class="y">ellipse</span>(50, 50, 50, 50);</span> <br> 
+ <span class="myCodeBro">    }</span> <br> 
+ <span class="myCodeBro">    <span class="f">else</span> {</span> <br> 
+ <span class="myCodeBro">      <span class="f">if</span> (<span class="s">key</span> == &apos;d&apos;) {</span> <br> 
+ <span class="myCodeBro">        <span class="y">fill</span>(0, 0, 255);</span> <br> 
+ <span class="myCodeBro">        <span class="y">triangle</span>(50, 25, 25, 75, 75, 75);</span> <br> 
+ <span class="myCodeBro">      }</span> <br> 
+ <span class="myCodeBro">      <span class="f">else</span> {</span> <br> 
+ <span class="myCodeBro">        <span class="f">if</span> (<span class="s">key</span> == &apos;f&apos;) {</span> <br> 
+ <span class="myCodeBro">          <span class="y">fill</span>(0, 0, 0);</span> <br> 
+ <span class="myCodeBro">          <span class="y">quad</span>(50, 25, 25, 50, 50, 75, 75, 50);</span> <br> 
+ <span class="myCodeBro">        }</span> <br> 
+ <span class="myCodeBro">      }</span> <br> 
+ <span class="myCodeBro">    }</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Note que dentro da cada estrutura <a class="codef">else</a> é criada uma outra <a class="codef">if/else</a> para continuar as comparações da tecla pressionada com uma das letras específicas para o desenho. Esse código também pode ser visto em forma de fluxograma como mostrado na figura <a class="linkref" href="capitulo2.html#figcap2-nestediffluxo">2.27</a>.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap2-nestediffluxo" src="img/pdfCap2-NestedIfFluxo.png"> 
+</div> 
+<figcaption> Figura 2.27 - Fluxograma referente ao código <a class="linkref" href="capitulo2.html#codcap2-ifnested1">2.33</a>.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Infelizmente o código <a class="linkref" href="capitulo2.html#codcap2-ifnested1">2.33</a> sofre de um problema típico de aninhamentos, a perda da legibilidade. Quanto mais comparações forem feitas, mais confusa ficará a escrita do código, principalmente se as instruções a serem executadas forem compostas por várias linhas. É possível contornar esse inconveniente reescrevendo o código de forma a separar completamente as comparações. Considere o exemplo:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.34 - Aninhamento de condicionais separados - <button class="btnn" onclick="copyDivToClipboard('codcap2-ifnested2')">Copiar código</button></h1></header> 
+ <section id="codcap2-ifnested2"> <span class="myCodeBro"><span class="j">void</span> <span class="x">draw</span>() {</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="j">void</span> <span class="x">keyPressed</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">background</span>(255);</span> <br> 
+ <span class="myCodeBro">  <span class="y">noStroke</span>();</span> <br> 
+ <br> 
+ <span class="myCodeBro">  <span class="f">if</span> (<span class="s">key</span> == &apos;a&apos;) {</span> <br> 
+ <span class="myCodeBro">    <span class="y">fill</span>(255, 0, 0);</span> <br> 
+ <span class="myCodeBro">    <span class="y">rect</span>(25, 25, 50, 50);</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <br> 
+ <span class="myCodeBro">  <span class="f">if</span> (<span class="s">key</span> == &apos;s&apos;) {</span> <br> 
+ <span class="myCodeBro">    <span class="y">fill</span>(0, 255, 0);</span> <br> 
+ <span class="myCodeBro">    <span class="y">ellipse</span>(50, 50, 50, 50);</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <br> 
+ <span class="myCodeBro">  <span class="f">if</span> (<span class="s">key</span> == &apos;d&apos;) {</span> <br> 
+ <span class="myCodeBro">    <span class="y">fill</span>(0, 0, 255);</span> <br> 
+ <span class="myCodeBro">    <span class="y">triangle</span>(50, 25, 25, 75, 75, 75);</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <br> 
+ <span class="myCodeBro">  <span class="f">if</span> (<span class="s">key</span> == &apos;f&apos;) {</span> <br> 
+ <span class="myCodeBro">    <span class="y">fill</span>(0, 0, 0);</span> <br> 
+ <span class="myCodeBro">    <span class="y">quad</span>(50, 25, 25, 50, 50, 75, 75, 50);</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>É bem mais agradável analisar o código acima, mas veja que ele é acometido por um outro contratempo. Imagine que você pressione a tecla <a class="codef">'a'</a>, que é o primeiro teste de ambos os códigos, <a class="linkref" href="capitulo2.html#codcap2-ifnested1">2.33</a> e <a class="linkref" href="capitulo2.html#codcap2-ifnested2">2.34</a>. Em <a class="linkref" href="capitulo2.html#codcap2-ifnested1">2.33</a> o teste será realizado e dado como verdadeiro, desta forma nenhum dos outros condicionais serão processados, pois eles se encontram dentro da estrutura <a class="codef">else</a>. Já em <a class="linkref" href="capitulo2.html#codcap2-ifnested2">2.34</a> a primeira condição será dada como verdadeira e será desenhado um quadrado, no entanto os outros condicionais não estão contidos dentro de um <a class="codef">else</a> e, por isso, também serão testados, ilustrado no fluxograma <a class="linkref" href="capitulo2.html#figcap2-nestediffluxo2">2.28</a>. Neste caso, enquanto o código <a class="linkref" href="capitulo2.html#codcap2-ifnested1">2.33</a> realizou apenas um teste, o código <a class="linkref" href="capitulo2.html#codcap2-ifnested2">2.34</a> realizou quatro, sendo bem menos eficiente do ponto de vista computacional. Claro que cabe ao programador balancear esses pontos, pois algumas vezes esse impacto será tão insignificante que é mais vantajoso manter um código limpo do que implementar micro otimizações de baixo ganho.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap2-nestediffluxo2" src="img/pdfCap2-NestedIfFluxo2.png"> 
+</div> 
+<figcaption> Figura 2.28 - Fluxograma referente ao código <a class="linkref" href="capitulo2.html#codcap2-ifnested2">2.34</a>.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Uma alternativa para quem deseja manter a eficiência e uma interface limpa é utilizar a estrutura <a class="codef">switch</a> <a id="switch%condicionaisestruturaalternativa"></a> cuja forma é mostrada abaixo:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.35 - <button class="btnn" onclick="copyDivToClipboard('codcap2-820')">Copiar código</button></h1></header> 
+ <section id="codcap2-820"> <span class="myCodeBro"><span class="f">switch</span>(variavel) {</span> <br> 
+ <br> 
+ <span class="myCodeBro">  <span class="j">case</span> teste1:</span> <br> 
+ <span class="myCodeBro"><span class="m">    // Código a ser executado se a comparação: (variavel == teste1) for verdadeira.</span></span> <br> 
+ <span class="myCodeBro">  <span class="j">break</span>;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  //...</span></span> <br> 
+ <br> 
+ <span class="myCodeBro">  <span class="j">case</span> testeN:</span> <br> 
+ <span class="myCodeBro"><span class="m">    // Código a ser executado se a comparação: (variavel == testeN) for verdadeira.</span></span> <br> 
+ <span class="myCodeBro">  <span class="j">break</span>;</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Os códigos <a class="linkref" href="capitulo2.html#codcap2-ifnested1">2.33</a> e <a class="linkref" href="capitulo2.html#codcap2-ifnested2">2.34</a> convertidos para esse novo modelo seriam dados por:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.36 - <button class="btnn" onclick="copyDivToClipboard('codcap2-267')">Copiar código</button></h1></header> 
+ <section id="codcap2-267"> <span class="myCodeBro"><span class="j">void</span> <span class="x">draw</span>() {</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="j">void</span> <span class="x">keyPressed</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">background</span>(255);</span> <br> 
+ <span class="myCodeBro">  <span class="y">noStroke</span>();</span> <br> 
+ <br> 
+ <span class="myCodeBro">  <span class="f">switch</span> (<span class="s">key</span>) {</span> <br> 
+ <span class="myCodeBro">    <span class="j">case</span> &apos;a&apos;:</span> <br> 
+ <span class="myCodeBro">      <span class="y">fill</span>(255, 0, 0);</span> <br> 
+ <span class="myCodeBro">      <span class="y">rect</span>(25, 25, 50, 50);</span> <br> 
+ <span class="myCodeBro">    <span class="j">break</span>;</span> <br> 
+ <br> 
+ <span class="myCodeBro">    <span class="j">case</span> &apos;s&apos;:</span> <br> 
+ <span class="myCodeBro">      <span class="y">fill</span>(0, 255, 0);</span> <br> 
+ <span class="myCodeBro">      <span class="y">ellipse</span>(50, 50, 50, 50);</span> <br> 
+ <span class="myCodeBro">    <span class="j">break</span>;</span> <br> 
+ <br> 
+ <span class="myCodeBro">    <span class="j">case</span> &apos;d&apos;:</span> <br> 
+ <span class="myCodeBro">      <span class="y">fill</span>(0, 0, 255);</span> <br> 
+ <span class="myCodeBro">      <span class="y">triangle</span>(50, 25, 25, 75, 75, 75);</span> <br> 
+ <span class="myCodeBro">    <span class="j">break</span>;</span> <br> 
+ <br> 
+ <span class="myCodeBro">    <span class="j">case</span> &apos;f&apos;:</span> <br> 
+ <span class="myCodeBro">      <span class="y">fill</span>(0, 0, 0);</span> <br> 
+ <span class="myCodeBro">      <span class="y">quad</span>(50, 25, 25, 50, 50, 75, 75, 50);</span> <br> 
+ <span class="myCodeBro">    <span class="j">break</span>;</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Uma grande limitação do elemento <a class="codef">switch</a> é que seus testes requerem as chamadas <i>expressões constantes</i>, ou seja, apenas comparações de igualdade (<a class="codef">==</a>) são válidas. Testes que usem de outros operadores (<a class="codef">></a>, <a class="codef"><</a>, <a class="codef">>=</a>, <a class="codef"><=</a>, <a class="codef">!=</a>) ou cujas variáveis de teste não sejam <a class="codef">int</a>, <a class="codef">String</a>, <a class="codef">char</a> ou <a class="codef">enum</a> são considerados como erros durante a compilação.</p>
+<p>Esta subseção, mais do que apresentar sobre outras formas de escrever condicionais, foi importante do ponto de vista de desenvolvimento de código. Ela foi desdobrada com o intuito de mostrar a você como pequenas escolhas na escrita de um bloco de instruções podem impactar antes mesmo da execução do programa, em sua legibilidade e, ao mesmo tempo, em sua performance durante a execução, relativo ao tempo de processamento. Apesar dessas informações serem mais voltadas para a parte técnica da programação, você deve ficar atento a esses tipos de detalhes, pois podem ocorrer não só em condicionais, mas em qualquer outro tipo de estrutura de código.</p>
+<p><span class="sec">2.5 Repetições</span> <a id="seccap2-repet" class="labup"></a></p>
+<p>O último tópico que compõe a formação básica de um programador são as repetições ou <i>loops</i> <a id="loop%repeticoes"></a>. Basicamente esse tipo de estrutura permite que parte de seu código seja repetido<a id="repeticoes%introducaoa"></a> um número arbitrário de vezes em uma fração das linhas que seriam necessárias. Até agora, se você quisesse desenhar um número elevado de figuras, digamos mil, seria necessário repetir mil vezes as linhas para desenhar essas figuras. Imagine quanto tempo você demoraria para chamar mil funções <a class="codef">rect()</a> e depois percebesse que esse número era excessivo e que, na verdade, você gostaria de 500 retângulos. Você iria ficar no mínimo frustrado por ter escrito o dobro do que realmente precisava, além de ter perdido um tempo precioso. As repetições foram criadas para evitar essa e outras situações semelhantes e ainda permitir um engrandecimento de seu programa por possibilitar criar mais conteúdo com menos linhas de código. Estruturas<a id="repeticoes%estruturabasica"></a> de repetição têm a seguinte forma:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.37 - <button class="btnn" onclick="copyDivToClipboard('codcap2-70')">Copiar código</button></h1></header> 
+ <section id="codcap2-70"> <span class="myCodeBro">enquanto (condição) {</span> <br> 
+ <span class="myCodeBro"><span class="m">  // Código a ser repetido.</span></span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>que no Processing se reflete com o uso do <a class="codef">while</a> <a id="while%repeticoesestruturabasica"></a></p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.38 - <button class="btnn" onclick="copyDivToClipboard('codcap2-195')">Copiar código</button></h1></header> 
+ <section id="codcap2-195"> <span class="myCodeBro"><span class="f">while</span>(condicao) {</span> <br> 
+ <span class="myCodeBro"><span class="m">  // Código a ser repetido.</span></span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>O campo de condição do <a class="codef">while</a> funciona de maneira muito semelhante ao da estrutura <a class="codef">if/else</a>, de tal forma que se a condição dentro dos parênteses for verdadeira (<a class="codef">true</a>) todo código dentro das chaves será executado. A diferença é que <i>enquanto</i> essa condição for verdadeira, o código continuará a ser repetido. É necessário tomar um pouco de cuidado com qual condição se coloca nessa estrutura, pois caso contrário pode ser que a execução do seu código fique presa para sempre em uma repetição. Ela deve ser projetada para executar apenas um número finito de iterações. É usual criar uma variável de controle que é verificada no condicional do <a class="codef">while</a> e incrementada no corpo da repetição. Por exemplo, se você quisesse desenhar 50 quadrados centralizados na tela, como na figura <a class="linkref" href="capitulo2.html#figcap2-whilequad1">2.29</a>, poderia escrever o seguinte código:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.39 - Figuras concêntricas - <button class="btnn" onclick="copyDivToClipboard('codcap2-whilequad')">Copiar código</button></h1></header> 
+ <section id="codcap2-whilequad"> <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">size</span>(300,300);</span> <br> 
+ <span class="myCodeBro">  <span class="y">background</span>(255);</span> <br> 
+ <span class="myCodeBro">  <span class="y">noFill</span>();</span> <br> 
+ <br> 
+ <span class="myCodeBro">  <span class="v">float </span>x = 0, y = 0, lado = 0;</span> <br> 
+ <br> 
+ <span class="myCodeBro">  <span class="v">int </span>contador = 0;</span> <br> 
+ <br> 
+ <span class="myCodeBro">  <span class="f">while</span>(contador &lt; 50) {</span> <br> 
+ <span class="myCodeBro">    lado = lado + 5;</span> <br> 
+ <span class="myCodeBro">    x = <span class="s">width</span>/2 - lado/2;</span> <br> 
+ <span class="myCodeBro">    y = <span class="s">height</span>/2 - lado/2;</span> <br> 
+ <br> 
+ <span class="myCodeBro">    <span class="y">rect</span>(x,y,lado,lado);</span> <br> 
+ <br> 
+ <span class="myCodeBro">    contador++;</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap2-whilequad1" src="img/pdfCap2-WhileQuad1.png"> 
+</div> 
+<figcaption> Figura 2.29 - Desenho de quadrados usando repetições.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Vamos analisar com mais detalhes alguns pontos desse código:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.40 - <button class="btnn" onclick="copyDivToClipboard('codcap2-538')">Copiar código</button></h1></header> 
+ <section id="codcap2-538"> <span class="myCodeBro"><span class="v">float </span>x = 0, y = 0, lado = 0;</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>As variáveis de posicionamento e tamanho do quadrado são criadas e inicializadas. A estratégia é fazer o quadrado começar com um tamanho de lado desprezível e aumentá-lo gradativamente.</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.41 - <button class="btnn" onclick="copyDivToClipboard('codcap2-819')">Copiar código</button></h1></header> 
+ <section id="codcap2-819"> <span class="myCodeBro"><span class="v">int </span>contador = 0;</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Neste ponto é definida a variável que irá armazenar quantas vezes a repetição foi executada. É ela quem faz o controle do <i>loop</i> e provocará uma condição de parada<a id="repeticoes%condicaodeparada"></a> da estrutura de repetição que, caso contrário, continuaria para sempre.</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.42 - <button class="btnn" onclick="copyDivToClipboard('codcap2-430')">Copiar código</button></h1></header> 
+ <section id="codcap2-430"> <span class="myCodeBro"><span class="f">while</span>(contador &lt; 50)</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Aqui é declarado o início de uma repetição e sua condição de parada. Note que o código interno (dentro das chaves do <a class="codef">while</a>) será executado enquanto a condição <a class="codef">(contador < 50)</a> for verdadeira.</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.43 - <button class="btnn" onclick="copyDivToClipboard('codcap2-728')">Copiar código</button></h1></header> 
+ <section id="codcap2-728"> <span class="myCodeBro">lado = lado + 5;</span> <br> 
+ <span class="myCodeBro">x = <span class="s">width</span>/2 - lado/2;</span> <br> 
+ <span class="myCodeBro">y = <span class="s">height</span>/2 - lado/2;</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>A primeira tarefa que é feita dentro do <i>loop</i> é aumentar o tamanho do lado do quadrado. Assim, cada vez que uma iteração da repetição for executada, o quadrado se torna maior criando um padrão formado por figuras concêntricas. Logo em seguida são calculadas as novas posições x e y que serão passadas para a função <a class="codef">rect()</a>. É necessário atualizar essas posições uma vez que essa função usa o canto superior esquerdo para desenhar a figura. A centralização é feita com base no centro da janela de exibição, ponto (<a class="codef">width/2</a>, <a class="codef">height/2</a>), subtraída da metade do lado do quadrado. Essa é a mesma filosofia aplicada na seção <a class="linkref" href="capitulo1.html#seccap1-processingjanela">1.5</a>. É de suma importância que essas atualizações sejam feitas dentro da estrutura de repetição para que o quadrado cresça a cada iteração.</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.44 - <button class="btnn" onclick="copyDivToClipboard('codcap2-737')">Copiar código</button></h1></header> 
+ <section id="codcap2-737"> <span class="myCodeBro"><span class="y">rect</span>(x,y,lado,lado);</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Uma vez que as coordenadas foram atualizadas, a figura é desenhada.</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.45 - <button class="btnn" onclick="copyDivToClipboard('codcap2-312')">Copiar código</button></h1></header> 
+ <section id="codcap2-312"> <span class="myCodeBro">contador++;</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Nesta linha a variável contador é incrementada em um. Isso significa que após a primeira repetição o valor de contador será 1, após a segunda ele será 2 e assim sucessivamente até atingir 50. Quando isso acontecer, o condicional da estrutura de repetição se tornará falso e o código interno ao <a class="codef">while</a> deixará de ser executado.</p>
+<p>Veja o poder incrível dessa nova ferramenta. Em vez de escrever mais de 70 linhas de código, você conseguiu reduzir para 22. E se você quisesse agora mais ou menos quadrados? Seria necessário alterar apenas a condição da repetição de <a class="codef">(contador < 50)</a> para outra como <a class="codef">(contador < 5000)</a>, sem adicionar nenhuma linha de código a mais. A grande vantagem dessa estrutura é que você pode focar na construção de apenas um elemento e depois repeti-lo para formar um padrão complexo. Na figura <a class="linkref" href="capitulo2.html#figcap2-whilequad2">2.30</a> foi criada uma única linha e depois repetida ao longo da janela de exibição.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap2-whilequad2" src="img/pdfCap2-WhileQuad2B.png"> 
+</div> 
+<figcaption> Figura 2.30 - Múltiplas repetições da curva em vermelho.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p><span class="secsub">2.5.1 Repetições - <i>for</i></span> <a id="seccap2-repetfor" class="labup"></a></p>
+<p>A estrutura <a class="codef">while</a> é conveniente quando você está aprendendo repetições, necessita de mais flexibilidade ou quando opta por conjunções mais elaboradas. Ela é acometida pelo inconvenientes da necessidade de declarar variáveis controle fora do <i>loop</i> e manualmente incrementá-las. Uma estrutura correspondente, compacta<a id="repeticoes%estruturacompacta"></a> e mais popular é a <a class="codef">for</a> <a id="for%repeticoesestruturacompacta"></a>. Veja sua forma abaixo:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.46 - <button class="btnn" onclick="copyDivToClipboard('codcap2-569')">Copiar código</button></h1></header> 
+ <section id="codcap2-569"> <span class="myCodeBro"><span class="f">for</span>(variavel; condicao; incremento) {</span> <br> 
+ <span class="myCodeBro"><span class="m">  // Código a ser repetido.</span></span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Esta estrutura possuí em uma única linha, respectivamente, a declaração e inicialização da variável de controle, a condição de parada da repetição e o incremento a cada iteração. A seguir é mostrada uma comparação entre essas duas formas de repetição:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.47 - <button class="btnn" onclick="copyDivToClipboard('codcap2-724')">Copiar código</button></h1></header> 
+ <section id="codcap2-724"> <span class="myCodeBro"><span class="v">int </span>contador = 0;</span> <br> 
+ <span class="myCodeBro"><span class="f">while</span>(contador &lt; 50) {</span> <br> 
+ <span class="myCodeBro"><span class="m">  // Código a ser repetido.</span></span> <br> 
+ <span class="myCodeBro">  contador++;</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>O <a class="codef">for</a> equivalente é dado por:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.48 - <button class="btnn" onclick="copyDivToClipboard('codcap2-466')">Copiar código</button></h1></header> 
+ <section id="codcap2-466"> <span class="myCodeBro"><span class="f">for</span>(<span class="v">int </span>contador = 0; contador &lt; 50; contador++) {</span> <br> 
+ <span class="myCodeBro"><span class="m">  // Código a ser repetido.</span></span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>A grande vantagem dessa notação é que você pode se dedicar diretamente ao código a ser repetido e não precisa alterar a variável de controle (<a class="codef">contador</a>) manualmente em cada iteração. Neste livro é dado foco a estrutura <a class="codef">for</a> justamente por esses fatores.</p>
+<p><span class="secsub">2.5.2 Múltiplas repetições</span> <a id="seccap2-repetnested" class="labup"></a></p>
+<p>As estruturas de repetição são ideais para economizar linhas de códigos ou transcorrer um grande volume de dados, mas na arte computacional elas também são usadas para criar ilusões e padrões. Para exemplificar esse conceito vamos criar um padrão de Truchet<a id="padroesdeTruchet"></a>, cuja base é formada pelo revestimento quadriculado de um espaço. Imagine a janela de saída como uma tela dividida em blocos e considere, a princípio, apenas uma linha dessa janela, ilustrada na figura <a class="linkref" href="capitulo2.html#figcap2-nestedline">2.31</a>.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap2-nestedline" src="img/pdfCap2-NestedLine.png"> 
+</div> 
+<figcaption> Figura 2.31 - Janela de saída como uma fileira de blocos.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>A quantidade de blocos necessários para preencher toda a janela horizontalmente pode ser calculado utilizando a informação do tamanho dela e do bloco, que é arbitrariamente definido:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.49 - <button class="btnn" onclick="copyDivToClipboard('codcap2-771')">Copiar código</button></h1></header> 
+ <section id="codcap2-771"> <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">size</span>(600,200);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Tamanho do bloco, em pixels, da divisão da janela de saída:</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>lado = 50;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Número de blocos necessários para preencher a janela horizontalmente:</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>numBlocosHoriz = <span class="s">width</span>/lado;</span> <br> 
+ <br> 
+ <span class="myCodeBro">  <span class="y">println</span>(numBlocosHoriz);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Dependendo do tamanho do bloco que você escolher, como por exemplo 70 pixels, os cálculos acima podem indicar que você precisa de um número fracionário de figuras (8.57 blocos) para preencher a tela. Isso não é um impeditivo, mas pode deixar o padrão irregular, com aparência de cortado. Essa situação é evitada se você escolher um tamanho de bloco que seja um divisor de resto zero do comprimento e altura da janela de saída. Agora que você possui o número e tamanho dos blocos é preciso descobrir como desenhá-los lado a lado, de maneira sequencial. Esta será uma operação padronizada com diversos elementos, sendo uma boa candidata para se utilizar de repetições. Considere como os blocos se ajustam um ao lado do outro, figura <a class="linkref" href="capitulo2.html#figcap2-nestedlinecalc">2.32</a>.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap2-nestedlinecalc" src="img/pdfCap2-NestedLineCalc.png"> 
+</div> 
+<figcaption> Figura 2.32 - Coordenadas dos blocos que dividem a tela.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Os blocos serão desenhados pela função nativa do Processing, <a class="codef">rect()</a>, com o intuito de simplificar o código. É preciso lembrar que essa função recebe a posição do canto superior esquerdo de cada retângulo na sequência, assim como seu tamanho. Pela figura <a class="linkref" href="capitulo2.html#figcap2-nestedlinecalc">2.32</a> você pode perceber que a posição do primeiro bloco é a origem, ou seja zero. A do segundo é igual a posição horizontal do primeiro, somada do lado do primeiro bloco, <a class="codef">lado</a>. A do terceiro é igual a posição inicial do segundo somado de <a class="codef">lado</a>, totalizando <a class="codef">2*lado</a> a partir do ponto inicial. Se você continuar com esse raciocínio para obter a posição de todos os outros blocos perceberá que cada posição horizontal será igual ao número do bloco atual subtraído de um<sup><a class="linkref" id="fnote-6" href="#footnote-6" title="Rodapé.">[6]</a></sup>, que multiplica o tamanho do lado do bloco, variável <a class="codef">lado</a>. Sendo assim, poderia escrever o código abaixo para desenhar uma linha de quadrados:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.50 - <button class="btnn" onclick="copyDivToClipboard('codcap2-946')">Copiar código</button></h1></header> 
+ <section id="codcap2-946"> <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">size</span>(600,200);</span> <br> 
+ <span class="myCodeBro">  <span class="y">background</span>(255);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Tamanho do bloco da divisão da janela de saída - Em pixels:</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>lado = 20;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Calcula o número de blocos na horizontal:</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>numBlocosH = <span class="s">width</span>/lado;</span> <br> 
+ <br> 
+ <span class="myCodeBro">  <span class="f">for</span>(<span class="v">int </span>i = 0; i &lt; numBlocosH; i++) {</span> <br> 
+ <span class="myCodeBro">    <span class="y">rect</span>(i*lado,<span class="s">height</span>/2 - lado/2,lado,lado);</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Neste exemplo, a posição vertical dos blocos é uma constante apenas para centralizá-los na janela de exibição e permitir uma visualização clara do que está ocorrendo. Quanto à estrutura <a class="codef">for</a>, veja que a parametrização da posição horizontal dos blocos foi feita pela variável <a class="codef">i</a>, contida no intervalo de zero até o número total de blocos para preencher a tela. Você pode ter estranhado o uso da variável <a class="codef">i</a>, sem um significado concreto, como índice da repetição, mas isso é uma prática habitual para compactação do código. A variável <a class="codef">i</a> é apenas um contador e seu nome é insignificante no escopo do programa. Execute o código e veja como é gerada uma linha de blocos que preenche toda extensão horizontal da tela.</p>
+<p>Você pode utilizar uma abordagem similar para preencher toda extensão vertical da tela. A única diferença é que desta vez a posição vertical de cada um dos blocos é atualizada em vez de permanecer uma constante. Os padrões de Truchet são ainda mais elaborados, formados pela divisão total da tela em blocos. Esta é uma tarefa repetitiva na qual se preenche completamente uma linha horizontal, em seguida toma-se um passo na vertical e novamente preenche-se uma linha na horizontal. Esse ritmo é mantido até que se termine de estampar a tela em sua totalidade, veja a figura <a class="linkref" href="capitulo2.html#figcap2-nestedwindow">2.33</a>.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap2-nestedwindow" src="img/pdfCap2-NestedWindow.png"> 
+</div> 
+<figcaption> Figura 2.33 - Preenchimento horizontal e vertical da janela.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>O preenchimento sequencial em linhas e colunas requer um tipo especial de <i>loop</i>, em que uma estrutura de repetição está contida dentro de outra. Essa estratégia é chamada de aninhamento de repetições<a id="repeticoes%aninhamentode"></a>, ou <i>nested loops</i>, e é evidenciada no código abaixo:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.51 - Janela quadriculada - <button class="btnn" onclick="copyDivToClipboard('codcap2-janelquad')">Copiar código</button></h1></header> 
+ <section id="codcap2-janelquad"> <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">size</span>(600,180);</span> <br> 
+ <span class="myCodeBro">  <span class="y">background</span>(255);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Tamanho do bloco da divisão da janela de saída - Em pixels:</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>lado = 20;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Calcula o número de blocos na horizontal:</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>numBlocosH = <span class="s">width</span>/lado;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Calcula o número de blocos na vertical:</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>numBlocosV = <span class="s">height</span>/lado;</span> <br> 
+ <br> 
+ <span class="myCodeBro">  <span class="f">for</span>(<span class="v">int </span>i = 0; i &lt; numBlocosH; i++) {</span> <br> 
+ <span class="myCodeBro">    <span class="f">for</span>(<span class="v">int </span>j = 0; j &lt; numBlocosV; j++) {</span> <br> 
+ <span class="myCodeBro">      <span class="y">rect</span>(i*lado,j*lado,lado,lado);</span> <br> 
+ <span class="myCodeBro">    }</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Em estruturas aninhadas, as repetições internas serão reiniciadas sempre que houver um passo na repetição externa. Por exemplo, no código <a class="linkref" href="capitulo2.html#codcap2-janelquad">2.51</a>, o <a class="codef">for</a> mais interno desenhará uma quantidade de retângulos igual ao valor da variável <a class="codef">numBlocosV</a>. Neste momento será dado um "passo" na estrutura do <a class="codef">for</a> externo, alterando <a class="codef">i</a> de zero para um e causando a repetição das linhas internas dele, novamente a estrutura <a class="codef">for</a> de índice <a class="codef">j</a>. O ciclo termina quando <a class="codef">i</a> atingir <a class="codef">numBlocosH</a> e <a class="codef">j</a> atingir <a class="codef">numBlocosV</a>, o que terá feito com que o Processing desenhasse um número de retângulos igual a multiplicação<sup><a class="linkref" id="fnote-7" href="#footnote-7" title="Rodapé.">[7]</a></sup> dos limites das repetições, um total de (<a class="codef">numBlocosH*numBlocosV</a>).</p>
+<p>Finalizado o preenchimento completo da tela com quadrados, você deve estar se perguntando o <i>porquê</i> de tudo isso. Realmente, até agora não há nada de interessante do ponto de vista artístico, mas a divisão da tela é importante em uma série de padrões visuais. Por exemplo, e se em vez de desenhar um bloco, você desenhasse apenas uma das diagonais dele? Você pode implementar isso substituindo a função <a class="codef">rect()</a> pela função <a class="codef">line()</a>. Após alterar o código sua janela será dividida igual a figura <a class="linkref" href="capitulo2.html#figcap2-nestedlines">2.34</a>.</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.52 - Preenchimento da tela com diagonais - <button class="btnn" onclick="copyDivToClipboard('codcap2-nestedlines')">Copiar código</button></h1></header> 
+ <section id="codcap2-nestedlines"> <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">size</span>(600,180);</span> <br> 
+ <span class="myCodeBro">  <span class="y">background</span>(255);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Tamanho do bloco da divisão da janela de saída - Em pixels:</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>lado = 30;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Calcula o número de blocos na horizontal:</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>numBlocosH = <span class="s">width</span>/lado;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Calcula o número de blocos na vertical:</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>numBlocosV = <span class="s">height</span>/lado;</span> <br> 
+ <br> 
+ <span class="myCodeBro">  <span class="f">for</span>(<span class="v">int </span>i = 0; i &lt; numBlocosH; i++) {</span> <br> 
+ <span class="myCodeBro">    <span class="f">for</span>(<span class="v">int </span>j = 0; j &lt; numBlocosV; j++) {</span> <br> 
+ <span class="myCodeBro">      <span class="y">line</span>(i*lado,j*lado,i*lado + lado,j*lado + lado);</span> <br> 
+ <span class="myCodeBro">    }</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap2-nestedlines" src="img/pdfCap2-NestedLines.png"> 
+</div> 
+<figcaption> Figura 2.34 - Padrões de linhas em vez de blocos.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>É possível ainda adicionar condicionais para criar padrões visuais variados. Você pode alternar entre desenhar uma ou outra diagonal de cada bloco dependendo se os contadores das repetições forem pares ou ímpares. Substitua a linha:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.53 - <button class="btnn" onclick="copyDivToClipboard('codcap2-428')">Copiar código</button></h1></header> 
+ <section id="codcap2-428"> <span class="myCodeBro"><span class="y">line</span>(i*lado,j*lado,i*lado + lado,j*lado + lado);</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>por este condicional:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.54 - <button class="btnn" onclick="copyDivToClipboard('codcap2-209')">Copiar código</button></h1></header> 
+ <section id="codcap2-209"> <span class="myCodeBro"><span class="f">if</span>(i%2 == 0) { //Se i é par, desenha uma diagonal:</span> <br> 
+ <span class="myCodeBro">  <span class="y">line</span>(i*lado,j*lado,i*lado + lado,j*lado + lado);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <span class="myCodeBro"><span class="f">else</span> { //Se i é ímpar, desenha a outra diagonal:</span> <br> 
+ <span class="myCodeBro">  <span class="y">line</span>(i*lado + lado,j*lado,i*lado,j*lado + lado);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>e você terá imagens como a figura <a class="linkref" href="capitulo2.html#figcap2-nestedlines2">2.35</a>. No código acima o operador módulo (%) foi empregado pois ele retorna o resto da divisão de um número pelo seu dividendo. O resto de qualquer número par dividido por dois será zero e de qualquer número ímpar será um. Sendo assim, este operador permite identificar as duas classes de números (par ou ímpar) que podem ser usadas no condicional para alternar o padrão de desenho.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap2-nestedlines2" src="img/pdfCap2-NestedLines2.png"> 
+</div> 
+<figcaption> Figura 2.35 - Padrões de linhas alternadas.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Experimente trocar os testes do condicional e verá que muitos outros padrões surgem das disposições variadas das diagonais. Altere a condição:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.55 - <button class="btnn" onclick="copyDivToClipboard('codcap2-841')">Copiar código</button></h1></header> 
+ <section id="codcap2-841"> <span class="myCodeBro"><span class="f">if</span>(i%2 == 0)</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>por outras do tipo:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.56 - <button class="btnn" onclick="copyDivToClipboard('codcap2-881')">Copiar código</button></h1></header> 
+ <section id="codcap2-881"> <span class="myCodeBro"><span class="f">if</span>(i*j%2 == 0) <span class="m">// ou</span></span> <br> 
+ <span class="myCodeBro"><span class="f">if</span>(i*j%3 == 0) <span class="m">// ou</span></span> <br> 
+ <span class="myCodeBro"><span class="f">if</span>((i+j)%3 == 0) <span class="m">// ou</span></span> <br> 
+ <span class="myCodeBro"><span class="f">if</span>(((i%2)+(j%3))%2 == 0)</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>e obterá resultados como os da figura <a class="linkref" href="capitulo2.html#figcap2-nestedlines3">2.36</a>.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-3"> 
+ <div class="pop imgMax3"> 
+<img class="img-fluid imgborder" id="pdfcap2-nestedlines3" src="img/pdfCap2-NestedLines3.png"> 
+</div> 
+<figcaption> Figura 2.37 - <a class="codef">i*j%2</a></figcaption> 
+ </div> 
+ <div class="col-md-3"> 
+ <div class="pop imgMax3"> 
+<img class="img-fluid imgborder" id="pdfcap2-nestedlines4" src="img/pdfCap2-NestedLines4.png"> 
+</div> 
+<figcaption> Figura 2.38 - <a class="codef">i*j%3</a></figcaption> 
+ </div> 
+ <div class="col-md-3"> 
+ <div class="pop imgMax3"> 
+<img class="img-fluid imgborder" id="pdfcap2-nestedlines5" src="img/pdfCap2-NestedLines5.png"> 
+</div> 
+<figcaption> Figura 2.39 - <a class="codef">(i+j)%3</a></figcaption> 
+ </div> 
+ <div class="col-md-3"> 
+ <div class="pop imgMax3"> 
+<img class="img-fluid imgborder" id="pdfcap2-nestedlines6" src="img/pdfCap2-NestedLines6.png"> 
+</div> 
+<figcaption> Figura 2.40 - <a class="codef">((i%2)+(j%3))%2</a></figcaption> 
+ </div> 
+ <div id="figcap2-nestedlines3" class="col-md-12 text-center"> 
+ Figura - 2.36 - Padrões variados formados pelas diagonais dos blocos. </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Esse gênero de padrões foi inspirado no trabalho do frade dominicano Sébastien Truchet<a id="TruchetSebastien"></a>, que desenvolveu um método<sup><a class="linkref" id="fnote-8" href="#footnote-8" title="Rodapé.">[8]</a></sup> capaz de ordenar gravuras simples em disposições complexas. Os chamados padrões de Truchet costumam ser usados em uma série de aplicações estéticas e, em sua forma primordial, são o resultado de uma análise combinatória de quatro matrizes compostas por um triângulo retângulo inscrito em um quadrado, figura <a class="linkref" href="capitulo2.html#figcap2-truchettiles">2.41</a>.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-3"> 
+ <div class="pop imgMax3"> 
+<img class="img-fluid imgborder" id="pdfcap2-truchetta" src="img/pdfCap2-TruchetTA.png"> 
+</div> 
+<figcaption> Figura 2.42</figcaption> 
+ </div> 
+ <div class="col-md-3"> 
+ <div class="pop imgMax3"> 
+<img class="img-fluid imgborder" id="pdfcap2-truchettb" src="img/pdfCap2-TruchetTB.png"> 
+</div> 
+<figcaption> Figura 2.43</figcaption> 
+ </div> 
+ <div class="col-md-3"> 
+ <div class="pop imgMax3"> 
+<img class="img-fluid imgborder" id="pdfcap2-truchettc" src="img/pdfCap2-TruchetTC.png"> 
+</div> 
+<figcaption> Figura 2.44</figcaption> 
+ </div> 
+ <div class="col-md-3"> 
+ <div class="pop imgMax3"> 
+<img class="img-fluid imgborder" id="pdfcap2-truchettd" src="img/pdfCap2-TruchetTD.png"> 
+</div> 
+<figcaption> Figura 2.45</figcaption> 
+ </div> 
+ <div id="figcap2-truchettiles" class="col-md-12 text-center"> 
+ Figura - 2.41 - Matrizes de Truchet. </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Dispostos sequencialmente, lado a lado, elas assumem uma forma unitária, sintetizando imagens como a figura <a class="linkref" href="capitulo2.html#figcap2-truchet1">2.46</a>.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap2-truchet1" src="img/pdfCap2-Truchet1.png"> 
+</div> 
+<figcaption> Figura 2.46 - Padrões formados por triângulos.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Para criar esse efeito em seu código, localize as linhas que desenham as diagonais em <a class="linkref" href="capitulo2.html#codcap2-nestedlines">2.52</a>:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.57 - <button class="btnn" onclick="copyDivToClipboard('codcap2-129')">Copiar código</button></h1></header> 
+ <section id="codcap2-129"> <span class="myCodeBro"><span class="y">line</span>(i*lado,j*lado,i*lado + lado,j*lado + lado);</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>e altere por estas, que desenham triângulos:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.58 - <button class="btnn" onclick="copyDivToClipboard('codcap2-527')">Copiar código</button></h1></header> 
+ <section id="codcap2-527"> <span class="myCodeBro"><span class="y">fill</span>(0);</span> <br> 
+ <span class="myCodeBro"><span class="f">if</span>(i%2 == 0 &amp;&amp; j%2 == 0) {</span> <br> 
+ <span class="myCodeBro">  <span class="y">triangle</span>(i*lado,j*lado,i*lado + lado,j*lado,i*lado + lado,j*lado + lado);</span> <br> 
+ <span class="myCodeBro"><span class="f">if</span>(i%2 != 0 &amp;&amp; j%2 == 0) {</span> <br> 
+ <span class="myCodeBro">  <span class="y">triangle</span>(i*lado,j*lado,i*lado,j*lado + lado,i*lado + lado,j*lado + lado);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <span class="myCodeBro"><span class="f">if</span>(i%2 == 0 &amp;&amp; j%2 != 0) {</span> <br> 
+ <span class="myCodeBro">  <span class="y">triangle</span>(i*lado + lado,j*lado,i*lado + lado,j*lado + lado,i*lado, j*lado + lado);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <span class="myCodeBro"><span class="f">if</span>(i%2 != 0 &amp;&amp; j%2 != 0) {</span> <br> 
+ <span class="myCodeBro">  <span class="y">triangle</span>(i*lado + lado,j*lado,i*lado,j*lado,i*lado,j*lado + lado);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Usando esse mesmo código é possível criar dezenas de padrões apenas modificando os condicionais, veja a figura <a class="linkref" href="capitulo2.html#figcap2-truchet2">2.47</a>. Ao longo dos anos o método de Truchet vem sendo usado como guia para experimentação com regras similares, usualmente formadas por matrizes na qual uma figura não radialmente simétrica é inscrita em quadrados, triângulos ou hexágonos, veja <a class="linkref" href="capitulo2.html#figcap2-truchet3">2.48</a>.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-3"> 
+ <div class="pop imgMax3"> 
+<img class="img-fluid imgborder" id="pdfcap2-truchet2" src="img/pdfCap2-Truchet2.png"> 
+</div> 
+<figcaption> Figura 2.49</figcaption> 
+ </div> 
+ <div class="col-md-3"> 
+ <div class="pop imgMax3"> 
+<img class="img-fluid imgborder" id="pdfcap2-truchet3" src="img/pdfCap2-Truchet3.png"> 
+</div> 
+<figcaption> Figura 2.50</figcaption> 
+ </div> 
+ <div class="col-md-3"> 
+ <div class="pop imgMax3"> 
+<img class="img-fluid imgborder" id="pdfcap2-truchet4" src="img/pdfCap2-Truchet4.png"> 
+</div> 
+<figcaption> Figura 2.51</figcaption> 
+ </div> 
+ <div class="col-md-3"> 
+ <div class="pop imgMax3"> 
+<img class="img-fluid imgborder" id="pdfcap2-truchet5" src="img/pdfCap2-Truchet5.png"> 
+</div> 
+<figcaption> Figura 2.52</figcaption> 
+ </div> 
+ <div id="figcap2-truchet2" class="col-md-12 text-center"> 
+ Figura - 2.47 - Padrões de Truchet. </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-4"> 
+ <div class="pop imgMax4"> 
+<img class="img-fluid imgborder" id="pdfcap2-truchetex2" src="img/pdfCap2-TruchetEx2.png"> 
+</div> 
+<figcaption> Figura 2.53</figcaption> 
+ </div> 
+ <div class="col-md-4"> 
+ <div class="pop imgMax4"> 
+<img class="img-fluid imgborder" id="pdfcap2-truchetex1" src="img/pdfCap2-TruchetEx1.png"> 
+</div> 
+<figcaption> Figura 2.54</figcaption> 
+ </div> 
+ <div class="col-md-4"> 
+ <div class="pop imgMax4"> 
+<img class="img-fluid imgborder" id="pdfcap2-truchetex6" src="img/pdfCap2-TruchetEx6.png"> 
+</div> 
+<figcaption> Figura 2.55</figcaption> 
+ </div> 
+ <div id="figcap2-truchet3" class="col-md-12 text-center"> 
+ Figura - 2.48 - Padrões de Truchet. </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-4"> 
+ <div class="pop imgMax4"> 
+<img class="img-fluid imgborder" id="pdfcap2-truchetex3" src="img/pdfCap2-TruchetEx3.png"> 
+</div> 
+<figcaption> Figura 2.56</figcaption> 
+ </div> 
+ <div class="col-md-4"> 
+ <div class="pop imgMax4"> 
+<img class="img-fluid imgborder" id="pdfcap2-truchetex4" src="img/pdfCap2-TruchetEx4.png"> 
+</div> 
+<figcaption> Figura 2.57</figcaption> 
+ </div> 
+ <div class="col-md-4"> 
+ <div class="pop imgMax4"> 
+<img class="img-fluid imgborder" id="pdfcap2-truchetex5" src="img/pdfCap2-TruchetEx5.png"> 
+</div> 
+<figcaption> Figura 2.58</figcaption> 
+ </div> 
+ <div id="figcap2-truchet4" class="col-md-12 text-center"> 
+ Figura - 2.59 - Padrões de Truchet. </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap2-truchethexag" src="img/pdfCap2-TruchetHexag.png"> 
+</div> 
+<figcaption> Figura 2.60 - Padrões de Truchet em uma grade hexagonal.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p><span class="sec">2.6 Tópicos avançados - classes e objetos</span> <a id="seccap2-class" class="labup"></a></p>
+<p>A seção final deste capítulo é dedicada à apresentação de um tópico extremamente popular na programação moderna, a Programação Orientada a Objetos (do inglês, <i>Object Oriented Programming</i> ou OOP). Na terceira parte deste livro existe um capítulo destinado exclusivamente ao uso deste tipo de abordagem, com um exemplo construído passo a passo. Se desejar, você pode postergar esta seção até lá, mas eu aconselho fortemente que você a siga e comece a se familiarizar com esta incrível metodologia de pensamento.</p>
+<p>A Programação Orientada a Objetos<a id="programacaoorientadaaobjetos"></a> é uma maneira de conduzir o design de softwares. Ela visa agrupar dados e código em uma abstração única, cujo objetivo é modelar um evento, um objeto ou ser, em fim, um elemento que faça parte do seu dia a dia. Muito mais do que uma série de regras, a OOP é uma abstração de conceitos e uma maneira diferente de abordar problemas, escrever códigos e conceber programas. No ponto central da OOP reside a classe<a id="classe"></a> <a id="programacaoorientadaaobjetos%classe%classe"></a>. Você pode imaginar uma classe como sendo uma estrutura de dados altamente customizável que contém suas próprias variáveis e funções, também chamadas, respectivamente, de atributos e métodos. Isso facilita o seu entendimento uma vez que você estudou esses dois tópicos separadamente.</p>
+<p>Você deve estar se perguntando o porquê das classes serem tão revolucionárias, então vamos para um cenário concreto. Suponha que você precisasse desenvolver um programa para modelar um animal de estimação, um cachorro por exemplo, qual tipo de variável usaria? Um cão seria uma <a class="codef">String</a>, identificado pelo seu nome? Ou um <a class="codef">int</a> que guardaria um registro no sistema? E se em um segundo momento você também quisesse que esse cão realizasse ações, como correr? Seus comportamentos seriam descritos por uma série de instruções e não variáveis. Onde você iria declarar a função <a class="codef">correr()</a>, no corpo do programa? De fato isto não é o ideal, pois você estaria misturando dados relativos ao objeto (cachorro) com a execução do programa principal que pode ser composto por muitos outros objetos e funções. As classes surgem para sistematizar, e de certa forma padronizar, essas questões levantadas.</p>
+<p>Uma cão possui uma lista de características além do nome ou registro, como altura, peso, cor dos olhos e raça dentre outros, que formam os seus atributos. Ele também pode realizar uma série de ações próprias como correr, latir ou brincar, que seriam seus métodos. A classe é altamente versátil, pois ela permite agrupar essas variáveis e funções em uma única estrutura de dados. Um ponto importante é que a classe<a id="classe%vsobjeto"></a> é uma espécie de "molde" geral, por exemplo, o animal cachorro, enquanto um membro específico da classe é chamado de objeto<a id="programacaoorientadaaobjetos%objeto"></a> (ou instância da classe). Uma cachorrinha chamada Mia, com 14cm de altura, 5kg de peso, cor de olhos preto e raça Pinscher seria uma instância da classe geral cachorro. A comparação é mostrada na figura <a class="linkref" href="capitulo2.html#figcap2-classdog">2.61</a>.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap2-classdog" src="img/figCap2-ClassDogoo.png"> 
+</div> 
+<figcaption> Figura 2.61 - Classe Cachorro e Instâncias Mia e Duke<sup>a</sup>.<br><span class="imgsubcaption"><sup>a</sup>  Todos os direitos reservados pelo fotógrafo Rafael Girundi.</span></figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>No Processing, uma classe<a id="classe%estruturabasica"></a> é definida da seguinte maneira:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.59 - Estrutura padrão de uma classe - <button class="btnn" onclick="copyDivToClipboard('codcap2-classestrut')">Copiar código</button></h1></header> 
+ <section id="codcap2-classestrut"> <span class="myCodeBro"><span class="j">class</span> NomeDaClasse {</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Variáveis ou atributos da classe.</span></span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Construtor</span></span> <br> 
+ <br> 
+ <span class="myCodeBro">  NomeDaClasse(parametrosDoConstrutor) {</span> <br> 
+ <span class="myCodeBro"><span class="m">    // Código do construtor.</span></span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Funções ou métodos da classe.</span></span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Observe que a classe é uma estrutura complexa no sentido que é composta por variáveis e funções. Em um programa do Processing, antes mesmo de declarar um objeto de uma classe, é necessário que a mesma esteja programada, que é basicamente um bloco como o do código <a class="linkref" href="capitulo2.html#codcap2-classestrut">2.59</a>. Mais detalhadamente, as classes possuem<a id="classe%componentesdeuma"></a> os seguintes pontos importantes:</p>
+</div>
+</div>
+<ul>
+  <li> <b>Declaração</b>: Uma classe é precedida pela palavra <a class="codef">class</a> <a id="class%palavra-chave"></a>, e seu nome segue as mesmas restrições da nomenclatura de variáveis e funções. Devem ser declaradas sempre fora do <a class="codef">setup()</a>, <a class="codef">draw()</a> ou qualquer outra função. Uma boa prática é declará-las com a primeira letra maiúscula. As chaves que seguem após o nome delimitam todo o código referente à classe. </li>
+  <li> <b>Construtores</b>: São funções executadas quando é feita a instanciação do objeto da classe. Eles podem ser entendidos como uma função que é chamada sempre que você cria um novo objeto da classe. O propósito do construtor é servir como uma interface para passar informações pertinentes ou essenciais para a existência de uma instância. Sua restrição é que construtores devem ter exatamente o mesmo nome da classe e não possuir nenhum tipo de retorno (nem mesmo <a class="codef">void</a>). </li>
+  <li> <b>Instanciação</b>: A instanciação de um objeto da classe é feita de maneira muito semelhante à declaração e inicialização de uma nova variável, contudo é precedida pela palavra <a class="codef">new</a> seguida do nome da classe e dos argumentos do construtor, tal como: 
+   <div class="mymodal">  
+     <section id="codcap2-9997"> 
+     <span class="myCodeBro">NomeDaClasse nomeDaInstancia = <span class="j">new</span> NomeDaClasse(argumentosDoConstrutor);</span> <br> 
+     </section> </div> </li>
+  <li> <b>Variáveis</b>: São chamadas de atributos de uma classe e podem ser qualquer tipo de variável estudada até o momento, inclusive outras classes, sendo sujeitas as mesmas regras de nomenclatura e declaração. Essas variáveis são internas às classes e não é possível usá-las em um programa sem referenciar explicitamente o objeto ou classe de origem. Para acessar os atributos de um objeto no programa principal utiliza-se da chamada sintaxe por ponto<a id="sintaxeporponto"></a>: 
+   <div class="mymodal">  
+     <section id="codcap2-9998"> 
+     <span class="myCodeBro">nomeDaInstancia.nomeDoAtributo;</span> <br> 
+     </section> </div> </li>
+  <li> <b>Funções</b>: Ou métodos de uma classe também seguem as mesmas regras das funções especificadas na seção <a class="linkref" href="capitulo2.html#seccap2-func">2.3</a>. Assim como os atributos, elas são internas a classe e suas invocações também exigem a sintaxe por ponto: 
+   <div class="mymodal">
+   <section id="codcap2-9999"> 
+     <span class="myCodeBro">nomeDaInstancia.nomeDaFuncao(argumentosDaFuncao);</span> <br> 
+     </section> </div> </li>
+  </ul>
+<div class="row">
+<div class="col-xl-12">
+<p>Confira no código abaixo como a classe genérica, citada anteriormente, modelaria a classe cachorro:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.60 - <button class="btnn" onclick="copyDivToClipboard('codcap2-654')">Copiar código</button></h1></header> 
+ <section id="codcap2-654"> <span class="myCodeBro"><span class="m">// Agrupa atributos e métodos comuns a todos os cachorros:</span></span> <br> 
+ <span class="myCodeBro"><span class="j">class</span> Cachorro {</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Atributos:</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">String </span>nome, raca;</span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>peso, altura;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Construtor:</span></span> <br> 
+ <span class="myCodeBro"><span class="m">  // Inicializa os atributos essenciais para a instanciação do objeto:</span></span> <br> 
+ <span class="myCodeBro">  Cachorro(<span class="v">String </span>_nome, <span class="v">String </span>_raca, <span class="v">float </span>_peso, <span class="v">float </span>_altura) {</span> <br> 
+ <span class="myCodeBro">    nome = _nome;</span> <br> 
+ <span class="myCodeBro">    raca = _raca;</span> <br> 
+ <span class="myCodeBro">    peso = _peso;</span> <br> 
+ <span class="myCodeBro">    altura = _altura;</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Métodos</span></span> <br> 
+ <span class="myCodeBro">  <span class="j">void</span> latir() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">println</span>(&quot;Au Au!&quot;);;</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">// Programa principal:</span></span> <br> 
+ <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Declara um objeto da classe cachorro:</span></span> <br> 
+ <span class="myCodeBro">  Cachorro cao1 = <span class="j">new</span> Cachorro(&quot;Mia&quot;, &quot;Pinscher&quot;, 3.2, 27);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Exibe atributos do objeto cao1:</span></span> <br> 
+ <span class="myCodeBro">  <span class="y">println</span>(&quot;Nome:&quot;, cao1.nome);</span> <br> 
+ <span class="myCodeBro">  <span class="y">println</span>(&quot;Raça:&quot;, cao1.raca);</span> <br> 
+ <span class="myCodeBro">  </span> <br> 
+ <span class="myCodeBro"><span class="m">  // Invoca um método do objeto cao1:</span></span> <br> 
+ <span class="myCodeBro">  cao1.latir();</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Isso concluí a parte <i>técnica</i> sobre classes. Os conceitos apresentados aqui permitem a principal aplicação das classes, exemplificada através de um estudo de caso na próxima seção.</p>
+<p><span class="secsub">2.6.1 Uma classe na prática</span> <a id="seccap2-classexample" class="labup"></a></p>
+<p>Professores de desenho costumam dizer que metade da habilidade de criar uma boa obra está na destreza da mão e a outra metade em uma mudança na forma de observar o mundo. Com a OOP é exatamente igual. Metade do necessário você acabou de aprender, relativo a como declarar uma classe, seus construtores, métodos e atributos. A outra metade consiste na mudança de como <i>enxergar</i> a separação e organização de seus programas. O entendimento dessa mudança de paradigma pode ser melhor ilustrado através de um exemplo. Considere o código abaixo que desenha círculos dispostos como a figura <a class="linkref" href="capitulo2.html#figcap2-classpattern">2.62</a>. Neste momento não estamos interessados na construção do padrão em si, o foco deve ser direcionado para a estrutura global da escrita do programa.</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.61 - <button class="btnn" onclick="copyDivToClipboard('codcap2-736')">Copiar código</button></h1></header> 
+ <section id="codcap2-736"> <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">size</span>(700,200);</span> <br> 
+ <span class="myCodeBro">  <span class="y">background</span>(255);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Desenho do padrão:</span></span> <br> 
+ <span class="myCodeBro">  <span class="f">for</span>(<span class="v">int </span>i = 0; i &lt; 31; i++) {</span> <br> 
+ <span class="myCodeBro">    <span class="f">for</span>(<span class="v">int </span>j = 0; j &lt; 10; j++) {</span> <br> 
+ <span class="myCodeBro">      <span class="v">color </span>corCirc = <span class="y">color</span>(180-50*(j-2),50*(j-3),j*25);</span> <br> 
+ <span class="myCodeBro">      <span class="y">fill</span>(corCirc);</span> <br> 
+ <span class="myCodeBro">      <span class="y">ellipse</span>(i*22.3+15,j*25+12.5*(i%2),25-<span class="y">abs</span>(i-15),25-<span class="y">abs</span>(i-15));</span> <br> 
+ <span class="myCodeBro">    }</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap2-classpattern" src="img/pdfCap2-ClassPattern.png"> 
+</div> 
+<figcaption> Figura 2.62 - Padrão formado por círculos.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Em relação as funcionalidades, não há nenhum mistério até agora visto que você conhece todos os comandos que formam esse programa; mas e em relação ao código? E se você quisesse saber qual a posição, o tamanho do raio ou até mesmo as cores do primeiro círculo desenhado, ou do círculo número 42, seria possível? Da maneira que o código acima foi escrito não é possível acessar nenhuma dessas informações simplesmente porque elas não foram armazenadas. Guardar essas informações implica em criar variáveis para conter os atributos dos círculos, tais como posição x, posição y, valor do raio e cor. Vamos reescrever o código e aproveitar para utilizar de vetores como a maneira de armazenar esses dados, reduzindo assim o tamanho final do texto. Além disso, optamos por criar uma função separada para exibir esses círculos coloridos de forma a organizar o código.</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.62 - Círculos - Programação Procedural - <button class="btnn" onclick="copyDivToClipboard('codcap2-classescircproced')">Copiar código</button></h1></header> 
+ <section id="codcap2-classescircproced"> <span class="myCodeBro"><span class="m">// Variáveis para armazenamento de dados dos círculos:</span></span> <br> 
+ <span class="myCodeBro"><span class="v">float</span>[] posX;</span> <br> 
+ <span class="myCodeBro"><span class="v">float</span>[] posY;</span> <br> 
+ <span class="myCodeBro"><span class="v">float</span>[] raio;</span> <br> 
+ <span class="myCodeBro"><span class="v">color</span>[] corC;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">size</span>(700, 200);</span> <br> 
+ <span class="myCodeBro">  <span class="y">background</span>(255);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Total de circulos: 31 (horiz) * 10 (vert):</span></span> <br> 
+ <span class="myCodeBro">  posX = <span class="j">new</span> <span class="v">float</span>[310];</span> <br> 
+ <span class="myCodeBro">  posY = <span class="j">new</span> <span class="v">float</span>[310];</span> <br> 
+ <span class="myCodeBro">  raio = <span class="j">new</span> <span class="v">float</span>[310];</span> <br> 
+ <span class="myCodeBro">  corC = <span class="j">new</span> <span class="v">color</span>[310];</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Índice identificador do número do círculo:</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">int </span>indice = 0;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Etapa de construção dos círculos:</span></span> <br> 
+ <span class="myCodeBro">  <span class="f">for</span> (<span class="v">int </span>i = 0; i &lt; 31; i++) {</span> <br> 
+ <span class="myCodeBro">    <span class="f">for</span> (<span class="v">int </span>j = 0; j &lt; 10; j++) {</span> <br> 
+ <span class="myCodeBro">      <span class="v">color </span>corCirc = <span class="y">color</span>(180 - 50 * (j - 2), 50 * (j - 3), j * 25);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">      // Guarda dados dos círculos para consultas posteriores:</span></span> <br> 
+ <span class="myCodeBro">      posX[indice] = i * 22.3 + 15;</span> <br> 
+ <span class="myCodeBro">      posY[indice] = j * 25 + 12.5 * (i % 2);</span> <br> 
+ <span class="myCodeBro">      raio[indice] = 25 - <span class="y">abs</span>(i - 15);</span> <br> 
+ <span class="myCodeBro">      corC[indice] = corCirc;</span> <br> 
+ <span class="myCodeBro">      indice++;</span> <br> 
+ <span class="myCodeBro">    }</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Etapa de exibição dos círculos:</span></span> <br> 
+ <span class="myCodeBro">  <span class="f">for</span> (<span class="v">int </span>i = 0; i &lt; indice - 1; i++) {</span> <br> 
+ <span class="myCodeBro">    exibirCirculo(i);</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <br> 
+ <span class="myCodeBro">  <span class="y">println</span>(&quot;Posição X,Y do círculo número 1:&quot;, posX[0], &quot;,&quot;, posY[0]);</span> <br> 
+ <span class="myCodeBro">  <span class="y">println</span>(&quot;Tamanho do raio do círculo número 42 &quot;, raio[41]);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="j">void</span> exibirCirculo(<span class="v">int </span>_c) {</span> <br> 
+ <span class="myCodeBro">  <span class="y">fill</span>(corC[_c]);</span> <br> 
+ <span class="myCodeBro">  <span class="y">ellipse</span>(posX[_c], posY[_c], raio[_c], raio[_c]);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Veja como foi necessário declarar variáveis adicionais e preenchê-las de maneira cuidadosa de modo que correspondessem especificamente a cada círculo. Se mais informações sobre esses círculos forem adicionadas (diâmetro, área, perímetro, exibição como um arco, etc.), serão necessárias cada vez mais variáveis e funções para obter esses dados. Isso gera inconvenientes, como o aumento do número de variáveis que não tem relação com o programa principal (e sim com os círculos), poluição do código principal com funções específicas dos círculos e atenção para preencher e consultar os dados com os índices corretos. Grande parte desses problemas podem ser contornados se abordarmos o programa com a mentalidade da OOP.</p>
+<p>Retorne ao código <a class="linkref" href="capitulo2.html#codcap2-classescircproced">2.62</a> e analise-o com calma. Você deve ter percebido que todos os círculos possuem variáveis comuns como posição do centro, valor de raio e cor, assim como uma função comum, a de exibição (todos eles são mostrados na tela). Portanto é possível considerar a forma "círculo" como uma estrutura de dados abstrata que agrupa as variáveis e funções comuns a todas essas figuras, sendo estas a base para a construção da classe <a class="codef">Circulo</a>. A representação individual de cada círculo será alcançada através da criação de uma instância (ou objeto) dessa classe. O código seguir demonstra a unificação das variáveis e funções comuns aos objetos na classe:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 2.63 - Círculos - OOP - <button class="btnn" onclick="copyDivToClipboard('codcap2-classescircoop')">Copiar código</button></h1></header> 
+ <section id="codcap2-classescircoop"> <span class="myCodeBro"><span class="m">// Declaração da classe:</span></span> <br> 
+ <span class="myCodeBro"><span class="j">class</span> Circulo {</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Atributos:</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>posX, posY;</span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>raio;</span> <br> 
+ <span class="myCodeBro">  <span class="v">color </span>cor;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Construtor:</span></span> <br> 
+ <span class="myCodeBro">  Circulo(<span class="v">float </span>_posX, <span class="v">float </span>_posY, <span class="v">float </span>_raio, <span class="v">color </span>_cor) {</span> <br> 
+ <span class="myCodeBro">    posX = _posX;</span> <br> 
+ <span class="myCodeBro">    posY = _posY;</span> <br> 
+ <span class="myCodeBro">    raio = _raio;</span> <br> 
+ <span class="myCodeBro">    cor = _cor;</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Métodos:</span></span> <br> 
+ <span class="myCodeBro">  <span class="j">void</span> exibir() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">fill</span>(cor);</span> <br> 
+ <span class="myCodeBro">  <span class="y">ellipse</span>(posX, posY, raio, raio);</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">// Programa Principal:</span></span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">// Declara um vetor de objetos da classe &quot;Circulo&quot;.</span></span> <br> 
+ <span class="myCodeBro"><span class="m">// Total de circulos: 31 (horiz) * 10 (vert):</span></span> <br> 
+ <span class="myCodeBro">Circulo[] circ = <span class="j">new</span> Circulo[310];</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">size</span>(700, 200);</span> <br> 
+ <span class="myCodeBro">  <span class="y">background</span>(255);</span> <br> 
+ <br> 
+ <span class="myCodeBro">  <span class="v">int </span>indice = 0;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Instanciação dos objetos da classe:</span></span> <br> 
+ <span class="myCodeBro">  <span class="f">for</span> (<span class="v">int </span>i = 0; i &lt; 31; i++) {</span> <br> 
+ <span class="myCodeBro">    <span class="f">for</span> (<span class="v">int </span>j = 0; j &lt; 10; j++) {</span> <br> 
+ <span class="myCodeBro">      <span class="v">color </span>corCirc = <span class="y">color</span>(180 - 50 * (j - 2), 50 * (j - 3), j * 25);</span> <br> 
+ <span class="myCodeBro">      circ[indice] = <span class="j">new</span> Circulo(i * 22.3 + 15, j * 25 + 12.5 * (i % 2), 25 - <span class="y">abs</span>(i - 15), corCirc);</span> <br> 
+ <span class="myCodeBro">      indice++;</span> <br> 
+ <span class="myCodeBro">    }</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Etapa de exibição dos círculos:</span></span> <br> 
+ <span class="myCodeBro">  <span class="f">for</span> (<span class="v">int </span>i = 0; i &lt; circ.<span class="j">length</span>; i++) {</span> <br> 
+ <span class="myCodeBro">    circ[i].exibir();</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">  </span> <br> 
+ <span class="myCodeBro">  <span class="y">println</span>(&quot;Posição X,Y do círculo número 1:&quot;, circ[0].posX, &quot;,&quot;, circ[0].posY);</span> <br> 
+ <span class="myCodeBro">  <span class="y">println</span>(&quot;Tamanho do raio do círculo número 42:&quot;, circ[41].raio);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Note como esse código ficou muito mais limpo e organizado que o anterior. Agora a classe <a class="codef">Circulo</a> contém todas as informações referentes a essa figura e, se necessário consultá-las, basta acessar o respectivo atributo do objeto através da sintaxe por ponto. Essa característica tornam as classes uma estrutura de dados autocontida. No que diz respeito ao código em si, perceba que agora há uma distinção notável entre o programa e a estrutura de dados que ele utiliza. No programa principal o foco foi direcionado apenas para a criação de objetos do tipo <a class="codef">Circulo</a> e, posteriormente, sua exibição. Todas as peculiaridades relativas aos detalhes técnicos da declaração e atribuição minuciosa das variáveis ou da implementação da função de exibição foram abstraídas pela classe, que agora faz isso automaticamente para você. Um esquema visual holístico das diferenças entre os códigos <a class="linkref" href="capitulo2.html#codcap2-classescircproced">2.62</a> e <a class="linkref" href="capitulo2.html#codcap2-classescircoop">2.63</a> pode ser vista na figura <a class="linkref" href="capitulo2.html#figcap2-classdiferences">2.63</a>.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap2-classdiferences" src="img/pdfCap2-ClassDiferences.png"> 
+</div> 
+<figcaption> Figura 2.63 - Diferenças entre abordagens Procedural e OOP.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Os tópicos apresentados nesta seção são uma introdução mínima as classes, mas suficiente para que você aplique esse conhecimento em quase a totalidade de seus programas. Se você quiser aprofundar mais na OOP, você pode procurar recursos que expliquem conceitos como polimorfismo, herança e encapsulamento que aumentam o reaproveitamento do código e a segurança de acesso as classes. Independente de suas outras funcionalidades, lembre-se que elas são uma de suas maiores aliadas na abordagem de problemas e no planejamento de soluções. A medida que você aumentar a complexidade de seus programas você irá querer organizá-los em componentes e subcomponentes, e nenhuma metodologia fornece um maneira mais natural e pragmática para atingir esse objetivo do que a OOP .</p>
+<p><span class="sec">2.7 Sumário</span> <a id="seccap2-end" class="labup"></a></p>
+<p>Neste primeiro capítulo focado puramente no código você aprendeu sobre os componentes que formam a base de todos os programas que você irá escrever. Brevemente, você estudou sobre:</p>
+</div>
+</div>
+<ul>
+ <li> <b>Variáveis</b>: São estruturas de dados que armazenam informações que podem ser acessadas com um simples referenciar ao seu nome. </li>
+ <li> <b>Operadores</b>: Manipulam e estabelecem relações entre as variáveis. São elementos chave em todas as demais estruturas de programação. </li>
+ <li> <b>Funções</b>: Permite compactar uma infinidade de instruções em um único bloco ou <i>script</i>. São executadas sempre que conveniente através da invocação da função. </li>
+ <li> <b>Condicionais</b>: Principais responsáveis por direcionar o fluxo de um programa de acordo com condições pré-estabelecidas ou em execução. </li>
+ <li> <b>Repetições</b>: Possibilitam repetir blocos de código em uma composição reduzida, potencialmente economizando centenas de linhas além do precioso tempo do programador. </li>
+ <li> <b>Classes</b>: É a mais customizável e poderosa estrutura de dados na programação. Agrupa variáveis e métodos referentes a uma mesma abstração ou modelo. Permite acessar os dados de uma maneira organizada e segregá-los do programa principal. </li>
+ </ul>
+<div class="row">
+<div class="col-xl-12">
+<p>Com isso você finaliza a primeira parte da fundação de um programador. Símbolos e nomes que antes não faziam sentido são prontamente decodificados por você. Mas calma, não deixe o poder subir à cabeça por que, na verdade, você é somente parte de um programador. Um programador não é alguém que memoriza todos os comandos, funções e sintaxes, e sim alguém que sabe usar o código a seu favor, criando e programando algoritmos para atingir um propósito. Saber a sintaxe e não ter um objetivo é como decorar um dicionário e não saber usar as palavras para formar frases.</p>
+<p>Na segunda parte dessa jornada você será convidado a se aprofundar em tópicos que compõem a carteira criativa de um artista programador (ou programador artista, fica a seu critério). Você aprenderá um pouco mais sobre como usar propriedades e resultados matemáticos para estampar estéticas singulares nos seus trabalhos. Mais á frente você testemunhará como é importante saber aplicar conhecimentos que não se restringem a linguagens de programação, abrangendo conceitos universais da matemática e da natureza.</p>
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<hr>
+
+
+<p><a class="linkref" id="footnote-1" href="#fnote-1" title="Voltar ao texto.">[1]</a> Nada garante que essas regras estejam no reino da lógica e da razão. As vezes elas se fundem no que origina essencialmente o <i>estilo</i> do artista, como as composições de Piet Mondrian ou de Pollock.</p>
+<p><a class="linkref" id="footnote-2" href="#fnote-2" title="Voltar ao texto.">[2]</a> Esses são apenas exemplos simplórios. Existem campos da arte e da psicologia inteiramente dedicados ao estudo das cores que, dependendo do contexto, podem apresentar diversos significados.</p>
+<p><a class="linkref" id="footnote-3" href="#fnote-3" title="Voltar ao texto.">[3]</a> Existem outros espaços de cores muito populares, como o HSV (<i>Hue, Saturation, Value</i>) ou o CMYK (<i>Cyan, Magenta, Yellow, Black</i>) sendo que este é representado por quatro canais e usa um sistema de cores subtrativo.</p>
+<p><a class="linkref" id="footnote-4" href="#fnote-4" title="Voltar ao texto.">[4]</a> O modo padrão do Processing considera uma profundidade de cores de 24 bits chamada de <i>Truecolor</i>. Isso significa que existem 2<sup>8</sup> = 256 bits por canal, podendo representar um total de 16777216 de cores distintas.</p>
+<p><a class="linkref" id="footnote-5" href="#fnote-5" title="Voltar ao texto.">[5]</a> Isso é chamado de sobrecarga ou <i>overload</i> de métodos na programação.</p>
+<p><a class="linkref" id="footnote-6" href="#fnote-6" title="Voltar ao texto.">[6]</a> É possível evitar essa subtração se começarmos com um bloco de número zero em vez de um.</p>
+<p><a class="linkref" id="footnote-7" href="#fnote-7" title="Voltar ao texto.">[7]</a> Visto que o incremento de ambas as variáveis de controle, <a class="codef">i</a> e <a class="codef">j</a>, é igual a um.</p>
+<p><a class="linkref" id="footnote-8" href="#fnote-8" title="Voltar ao texto.">[8]</a> Douat, D. (1722). <i>Méthode pour faire une infinité de desseins différens avec des carreaux mi-partis de deux couleurs par une ligne diagonale</i>. Chez Florentin de Laulne.</p>
+
+ <br> 
+
+              <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                      <img src="" class="imagepreview" style="width: 100%;" >
+                    </div>
+                  </div>
+                </div>
+              </div>
+</div>
+</div>
+</div>
+            <div class="custom-container">
+              <div class="row">
+                <div class="col">
+                  <div>
+                    <a href="capitulo1.html" class="btn btn-sm btn-secondary">&lt;&lt; Capítulo 1</a>
+                    <a href="parte2.html" class="btn btn-sm btnright btn-secondary">Parte II &gt;&gt;</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <button id="menu-toggle" class="btn btn-secondary btn-sm toggled">&#8649;<br>M<br>E<br>N<br>U<br>&#8649;</button>
+          </div>
+          <footer class="page-footer bg-dark text-light meufooter">
+            <div class="footer-copyright py-1">&copy; 2020
+              <a href="mailto:mateuspberruezo@gmail.com"> Mateus Berruezo</a>
+            </div>
+          </footer>
+        </div>
+      </div>
+    <script src="../js/jquery-3.2.1.slim.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/booko.js"></script>
+  </body>
+</html>

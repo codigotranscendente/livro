@@ -1,0 +1,937 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>OCT: Capitulo 5</title>
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="../css/bookonline.css" rel="stylesheet">
+</head>
+<body>
+  <div id="page-container">
+    <div id="content-wrap">
+      <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="mainNav">
+        <div class="container justify-content-center">
+          <a class="navbar-brand" href="../index.html">O CÓDIGO TRANSCENDENTE</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse align-items-center" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto nav-masthead align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="../book.html">Livro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../about.html">Autor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../faq.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../livro/lindex.html">Online</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="wrapper" class="toggled">
+        <div id="sidebar-wrapper">
+          <ul class="sidebar-nav">
+            <li class="sidebar-brand"></li>
+            <li><a href="lindex.html">LIVRO</a></li>
+            <li><a href="dedicatoria.html">DEDICATÓRIA</a></li>
+            <li><a href="sumario.html">SUMÁRIO</a></li>
+            <li><a href="cartaprefacio.html">CARTA-PREFÁCIO</a></li>
+            <li><a href="agradecimentos.html">AGRADECIMENTOS</a></li>
+            <li><a href="prefacio.html">PREFÁCIO</a></li>
+            <li><a href="introducao.html">INTRODUÇÃO</a></li>
+            <li><a href="parte1.html">I. ORIGEM</a></li>
+            <li><a class="ind" href="capitulo1.html">1. PRIMEIROS PASSOS</a></li>
+            <li><a class="ind" href="capitulo2.html">2. A ARTE DA PROGRAMAÇÃO</a></li>
+            <li><a href="parte2.html">II. EVOLUÇÃO</a></li>
+            <li><a class="ind" href="capitulo3.html">3. CAOS</a></li>
+            <li><a class="ind" href="capitulo4.html">4. ORDEM</a></li>
+            <li><a class="ind" href="capitulo5.html">5. ILUSÕES</a></li>
+            <li><a href="parte3.html">III. TRANSCENDÊNCIA</a></li>
+            <li><a class="ind" href="capitulo6.html">6. FRACTAIS</a></li>
+            <li><a class="ind" href="capitulo7.html">7. EMERGÊNCIA</a></li>
+            <li><a class="ind" href="capitulo8.html">8. O CÓDIGO TRANSCENDENTE</a></li>
+            <li><a href="final.html">O PROCESSO FINAL</a></li>
+            <li><a href="indicea.html">ÍNDICE</a></li>
+          </ul>
+        </div>
+        <div class="container-book vertical-book">
+<div class="custom-container">
+<div class="row">
+<div class="col-xl-12">
+
+<p><span class="capnbr">[ CAPÍTULO 5 ]</span><br><span class="capname">Ilusões</span><br><span class="capnbrbot">Valor nos detalhes</span><br></p>
+<p>O processo artístico por trás de uma pintura, ilustração ou qualquer outro tipo de produção composta por múltiplas fases, normalmente começa com o planejamento. Grandes artistas usam e abusam dos rascunhos para delinear a forma inicial de uma ideia e, posteriormente, aprimorá-la. Nos quatro capítulos anteriores você foi direcionado para o criar dos esboços de sua obra através do posicionamento de figuras, controle do fluxo do desenho, repetições de padrões e inclusão de variedade através de elementos como a incerteza. Esses são os aspectos técnicos da composição artística, aqueles que precedem a arte.</p>
+<p>O próximo passo é a etapa de construção de estilo e refinamento da forma que consiste em adicionar riqueza visual, seja por meio de cores, profundidade de sombreamento, transparência ou complexidade dos traços. Neste capítulo você irá aprender como utilizar as funções do Processing para transformar rascunhos tediosos em produções intrigantes que atraem olhares.</p>
+<p>É tentador procurar padronizar o máximo de tarefas na computação, mas isso dificilmente pode ser estendido para a arte. A interpretação de uma obra é algo muito pessoal e depende tanto de nossa vivência pessoal quanto do contexto histórico e social da época. Consequentemente leve as informações apresentadas neste capítulo exatamente como elas são: apenas sugestões baseadas em práticas comuns na arte tradicional e computacional. Extrapole esse pensamento, entenda que toda regra tem uma exceção e, as vezes, quebrá-las causa mais efeito do que segui-las.</p>
+<p><span class="sec">5.1 Linhas etéreas</span> <a id="seccap5-format" class="labup"></a></p>
+<p>As formatações<a id="formatacao"></a> em seus programas são como um paralelo dos diversos materiais artísticos disponíveis para a customização do traçado de seu desenho. Espessuras de ponta de lápis e cores vibrantes de <i>crayon</i> podem ser emuladas diretamente com as funções nativas do Processing, enquanto pinceladas e depósitos irregulares de tinta costumam ser programados em aplicações mais elaboradas. Ao longo do livro você informalmente usou funções de estilo como:</p>
+</div>
+</div>
+<ul>
+ <li> <b><a class="codef">fill()</a></b> <a id="fillfuncao"></a> Preenche a figura com uma cor qualquer. </li>
+ <li> <b><a class="codef">noFill()</a></b> <a id="noFillfuncao"></a>: A figura não possuirá preenchimento, ela será transparente. </li>
+ <li> <b><a class="codef">stroke()</a></b> <a id="strokefuncao"></a>: Preenche a borda da figura (ou uma linha/ponto) com uma cor qualquer. </li>
+ <li> <b><a class="codef">noStroke()</a></b> <a id="noStrokefuncao"></a>: A borda da figura não possuirá preenchimento, ela será transparente. </li>
+ <li> <b><a class="codef">strokeWeight()</a></b> <a id="strokeWeightfuncao"></a>: Define a espessura da borda da figura (ou de uma linha/ponto). </li>
+ </ul>
+<div class="row">
+<div class="col-xl-12">
+<p>Rigorosamente, as ferramentas de formatação funcionam como máquinas de estado<a id="maquinadeestado"></a>, isto é, a formatação que você estabelecer permanecerá como vigente até que você a mude de novo. Por exemplo, se você definiu um <a class="codef">fill(255,0,0)</a> no início do seu programa, todas as figuras que você desenhar serão preenchidas de vermelho até que você mude de cor chamando outra função <a class="codef">fill()</a>. A formatação é persistente ao ponto de não voltar para a original mesmo no início de um novo frame da função <a class="codef">draw()</a>. Você pode fazer uma analogia com o processo de desenhar no papel, uma vez que você decide usar um lápis vermelho, tudo que você desenhar será vermelho até que você decida usar outro lápis. O código abaixo e a figura <a class="linkref" href="capitulo5.html#figcap5-maqestados">5.1</a> ilustram esse fenômeno:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 5.1 - <button class="btnn" onclick="copyDivToClipboard('codcap5-731')">Copiar código</button></h1></header> 
+ <section id="codcap5-731"> <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">background</span>(255);</span> <br> 
+ <span class="myCodeBro"><span class="m">  // O Processing irá gerar um quadro a cada 2 segundos,</span></span> <br> 
+ <span class="myCodeBro"><span class="m">  // desta forma você terá tempo para ver a formatação como uma máquina de estados.</span></span> <br> 
+ <span class="myCodeBro">  <span class="y">frameRate</span>(0.5);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="j">void</span> <span class="x">draw</span>() {</span> <br> 
+ <span class="myCodeBro"><span class="m">  // Exibe o número de quadros decorridos no console:</span></span> <br> 
+ <span class="myCodeBro">  <span class="y">println</span>(&quot;Frame:&quot;, <span class="s">frameCount</span>);</span> <br> 
+ <span class="myCodeBro">  <span class="y">rect</span>(10,10,40,40);</span> <br> 
+ <span class="myCodeBro">  <span class="y">fill</span>(255,0,0);</span> <br> 
+ <span class="myCodeBro">  <span class="y">rect</span>(50,50,40,40);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="pdfcap5-maqestados1" src="img/pdfCap5-MaqEstados1.png"> 
+</div> 
+<figcaption> Figura 5.2 - Primeiro frame da execução.</figcaption> 
+ </div> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="pdfcap5-maqestados2" src="img/pdfCap5-MaqEstados2.png"> 
+</div> 
+<figcaption> Figura 5.3 - Demais frames da execução.</figcaption> 
+ </div> 
+ <div id="figcap5-maqestados" class="col-md-12 text-center"> 
+ Figura - 5.1 - Formatação como uma máquina de estados. </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Ao executar o código você deve ter observado no primeiro frame são exibidos dois quadrados, um branco e um vermelho e, no segundo frame, dois vermelhos. No quadro inicial não havia sido estabelecida uma formatação para o preenchimento das formas, <a class="codef">fill()</a>, e o Processing usou o padrão, que é a cor branca. Porém, no meio da execução do primeiro quadro a cor de preenchimento é definida como vermelho e logo em seguida é desenhada uma forma com essa cor. Como o Processing usa de uma máquina de estados, quando ele parte para o segundo quadro a formatação de preenchimento já está definida e ele não usará mais o padrão original. Desta forma ambos os quadrados são preenchidos com a cor vermelha. Fique atento a essa particularidade visto que, se você desejar múltiplos estilos de formatação no seu programa, deverá colocar o respectivo código imediatamente antes do desenho das figuras.</p>
+<p>Um dos fatores emulados pelas funções de estilo que contribui significativamente na aparência final de uma imagem é a suavidade dos traços usados nos desenhos. Essa formatação pode ser evidenciada através de um panorama saturado de formas, tais como círculos de posições e raios distintos. No código abaixo, no qual o ruído Perlin é o protagonista na disposição irregular das figuras, exploramos a suavidade dos traços:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 5.2 - <button class="btnn" onclick="copyDivToClipboard('codcap5-651')">Copiar código</button></h1></header> 
+ <section id="codcap5-651"> <span class="myCodeBro"><span class="m">// Ruídos:</span></span> <br> 
+ <span class="myCodeBro"><span class="v">float </span>nx = 0, ny = 100, nr = 200;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">size</span>(1200, 500);</span> <br> 
+ <span class="myCodeBro">  <span class="y">background</span>(255);</span> <br> 
+ <span class="myCodeBro">  <span class="y">noFill</span>();</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="j">void</span> <span class="x">draw</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>posX = <span class="y">map</span>(<span class="y">noise</span>(nx),0,1,0,<span class="s">width</span>);</span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>posY = <span class="y">map</span>(<span class="y">noise</span>(ny),0,1,0,<span class="s">height</span>);</span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>r = 100 + 200*<span class="y">noise</span>(nr);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Círculo de posição e raio variados:</span></span> <br> 
+ <span class="myCodeBro">  <span class="y">ellipse</span>(posX,posY,r,r);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Os incrementos de ruídos foram alterados</span></span> <br> 
+ <span class="myCodeBro"><span class="m">  // inúmeras vezes até achar um movimento satisfatório.</span></span> <br> 
+ <span class="myCodeBro">  nx += 0.008;</span> <br> 
+ <span class="myCodeBro">  ny += 0.005;</span> <br> 
+ <span class="myCodeBro">  nr += 0.005;</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap5-circsolidos" src="img/figCap5-CircSolidos.png"> 
+</div> 
+<figcaption> Figura 5.4 - Desenhos de múltiplos círculos na janela.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>A janela de saída se parecerá com algo similar a figura <a class="linkref" href="capitulo5.html#figcap5-circsolidos">5.4</a>. Você deve ter notado que não há variação no traço do círculo o que torna a figura densa e sobrecarregada. Se o programa continuasse a executar por um pouco mais de tempo, obteríamos apenas um borrão preto proveniente da aglomeração de traços sólidos. Experimente deixar o programa rodando por um minuto e depois volte para ver os resultados.</p>
+<p>Seguindo a linha de suavidade dos traços, podemos usar a função <a class="codef">strokeWeight()</a> com o intuito de reduzir a espessura dos mesmos. É possível aumentar ainda mais profundidade visual se adicionarmos transparência à cor preta, firmando que apenas o perseverante acúmulo de figuras através dos frames produza uma cor mais intensa. Adicione a linha abaixo logo antes do desenho do círculo.</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 5.3 - <button class="btnn" onclick="copyDivToClipboard('codcap5-142')">Copiar código</button></h1></header> 
+ <section id="codcap5-142"> <span class="myCodeBro"><span class="y">stroke</span>(<span class="y">map</span>(r,100,300,100,0),20);</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Veja a diferença ao deixar os dois programas executarem exatamente o mesmo número de frames (8000) na figura <a class="linkref" href="capitulo5.html#figcap5-circtransp">5.5</a>.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap5-circsolid" src="img/figCap5-CircSolid.png"> 
+</div> 
+<figcaption> Figura 5.6 - Formatação padrão do Processing.</figcaption> 
+ </div> 
+ </div> 
+ <div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap5-circtransp" src="img/figCap5-CircTransp.png"> 
+</div> 
+<figcaption> Figura 5.5 - Formatação customizada.</figcaption> 
+ </div> 
+ <div id="figcap5-circtransp" class="col-md-12 text-center"> 
+ Figura - 5.5 - Comparação da imagem gerada após 8000 frames. </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Essa técnica leva a um aumento no tempo total de execução para que a figura seja "concluída", situação facilmente relevada dada a sutileza das linhas que fabricarão uma imagem menos agressiva ao olhar.</p>
+<p><span class="sec">5.2 Faça-se a cor</span> <a id="seccap5-formatcores" class="labup"></a></p>
+<p>As cores são outro grupo de elementos que fornecem um aspecto completamente novo as suas imagens. Na arte tradicional e na ilustração moderna elas costumam ser agrupadas em paletas de cores<a id="paletadecores"></a>, que são um conjunto discreto e finito de tons como os da figura <a class="linkref" href="capitulo5.html#figcap5-paletacores">5.7</a>, idealizados para manter a consistência em seus projetos.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="figcap5-paletacoresa" src="img/figCap5-PaletaCoresA.png"> 
+</div> 
+<figcaption> Figura 5.8 - Na arte.</figcaption> 
+ </div> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="pdfcap5-paletacoresd1" src="img/pdfCap5-PaletaCoresD1.png"> 
+</div> 
+<figcaption> Figura 5.9 - Na computação.</figcaption> 
+ </div> 
+ <div id="figcap5-paletacores" class="col-md-12 text-center"> 
+ Figura - 5.7 - Exemplo de paletas de cores em meios distintos. </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>As paletas são a representação física de um esquema de cores<a id="esquemadecores"></a> que, por sua vez, é definido como uma escolha de cores a serem usadas no design de um determinado tipo de mídia. Eles são empregados para criar estilo e aumentar o atrativo e apelo estético de um trabalho. Existem diversas técnicas para a escolha de um esquema de cores, como complementares, triádicas, tetraédricas e análogas dentre outras, mostradas na figura <a class="linkref" href="capitulo5.html#figcap5-paletacoresimg">5.10</a>.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-4"> 
+ <div class="pop imgMax4"> 
+<img class="img-fluid imgborder" id="figcap5-paletacoresimg1" src="img/figCap5-PaletaCoresImg1.png"> 
+</div> 
+<figcaption> Figura 5.11 - Análogas.</figcaption> 
+ </div> 
+ <div class="col-md-4"> 
+ <div class="pop imgMax4"> 
+<img class="img-fluid imgborder" id="figcap5-paletacoresimg2" src="img/figCap5-PaletaCoresImg2.png"> 
+</div> 
+<figcaption> Figura 5.12 - Complementares.</figcaption> 
+ </div> 
+ <div class="col-md-4"> 
+ <div class="pop imgMax4"> 
+<img class="img-fluid imgborder" id="figcap5-paletacoresimg3" src="img/figCap5-PaletaCoresImg3.png"> 
+</div> 
+<figcaption> Figura 5.13 - Monocromáticas.</figcaption> 
+ </div> 
+ <div id="figcap5-paletacoresimg" class="col-md-12 text-center"> 
+ Figura - 5.10 - Esquema de cores. </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>A definição da paleta pode seguir regras estritas como as técnicas citadas acima ou então através de combinações não convencionais puramente decididas por sentimento. O instinto, nesse ponto, tem um papel substancial ao implicitamente externar como as cores influenciam nas emoções humanas, uma das áreas que é hoje estudada pela psicologia<sup><a class="linkref" id="fnote-1" href="#footnote-1" title="Rodapé.">[1]</a></sup>. No Processing é possível escrever um código que emula uma paleta<a id="paletadecores%noProcessing"></a> usando vetores:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 5.4 - <button class="btnn" onclick="copyDivToClipboard('codcap5-274')">Copiar código</button></h1></header> 
+ <section id="codcap5-274"> <span class="myCodeBro"><span class="m">// Cores definidas no sistema RGB:</span></span> <br> 
+ <span class="myCodeBro"><span class="y">color</span>[] c = { <span class="y">color</span>(88,24,64), <span class="y">color</span>(144,12,58), <span class="y">color</span>(199,0,52), <span class="y">color</span>(255,87,46) };</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>que é equivalente a:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 5.5 - <button class="btnn" onclick="copyDivToClipboard('codcap5-206')">Copiar código</button></h1></header> 
+ <section id="codcap5-206"> <span class="myCodeBro"><span class="m">// Cores definidas através de seu código hexadecimal:</span></span> <br> 
+ <span class="myCodeBro"><span class="v">color</span>[] c = { #581840, #900C3A, #C70034, #FF572E };</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Esta segunda maneira é mais usual e utiliza de uma codificação hexadecimal das cores. A equivalência entre a descrição RGB e hexadecimal segue uma transformação entre bases numéricas e a ferramenta de seleção de cores, explicada na seção <a class="linkref" href="capitulo2.html#seccap2-varcolor">2.1.3</a>, automaticamente realiza esse cálculo para você. Veja a figura <a class="linkref" href="capitulo5.html#figcap5-coresequiv">5.14</a>.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap5-coresequiv" src="img/figCap5-CoresEquiv.png"> 
+</div> 
+<figcaption> Figura 5.14 - Equivalência RGB e Hexadecimal das cores.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Do ponto de vista de código, é interessante criar uma paleta de cores como um vetor para acessá-las diretamente pelos seus índices. Tal abordagem segmenta o esquema de cores do código, aumentando a organização e permitindo sua troca sem que seja necessário reescrever o código. Também possibilita que seja utilizado da aleatoriedade para escolher as cores de maneira inesperada, veja o código abaixo:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 5.6 - <button class="btnn" onclick="copyDivToClipboard('codcap5-2')">Copiar código</button></h1></header> 
+ <section id="codcap5-2"> <span class="myCodeBro"><span class="v">color</span>[] c = { #581840, #900C3A, #C70034, #FF572E };</span> <br> 
+ <span class="myCodeBro"><span class="m">// Cor escolhida aleatoriamente dentre todas as possibilidades da paleta:</span></span> <br> 
+ <span class="myCodeBro"><span class="v">int </span>indice = <span class="y">round</span>(<span class="y">random</span>(3));</span> <br> 
+ <span class="myCodeBro"><span class="y">background</span>(c[indice]);</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Cabe ressaltar que a escolha aleatória dentro de um espaço finito de cores, como a de uma paleta, é fundamentalmente diferente de uma paleta completamente arbitrária uma vez que, no primeiro caso, o esquema é mantido e no segundo não. Veja as distinções na figura <a class="linkref" href="capitulo5.html#figcap5-paletana">5.15</a>. A melhor maneira de expor o impacto causado por uma paleta de cores é através de uma comparação do tipo "antes e depois". As figuras <a class="linkref" href="capitulo5.html#figcap5-paletaad1">5.16</a>, <a class="linkref" href="capitulo5.html#figcap5-paletaad2">5.17</a> e <a class="linkref" href="capitulo5.html#figcap5-paletaad3">5.18</a> ilustram o mesmo programa executado, inicialmente através da formatação padrão e depois usando uma paleta de cores. A figura <a class="linkref" href="capitulo5.html#figcap5-starmandalacolor">5.19</a> é a colorização da mandala do capítulo anterior.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="pdfcap5-paletana1" src="img/pdfCap5-PaletaNA1.png"> 
+</div> 
+<figcaption> Figura 5.20</figcaption> 
+ </div> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="pdfcap5-paletana2" src="img/pdfCap5-PaletaNA2.png"> 
+</div> 
+<figcaption> Figura 5.21</figcaption> 
+ </div> 
+ <div id="figcap5-paletana" class="col-md-12 text-center"> 
+ Figura - 5.15 - Paleta customizada e aleatória. </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="pdfcap5-paletaad12" src="img/pdfCap5-PaletaAD12.png"> 
+</div> 
+<figcaption> Figura 5.22</figcaption> 
+ </div> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="pdfcap5-paletaad11" src="img/pdfCap5-PaletaAD11.png"> 
+</div> 
+<figcaption> Figura 5.23</figcaption> 
+ </div> 
+ <div id="figcap5-paletaad1" class="col-md-12 text-center"> 
+ Figura - 5.16 - Padrão com e sem cores. </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>As diferenças são notáveis como você pode ter percebido. Os dois principais responsáveis pelo sucesso das paletas sobre um esquema de cores inteiramente aleatório ou a ausência delas são a limitação do espectro de cores e escolha cuidadosa das mesmas para permitir uma harmonização de tons e contrastes.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="pdfcap5-paletaad22" src="img/pdfCap5-PaletaAD22.png"> 
+</div> 
+<figcaption> Figura 5.24</figcaption> 
+ </div> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="pdfcap5-paletaad21" src="img/pdfCap5-PaletaAD21.png"> 
+</div> 
+<figcaption> Figura 5.25</figcaption> 
+ </div> 
+ <div id="figcap5-paletaad2" class="col-md-12 text-center"> 
+ Figura - 5.17 - Padrão com e sem cores. </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="pdfcap5-paletaad31" src="img/pdfCap5-PaletaAD31.png"> 
+</div> 
+<figcaption> Figura 5.26</figcaption> 
+ </div> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="pdfcap5-paletaad32" src="img/pdfCap5-PaletaAD32.png"> 
+</div> 
+<figcaption> Figura 5.27</figcaption> 
+ </div> 
+ <div id="figcap5-paletaad3" class="col-md-12 text-center"> 
+ Figura - 5.18 - Padrão com e sem cores. </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap5-starmandalacolor" src="img/pdfCap5-StarMandalaColor.png"> 
+</div> 
+<figcaption> Figura 5.19 - Mandala sob uma paleta de cores.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p><span class="sec">5.3 Através do espelho</span> <a id="seccap5-simetria" class="labup"></a></p>
+<p>A simetria é uma propriedade excepcionalmente bela que reina em absoluto em nossa sociedade e no mundo natural. Sua presença é tão constante que a consideramos banal, muitas vezes esquecendo de admirar sua singela beleza e a sensação de equilíbrio e harmonia que ela proporciona. Na arte computacional a simetria pode ser usada para criar figuras caleidoscópicas, invariantes e espelhadas.</p>
+<p>O conceito técnico por trás da simetria é simples: a forma é mantida mesmo sob presença de operações geométricas como reflexão, translação, rotação, ampliação e redução (figura <a class="linkref" href="capitulo5.html#figcap5-simetrias">5.28</a>). A simetria radial<a id="simetria%radial"></a>, como aquela mostrada na seção <a class="linkref" href="capitulo4.html#seccap4-radiais">4.3</a>, é obtida a partir de rotações apoiadas na trigonometria, cujo posicionamento das figuras utilizará das funções seno e cosseno. O segundo tipo, a simetria de escala<a id="simetria%deescala"></a>, relativa à contração ou expansão da figura, é representada pelos fractais e será apresentada mais a frente neste mesmo livro. Finalmente, a simetria reflexiva<a id="simetria%reflexiva"></a>, estudada nesta seção, é caracterizada pela ação de cortar um objeto por um ou mais planos, dividindo-o em partes iguais, porém espelhadas. Na presença de movimento, a seção complementar se moverá na direção oposta da original. Se uma forma se move para a esquerda, sua reflexão se moverá para a direita. O mesmo vale para a orientação vertical. Esse ponto é ilustrado conceitualmente em <a class="linkref" href="capitulo5.html#figcap5-simetriaplanar1">5.29</a> e computacionalmente em <a class="linkref" href="capitulo5.html#figcap5-simetriaplanar">5.30</a>.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-4"> 
+ <div class="pop imgMax4"> 
+<img class="img-fluid imgborder" id="pdfcap5-sp" src="img/pdfCap5-SP.png"> 
+</div> 
+<figcaption> Figura 5.31 - Reflexão.</figcaption> 
+ </div> 
+ <div class="col-md-4"> 
+ <div class="pop imgMax4"> 
+<img class="img-fluid imgborder" id="pdfcap5-sr" src="img/pdfCap5-SR.png"> 
+</div> 
+<figcaption> Figura 5.32 - Rotação.</figcaption> 
+ </div> 
+ <div class="col-md-4"> 
+ <div class="pop imgMax4"> 
+<img class="img-fluid imgborder" id="pdfcap5-ss" src="img/pdfCap5-SS.png"> 
+</div> 
+<figcaption> Figura 5.33 - Escala.</figcaption> 
+ </div> 
+ <div id="figcap5-simetrias" class="col-md-12 text-center"> 
+ Figura - 5.28 - Exemplos de figuras simétricas. </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap5-simetriaplanar1" src="img/pdfCap5-SimetriaPlanar3.png"> 
+</div> 
+<figcaption> Figura 5.29 - Movimento em simetria reflexiva.</figcaption> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="pdfcap5-simetriaplanar1" src="img/pdfCap5-SimetriaPlanar1.png"> 
+</div> 
+<figcaption> Figura 5.34 - Horizontal.</figcaption> 
+ </div> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="pdfcap5-simetriaplanar2" src="img/pdfCap5-SimetriaPlanar2.png"> 
+</div> 
+<figcaption> Figura 5.35 - Vertical.</figcaption> 
+ </div> 
+ <div id="figcap5-simetriaplanar" class="col-md-12 text-center"> 
+ Figura - 5.30 - Simetria reflexiva. </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p></p>
+<p>No capítulo destinado a funções, na seção de interrupções, <a class="linkref" href="capitulo2.html#seccap2-funcinterrupt">2.3.1</a>, você desenvolveu um código que desenhava círculos ao movimentar o mouse. Você pode experimentar adicionar a simetria reflexiva ao código para transformar o tipo de figuras que serão geradas. Uma possível adaptação é mostrada no código a seguir, que contempla simultaneamente as simetrias horizontais (eixo x) e verticais (eixo y), desenhando quatro círculos no lugar de apenas um. Veja o resultado na figura <a class="linkref" href="capitulo5.html#figcap5-simetria">5.36</a>.</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 5.7 - <button class="btnn" onclick="copyDivToClipboard('codcap5-369')">Copiar código</button></h1></header> 
+ <section id="codcap5-369"> <span class="myCodeBro"><span class="m">// Paleta de cores:</span></span> <br> 
+ <span class="myCodeBro"><span class="v">color</span>[] c = { #581840, #900C3A, #C70034, #FF572E };</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">size</span>(800,800);</span> <br> 
+ <span class="myCodeBro">  <span class="y">background</span>(255);</span> <br> 
+ <span class="myCodeBro">  <span class="y">noStroke</span>();</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="j">void</span> <span class="x">draw</span>() {</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">// Mouse pressionado e arrastado:</span></span> <br> 
+ <span class="myCodeBro"><span class="j">void</span> <span class="x">mouseDragged</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="v">int </span>indice = <span class="y">round</span>(<span class="y">random</span>(3));</span> <br> 
+ <span class="myCodeBro">  <span class="y">fill</span>(c[indice]);</span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>raio = <span class="y">dist</span>(<span class="s">mouseX</span>,<span class="s">mouseY</span>,<span class="s">pmouseX</span>,<span class="s">pmouseY</span>);</span> <br> 
+ <span class="myCodeBro">  <span class="y">ellipse</span>(<span class="s">mouseX</span>,<span class="s">mouseY</span>,raio,raio);</span> <br> 
+ <span class="myCodeBro">  <span class="y">ellipse</span>(<span class="s">mouseX</span>,<span class="s">height</span>-<span class="s">mouseY</span>,raio,raio);</span> <br> 
+ <span class="myCodeBro">  <span class="y">ellipse</span>(<span class="s">width</span>-<span class="s">mouseX</span>,<span class="s">mouseY</span>,raio,raio);</span> <br> 
+ <span class="myCodeBro">  <span class="y">ellipse</span>(<span class="s">width</span>-<span class="s">mouseX</span>,<span class="s">height</span>-<span class="s">mouseY</span>,raio,raio);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>A computação, aliada à simetria, também pode ser aplicada quando se deseja explorar padrões artísticos repetitivos. A figura <a class="linkref" href="capitulo5.html#figcap5-maxsimetria">5.37</a> é um máximo da simetria (aumente o zoom na imagem) que demonstra todas as 32768 formas de se preencher um quadrado, simétrico em relação ao seu eixo y central, dividido em vinte e cinco partes iguais<sup><a class="linkref" id="fnote-2" href="#footnote-2" title="Rodapé.">[2]</a></sup>.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap5-simetria" src="img/pdfCap5-Simetria.png"> 
+</div> 
+<figcaption> Figura 5.36 - Desenho simétrico na janela ao arrastar o mouse.</figcaption> 
+ </div> 
+ </div> 
+ <div class="row justify-content-center align-items-center text-center imgspc"> 
+  <div class="col-md-12 imgMax12"> 
+  <div> 
+  <a href="img/figCap5-MaxSimetria.png"><img class="img-fluid imgborder" id="figcap5-maxsimetria" src="img/figCap5-MaxSimetria.png"></a> 
+  </div> 
+  <figcaption> Figura 5.37 - Total de 32768 possibilidades.</figcaption> 
+  </div> 
+  </div> 
+<div class="row">
+<div class="col-xl-12">
+<p><span class="sec">5.4 Um exemplo para reinar sobre todos</span> <a id="seccap5-finalex" class="labup"></a></p>
+<p>A segunda parte deste livro, e este capítulo, serão encerrados com a proposta de que você use tudo que aprendeu até o momento para desenvolver um programa que crie imagens gerativas. O principal objetivo será a visualização, de uma maneira mais elaborada, da função <a class="codef">noise()</a>.</p>
+<p>Na seção <a class="linkref" href="capitulo4.html#seccap4-trig">4.1</a>, dominada por operações trigonométricas, você aprendeu que é possível determinar qualquer ponto na superfície de um círculo através de duas fórmulas que dependem de seu centro, raio e ângulo do setor. Elas fórmulas também podem ser usadas para traçar uma reta<a id="retacentradaemcirculo"></a> qualquer, cujo primeiro ponto é o centro do círculo e o segundo é dado pelo ponto em sua superfície, que pode ser facilmente determinado quando se tem o raio e o ângulo. Estes dois últimos parâmetros são arbitrários e você é livre para escolher qual será o comprimento dessa reta (raio do círculo) e qual será sua orientação (ângulo do setor). Por exemplo, se desejar traçar uma reta com início no ponto (50,50), com 40 pixels de comprimento e uma inclinação de 30°, basta utilizar as fórmulas <a class="linkref" href="capitulo4.html#codcap4-circleeq">4.1</a> para obter os pontos finais dela:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 5.8 - <button class="btnn" onclick="copyDivToClipboard('codcap5-834')">Copiar código</button></h1></header> 
+ <section id="codcap5-834"> <span class="myCodeBro"><span class="v">float </span>xf = 50 + 40*<span class="y">cos</span>(<span class="y">radians</span>(30)); <span class="m">// O resultado é xf = 84.64</span></span> <br> 
+ <span class="myCodeBro"><span class="v">float </span>yf = 50 + 40*<span class="y">sin</span>(<span class="y">radians</span>(30)); <span class="m">// O resultado é yf = 70.00</span></span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>e ela seria traçada como:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 5.9 - <button class="btnn" onclick="copyDivToClipboard('codcap5-399')">Copiar código</button></h1></header> 
+ <section id="codcap5-399"> <span class="myCodeBro"><span class="y">line</span>(50,50,xf,yf).</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Isto será muito útil por que em vez de usar pontos para visualizar o ruído Perlin, você pode utilizar retas anguladas<a id="ruidoPerlin%visualizadoatravesde%retas"></a>. Para obter um efeito uniforme é interessante distribuir essas retas homogeneamente em toda a janela de saída. Você pode usar um raciocínio semelhante ao do posicionamento de blocos no padrão de Truchet, seção <a class="linkref" href="capitulo2.html#seccap2-repetnested">2.5.2</a>, e construir uma estrutura dupla de repetições. Vamos concretizar essas ideias através de um programa, veja o código abaixo. Algumas variáveis foram parametrizadas para auxiliar nas etapas posteriores. O resultado é mostrado na figura <a class="linkref" href="capitulo5.html#figcap5-noise2dfixline">5.38</a>.</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 5.10 - <button class="btnn" onclick="copyDivToClipboard('codcap5-250')">Copiar código</button></h1></header> 
+ <section id="codcap5-250"> <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">size</span>(700, 200);</span> <br> 
+ <span class="myCodeBro">  <span class="y">frameRate</span>(30);</span> <br> 
+ <span class="myCodeBro">  <span class="y">background</span>(255);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="j">void</span> <span class="x">draw</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">background</span>(255);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Separação entre uma linha e outra (em pixels):</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">int </span>sepLinhas = 20;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Tamanho das linhas desenhadas (em pixels):</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>tamLinha = 20;</span> <br> 
+ <span class="myCodeBro">  </span> <br> 
+ <span class="myCodeBro">  <span class="f">for</span> (<span class="v">int </span>y = 0; y &lt;= <span class="s">height</span>; y += sepLinhas) {</span> <br> 
+ <span class="myCodeBro">    <span class="f">for</span> (<span class="v">int </span>x = 0; x &lt;= <span class="s">width</span>; x += sepLinhas) {</span> <br> 
+ <span class="myCodeBro"><span class="m">      // Define a variável que irá determinar a inclinação das retas:</span></span> <br> 
+ <span class="myCodeBro">      <span class="v">float </span>angulo = 30;</span> <br> 
+ <span class="myCodeBro">      <span class="v">float </span>xf = x + tamLinha * <span class="y">cos</span>(<span class="y">radians</span>(angulo));</span> <br> 
+ <span class="myCodeBro">      <span class="v">float </span>yf = y + tamLinha * <span class="y">sin</span>(<span class="y">radians</span>(angulo));</span> <br> 
+ <span class="myCodeBro">      <span class="y">line</span>(x, y, xf, yf);</span> <br> 
+ <span class="myCodeBro">    }</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap5-noise2dfixline" src="img/figCap5-Noise2DFixLine.png"> 
+</div> 
+<figcaption> Figura 5.38 - Retas anguladas distribuídas homogeneamente na tela.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Visto que as retas estão distribuídas de maneira adequada, você pode adicionar o ruído Perlin para diversificar a angulação das mesmas. Altere as estruturas de repetição de acordo com o código abaixo para criar padrões semelhantes ao da figura <a class="linkref" href="capitulo5.html#figcap5-noise2dvarline">5.39</a>.</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 5.11 - <button class="btnn" onclick="copyDivToClipboard('codcap5-671')">Copiar código</button></h1></header> 
+ <section id="codcap5-671"> <span class="myCodeBro"><span class="m">// Valores iniciais dos ruídos:</span></span> <br> 
+ <span class="myCodeBro"><span class="v">float </span>nxi = <span class="y">random</span>(100);</span> <br> 
+ <span class="myCodeBro"><span class="v">float </span>nyi = <span class="y">random</span>(100);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">size</span>(700, 200);</span> <br> 
+ <span class="myCodeBro">  <span class="y">frameRate</span>(30);</span> <br> 
+ <span class="myCodeBro">  <span class="y">background</span>(255);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="j">void</span> <span class="x">draw</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">background</span>(255);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Separação entre uma linha e outra (em pixels):</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">int </span>sepLinhas = 20;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Tamanho das linhas desenhadas (em pixels):</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>tamLinha = 20;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Incrementa o valor inicial dos ruídos:</span></span> <br> 
+ <span class="myCodeBro">  nxi += 0.01;</span> <br> 
+ <span class="myCodeBro">  nyi += 0.01;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Define os ruídos locais a serem usados na angulação das retas:</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>ny = nyi;</span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>nx = nxi;</span> <br> 
+ <br> 
+ <span class="myCodeBro">  <span class="f">for</span> (<span class="v">int </span>y = 0; y &lt;= <span class="s">height</span>; y += sepLinhas) {</span> <br> 
+ <span class="myCodeBro"><span class="m">    // Incrementa e reinicia o ruído local:</span></span> <br> 
+ <span class="myCodeBro">    ny += 0.05;</span> <br> 
+ <span class="myCodeBro">    nx = nxi;</span> <br> 
+ <br> 
+ <span class="myCodeBro">    <span class="f">for</span> (<span class="v">int </span>x = 0; x &lt;= <span class="s">width</span>; x += sepLinhas) {</span> <br> 
+ <span class="myCodeBro"><span class="m">      // Incrementa o ruído local:</span></span> <br> 
+ <span class="myCodeBro">      nx += 0.05;</span> <br> 
+ <span class="myCodeBro">      </span> <br> 
+ <span class="myCodeBro"><span class="m">      // Define a variável que irá determinar a inclinação das retas:</span></span> <br> 
+ <span class="myCodeBro">      <span class="v">float </span>angulo = 360 * <span class="y">noise</span>(nx, ny);</span> <br> 
+ <span class="myCodeBro">      <span class="v">float </span>xf = x + tamLinha * <span class="y">cos</span>(<span class="y">radians</span>(angulo));</span> <br> 
+ <span class="myCodeBro">      <span class="v">float </span>yf = y + tamLinha * <span class="y">sin</span>(<span class="y">radians</span>(angulo));</span> <br> 
+ <span class="myCodeBro">      <span class="y">line</span>(x, y, xf, yf);</span> <br> 
+ <span class="myCodeBro">    }</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap5-noise2dvarline" src="img/figCap5-Noise2DVarLine.png"> 
+</div> 
+<figcaption> Figura 5.39 - Retas anguladas através da função <a class="codef">noise()</a>.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Ao executar o programa e a animação, você deve ter observado que a função <a class="codef">noise()</a> cria uma variação suave no ângulo das retas, expressando um efeito de fluxo na sua imagem. Mais uma vez isso reforça a natureza orgânica do ruído Perlin. A figura <a class="linkref" href="capitulo5.html#figcap5-rand2dvarline">5.40</a> mostra o que aconteceria se fosse utilizada a função <a class="codef">random()</a> <a id="aleatoriedade%visualizadaatravesde%retas"></a> em seu lugar.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap5-rand2dvarline" src="img/figCap5-Rand2DVarLine.png"> 
+</div> 
+<figcaption> Figura 5.40 - Retas anguladas através da função <a class="codef">random()</a>.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Neste ponto podemos considerar que a etapa de rascunho, o alicerce do programa, está terminada e que nos resta canalizar nossa atenção para a formatação<a id="formatacao%estudodecaso"></a>. A primeira alteração que você pode fazer é experimentar com diversos valores para o tamanho e quantidade de retas. Esses valores foram parametrizados na concepção do código, atere-os para obter padrões como os da figura <a class="linkref" href="capitulo5.html#figcap5-noise2dvarvar">5.41</a>.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-3"> 
+ <div class="pop imgMax3"> 
+<img class="img-fluid imgborder" id="figcap5-noise2dvarvars10t20" src="img/figCap5-Noise2DVarVarS10T20.png"> 
+</div> 
+<figcaption> Figura 5.42 - <br> <a class="codef">sepLinhas = 10</a> <br> <a class="codef">tamLinha = 20</a></figcaption> 
+ </div> 
+ <div class="col-md-3"> 
+ <div class="pop imgMax3"> 
+<img class="img-fluid imgborder" id="figcap5-noise2dvarvars5t20" src="img/figCap5-Noise2DVarVarS5T20.png"> 
+</div> 
+<figcaption> Figura 5.43 - <br> <a class="codef">sepLinhas = 5</a> <br> <a class="codef">tamLinha = 20</a></figcaption> 
+ </div> 
+ <div class="col-md-3"> 
+ <div class="pop imgMax3"> 
+<img class="img-fluid imgborder" id="figcap5-noise2dvarvars2t2" src="img/figCap5-Noise2DVarVarS2T2.png"> 
+</div> 
+<figcaption> Figura 5.44 - <br> <a class="codef">sepLinhas = 2</a> <br> <a class="codef">tamLinha = 2</a></figcaption> 
+ </div> 
+ <div class="col-md-3"> 
+ <div class="pop imgMax3"> 
+<img class="img-fluid imgborder" id="figcap5-noise2dvarvars2t10" src="img/figCap5-Noise2DVarVarS2T10.png"> 
+</div> 
+<figcaption> Figura 5.45 - <br> <a class="codef">sepLinhas = 2</a> <br> <a class="codef">tamLinha = 10</a></figcaption> 
+ </div> 
+ <div id="figcap5-noise2dvarvar" class="col-md-12 text-center"> 
+ Figura - 5.41 - Padrões formados por outras parametrizações. </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>O segundo ponto é enriquecer visualmente a figura usando tons e cores. As alternativas aqui são muitas, sendo uma delas baseada na disposição espacial das retas. Nesse tipo de abordagem utiliza-se da informação da posição dos objetos, no caso as retas, para definir a formatação. Um exemplo seria colocar tons mais claros em retas à direita da tela e gradativamente escurece-las até atingir o canto esquerdo da janela, criando uma espécie de gradiente<a id="formatacao%gradientedecores"></a> como mostrado na figura <a class="linkref" href="capitulo5.html#figcap5-noise2dgrad">5.46</a>. A única alteração que deve ser feita é adicionar uma formatação, logo antes do desenho, interna na segunda estrutura de repetição:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 5.12 - Formatação baseada em posição - <button class="btnn" onclick="copyDivToClipboard('codcap5-formatgrad')">Copiar código</button></h1></header> 
+ <section id="codcap5-formatgrad"> <span class="myCodeBro"><span class="f">for</span> (<span class="v">int </span>x = 0; x &lt;= <span class="s">width</span>; x += sepLinhas) {</span> <br> 
+ <span class="myCodeBro"><span class="m">  // Incrementa o ruído local:</span></span> <br> 
+ <span class="myCodeBro">  nx += 0.05;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Define a variável que irá determinar a inclinação das retas:</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>angulo = 360 * <span class="y">noise</span>(nx, ny);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Utiliza as coordenadas espaciais (x,y) para criar um gradiente:</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>cor = <span class="y">map</span>(x + y, 0, <span class="s">width</span> + <span class="s">height</span>, 0, 255);</span> <br> 
+ <span class="myCodeBro">  <span class="y">stroke</span>(cor);</span> <br> 
+ <span class="myCodeBro">  </span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>xf = x + tamLinha * <span class="y">cos</span>(<span class="y">radians</span>(angulo));</span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>yf = y + tamLinha * <span class="y">sin</span>(<span class="y">radians</span>(angulo));</span> <br> 
+ <span class="myCodeBro">  <span class="y">line</span>(x, y, xf, yf);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap5-noise2dgrad" src="img/figCap5-Noise2DGrad.png"> 
+</div> 
+<figcaption> Figura 5.46 - Formatação em estilo gradiente.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>A formatação no estilo gradiente é interessante em alguns casos, mas ela é simplória e previsível. Nela, sempre existirão um ou mais pontos de convergência de cores e algum tipo de interpolação (no caso acima, linear). Uma boa estratégia para cativar olhares é abusar de contrastes inesperados em um mesmo padrão. Então, qual variável pode ser responsável pela formatação sem ser a posição das retas? Um ótimo candidato é um parâmetro que varia inesperadamente com o desenho de cada uma delas como, por exemplo, seu ângulo cujos valores estão entre 0° \ e 360°. O código abaixo é uma sugestão de como fazer isso, e uma das possíveis imagens geradas está mostrada na figura <a class="linkref" href="capitulo5.html#figcap5-noise2dradial">5.47</a>.</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 5.13 - Formatação baseada em ângulo - <button class="btnn" onclick="copyDivToClipboard('codcap5-formatang')">Copiar código</button></h1></header> 
+ <section id="codcap5-formatang"> <span class="myCodeBro"><span class="f">for</span> (<span class="v">int </span>x = 0; x &lt;= <span class="s">width</span>; x += sepLinhas) {</span> <br> 
+ <span class="myCodeBro"><span class="m">  // Incrementa o ruído local:</span></span> <br> 
+ <span class="myCodeBro">  nx += 0.05;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Define a variável que irá determinar a inclinação das retas:</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>angulo = 360*<span class="y">noise</span>(nx,ny);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Utiliza a angulação das retas para definição da cor:</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>cor = <span class="y">map</span>(angulo,0,360,0,255);</span> <br> 
+ <br> 
+ <span class="myCodeBro">  <span class="y">stroke</span>(cor);</span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>xf = x + tamLinha*<span class="y">cos</span>(<span class="y">radians</span>(angulo));</span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>yf = y + tamLinha*<span class="y">sin</span>(<span class="y">radians</span>(angulo));</span> <br> 
+ <span class="myCodeBro">  <span class="y">line</span>(x,y,xf,yf);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap5-noise2dradial" src="img/figCap5-Noise2DRadial.png"> 
+</div> 
+<figcaption> Figura 5.47 - Retas coloridas de acordo com suas angulações.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Você pode perceber que agora as retas formam um padrão menos homogêneo. Essa formatação ainda tem uma consequência oculta bem mais importante do que somente a inclusão de cores. Note que não há mais problema se as retas se sobreporem uma vez que serão criados contrastes proveniente das diferentes angulações. Isso permite que a quantidade de retas seja aumentada consideravelmente. Para conseguir imagens como a <a class="linkref" href="capitulo5.html#figcap5-noise2dpenult">5.48</a> altere os valores das variáveis para:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 5.14 - <button class="btnn" onclick="copyDivToClipboard('codcap5-950')">Copiar código</button></h1></header> 
+ <section id="codcap5-950"> <span class="myCodeBro"><span class="v">int </span>sepLinhas = 2;</span> <br> 
+ <span class="myCodeBro"><span class="v">float </span>tamLinha = 10;</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>e comente a limpeza de fundo dentro de <a class="codef">draw()</a>:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 5.15 - <button class="btnn" onclick="copyDivToClipboard('codcap5-807')">Copiar código</button></h1></header> 
+ <section id="codcap5-807"> <span class="myCodeBro"><span class="m">//background(255);</span></span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap5-noise2dpenult" src="img/figCap5-Noise2DPenult.png"> 
+</div> 
+<figcaption> Figura 5.48 - Retas sobrepostas com formatação dependente de ângulo.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>A finalização da obra pode ser feita aumentando os incrementos dos ruídos que provocará uma crescente oscilação nas inclinações das retas, entalhando a imagem com uma textura mais visível, progressivamente mais agressiva. Mudando o foco da composição, podemos adicionar cores ao invés de apenas tons de cinza. Optou-se por uma paleta monocromática para manter a ilusão de uma peça de constituição única. Por último, você pode eternizar sua peça salvando-a diretamente com a função <a class="codef">saveFrame()</a> que recebe o caminho<sup><a class="linkref" id="fnote-3" href="#footnote-3" title="Rodapé.">[3]</a></sup>, o nome e o tipo do arquivo de imagem a ser gravada. A extensão .png é interessante por possuir uma qualidade satisfatória mantendo um tamanho reduzido. Uma boa prática ao salvar imagens (ou qualquer outro arquivo) é definir uma condição específica para essa ação, caso contrário o Processing criará arquivos na velocidade de execução do programa. O código completo, incluindo essas últimas alterações, se encontra abaixo e, a imagem, na figura <a class="linkref" href="capitulo5.html#figcap5-noise2dfinal">5.49</a>:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 5.16 - <button class="btnn" onclick="copyDivToClipboard('codcap5-146')">Copiar código</button></h1></header> 
+ <section id="codcap5-146"> <span class="myCodeBro"><span class="v">float </span>nxi = <span class="y">random</span>(100);</span> <br> 
+ <span class="myCodeBro"><span class="v">float </span>nyi = <span class="y">random</span>(100);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">size</span>(700, 200);</span> <br> 
+ <span class="myCodeBro">  <span class="y">frameRate</span>(30);</span> <br> 
+ <span class="myCodeBro">  <span class="y">background</span>(255);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="j">void</span> <span class="x">draw</span>() {</span> <br> 
+ <span class="myCodeBro"><span class="m">  //background(255);</span></span> <br> 
+ <span class="myCodeBro">  <span class="y">strokeWeight</span>(2);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Separação entre uma linha e outra (em pixels):</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">int </span>sepLinhas = 2;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Tamanho das linhas desenhadas (em pixels):</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>tamLinha = 10;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Incrementa o valor inicial dos ruídos:</span></span> <br> 
+ <span class="myCodeBro">  nxi += 0.01;</span> <br> 
+ <span class="myCodeBro">  nyi += 0.01;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Define os ruídos locais a serem usados na angulação das retas:</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>ny = nyi;</span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>nx = nxi;</span> <br> 
+ <br> 
+ <span class="myCodeBro">  <span class="f">for</span> (<span class="v">int </span>y = 0; y &lt;= <span class="s">height</span>; y += sepLinhas) {</span> <br> 
+ <span class="myCodeBro"><span class="m">    // Incrementa e reinicia o ruído local:</span></span> <br> 
+ <span class="myCodeBro">    ny += 0.1;</span> <br> 
+ <span class="myCodeBro">    nx = nxi;</span> <br> 
+ <br> 
+ <span class="myCodeBro">    <span class="f">for</span> (<span class="v">int </span>x = 0; x &lt;= <span class="s">width</span>; x += sepLinhas) {</span> <br> 
+ <span class="myCodeBro"><span class="m">      // Incrementa o ruído local:</span></span> <br> 
+ <span class="myCodeBro">      nx += 0.1;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">      // Define a variável que irá determinar a inclinação das retas:</span></span> <br> 
+ <span class="myCodeBro">      <span class="v">float </span>angulo = 360 * <span class="y">noise</span>(nx, ny);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">      // Cores baseadas na inclinação das retas:</span></span> <br> 
+ <span class="myCodeBro">      <span class="v">float </span>verm = 60 + <span class="y">map</span>(angulo, 0, 360, 0, 255);</span> <br> 
+ <span class="myCodeBro">      <span class="y">stroke</span>(verm, 0, 0);</span> <br> 
+ <span class="myCodeBro">      </span> <br> 
+ <span class="myCodeBro"><span class="m">      // Cálculo do ponto final da reta angulada:</span></span> <br> 
+ <span class="myCodeBro">      <span class="v">float </span>xf = x + tamLinha * <span class="y">cos</span>(<span class="y">radians</span>(angulo));</span> <br> 
+ <span class="myCodeBro">      <span class="v">float </span>yf = y + tamLinha * <span class="y">sin</span>(<span class="y">radians</span>(angulo));</span> <br> 
+ <span class="myCodeBro">      <span class="y">line</span>(x, y, xf, yf);</span> <br> 
+ <span class="myCodeBro">    }</span> <br> 
+ <span class="myCodeBro">    <span class="f">if</span> (<span class="s">frameCount</span> == 5) {</span> <br> 
+ <span class="myCodeBro">      <span class="y">saveFrame</span>(&quot;Imagem.png&quot;);</span> <br> 
+ <span class="myCodeBro">    }</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap5-noise2dfinal" src="img/figCap5-Noise2DFinalHQ_05.png"> 
+</div> 
+<figcaption> Figura 5.49 - Imagem final após alterações na formatação.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>A comparação, lado a lado entre as diversas etapas desse projeto, figura <a class="linkref" href="capitulo5.html#figcap5-noise2dcomp">5.50</a>, nos ajuda a entender que empilhar sucessivamente camadas de formatação impulsiona uma evolução na riqueza e complexidade do padrão.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap5-noise2dcomp" src="img/figCap5-Noise2DCompHQ.png"> 
+</div> 
+<figcaption> Figura 5.50 - Evolução da visualização do ruído bidimensional.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p><span class="sec">5.5 Sumário</span> <a id="seccap5-end" class="labup"></a></p>
+<p>Os diferentes estilos de formatação, que algumas vezes são vistas por programadores como irrisórias no contexto do programa como um todo, não devem ser menosprezadas quando se trabalha com a computação artística. Você aprendeu diversas maneiras de enriquecer visualmente suas imagens e criar uma estética marcante através de técnicas de formatação que parecem simples, mas juntas são responsáveis por modificar profundamente a imagem. Você também foi capaz de escrever um código que utiliza de tudo<sup><a class="linkref" id="fnote-4" href="#footnote-4" title="Rodapé.">[4]</a></sup> que você aprendeu até o momento, como condicionais, repetições, trigonometria, aleatoriedade e, por fim, a própria formatação. Isso finaliza a segunda parte do livro, indicando que você agora possui um versátil conhecimento matemático e poderosas ferramentas de programação para criar verdadeiras obras primas nascidas da sua criatividade.</p>
+<p>Na terceira parte deste livro você investigará melhor como aplicar conceitos matemáticos aliados aos recursos que você vem estudando. Serão mostradas algumas dicas e estratégias de programação, mas o verdadeiro valor nestes últimos capítulos está no processo da projeção da criatividade e na transformação do conceitual no físico.</p>
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<hr>
+
+
+<p><a class="linkref" id="footnote-1" href="#fnote-1" title="Voltar ao texto.">[1]</a> Valdez, P. e Mehrabian, A. (1994). "<i>Effects of Color on Emotions</i>". Journal of Experimental Psychology General 123(4): pags.394-409.</p>
+<p><a class="linkref" id="footnote-2" href="#fnote-2" title="Voltar ao texto.">[2]</a> Baseado na obra <i>Invader Fractal</i> de Jared Tarbell.</p>
+<p><a class="linkref" id="footnote-3" href="#fnote-3" title="Voltar ao texto.">[3]</a> Utilizar essa função sem incluir um caminho salva a imagem no próprio diretório do programa.</p>
+<p><a class="linkref" id="footnote-4" href="#fnote-4" title="Voltar ao texto.">[4]</a> A programação orientada a objetos não foi utilizada por ser considerada como um tópico avançado. Ela possuí uma aplicação própria em um capítulo posterior.</p>
+
+ <br> 
+
+              <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                      <img src="" class="imagepreview" style="width: 100%;" >
+                    </div>
+                  </div>
+                </div>
+              </div>
+</div>
+</div>
+</div>
+            <div class="custom-container">
+              <div class="row">
+                <div class="col">
+                  <div>
+                    <a href="capitulo4.html" class="btn btn-sm btn-secondary">&lt;&lt; Capítulo 4</a>
+                    <a href="parte3.html" class="btn btn-sm btnright btn-secondary">Parte III &gt;&gt;</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <button id="menu-toggle" class="btn btn-secondary btn-sm toggled">&#8649;<br>M<br>E<br>N<br>U<br>&#8649;</button>
+          </div>
+          <footer class="page-footer bg-dark text-light meufooter">
+            <div class="footer-copyright py-1">&copy; 2020
+              <a href="mailto:mateuspberruezo@gmail.com"> Mateus Berruezo</a>
+            </div>
+          </footer>
+        </div>
+      </div>
+    <script src="../js/jquery-3.2.1.slim.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/booko.js"></script>
+  </body>
+</html>

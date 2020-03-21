@@ -1,0 +1,942 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>OCT: Capitulo 6</title>
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="../css/bookonline.css" rel="stylesheet">
+</head>
+<body>
+  <div id="page-container">
+    <div id="content-wrap">
+      <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="mainNav">
+        <div class="container justify-content-center">
+          <a class="navbar-brand" href="../index.html">O CÓDIGO TRANSCENDENTE</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse align-items-center" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto nav-masthead align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="../book.html">Livro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../about.html">Autor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../faq.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../livro/lindex.html">Online</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="wrapper" class="toggled">
+        <div id="sidebar-wrapper">
+          <ul class="sidebar-nav">
+            <li class="sidebar-brand"></li>
+            <li><a href="lindex.html">LIVRO</a></li>
+            <li><a href="dedicatoria.html">DEDICATÓRIA</a></li>
+            <li><a href="sumario.html">SUMÁRIO</a></li>
+            <li><a href="cartaprefacio.html">CARTA-PREFÁCIO</a></li>
+            <li><a href="agradecimentos.html">AGRADECIMENTOS</a></li>
+            <li><a href="prefacio.html">PREFÁCIO</a></li>
+            <li><a href="introducao.html">INTRODUÇÃO</a></li>
+            <li><a href="parte1.html">I. ORIGEM</a></li>
+            <li><a class="ind" href="capitulo1.html">1. PRIMEIROS PASSOS</a></li>
+            <li><a class="ind" href="capitulo2.html">2. A ARTE DA PROGRAMAÇÃO</a></li>
+            <li><a href="parte2.html">II. EVOLUÇÃO</a></li>
+            <li><a class="ind" href="capitulo3.html">3. CAOS</a></li>
+            <li><a class="ind" href="capitulo4.html">4. ORDEM</a></li>
+            <li><a class="ind" href="capitulo5.html">5. ILUSÕES</a></li>
+            <li><a href="parte3.html">III. TRANSCENDÊNCIA</a></li>
+            <li><a class="ind" href="capitulo6.html">6. FRACTAIS</a></li>
+            <li><a class="ind" href="capitulo7.html">7. EMERGÊNCIA</a></li>
+            <li><a class="ind" href="capitulo8.html">8. O CÓDIGO TRANSCENDENTE</a></li>
+            <li><a href="final.html">O PROCESSO FINAL</a></li>
+            <li><a href="indicea.html">ÍNDICE</a></li>
+          </ul>
+        </div>
+        <div class="container-book vertical-book">
+<div class="custom-container">
+<div class="row">
+<div class="col-xl-12">
+
+<p><span class="capnbr">[ CAPÍTULO 6 ]</span><br><span class="capname">Fractais</span><br><span class="capnbrbot">Catástase computacional</span><br></p>
+<p>Em 1989 o pai da geometria fractal<a id="geometriafractal"></a>, o matemático Benoit B. Mandelbrot<a id="MandelbrotBenoit"></a>, publicou um artigo intitulado Geometria Fractal: o que é, e o que ela faz?<sup><a class="linkref" id="fnote-1" href="#footnote-1" title="Rodapé.">[1]</a></sup> em que a definiu<a id="geometriafractal%definicao"></a> em um pequeno parágrafo:</p>
+<p><i>"Geometria fractal é um meio termo geométrico trabalhável entre a excessiva ordem geométrica Euclidiana e o caos geométrico da matemática geral. É baseado em uma forma de simetria que foi préviamente subutilizada, chamada de invariância na presença de contração e dilatação. A geometria fractal é convenientemente vista como uma linguagem que prova seu valor pelos seus usos. É usada na arte e na matemática pura, sem aplicações "práticas", podendo ser dita como sendo poética."</i></p>
+<p>Em um contexto puramente técnico, pode parecer estranho que palavras como "arte" e "poética" apareçam ao lado de termos matemáticos, mas esta é apenas mais uma prova da natureza singular dessas complexas estruturas geométricas. Fractais<a id="fractais"></a> talvez sejam uma das formas mais famosas de arte matemática existentes. Muitas vezes associados a estruturas caóticas, psicodélicas e enlouquecedoras, os fractais são fonte de admiração de um público cativado pela sua beleza hipnotizante ou pelas regras simples que dão vida a padrões complexos. Sem mais demoras, iremos agora entrar em um capitulo dedicado a essas formas intrigantes e ao espaço que elas conquistaram na arte computacional.</p>
+<p><span class="sec">6.1 Autossimilaridade e recursividade</span> <a id="seccap6-fractal" class="labup"></a></p>
+<p>Fractais<a id="fractais%definicao"></a> (do latim <i>fractus</i>: fração, quebrado) são padrões autossimilares<a id="autossimilaridade"></a> ao longo de uma escala de ampliação infinita. Isso significa que fractais podem ser divididos em inúmeros outros pedaços que, se observados de perto, seriam idênticos ao fractal original. Curiosamente, fractais são encontrados em múltiplos fenômenos naturais, como flocos de neve (figura <a class="linkref" href="capitulo6.html#figcap6-snowflake">6.1</a>), raios, linhas costeiras, plantas (figura <a class="linkref" href="capitulo6.html#figcap6-romanesco">6.2</a>), montanhas, veias e padrões em animais dentre outros.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="figcap6-snowflake" src="img/figCap6-Snowflake.jpg"> 
+</div> 
+<figcaption> Figura 6.1 - Floco de neve ampliado<sup>a</sup>, cortesia dos fotógrafos <br> Olga Sytina e Alexey Kljatov.<br><span class="imgsubcaption"><sup>a</sup>  Todos os direitos reservados pelos artistas originais.</span></figcaption> 
+ </div> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="figcap6-romanesco" src="img/figCap6-Romanesco.jpg"> 
+</div> 
+<figcaption> Figura 6.2 - Brócolis Romanesco<sup>b</sup>, cortesia do fotógrafo <br> Scott Atwood.<br><span class="imgsubcaption"><sup>b</sup>  Todos os direitos reservados pelo artista original.</span></figcaption> 
+ </div> 
+ <div id="figcap6-natfrac" class="col-md-12 text-center"> 
+ Figura - 6.3 - Fractais encontrados na natureza. </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p></p>
+<p>No segmento computacional, o floco de neve de Koch<a id="flocodenevedeKoch"></a> é um dos fractais em que se pode observar o comportamento autossimilar de forma mais evidente. Na imagem <a class="linkref" href="capitulo6.html#figcap6-kochsnowflake7">6.4</a> é mostrada sua representação com sete níveis de subdivisões. Ele foi concebido como uma figura do tipo <i>Scalable Vector Graphics</i> e você pode aplicar um fator de ampliação relativamente alto a ela (mais de 5000%) para ver como o fractal se repete em escala macro e micro.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap6-kochsnowflake7" src="img/pdfCap6-Koch7.png"> 
+</div> 
+<figcaption> Figura 6.4 - Floco de neve de Koch, 7 divisões.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p></p>
+<p>Os fractais mais notáveis são divididos em três grandes grupos. Os fractais geométricos<a id="fractais%geometricos"></a>, figura <a class="linkref" href="capitulo6.html#figcap6-fracgeom">6.5</a>, são normalmente criados através de sucessivas repetições de um processo geométrico simples ao longo de um espaço indeterminado. O floco de neve de Koch é um fractal geométrico nascido a partir de uma regra de subdivisão infinita das retas que o compõe. Outros exemplos seriam os Triângulos de Sierpinski, a Árvore Fractal e a Curva Dragão.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-4"> 
+ <div class="pop imgMax4"> 
+<img class="img-fluid imgborder" id="pdfcap6-snowflake" src="img/pdfCap6-Snowflake.png"> 
+</div> 
+<figcaption> Figura 6.6 - Floco de neve de Koch.</figcaption> 
+ </div> 
+ <div class="col-md-4"> 
+ <div class="pop imgMax4"> 
+<img class="img-fluid imgborder" id="pdfcap6-dragon" src="img/pdfCap6-Dragon.png"> 
+</div> 
+<figcaption> Figura 6.7 - Dragão de Harter-Heighway.</figcaption> 
+ </div> 
+ <div class="col-md-4"> 
+ <div class="pop imgMax4"> 
+<img class="img-fluid imgborder" id="pdfcap6-triangle" src="img/pdfCap6-Triangle.png"> 
+</div> 
+<figcaption> Figura 6.8 - Triângulo de Sierpinski.</figcaption> 
+ </div> 
+ <div id="figcap6-fracgeom" class="col-md-12 text-center"> 
+ Figura - 6.5 - Fractais geométricos. </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p></p>
+<p></p>
+<p>Por outro lado, os denominados fractais abstratos<a id="fractais%abstratos"></a>, figura <a class="linkref" href="capitulo6.html#figcap6-fracabstr">6.9</a>, como os criados por Mandelbrot, podem ser gerados através de computadores que calculam repetidamente uma equação matemática ou uma relação de recorrência. O Conjunto de Mandelbrot e o de Julia são os mais famosos deste tipo.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="figcap6-mandelbrot" src="img/figCap6-Mandelbrot.png"> 
+</div> 
+<figcaption> Figura 6.10 - Conjunto de Mandelbrot.</figcaption> 
+ </div> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="figcap6-julia" src="img/figCap6-Julia.png"> 
+</div> 
+<figcaption> Figura 6.11 - Conjunto de Julia.</figcaption> 
+ </div> 
+ <div id="figcap6-fracabstr" class="col-md-12 text-center"> 
+ Figura - 6.9 - Fractais abstratos. </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p></p>
+<p>Por último, estão os fractais aleatórios<a id="fractais%aleatorios"></a>, figura <a class="linkref" href="capitulo6.html#figcap6-fracaleat">6.12</a>, formados através de processos estocásticos. Neste grupo estão o Voo de Lévy e as Trajetórias do Movimento Browniano.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="pdfcap6-fracaleatlevy" src="img/pdfCap6-FracAleatLevy.png"> 
+</div> 
+<figcaption> Figura 6.13 - Voo de Lévy.</figcaption> 
+ </div> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="pdfcap6-fracaleatbrow" src="img/pdfCap6-FracAleatBrow.png"> 
+</div> 
+<figcaption> Figura 6.14 - Movimento Browniano.</figcaption> 
+ </div> 
+ <div id="figcap6-fracaleat" class="col-md-12 text-center"> 
+ Figura - 6.12 - Fractais aleatórios. </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p></p>
+<p>Um fractal é criado pela repetição infinita, no âmbito espacial e temporal, de um padrão sobre si mesmo. Esse incessante empilhamento de operações e desenhos o torna ideal para ser materializado por um computador. As palavras chave quando nos referimos a essas figuras são <i>recursividade</i> <a id="recursividade"></a> e <i>regras</i>. A recursividade faz analogia a funções que realizam chamadas a elas mesmas. Por exemplo, uma linha de ação lógica de programação seria projetar uma função que desenhasse parte do padrão e, em seguida, fazer com que essa sub-rotina invocasse a si mesma, repetindo a forma e criando a autossimilaridade. É importante observar que enquanto essa repetição infinita é inofensiva na teoria, ela é muito perigosa na prática. Na maioria das vezes a recursividade multiplica o número de operações realizadas por iteração ou ciclo de desenho da figura. Quando programado, um fractal deve possuir uma condição de parada<a id="recursividade%condicaodeparada"></a>, caso contrário ele irá explodir no numero de operações e travar a simulação por falta de memória. As condições de parada da recursividade para um fractal normalmente se resumem a um tamanho visual mínimo, afinal, não faz sentido possuir um número infinito de detalhes se o computador não for capaz de exibí-los. Baseado nessa explicação simplificada, você pode ter concluído que a forma básica de uma função recursiva<a id="recursividade%funcaoestruturabasica"></a> que desenha um fractal é algo do tipo:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 6.1 - <button class="btnn" onclick="copyDivToClipboard('codcap6-58')">Copiar código</button></h1></header> 
+ <section id="codcap6-58"> <span class="myCodeBro"><span class="j">void</span> desenhaFractal(argumentos) {</span> <br> 
+ <span class="myCodeBro"><span class="m">  // 1) Desenha o padrão.</span></span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // 2) Gera novosArgumentos baseados em regras.</span></span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // 3) Função chama a si mesma com os novos argumentos.</span></span> <br> 
+ <span class="myCodeBro">  <span class="f">if</span>(condicaoDeParada == <span class="j">false</span>) {</span> <br> 
+ <span class="myCodeBro">    desenhaFractal(argumentos e/ou novosArgumentos);</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Igualmente importante são as regras<a id="fractais%regras"></a> ou os processos que dão vida a esses padrões. Os fractais geométricos são profundamente enraizados em regras simples repetidas ao longo de muitas iterações, gerando imagens de uma complexidade visual mesmerizante. Em geral essas regras se limitam a desenhar elementos geométricos (círculos, retas, retângulos, etc.), rotados e transladados, respeitando pré-condições de projeto. Um exemplo que podemos citar é do próprio floco de neve de Koch<a id="flocodenevedeKoch%regras"></a>, cujas leis de construção, mostradas abaixo e ilustradas em <a class="linkref" href="capitulo6.html#figcap6-kochsnowflakeinstruct">6.15</a>, são baseadas na subdivisão recursiva de retas.</p>
+</div>
+</div>
+<ol>
+ <li> Comece com um segmento de reta. </li>
+ <li> Divida a reta em outros três segmentos de comprimentos idênticos. </li>
+ <li> Desenhe um triângulo equilátero que possua o segmento central do passo 2 como base. </li>
+ <li> Remova o segmento que é a base do triângulo desenhado no passo 3 </li>
+ <li> Repita os passos anteriores para cada segmento de reta existente. </li>
+ </ol>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-2"> 
+ <div class="pop imgMax2"> 
+<img class="img-fluid imgborder" id="pdfcap6-kochi1" src="img/pdfCap6-KochI1.png"> 
+</div> 
+<figcaption> Figura 6.16 - Passo 1.</figcaption> 
+ </div> 
+ <div class="col-md-2"> 
+ <div class="pop imgMax2"> 
+<img class="img-fluid imgborder" id="pdfcap6-kochi2" src="img/pdfCap6-KochI2.png"> 
+</div> 
+<figcaption> Figura 6.17 - Passo 2.</figcaption> 
+ </div> 
+ <div class="col-md-2"> 
+ <div class="pop imgMax2"> 
+<img class="img-fluid imgborder" id="pdfcap6-kochi3" src="img/pdfCap6-KochI3.png"> 
+</div> 
+<figcaption> Figura 6.18 - Passo 3.</figcaption> 
+ </div> 
+ <div class="col-md-2"> 
+ <div class="pop imgMax2"> 
+<img class="img-fluid imgborder" id="pdfcap6-kochi4" src="img/pdfCap6-KochI4.png"> 
+</div> 
+<figcaption> Figura 6.19 - Passo 4.</figcaption> 
+ </div> 
+ <div class="col-md-2"> 
+ <div class="pop imgMax2"> 
+<img class="img-fluid imgborder" id="pdfcap6-kochi5" src="img/pdfCap6-KochI5.png"> 
+</div> 
+<figcaption> Figura 6.20 - Passo 5.</figcaption> 
+ </div> 
+ <div id="figcap6-kochsnowflakeinstruct" class="col-md-12 text-center"> 
+ Figura - 6.15 - Passos para a construção do Floco de neve de Koch. </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Os detalhes em um fractal são revelados quando as regras de construção são repetidas para cada subelemento (passo 5 nas instruções citadas anteriormente), figura <a class="linkref" href="capitulo6.html#figcap6-kochsnowflake">6.21</a>.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-2"> 
+ <div class="pop imgMax2"> 
+<img class="img-fluid imgborder" id="pdfcap6-koch0" src="img/pdfCap6-Koch0.png"> 
+</div> 
+<figcaption> Figura 6.22 - 0.</figcaption> 
+ </div> 
+ <div class="col-md-2"> 
+ <div class="pop imgMax2"> 
+<img class="img-fluid imgborder" id="pdfcap6-koch1" src="img/pdfCap6-Koch1.png"> 
+</div> 
+<figcaption> Figura 6.23 - 1.</figcaption> 
+ </div> 
+ <div class="col-md-2"> 
+ <div class="pop imgMax2"> 
+<img class="img-fluid imgborder" id="pdfcap6-koch2" src="img/pdfCap6-Koch2.png"> 
+</div> 
+<figcaption> Figura 6.24 - 2.</figcaption> 
+ </div> 
+ <div class="col-md-2"> 
+ <div class="pop imgMax2"> 
+<img class="img-fluid imgborder" id="pdfcap6-koch3" src="img/pdfCap6-Koch3.png"> 
+</div> 
+<figcaption> Figura 6.25 - 3.</figcaption> 
+ </div> 
+ <div class="col-md-2"> 
+ <div class="pop imgMax2"> 
+<img class="img-fluid imgborder" id="pdfcap6-koch4" src="img/pdfCap6-Koch4.png"> 
+</div> 
+<figcaption> Figura 6.26 - 4.</figcaption> 
+ </div> 
+ <div class="col-md-2"> 
+ <div class="pop imgMax2"> 
+<img class="img-fluid imgborder" id="pdfcap6-koch5" src="img/pdfCap6-Koch5.png"> 
+</div> 
+<figcaption> Figura 6.27 - 5.</figcaption> 
+ </div> 
+ <div id="figcap6-kochsnowflake" class="col-md-12 text-center"> 
+ Figura - 6.21 - Níveis de subdivisões no Floco de neve de Koch. </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Você entenderá melhor como essas regras locais são capazes de gerar um resultado global quando programar um fractal nas próximas seções.</p>
+<p><span class="sec">6.2 Fractal árvore</span> <a id="seccap6-fractaltree" class="labup"></a></p>
+<p>Um estudo de caso clássico, simples e belo é o fractal planta ou árvore<a id="fractalarvore"></a>. Ele recebe esse nome em homenagem a sua forma, que remete a de uma árvore composta por um tronco central que se desdobra em diversos galhos ou ramos a medida que ela cresce, figura <a class="linkref" href="capitulo6.html#figcap6-fracarv">6.28</a>.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="figcap6-fracarv1" src="img/figCap6-FracArv1.jpg"> 
+</div> 
+<figcaption> Figura 6.29 - Silhueta de uma árvore.</figcaption> 
+ </div> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="pdfcap6-fracarv22" src="img/pdfCap6-FracArv22.png"> 
+</div> 
+<figcaption> Figura 6.30 - Fractal árvore deformado usando a função <a class="codef">noise()</a>.</figcaption> 
+ </div> 
+ <div id="figcap6-fracarv" class="col-md-12 text-center"> 
+ Figura - 6.28 - Comparação árvore e fractal </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Ao final deste capítulo você será capaz de reproduzir formas como esta, mas primeiramente você deve começar pelo básico e entender como um fractal é transmutado do conceito para o código. Concentre-se na forma mais rudimentar de um fractal regular<sup><a class="linkref" id="fnote-2" href="#footnote-2" title="Rodapé.">[2]</a></sup> desta categoria e como ele se desenvolve a cada iteração da recursividade, mostrados na figura <a class="linkref" href="capitulo6.html#figcap6-arvpartes1">6.31</a>.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-3"> 
+ <div class="pop imgMax3"> 
+<img class="img-fluid imgborder" id="figcap6-arvpartes18" src="img/pdfCap6-ArvPartes18.png"> 
+</div> 
+<figcaption> Figura 6.32 - Iteração 1.</figcaption> 
+ </div> 
+ <div class="col-md-3"> 
+ <div class="pop imgMax3"> 
+<img class="img-fluid imgborder" id="pdfcap6-arvpartes17" src="img/pdfCap6-ArvPartes17.png"> 
+</div> 
+<figcaption> Figura 6.33 - Iteração 2.</figcaption> 
+ </div> 
+ <div class="col-md-3"> 
+ <div class="pop imgMax3"> 
+<img class="img-fluid imgborder" id="pdfcap6-arvpartes16" src="img/pdfCap6-ArvPartes16.png"> 
+</div> 
+<figcaption> Figura 6.34 - Iteração 3.</figcaption> 
+ </div> 
+ <div class="col-md-3"> 
+ <div class="pop imgMax3"> 
+<img class="img-fluid imgborder" id="figcap6-arvpartes15" src="img/pdfCap6-ArvPartes15.png"> 
+</div> 
+<figcaption> Figura 6.35 - Iteração 4.</figcaption> 
+ </div> 
+ </div> 
+ <div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-3"> 
+ <div class="pop imgMax3"> 
+<img class="img-fluid imgborder" id="pdfcap6-arvpartes14" src="img/pdfCap6-ArvPartes14.png"> 
+</div> 
+<figcaption> Figura 6.36 - Iteração 5.</figcaption> 
+ </div> 
+ <div class="col-md-3"> 
+ <div class="pop imgMax3"> 
+<img class="img-fluid imgborder" id="pdfcap6-arvpartes13" src="img/pdfCap6-ArvPartes13.png"> 
+</div> 
+<figcaption> Figura 6.37 - Iteração 6.</figcaption> 
+ </div> 
+ <div class="col-md-3"> 
+ <div class="pop imgMax3"> 
+<img class="img-fluid imgborder" id="pdfcap6-arvpartes12" src="img/pdfCap6-ArvPartes12.png"> 
+</div> 
+<figcaption> Figura 6.38 - Iteração 7.</figcaption> 
+ </div> 
+ <div class="col-md-3"> 
+ <div class="pop imgMax3"> 
+<img class="img-fluid imgborder" id="pdfcap6-arvpartes11" src="img/pdfCap6-ArvPartes11.png"> 
+</div> 
+<figcaption> Figura 6.39 - Iteração 8.</figcaption> 
+ </div> 
+ <div id="figcap6-arvpartes1" class="col-md-12 text-center"> 
+ Figura - 6.31 - Etapas do desenvolvimento do fractal árvore. </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>A análise do fractal através de etapas é mais naturalmente entendida se analisarmos apenas um único ramo da árvore, figura <a class="linkref" href="capitulo6.html#figcap6-arvpartes21">6.40</a>, uma vez que os demais são gerados por repetições simétricas da forma principal. Este ramo também será propositadamente distorcido de modo que a cada iteração o tamanho do próximo galho seja apenas ligeiramente menor que o anterior, como mostrado na figura <a class="linkref" href="capitulo6.html#figcap6-arvpartes22">6.41</a>. O objetivo é propiciar uma explanação mais clara da etapa geométrica de projeto do fractal.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="figcap6-arvpartes21" src="img/pdfCap6-ArvPartes21.png"> 
+</div> 
+<figcaption> Figura 6.40 - Ramo em análise do fractal árvore.</figcaption> 
+ </div> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="figcap6-arvpartes22" src="img/pdfCap6-ArvPartes22.png"> 
+</div> 
+<figcaption> Figura 6.41 - Ramo aumentado em tamanho.</figcaption> 
+ </div> 
+ <div id="figcap6-544" class="col-md-12 text-center"> 
+ Figura - 6.42 - Objeto de estudo do fractal árvore. </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p></p>
+<p>Se você dividir o ramo em cada uma de suas iterações, perceberá que ele consiste<a id="fractalarvore%regras"></a> em três operações primordiais:</p>
+</div>
+</div>
+<ol>
+ <li> Desenhar uma reta cujo ponto inicial é igual ao ponto final da reta da iteração passada. </li>
+ <li> Inclinar a reta desenhada em 1, para que ela tenha um certo ângulo em relação à reta desenhada na iteração passada. </li>
+ <li> Reduzir o tamanho da reta desenhada em 1, de forma que ela seja menor que a reta desenhada na iteração passada. </li>
+ </ol>
+<div class="row">
+<div class="col-xl-12">
+<p>Para fins de exemplo, considere que o ângulo de inclinação da segunda operação é fixo em 45° . Estes três procedimentos estão evidenciados nas figuras <a class="linkref" href="capitulo6.html#figcap6-arvpartes31">6.43</a> e <a class="linkref" href="capitulo6.html#figcap6-arvpartes32">6.44</a>.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="figcap6-arvpartes31" src="img/pdfCap6-ArvPartes32.png"> 
+</div> 
+<figcaption> Figura 6.43 - Pontos iniciais e finais de cada iteração.</figcaption> 
+ </div> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="figcap6-arvpartes32" src="img/pdfCap6-ArvPartes31.png"> 
+</div> 
+<figcaption> Figura 6.44 - Inclinações a cada iteração.</figcaption> 
+ </div> 
+ <div id="figcap6-874" class="col-md-12 text-center"> 
+ Figura - 6.45 - Etapas do desenho de um ramo do fractal árvore. </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Com base nessas proposições podemos inferir que a função<a id="fractalarvore%projetodafuncao"></a> para desenhar a reta que compõe cada iteração desse ramo possuirá as seguintes premissas:</p>
+</div>
+</div>
+<ul>
+ <li> <b>Parâmetros da função</b>: Deverão ser fornecidos, para cada iteração, um ponto inicial, um comprimento da reta e o ângulo de inclinação dessa reta, totalizando três argumentos de entrada. </li>
+ <li> <b>Corpo da função</b>: Essa função calculará o ponto final da reta usando os argumentos de entrada e as equações trigonométricas do círculo <a class="linkref" href="capitulo4.html#codcap4-circleeq">(4.1</a>). A reta que representa o ramo da árvore será traçada através da função <a class="codef">line()</a> usando as coordenadas do ponto inicial (fornecido) e final (calculado). </li>
+ <li> <b>Retorno da função</b>: A função deverá devolver as coordenadas x e y do ponto final da reta para que essa informação seja usada na próxima chamada da sub-rotina (próxima iteração). Isto implica em mais de uma variável de retorno sendo necessário usar vetores para agrupar os dados. </li>
+ </ul>
+<div class="row">
+<div class="col-xl-12">
+<p>Seguindo esse raciocínio você pode prontamente escrever a função para desenhar um ramo dessa árvore e depois chamá-la no programa principal:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 6.2 - Ramo simples - <button class="btnn" onclick="copyDivToClipboard('codcap6-41')">Copiar código</button></h1></header> 
+ <section id="codcap6-41"> <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">size</span>(500,500);</span> <br> 
+ <span class="myCodeBro">  <span class="y">background</span>(255);</span> <br> 
+ <br> 
+ <span class="myCodeBro">  <span class="v">float</span>[] pontos = <span class="j">new</span> <span class="v">float</span>[2];</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Utilizado -90° apenas para que a árvore cresça para cima da tela.</span></span> <br> 
+ <span class="myCodeBro">  pontos = arvore(<span class="s">width</span>/2,<span class="s">height</span>,100,-90);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="v">float</span>[] arvore(<span class="v">float </span>_xi, <span class="v">float </span>_yi, <span class="v">float </span>_comp, <span class="v">float </span>_angulo) {</span> <br> 
+ <span class="myCodeBro"><span class="m">  // Fórmula básica mostrada na seção 4.1</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>xf = _xi + <span class="y">cos</span>(<span class="y">radians</span>(_angulo))*_comp;</span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>yf = _yi + <span class="y">sin</span>(<span class="y">radians</span>(_angulo))*_comp;</span> <br> 
+ <span class="myCodeBro">  <span class="y">line</span>(_xi,_yi,xf,yf);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Esta função retorna os pontos final do ramo:</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">float</span>[] posFinal = {xf,yf};</span> <br> 
+ <br> 
+ <span class="myCodeBro">  <span class="j">return</span> posFinal;</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Ao executar esse código você verá exatamente a primeira e única iteração da árvore, mostrada anteriormente na figura <a class="linkref" href="capitulo6.html#figcap6-arvpartes18">6.32</a>. O restante do ramo será construído com as chamadas subsequentes à função <a class="codef">arvore()</a>. Complemente o código do <a class="codef">setup()</a> com as linhas:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 6.3 - <button class="btnn" onclick="copyDivToClipboard('codcap6-103')">Copiar código</button></h1></header> 
+ <section id="codcap6-103"> <span class="myCodeBro"><span class="m">// Gera um dos ramos da figura 6.9d:</span></span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">// Iteração 1.</span></span> <br> 
+ <span class="myCodeBro">pontos = arvore(<span class="s">width</span>/2,<span class="s">height</span>,100,-90);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">// Iteração 2: 60% menor e inclinado 45° em relação à Iteração 1.</span></span> <br> 
+ <span class="myCodeBro">pontos = arvore(pontos[0],pontos[1],100*0.6,-90 + 45);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">// Iteração 3: 60% menor e inclinado 45° em relação à Iteração 2.</span></span> <br> 
+ <span class="myCodeBro">pontos = arvore(pontos[0],pontos[1],100*0.6*0.6,-90 + 45 + 45);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">// Iteração 4: 60% menor e inclinado 45° em relação à Iteração 3.</span></span> <br> 
+ <span class="myCodeBro">pontos = arvore(pontos[0],pontos[1],100*0.6*0.6*0.6,-90 + 45 + 45 + 45);</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Observe que essa abordagem não é elegante, uma vez que é necessário que a função <a class="codef">arvore()</a> retorne variáveis que serão usadas em chamadas posteriores dessa mesma função, além de ser requerida a atualização manual dos argumentos de entrada. Uma solução para esse problema é usar a <i>recursividade</i>. Perceba que a função <a class="codef">arvore()</a>, escrita dessa maneira, não é recursiva, ou seja, ela não faz uma invocação a si mesma. No entanto isso seria muito interessante dado que ela possuí todos os argumentos necessários para a execução da próxima iteração: o ponto final da reta anterior, o novo ângulo de inclinação e o novo comprimento. Vamos atualizar nossa função com essas sugestões, mas <b>não execute esse novo código</b> ainda!</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 6.4 - Ramo recursivo - <button class="btnn" onclick="copyDivToClipboard('codcap6-arvoreramoerro')">Copiar código</button></h1></header> 
+ <section id="codcap6-arvoreramoerro"> <span class="myCodeBro"><span class="j">void</span> arvore(<span class="v">float </span>_xi, <span class="v">float </span>_yi, <span class="v">float </span>_comp, <span class="v">float </span>_angulo) {</span> <br> 
+ <span class="myCodeBro"><span class="m">  // Fórmula básica mostrada na seção 4.1</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>xf = _xi + <span class="y">cos</span>(<span class="y">radians</span>(_angulo))*_comp;</span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>yf = _yi + <span class="y">sin</span>(<span class="y">radians</span>(_angulo))*_comp;</span> <br> 
+ <br> 
+ <span class="myCodeBro">  <span class="y">line</span>(_xi,_yi,xf,yf);</span> <br> 
+ <span class="myCodeBro"><span class="m">  // Cada novo ramo será 60% do tamanho do original:</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>novoComp = 0.6*_comp;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Cada novo ramo será inclinado 45°do ramo anterior:</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>novoAngulo = _angulo + 45;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Recursividade: Esta função faz uma chamada</span></span> <br> 
+ <span class="myCodeBro"><span class="m">  // a ela própria (com novos argumentos) para desenhar</span></span> <br> 
+ <span class="myCodeBro"><span class="m">  // a próxima reta do ramo.</span></span> <br> 
+ <span class="myCodeBro">  arvore(xf,yf,novoComp,novoAngulo);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>A rotina acima irá desenhar uma figura como a <a class="linkref" href="capitulo6.html#figcap6-arvpartes22">6.41</a>, mas se você executá-la dessa maneira o Processing irá travar, com uma mensagem de erro igual a mostrada na figura <a class="linkref" href="capitulo6.html#figcap6-stackoverflow">6.46</a>, indicando um estouro de memória em virtude da <i>recursividade infinita</i> <a id="recursividadeinfinita%infloop"></a>. Essa falha ocorreu porque em <a class="linkref" href="capitulo6.html#codcap6-arvoreramoerro">6.4</a> existe um erro inerente de projeto visto que não foi adicionada uma condição de parada para impedir a repetição descontrolada da chamada da função. Isto é de suma importância no fractal árvore, pois ele cresce quadráticamente com o número de iterações. Em outras palavras, uma reta gera duas, que geram quatro, que geram oito e assim por diante, sempre dobrando o número de retas a cada iteração.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap6-stackoverflow" src="img/figCap6-StackOverflow.png"> 
+</div> 
+<figcaption> Figura 6.46 - Erro de recursividade infinita.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Um bom candidato para condição de parada<a id="fractalarvore%condicaodeparada"></a> é a resolução visual. Como cada reta que compõe o fractal diminui o seu tamanho a cada iteração, se esse tamanho for menor que certo valor, tal como 2 pixels, a função não será mais chamada recursivamente. Vamos aproveitar e fazer uma última alteração. Conforme mostrado na figura <a class="linkref" href="capitulo6.html#figcap6-arvpartes1">6.31</a>, cada iteração consiste em desenhar dois ramos (ou retas) com inclinações simétricas. Por exemplo, se um é desenhado com +45° o outro deverá ser desenhado com -45° . Podemos incluir essa simples condição e, em vez de fazer uma única chamada recursiva, fazer duas para que sejam desenhados dois ramos no final de cada iteração. Veja o código completo a seguir:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 6.5 - Árvore recursiva - <button class="btnn" onclick="copyDivToClipboard('codcap6-arvorerecursv')">Copiar código</button></h1></header> 
+ <section id="codcap6-arvorerecursv"> <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">size</span>(500, 500);</span> <br> 
+ <span class="myCodeBro">  <span class="y">background</span>(255);</span> <br> 
+ <span class="myCodeBro">  arvore(<span class="s">width</span> / 2, <span class="s">height</span>, 100, -90);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="j">void</span> arvore(<span class="v">float </span>_xi, <span class="v">float </span>_yi, <span class="v">float </span>_comp, <span class="v">float </span>_angulo) {</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Condição de parada da recursividade:</span></span> <br> 
+ <span class="myCodeBro"><span class="m">  // Comprimento do ramo menos que 2 pixels.</span></span> <br> 
+ <span class="myCodeBro">  <span class="f">if</span> (_comp &gt; 2) {</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">    // Cálculo do ponto final do ramo e seu desenho:</span></span> <br> 
+ <span class="myCodeBro">    <span class="v">float </span>xf = _xi + <span class="y">cos</span>(<span class="y">radians</span>(_angulo)) * _comp;</span> <br> 
+ <span class="myCodeBro">    <span class="v">float </span>yf = _yi + <span class="y">sin</span>(<span class="y">radians</span>(_angulo)) * _comp;</span> <br> 
+ <span class="myCodeBro">    <span class="y">line</span>(_xi, _yi, xf, yf);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">    // Cada novo ramo será 60% do tamanho do original:</span></span> <br> 
+ <span class="myCodeBro">    <span class="v">float </span>novoComp = 0.6 * _comp;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">    // São duas retas, uma inclinada a +45°da reta original</span></span> <br> 
+ <span class="myCodeBro"><span class="m">    // e outra a -45°da reta original:</span></span> <br> 
+ <span class="myCodeBro">    <span class="v">float </span>novoAnguloR1 = _angulo + 45;</span> <br> 
+ <span class="myCodeBro">    <span class="v">float </span>novoAnguloR2 = _angulo - 45;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">    // Recursividade: Esta função faz duas chamadas</span></span> <br> 
+ <span class="myCodeBro"><span class="m">    // a ela própria (com novos argumentos) para desenhar</span></span> <br> 
+ <span class="myCodeBro"><span class="m">    // outras 2 retas.</span></span> <br> 
+ <span class="myCodeBro">    arvore(xf, yf, novoComp, novoAnguloR1);</span> <br> 
+ <span class="myCodeBro">    arvore(xf, yf, novoComp, novoAnguloR2);</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Você pode perceber que não houve nenhuma mudança quanto a chamada da função em <a class="codef">setup()</a>, visto que todos os passos para desenhar o fractal estão contidos em <a class="codef">arvore()</a>. O fluxo de desenho também é mantido e conhecido: a primeira reta será desenhada no ponto central da parte inferior da tela, com um comprimento de cem pixels e uma angulação de -90°. Como dito anteriormente, esse ângulo foi definido de maneira que a árvore crescesse para cima. Se você alterar esse ângulo a árvore passará a ter uma inclinação diferente, mas seus ramos continuarão com uma inclinação de 45° em relação ao ramo originário e com 60% do tamanho do mesmo, já que tais características foram fixadas no corpo da função.</p>
+<p>Claro que você deve estar imaginando como seria essa árvore se você alterasse os 45° para algum outro valor. Você pode investigar o resultado mudando essa grandeza diretamente no corpo da função, ou pode reescrevê-la para que ela contemple mais um argumento, sendo este o ângulo de inclinação dos ramos. O código abaixo produz resultados como os da figura <a class="linkref" href="capitulo6.html#figcap6-arvangulos">6.47</a>.</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 6.6 - Árvores fractais - <button class="btnn" onclick="copyDivToClipboard('codcap6-arvfrac')">Copiar código</button></h1></header> 
+ <section id="codcap6-arvfrac"> <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">size</span>(500, 500);</span> <br> 
+ <span class="myCodeBro">  <span class="y">background</span>(255);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="j">void</span> <span class="x">draw</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">background</span>(255);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Angulo do ramo vai de 0°a 180°</span></span> <br> 
+ <span class="myCodeBro"><span class="m">  // de acordo com a posição horizontal do mouse:</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>aRamo = <span class="y">map</span>(<span class="s">mouseX</span>, 0, <span class="s">width</span>, 0, 180);</span> <br> 
+ <span class="myCodeBro">  arvore(<span class="s">width</span> / 2, <span class="s">height</span>, 100, -90, aRamo);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="j">void</span> arvore(<span class="v">float </span>_xi, <span class="v">float </span>_yi, <span class="v">float </span>_comp, <span class="v">float </span>_angulo, <span class="v">float </span>_anguloRamo) {</span> <br> 
+ <span class="myCodeBro">  <span class="f">if</span> (_comp &gt; 2) {</span> <br> 
+ <br> 
+ <span class="myCodeBro">    <span class="v">float </span>xf = _xi + <span class="y">cos</span>(<span class="y">radians</span>(_angulo)) * _comp;</span> <br> 
+ <span class="myCodeBro">    <span class="v">float </span>yf = _yi + <span class="y">sin</span>(<span class="y">radians</span>(_angulo)) * _comp;</span> <br> 
+ <span class="myCodeBro">    <span class="y">line</span>(_xi, _yi, xf, yf);</span> <br> 
+ <br> 
+ <span class="myCodeBro">    <span class="v">float </span>novoComp = 0.6 * _comp;</span> <br> 
+ <br> 
+ <span class="myCodeBro">    <span class="v">float </span>novoAnguloR1 = _angulo + _anguloRamo;</span> <br> 
+ <span class="myCodeBro">    <span class="v">float </span>novoAnguloR2 = _angulo - _anguloRamo;</span> <br> 
+ <span class="myCodeBro">    </span> <br> 
+ <span class="myCodeBro">    arvore(xf, yf, novoComp, novoAnguloR1, _anguloRamo);</span> <br> 
+ <span class="myCodeBro">    arvore(xf, yf, novoComp, novoAnguloR2, _anguloRamo);</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="pdfcap6-arvangulos15" src="img/pdfCap6-ArvAngulos15.png"> 
+</div> 
+<figcaption> Figura 6.48 - 15°.</figcaption> 
+ </div> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="pdfcap6-arvangulos30" src="img/pdfCap6-ArvAngulos30.png"> 
+</div> 
+<figcaption> Figura 6.49 - 30°.</figcaption> 
+ </div> 
+ </div> 
+ <div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-4"> 
+ <div class="pop imgMax4"> 
+<img class="img-fluid imgborder" id="pdfcap6-arvangulos90" src="img/pdfCap6-ArvAngulos90.png"> 
+</div> 
+<figcaption> Figura 6.50 - 90°.</figcaption> 
+ </div> 
+ <div class="col-md-4"> 
+ <div class="pop imgMax4"> 
+<img class="img-fluid imgborder" id="pdfcap6-arvangulos135" src="img/pdfCap6-ArvAngulos135.png"> 
+</div> 
+<figcaption> Figura 6.51 - 135°.</figcaption> 
+ </div> 
+ <div class="col-md-4"> 
+ <div class="pop imgMax4"> 
+<img class="img-fluid imgborder" id="pdfcap6-arvangulos150" src="img/pdfCap6-ArvAngulos150.png"> 
+</div> 
+<figcaption> Figura 6.52 - 150°.</figcaption> 
+ </div> 
+ <div id="figcap6-arvangulos" class="col-md-12 text-center"> 
+ Figura - 6.47 - Fractais com ramificações anguladas. </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p><span class="secsub">6.2.1 Subespécies</span> <a id="seccap6-fractaltreeformat" class="labup"></a></p>
+<p>Finalizada a implementação da forma do fractal, podemos experimentar com variações sobre a função <a class="codef">arvore()</a> para criar efeitos artísticos. Muitos deles se resumem a modificar as variáveis da função original, mas irão ecoar em estéticas significativamente diferentes. No entanto, deve-se ter cuidado ao alterar esses coeficientes, pois isso pode acarretar em um aumento colossal de operações e travar a simulação. Em geral, uma boa prática é ajustar os coeficientes <i>individualmente</i> e alterar <i>levemente</i> seus valores, sempre observando quais são os efeitos gerados no fractal.</p>
+<p>A primeira alteração que você pode fazer é reduzir o quanto um ramo será encurtado a cada iteração que, no código original, é de 40% em relação ao comprimento do ramo originário. Reduzir menos esse tamanho implica em mais repetições para que a condição de parada seja atingida, diretamente aumentando o número de ramos. Para realizar essa alteração basta modificar a linha que define essa redução. Os efeitos são mostrados na figura <a class="linkref" href="capitulo6.html#figcap6-farvramo30perc">6.53</a>.</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 6.7 - <button class="btnn" onclick="copyDivToClipboard('codcap6-932')">Copiar código</button></h1></header> 
+ <section id="codcap6-932"> <span class="myCodeBro"><span class="m">// Reduz em 30% o comprimento do ramo por iteração</span></span> <br> 
+ <span class="myCodeBro"><span class="v">float </span>novoComp = 0.70*_comp;</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap6-farvramo30perc" src="img/pdfCap6-FArvRamo30Perc.png"> 
+</div> 
+<figcaption> Figura 6.53 - Ramos reduzidos 30% a cada iteração.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Outra característica marcante que pode ser modificada é a simetria do fractal. Podemos forçar um crescimento assimétrico<a id="fractalarvore%assimetria"></a> ao criar dois fatores distintos de redução de tamanho do ramo, um para cada função recursiva. Veja na figura <a class="linkref" href="capitulo6.html#figcap6-farvformatsim">6.54</a> que o fractal assume forma bem diferente da original. Retorne ao código <a class="linkref" href="capitulo6.html#codcap6-arvfrac">6.6</a> e altere as linhas internas a função <a class="codef">arvore()</a> de:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 6.8 - <button class="btnn" onclick="copyDivToClipboard('codcap6-33')">Copiar código</button></h1></header> 
+ <section id="codcap6-33"> <span class="myCodeBro"><span class="v">float </span>novoComp = 0.6*_comp;</span> <br> 
+ <span class="myCodeBro">arvore(xf,yf,novoComp,novoAnguloR1,_anguloRamo);</span> <br> 
+ <span class="myCodeBro">arvore(xf,yf,novoComp,novoAnguloR2,_anguloRamo);</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>para:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 6.9 - <button class="btnn" onclick="copyDivToClipboard('codcap6-858')">Copiar código</button></h1></header> 
+ <section id="codcap6-858"> <span class="myCodeBro"><span class="m">// Um ramo diminui 20% do comprimento originário, enquanto o outro diminui 50%:</span></span> <br> 
+ <span class="myCodeBro"><span class="v">float </span>novoCompR1 = 0.8*_comp;</span> <br> 
+ <span class="myCodeBro"><span class="v">float </span>novoCompR2 = 0.5*_comp;</span> <br> 
+ <br> 
+ <span class="myCodeBro">arvore(xf,yf,novoCompR1,novoAnguloR1,_anguloRamo);</span> <br> 
+ <span class="myCodeBro">arvore(xf,yf,novoCompR2,novoAnguloR2,_anguloRamo);</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="pdfcap6-farvformatsim25" src="img/pdfCap6-FArvFormatSim25.png"> 
+</div> 
+<figcaption> Figura 6.55 - Inclinação de 25°.</figcaption> 
+ </div> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="pdfcap6-farvformatsim70" src="img/pdfCap6-FArvFormatSim70.png"> 
+</div> 
+<figcaption> Figura 6.56 - Inclinação de 70°.</figcaption> 
+ </div> 
+ <div id="figcap6-farvformatsim" class="col-md-12 text-center"> 
+ Figura - 6.54 - Fractal com quebra de simetria. </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>E se você quiser que o fractal se pareça realmente com uma árvore? Então seria preciso colocar "folhas" <a id="fractalarvore%folhas"></a> nas terminações de seus "galhos". Neste caso você deve lembrar que o fractal só atinge o último ramo após passar pela condição de parada. Consequentemente você pode adicionar um <a class="codef">else</a> no condicional para fazer com que ela desenhe um círculo que imitará uma folha. Veja a figura <a class="linkref" href="capitulo6.html#figcap6-farvformatfolha">6.57</a>.</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 6.10 - <button class="btnn" onclick="copyDivToClipboard('codcap6-536')">Copiar código</button></h1></header> 
+ <section id="codcap6-536"> <span class="myCodeBro"><span class="j">void</span> arvore(<span class="v">float </span>_xi, <span class="v">float </span>_yi, <span class="v">float </span>_comp, <span class="v">float </span>_angulo, <span class="v">float </span>_anguloRamo) {</span> <br> 
+ <span class="myCodeBro">  <span class="f">if</span> (_comp &gt; 2) {</span> <br> 
+ <span class="myCodeBro">    <span class="y">stroke</span>(50);</span> <br> 
+ <span class="myCodeBro">    <span class="y">strokeWeight</span>(1);</span> <br> 
+ <br> 
+ <span class="myCodeBro">    <span class="v">float </span>xf = _xi + <span class="y">cos</span>(<span class="y">radians</span>(_angulo)) * _comp;</span> <br> 
+ <span class="myCodeBro">    <span class="v">float </span>yf = _yi + <span class="y">sin</span>(<span class="y">radians</span>(_angulo)) * _comp;</span> <br> 
+ <span class="myCodeBro">    <span class="y">line</span>(_xi, _yi, xf, yf);</span> <br> 
+ <br> 
+ <span class="myCodeBro">    <span class="v">float </span>novoComp = 0.6 * _comp;</span> <br> 
+ <br> 
+ <span class="myCodeBro">    <span class="v">float </span>novoAnguloR1 = _angulo + _anguloRamo;</span> <br> 
+ <span class="myCodeBro">    <span class="v">float </span>novoAnguloR2 = _angulo - _anguloRamo;</span> <br> 
+ <br> 
+ <span class="myCodeBro">    arvore(xf, yf, novoComp, novoAnguloR1, _anguloRamo);</span> <br> 
+ <span class="myCodeBro">    arvore(xf, yf, novoComp, novoAnguloR2, _anguloRamo);</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">  <span class="f">else</span> {</span> <br> 
+ <span class="myCodeBro"><span class="m">    // Sumula uma &quot;folha&quot; como um círculo de tom esverdeado:</span></span> <br> 
+ <span class="myCodeBro">    <span class="y">fill</span>(<span class="y">random</span>(100, 120), <span class="y">random</span>(165, 185), <span class="y">random</span>(130, 150), 10);</span> <br> 
+ <span class="myCodeBro">    <span class="y">stroke</span>(<span class="y">random</span>(100, 120), <span class="y">random</span>(165, 185), <span class="y">random</span>(130, 150), 150);</span> <br> 
+ <span class="myCodeBro">    <span class="y">strokeWeight</span>(0);</span> <br> 
+ <br> 
+ <span class="myCodeBro">    <span class="v">float </span>raio = <span class="y">random</span>(25, 50);</span> <br> 
+ <span class="myCodeBro">    </span> <br> 
+ <span class="myCodeBro">    <span class="y">ellipse</span>(_xi, _yi, raio, raio);</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap6-farvformatfolha" src="img/figCap6-FArvFormatFolha.png"> 
+</div> 
+<figcaption> Figura 6.57 - Fractal árvore com "folhas" em suas extremidades.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Obviamente que poderíamos aumentar ainda mais a semelhança com uma árvore se a figura possuísse um tronco e galhos que se tornassem cada vez mais finos de acordo com seu tamanho. Essa alteração requer uma variável que esteja ligada as iterações do fractal, uma vez que mais iterações significam ramos mais distantes do ramo originário e, portanto, mais finos. Sabemos que a própria função <a class="codef">arvore()</a> possui um argumento de entrada relativo ao tamanho do ramo, que diminui conforme o fractal se expande. Sendo assim podemos vincular esse argumento à formatação da espessura<a id="fractalarvore%espessura"></a> da linha desenhada, simulando um afinamento da estrutura a cada ciclo. Os resultados podem ser vistos na figura <a class="linkref" href="capitulo6.html#figcap6-farvformattronco">6.58</a>.</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 6.11 - <button class="btnn" onclick="copyDivToClipboard('codcap6-149')">Copiar código</button></h1></header> 
+ <section id="codcap6-149"> <span class="myCodeBro"><span class="j">void</span> arvore(<span class="v">float </span>_xi, <span class="v">float </span>_yi, <span class="v">float </span>_comp, <span class="v">float </span>_angulo, <span class="v">float </span>_anguloRamo) {</span> <br> 
+ <span class="myCodeBro">  <span class="f">if</span> (_comp &gt; 2) {</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">    // O comprimento vai de 100 a 2, e a espessura de 10 a 0.</span></span> <br> 
+ <span class="myCodeBro"><span class="m">    // É necessário que a transformação seja decrescente</span></span> <br> 
+ <span class="myCodeBro"><span class="m">    // para que ocorra o afinamento dos ramos.</span></span> <br> 
+ <span class="myCodeBro">    <span class="v">float </span>espessura = <span class="y">map</span>(_comp, 100, 2, 10, 0);</span> <br> 
+ <span class="myCodeBro">    <span class="y">strokeWeight</span>(espessura);</span> <br> 
+ <br> 
+ <span class="myCodeBro">    <span class="v">float </span>xf = _xi + <span class="y">cos</span>(<span class="y">radians</span>(_angulo)) * _comp;</span> <br> 
+ <span class="myCodeBro">    <span class="v">float </span>yf = _yi + <span class="y">sin</span>(<span class="y">radians</span>(_angulo)) * _comp;</span> <br> 
+ <span class="myCodeBro">    <span class="y">line</span>(_xi, _yi, xf, yf);</span> <br> 
+ <br> 
+ <span class="myCodeBro">    <span class="v">float </span>novoComp = 0.65 * _comp;</span> <br> 
+ <br> 
+ <span class="myCodeBro">    <span class="v">float </span>novoAnguloR1 = _angulo + _anguloRamo;</span> <br> 
+ <span class="myCodeBro">    <span class="v">float </span>novoAnguloR2 = _angulo - _anguloRamo;</span> <br> 
+ <span class="myCodeBro">    </span> <br> 
+ <span class="myCodeBro">    arvore(xf, yf, novoComp, novoAnguloR1, _anguloRamo);</span> <br> 
+ <span class="myCodeBro">    arvore(xf, yf, novoComp, novoAnguloR2, _anguloRamo);</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap6-farvformattronco" src="img/pdfCap6-FArvFormatTronco.png"> 
+</div> 
+<figcaption> Figura 6.58 - Fractal árvore com espessura nos "galhos".</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Todas as formatações apresentadas contribuem para uma exibição que emula o natural, mas a forma principal ainda pode ser retraçada a sua origem estruturalmente mecânica. O recurso final para combater esse excesso de rigidez é aplicar os conceitos do capítulo <a class="linkref" href="capitulo4.html#seccap4-main">4</a> relativos a aleatoriedade. O caos pode ser usado para quebrar os alicerces simétricos e regulares dos fractais, criando formas mais orgânicas. A autossimilaridade perfeita será perdida, mas a definição é abrangente o suficiente para incluir aproximações das formas. O procedimento para aplicar a incerteza é idêntico ao das seções passadas: identificar um ponto que influencie consideravelmente o desenho de nossa figura e torná-lo aleatório<a id="fractalarvore%aleatorio"></a>. Em nosso exemplo em específico, a angulação dos ramos é a candidata perfeita. Simplesmente edite a parte abaixo do código:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 6.12 - <button class="btnn" onclick="copyDivToClipboard('codcap6-961')">Copiar código</button></h1></header> 
+ <section id="codcap6-961"> <span class="myCodeBro"><span class="v">float </span>novoAnguloR1 = _angulo + _anguloRamo;</span> <br> 
+ <span class="myCodeBro"><span class="v">float </span>novoAnguloR2 = _angulo - _anguloRamo;</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>para:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 6.13 - <button class="btnn" onclick="copyDivToClipboard('codcap6-361')">Copiar código</button></h1></header> 
+ <section id="codcap6-361"> <span class="myCodeBro"><span class="v">float </span>novoAnguloR1 = _angulo + <span class="y">random</span>(_anguloRamo);</span> <br> 
+ <span class="myCodeBro"><span class="v">float </span>novoAnguloR2 = _angulo - <span class="y">random</span>(_anguloRamo);</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Antes de executar seu novo programa, tenha certeza de mover a chamada da função <a class="codef">arvore()</a> para dentro de <a class="codef">setup()</a> (ou seja, remova-a de dentro do <a class="codef">draw()</a>). Isso é especialmente importante, caso contrário a cada frame será gerado um número aleatório e a sua árvore vai parecer que está se movimentando muito rápida e irregularmente. A figura <a class="linkref" href="capitulo6.html#figcap6-arvformataleat">6.59</a> apresenta um fractal sob o efeito de perturbações caóticas.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap6-arvformataleat" src="img/pdfCap6-ArvFormatAleat.png"> 
+</div> 
+<figcaption> Figura 6.59 - Fractal árvore aleatório.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Diversas outras ideias podem ser usadas para incrementar os fractais, como múltiplas exibições simétricas, irregularidades na angulação dos ramos, inclinações exacerbadas ou irrisórias, dentre outras. Combinando-as com as algumas das técnicas apresentadas nesta seção, você pode gerar padrões realmente complexos e surreais que não parecem ter sido desenhados por regras simples, como é o caso do fractal árvore. Essa filosofia foi empregada para gerar figuras como a <a class="linkref" href="capitulo6.html#figcap6-arvultra">6.60</a> ou <a class="linkref" href="capitulo6.html#figcap6-arvformatvar">6.61</a>. Note que, no sentido fiel da palavra, essas figuras não são fractais e sim obras gerativas nascidas de instruções recursivas.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap6-arvultra" src="img/pdfCap6-UltraArvore1.png"> 
+</div> 
+<figcaption> Figura 6.60 - "Fractal" árvore unindo todas as estratégias de formatação.</figcaption> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap6-arvformatvar" src="img/pdfCap6-UltraFrac.png"> 
+</div> 
+<figcaption> Figura 6.61 - Recursividade gerativa.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p><span class="sec">6.3 Sumário</span> <a id="seccap6-end" class="labup"></a></p>
+<p>Neste capítulo você aprendeu um pouco mais sobre o que são as curiosas estruturas autossimilares denominadas fractais. Sua beleza hipnotizante é tanto derivada da figura macro do fractal quanto da repetição infinita de regras e frações simples. Na parte que aludiu à programação você viu que a recursividade computacional consiste na chamada de uma função dentro si mesma, sendo a chave para criar a autossimilaridade dos fractais.</p>
+<p>No quesito prático, você acompanhou um passo a passo do projeto de um fractal, incluindo como derivar as regras de desenho e condições de parada da recursividade. Por último, foram mostradas múltiplas maneiras de se utilizar formatações para conceder um estilo único em sua imagem, ou adicionar variedade a sua arte.</p>
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<hr>
+
+
+<p><a class="linkref" id="footnote-1" href="#fnote-1" title="Voltar ao texto.">[1]</a> Mandelbrot, B. B. (1989). "<i>Fractal Geometry: What is it, and What Does it do?</i>". Proceedings of The Royal Society A Mathematical Physical and Engineering Sciences 423(1864).</p>
+<p><a class="linkref" id="footnote-2" href="#fnote-2" title="Voltar ao texto.">[2]</a> Não perturbado por funções do tipo <a class="codef">noise()</a> ou <a class="codef">random()</a>.</p>
+
+ <br> 
+
+              <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                      <img src="" class="imagepreview" style="width: 100%;" >
+                    </div>
+                  </div>
+                </div>
+              </div>
+</div>
+</div>
+</div>
+            <div class="custom-container">
+              <div class="row">
+                <div class="col">
+                  <div>
+                    <a href="parte3.html" class="btn btn-sm btn-secondary">&lt;&lt; Parte III</a>
+                    <a href="capitulo7.html" class="btn btn-sm btnright btn-secondary">Capítulo 7 &gt;&gt;</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <button id="menu-toggle" class="btn btn-secondary btn-sm toggled">&#8649;<br>M<br>E<br>N<br>U<br>&#8649;</button>
+          </div>
+          <footer class="page-footer bg-dark text-light meufooter">
+            <div class="footer-copyright py-1">&copy; 2020
+              <a href="mailto:mateuspberruezo@gmail.com"> Mateus Berruezo</a>
+            </div>
+          </footer>
+        </div>
+      </div>
+    <script src="../js/jquery-3.2.1.slim.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/booko.js"></script>
+  </body>
+</html>

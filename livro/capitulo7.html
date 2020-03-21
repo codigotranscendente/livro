@@ -1,0 +1,770 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>OCT: Capitulo 7</title>
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="../css/bookonline.css" rel="stylesheet">
+</head>
+<body>
+  <div id="page-container">
+    <div id="content-wrap">
+      <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="mainNav">
+        <div class="container justify-content-center">
+          <a class="navbar-brand" href="../index.html">O CÓDIGO TRANSCENDENTE</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse align-items-center" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto nav-masthead align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="../book.html">Livro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../about.html">Autor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../faq.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../livro/lindex.html">Online</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="wrapper" class="toggled">
+        <div id="sidebar-wrapper">
+          <ul class="sidebar-nav">
+            <li class="sidebar-brand"></li>
+            <li><a href="lindex.html">LIVRO</a></li>
+            <li><a href="dedicatoria.html">DEDICATÓRIA</a></li>
+            <li><a href="sumario.html">SUMÁRIO</a></li>
+            <li><a href="cartaprefacio.html">CARTA-PREFÁCIO</a></li>
+            <li><a href="agradecimentos.html">AGRADECIMENTOS</a></li>
+            <li><a href="prefacio.html">PREFÁCIO</a></li>
+            <li><a href="introducao.html">INTRODUÇÃO</a></li>
+            <li><a href="parte1.html">I. ORIGEM</a></li>
+            <li><a class="ind" href="capitulo1.html">1. PRIMEIROS PASSOS</a></li>
+            <li><a class="ind" href="capitulo2.html">2. A ARTE DA PROGRAMAÇÃO</a></li>
+            <li><a href="parte2.html">II. EVOLUÇÃO</a></li>
+            <li><a class="ind" href="capitulo3.html">3. CAOS</a></li>
+            <li><a class="ind" href="capitulo4.html">4. ORDEM</a></li>
+            <li><a class="ind" href="capitulo5.html">5. ILUSÕES</a></li>
+            <li><a href="parte3.html">III. TRANSCENDÊNCIA</a></li>
+            <li><a class="ind" href="capitulo6.html">6. FRACTAIS</a></li>
+            <li><a class="ind" href="capitulo7.html">7. EMERGÊNCIA</a></li>
+            <li><a class="ind" href="capitulo8.html">8. O CÓDIGO TRANSCENDENTE</a></li>
+            <li><a href="final.html">O PROCESSO FINAL</a></li>
+            <li><a href="indicea.html">ÍNDICE</a></li>
+          </ul>
+        </div>
+        <div class="container-book vertical-book">
+<div class="custom-container">
+<div class="row">
+<div class="col-xl-12">
+
+<p><span class="capnbr">[ CAPÍTULO 7 ]</span><br><span class="capname">Emergência</span><br><span class="capnbrbot">Causa e efeito</span><br></p>
+<p>Uma das primeiras series de peças artísticas concebidas com o Processing foi fruto de um de seus fundadores, Casey Reas, que a batizou como <i>Process</i> <a id="Process"></a>. Cada uma dessas obras foi individualmente numerada com um código que representava a visualização de um processo diferente. Casey definiu um <i>processo</i> <a id="processo"></a> como um ambiente construído para elementos, que determina a maneira da qual suas relações e interações serão visualizadas. Por sua vez, elementos, ou <i>agentes</i> <a id="agentes"></a>, são sistemas computacionais compostos por uma forma, como um círculo ou ponto, e um ou mais comportamentos, como se movimentar aleatoriamente pela janela de exibição. A intenção de Casey foi mostrar que o comportamento descrito individualmente pelos elementos era simples e desinteressante, mas a interação entre um número elevado de processos e elementos tornava a imagem final altamente imprevisível e única. A isso se dá o nome de <i>emergência</i> <a id="emergencia"></a>, um movimento inesperado para o além daquilo que você pudesse prever que regras simples seriam capazes de criar. Esta filosofia, de que a totalidade do resultado final é mais valorizado do que a contribuição individual, é um dos pontos centrais da linguagem Processing.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap7-cardume" src="img/figCap7-Cardume.jpg"> 
+</div> 
+<figcaption> Figura 7.1 - Cardume de sardinhas<sup>a</sup>, cortesia do fotógrafo Mark Harris.<br><span class="imgsubcaption"><sup>a</sup>  Todos os direitos reservados pelo artista original.</span></figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Uma maneira de entender mais claramente o processo emergente, e como a ação local resulta em uma consequência global, é examinando modelos encontrados na natureza. Imagine um cardume composto por milhares de peixes que se movem como um grande e único ser. O cardume é o comportamento emergente que surge, não de uma coordenação central dos peixes, que neste caso são os agentes, mas sim das regras individuais que cada um deles segue. Podemos rapidamente imaginar que alguns dos objetivos de um peixe são a alimentação, a reprodução e a sobrevivência (escapar de predadores), todos esses tornam-se mais fáceis quando em um grupo. Simultaneamente, os peixes usam a suas percepções (audição, visão, olfato e paladar) para se manter perto de outros peixes, localizar alimentos próximos e evitar colisões. O cardume é formado pela interação de cada um dos elementos que o compõe.</p>
+<p>Na computação existem diversas simulações clássicas que abraçam a ideia de emergência no sentido de que o pontual explode em complexidade. Algumas das mais comuns são o jogo da vida de John Conway, a colônia de formigas, a floresta de Reeves e os <i>boids</i> de Reynolds. Todos esses algoritmos são casos clássicos para ilustrar a emergência, seja visando imitar a natureza ou formando um processo puramente sintético. Infelizmente, a maioria dessas simulações pode ser encaixada em duas categorias indesejadas para aqueles iniciantes na computação, seja programador ou artista. Em um extremo elas são fáceis de programar, mas difíceis de se entender o propósito ou a origem do raciocínio, como por exemplo o jogo da vida de Conway. E no espectro oposto elas são fáceis de entender e difíceis de programar, como os <i>boids</i> de Reynolds que imitam a murmuração de pássaros, mas requerem um uso exacerbado de vetores, condicionais, repetições e otimizações locais. Todavia nem tudo está perdido, existe um terceiro método que iremos examinar, mais brando na programação e no entendimento, baseado em <i>Process</i>, figura <a class="linkref" href="capitulo7.html#figcap7-index">7.2</a>, o trabalho citado de Casey Reas.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="figcap7-process9(a)" src="img/figCap7-Process9(A).jpg"> 
+</div> 
+<figcaption> Figura 7.3 - <i>Process 9 (A)</i> <sup>b</sup>.</figcaption> 
+ </div> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="figcap7-process18(b)" src="img/figCap7-Process18(B).jpg"> 
+</div> 
+<figcaption> Figura 7.4 - <i>Process 18 (B)</i> <sup>b</sup>.</figcaption> 
+ </div> 
+ <div id="figcap7-index" class="col-md-12 text-center"> 
+ Figura - 7.2 - Representações gráficas de processos emergentes: <i>Process</i>. Cortesia do próprio artista, Casey Reas.<br><span class="imgsubcaption"><sup>b</sup>  Todos os direitos reservados pelo artista original.</span> </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p><span class="sec">7.1 Agente autônomo</span> <a id="seccap7-agentes" class="labup"></a></p>
+<p>Os principais autores da obra final são formalmente nomeados de agentes autônomos, reforçando a afirmação que eles agem localmente e de acordo com suas próprias intenções. Eles são constituídos por três<sup><a class="linkref" id="fnote-1" href="#footnote-1" title="Rodapé.">[1]</a></sup> características principais:</p>
+</div>
+</div>
+<ul>
+ <li> <b>Forma</b> <a id="agentes%forma"></a>: É a representação física do agente. Normalmente é um ponto, linha, círculo ou qualquer outra figura, geométrica ou não. </li>
+ <li> <b>Percepções</b> <a id="agentes%percepcoes"></a>: É o processo de reconhecimento e interpretação das informações que os agentes têm acesso para tomada de decisões. Por exemplo, um elemento pode verificar se está próximo de outro, ou se está contido dentro de uma região específica do espaço (como um círculo ou quadrado). </li>
+ <li> <b>Comportamentos</b> <a id="agentes%comportamentos"></a>: São as ações que os agentes são capazes de expressar. Algumas delas podem ser se movimentar pelo espaço, mudar sua direção ou interferir com a trajetória de outros elementos. Aqui também estão contidos os objetivos globais dos agentes, tais como se movimentar aleatoriamente pela janela de exibição ou sempre se aproximar ou afastar do elemento mais próximo a ele. </li>
+ </ul>
+<div class="row">
+<div class="col-xl-12">
+<p>Do ponto de vista da programação<a id="agentes%naprogramacao"></a>, um agente é composto por múltiplos componentes heterogêneos. Suas formas são representadas por atributos, como posição e tamanho, e suas percepções ou comportamentos particulares podem ser descritos através de funções internas. É interessante que essas características estejam organizadas e acessíveis por agente, tornando-o uma unidade complexa. Felizmente você estudou na seção <a class="linkref" href="capitulo2.html#seccap2-class">2.6</a> que as classes permitem satisfazer todas essas necessidades ao agrupar diferentes estruturas de programação e produzir objetos completamente individualizados e autocontidos.</p>
+<p>Nesta seção você dará vida a uma série de agentes através das instanciações de uma classe geradora. Portanto vamos começar definindo, arbitrariamente, o que iremos programar. Suponha um elemento simplificado cujo único propósito é dar um passo em linha reta, com uma determinada direção, a cada instante de tempo. Simultaneamente ele deve ser capaz de perceber seu ambiente e reajustar sua direção para se manter dentro da janela de exibição. Com base nessa descrição podemos inferir que cada agente possuirá uma posição no espaço, um ângulo de movimentação e um tamanho de passo. Finalmente, iremos adicionar dois métodos de visualização que concederão forma ao agente, um para exibi-lo simplesmente como um ponto e o outro como uma reta, pois assim será possível acompanhar melhor sua trajetória ao longo do tempo. A classe<a id="Agenteclasse"></a> abaixo, que descreve o agente, foi escrita com base nessas premissas e sua explicação é feita no próximo parágrafo.</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 7.1 - Classe Agente - <button class="btnn" onclick="copyDivToClipboard('codcap7-classagentesautom')">Copiar código</button></h1></header> 
+ <section id="codcap7-classagentesautom"> <span class="myCodeBro"><span class="j">class</span> Agente {</span> <br> 
+ <span class="myCodeBro">  </span> <br> 
+ <span class="myCodeBro"><span class="m">  // Atributos:</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>posXA, posYA, posX, posY;</span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>angulo;</span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>passo;</span> <br> 
+ <span class="myCodeBro">  </span> <br> 
+ <span class="myCodeBro"><span class="m">  // Construtor:</span></span> <br> 
+ <span class="myCodeBro">  Agente(<span class="v">float </span>_posX, <span class="v">float </span>_posY, <span class="v">float </span>_angulo, <span class="v">float </span>_passo) {</span> <br> 
+ <span class="myCodeBro">    posX = _posX;</span> <br> 
+ <span class="myCodeBro">    posXA = posX;</span> <br> 
+ <span class="myCodeBro">    posY = _posY;</span> <br> 
+ <span class="myCodeBro">    posYA = posY;</span> <br> 
+ <span class="myCodeBro">    angulo = _angulo;</span> <br> 
+ <span class="myCodeBro">    passo = _passo;</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">  </span> <br> 
+ <span class="myCodeBro"><span class="m">  // Métodos:</span></span> <br> 
+ <span class="myCodeBro">  </span> <br> 
+ <span class="myCodeBro"><span class="m">  // Atualiza a posição espacial do agente:</span></span> <br> 
+ <span class="myCodeBro">  <span class="j">void</span> atualizar() {</span> <br> 
+ <span class="myCodeBro"><span class="m">    // Grava a posição anterior:</span></span> <br> 
+ <span class="myCodeBro">    posXA = posX;</span> <br> 
+ <span class="myCodeBro">    posYA = posY;</span> <br> 
+ <span class="myCodeBro"><span class="m">    // Atualiza a posição atual:</span></span> <br> 
+ <span class="myCodeBro">    posX = posX + passo * <span class="y">cos</span>(<span class="y">radians</span>(angulo));</span> <br> 
+ <span class="myCodeBro">    posY = posY + passo * <span class="y">sin</span>(<span class="y">radians</span>(angulo));</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Forma do agente - Ponto</span></span> <br> 
+ <span class="myCodeBro">  <span class="j">void</span> exibirComoPonto() {</span> <br> 
+ <span class="myCodeBro">    <span class="y">stroke</span>(0);</span> <br> 
+ <span class="myCodeBro">    <span class="y">strokeWeight</span>(2);</span> <br> 
+ <span class="myCodeBro">    <span class="y">point</span>(posX, posY);</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Forma do agente - Reta</span></span> <br> 
+ <span class="myCodeBro">  <span class="j">void</span> exibirComoReta() {</span> <br> 
+ <span class="myCodeBro">    <span class="y">stroke</span>(0);</span> <br> 
+ <span class="myCodeBro">    <span class="y">strokeWeight</span>(1);</span> <br> 
+ <span class="myCodeBro">    <span class="y">line</span>(posXA, posYA, posX, posY);</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>O construtor<a id="Agenteclasse%construtor"></a> do agente recebe as informações essenciais para a definição mínima do mesmo: uma posição inicial na janela de saída, um ângulo inicial, que representa a direção de sua trajetória, e o tamanho do passo, que especifica o quanto efetivamente de espaço o agente irá percorrer ao se movimentar a cada quadro.</p>
+<p>O deslocamento do agente é feito através da função <a class="codef">atualizar()</a> <a id="Agenteclasse%atualizarmetodo"></a> que recalcula sua posição atual de acordo com sua direção e tamanho de passo. O movimento de elementos<a id="movimentodeelementos"></a> na computação é derivado da física e formalizado através de vetores<sup><a class="linkref" id="fnote-2" href="#footnote-2" title="Rodapé.">[2]</a></sup>, mas este assunto é extenso e relativamente técnico, não sendo detalhado neste livro. Em vez disso existe uma maneira mais intuitiva de entender o movimento dos agentes usando as versáteis equações do círculo, <a class="linkref" href="capitulo4.html#codcap4-circleeq">4.1</a>, obtidas na seção de trigonometria. Para isso imagine o agente como sendo o ponto central de um círculo. O raio desse círculo é justamente a variável <a class="codef">passo</a> do agente, e a direção dele é o ângulo do arco, variável <a class="codef">angulo</a>. Desta forma, o ponto que está na borda do círculo é a posição futura do agente após ele dar um "passo", e é obtida usando as fórmulas citadas. Toda vez que a posição é atualizada, o ponto futuro se torna o ponto presente e o círculo é deslocado para esse novo ponto, permitindo obter a próxima posição da mesma maneira. As figuras <a class="linkref" href="capitulo7.html#figcap7-movagente1">7.5</a> e <a class="linkref" href="capitulo7.html#figcap7-movagente2">7.6</a> ilustram essa abordagem.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap7-movagente1" src="img/pdfCap7-MovAgente1.png"> 
+</div> 
+<figcaption> Figura 7.5 - Movimentação do agente no espaço.</figcaption> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap7-movagente2" src="img/pdfCap7-MovAgente2.png"> 
+</div> 
+<figcaption> Figura 7.6 - Movimentação do agente ao longo dos quadros.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>As outras duas funções da classe <a class="codef">Agente</a>, <a class="codef">exibirComoPonto()</a> <a id="Agenteclasse%exibirComoPontometodo"></a> e <a class="codef">exibirComoReta()</a> <a id="Agenteclasse%exibirComoRetametodo"></a>, são responsáveis pelas suas formas. A exibição<a id="Agenteclasse%exibicao"></a> através de um ponto necessita apenas da posição atual (<a class="codef">posX</a> e <a class="codef">posY</a>), enquanto a que desenha uma reta necessita da posição atual e também da anterior (<a class="codef">posXA</a> e <a class="codef">posYA</a>). Não se esqueça de copiar todo o código <a class="linkref" href="capitulo7.html#codcap7-classagentesautom">7.1</a> da classe para dentro do editor de texto do Processing.</p>
+<p>Finalizada a análise da classe, podemos nos dedicar ao programa principal. Para popular o seu processo você pode criar um vetor do tipo <a class="codef">Agente</a> e adicionar um número qualquer de elementos a ele. Consequentemente o que resta escrever no código são as chamadas as rotinas para exibir cada um dos agentes e atualizar suas posições a cada quadro. Ambas devem ser feitas dentro da função <a class="codef">draw()</a> para que o movimento seja animado, veja o código abaixo:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 7.2 - Agentes autônomos na janela de exibição - <button class="btnn" onclick="copyDivToClipboard('codcap7-agentesautom')">Copiar código</button></h1></header> 
+ <section id="codcap7-agentesautom"> <span class="myCodeBro">Agente[] ags;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">size</span>(300, 200);</span> <br> 
+ <span class="myCodeBro">  <span class="y">background</span>(255);</span> <br> 
+ <span class="myCodeBro">  </span> <br> 
+ <span class="myCodeBro">  <span class="v">int </span>numAgentes = 10;</span> <br> 
+ <span class="myCodeBro">  ags = <span class="j">new</span> Agente[numAgentes];</span> <br> 
+ <span class="myCodeBro">  </span> <br> 
+ <span class="myCodeBro">  <span class="f">for</span> (<span class="v">int </span>i = 0; i &lt; numAgentes; i++) {</span> <br> 
+ <span class="myCodeBro"><span class="m">    // Cria e distribui os agentes aleatoriamente pela tela:</span></span> <br> 
+ <span class="myCodeBro">    ags[i] = <span class="j">new</span> Agente(<span class="y">random</span>(<span class="s">width</span>), <span class="y">random</span>(<span class="s">height</span>), <span class="y">random</span>(360), 2);</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="j">void</span> <span class="x">draw</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="f">for</span> (<span class="v">int </span>i = 0; i &lt; ags.<span class="j">length</span>; i++) {</span> <br> 
+ <span class="myCodeBro"><span class="m">    // Para cada agente declarado, atualiza e exibe ele:</span></span> <br> 
+ <span class="myCodeBro">    ags[i].atualizar();</span> <br> 
+ <span class="myCodeBro">    ags[i].exibirComoReta();</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap7-movagentesborderless" src="img/pdfCap7-MovAgentesBorderless.png"> 
+</div> 
+<figcaption> Figura 7.7 - Movimentação de dez agentes.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Ao executar o código proposto você deve ter visto algo parecido com a figura <a class="linkref" href="capitulo7.html#figcap7-movagentesborderless">7.7</a> <sup><a class="linkref" id="fnote-3" href="#footnote-3" title="Rodapé.">[3]</a></sup>, confirmando que o agente está fazendo aquilo que você programou ele para fazer: andar em linha reta. Entretanto, perceba que o agente se locomove independentemente da janela de exibição e rapidamente sai do nosso campo de visão. Nossa próxima meta é impedir que isso aconteça.</p>
+<p>Vamos começar entendendo melhor o espaço de restrição<a id="janeladesaida%limitesda"></a> do agente que em nosso caso é a janela do Processing, ilustrada na figura <a class="linkref" href="capitulo7.html#figcap7-limitesjanela">7.8</a>. Lembre-se que é você quem define o tamanho da tela através da função <a class="codef">size()</a> e, portanto, possui exatamente as coordenadas e dimensões da mesma. Esses dados são suficientes para que você programe o agente de forma que ele detecte esses limites e não se mova além deles.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap7-limitesjanela" src="img/pdfCap7-LimitesJanela1.png"> 
+</div> 
+<figcaption> Figura 7.8 - Janela de exibição e seus limites.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Note que o agente está em um plano bidimensional e sua posição é definida por uma parcela horizontal e uma vertical, sendo possível saber se ele está dentro ou fora da janela usando suas coordenadas. Se a posição horizontal do agente for menor que zero ou maior que o comprimento da tela (<a class="codef">width</a>), ou então se sua posição vertical for menor que zero ou maior que a altura da tela (<a class="codef">height</a>), o agente estará fora da janela de exibição e do nosso campo de visão, veja a figura <a class="linkref" href="capitulo7.html#figcap7-foralimites">7.9</a>.</p>
+<p>O próprio agente deve ser capaz de perceber o espaço em que se encontra, entender se sair dele e tomar as devidas ações para contornar esse evento. Ele pode, por exemplo, retornar para os limites da janela de exibição e alterar o ângulo da sua direção, de forma a evitar o movimento de saída da zona restrita. A maneira fisicamente correta de mudar o ângulo de um objeto qualquer quando ele atinge uma superfície é criando uma simetria de ângulo de incidência (&phi;<sub>i<\sub>) e reflexão<a id="reflexaofisica"></a> ($\phi_{r}$), mas para contribuir com a parcela gerativa de nossa obra iremos adicionar o caos e fazer com que esse ângulo varie aleatoriamente. Mesmo que tal fato não corresponda à realidade, ele faz parte do processo da experimentação e podemos criar as regras que quisermos. A figura <a class="linkref" href="capitulo7.html#figcap7-angulosreflex">7.10</a> ilustra esse conceito.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap7-foralimites" src="img/pdfCap7-LimitesJanela2.png"> 
+</div> 
+<figcaption> Figura 7.9 - Posições fora do limite da janela.</figcaption> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="pdfcap7-angulosreflex1" src="img/pdfCap7-AngulosReflex1.png"> 
+</div> 
+<figcaption> Figura 7.11 - Segundo a Lei da Reflexão.</figcaption> 
+ </div> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="pdfcap7-angulosreflex2" src="img/pdfCap7-AngulosReflex2.png"> 
+</div> 
+<figcaption> Figura 7.12 - Aleatoriamente.</figcaption> 
+ </div> 
+ <div id="figcap7-angulosreflex" class="col-md-12 text-center"> 
+ Figura - 7.10 - Possíveis ângulos de reflexão. </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Veja que você está adicionando mais um comportamento a esse agente, em que ele verifica se está fora da janela de exibição e, se estiver, retorna para uma posição dentro dela e depois altera sua direção. Isso corresponde a um novo método a ser adicionado na classe <a class="codef">Agente</a>, que pode ser visto no código a seguir:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 7.3 - <button class="btnn" onclick="copyDivToClipboard('codcap7-93')">Copiar código</button></h1></header> 
+ <section id="codcap7-93"> <span class="myCodeBro"><span class="j">void</span> detectaBordas() {</span> <br> 
+ <span class="myCodeBro"><span class="m">  // Se o agente sair da região de limite, altera sua direção de movimento:</span></span> <br> 
+ <span class="myCodeBro">  <span class="f">if</span> (posX &lt; 0 || posX &gt; <span class="s">width</span> || posY &lt; 0 || posY &gt; <span class="s">height</span>) {</span> <br> 
+ <span class="myCodeBro">    angulo = <span class="y">random</span>(360);</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">  </span> <br> 
+ <span class="myCodeBro"><span class="m">  // Se o agente sair da região de limite, ele volta para a mesma:</span></span> <br> 
+ <span class="myCodeBro">  <span class="f">if</span> (posX &lt; 0) {</span> <br> 
+ <span class="myCodeBro">    posX = 0;</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">  <span class="f">else</span> {</span> <br> 
+ <span class="myCodeBro">    <span class="f">if</span> (posX &gt; <span class="s">width</span>) {</span> <br> 
+ <span class="myCodeBro">      posX = <span class="s">width</span>;</span> <br> 
+ <span class="myCodeBro">    }</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">  <span class="f">if</span> (posY &lt; 0) {</span> <br> 
+ <span class="myCodeBro">    posY = 0;</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">  <span class="f">else</span> {</span> <br> 
+ <span class="myCodeBro">    <span class="f">if</span> (posY &gt; <span class="s">height</span>) {</span> <br> 
+ <span class="myCodeBro">      posY = <span class="s">height</span>;</span> <br> 
+ <span class="myCodeBro">    }</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Agora, além de chamar as funções <a class="codef">atualizar()</a> e <a class="codef">exibirComoReta()</a> você tem que fazer com que o agente teste sua posição chamado o método <a class="codef">detectaBordas()</a>.</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 7.4 - <button class="btnn" onclick="copyDivToClipboard('codcap7-983')">Copiar código</button></h1></header> 
+ <section id="codcap7-983"> <span class="myCodeBro"><span class="f">for</span>(<span class="v">int </span>i = 0; i &lt; ags.<span class="j">length</span>; i++) {</span> <br> 
+ <span class="myCodeBro">  ags[i].detectaBordas();</span> <br> 
+ <span class="myCodeBro">  ags[i].atualizar();</span> <br> 
+ <span class="myCodeBro">  ags[i].exibirComoReta();</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Ao executar o código após essas alterações, você verá que o agente se limita a ficar sempre dentro da janela de exibição, criando um padrão menos previsível, como o da figura <a class="linkref" href="capitulo7.html#figcap7-agentereflex">7.13</a>. O seu agente autônomo está completo, possuindo uma <i>forma</i> de linha, e dotado de <i>percepções</i> e <i>comportamentos</i>, que o impele a sempre andar em linha reta e permanecer no campo de visão do programador.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap7-agentereflex" src="img/pdfCap7-AgenteReflex.png"> 
+</div> 
+<figcaption> Figura 7.13 - Agentes após as alterações nos seus comportamentos.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p><span class="sec">7.2 Processo</span> <a id="seccap7-processo" class="labup"></a></p>
+<p>Muito bem, uma vez definidas as propriedades dos seus agentes, você pode focar na concepção de um processo. Isso naturalmente invocará uma pergunta fundamental:</p>
+<p><i>Mas afinal, o que exatamente é o "processo" <a id="processo71"></a>?</i></p>
+<p>Mesmo que possa parecer muito peculiar, você é livre para responder essa pergunta como quiser, não há uma resposta certa ou errada. O que de fato existe é a sua capacidade criativa de inventar um processo utilizando os agentes, com o propósito singular de explorar os diversos padrões emergentes provenientes das interações entre eles mesmos e o ambiente em que estão inseridos. Esta é a parte subjetiva da computação artística. Por exemplo, você pode desejar visualizar o que acontece quando você desenha um círculo cada vez que dois agentes colidem; ou então desenhar triângulos com vértices nas posições dos agentes sempre que eles se aproximarem uns dos outros; ou quem sabe fazer com que um agente absorva o outro e aumente de tamanho. As possibilidades são infinitas, assim como a quantidade e diversidade de imagens que cada processo é capaz de gerar.</p>
+<p>Analisar com detalhes todos os cenários que podem ser idealizados como um processo é matéria para um livro por si só, portanto iremos dissecar apenas um estudo de caso<a id="processoestudodecaso"></a>.</p>
+<p>Vamos começar com uma ideia simples e abandonar o desenho da trajetória dos agentes, optando por traçar uma conexão<a id="processoestudodecaso%conexao"></a> entre eles caso os mesmos se encontrem próximos. Perceba que neste exato ponto existe uma interface crucial entre o conceitual e o prático, entre o que você deseja fazer e como fazer isso. Você pode maximizar suas chances de sucesso nessa etapa, e em demais projetos, se focar em três aspectos centrais: estabelecer os dados que você possui, compreender como os mesmos podem ser usados para atingir seus objetivos e, se necessário, implementar novas funcionalidades. Esse fluxo de ação, para o processo de ligar os agentes através de retas, está ilustrado na figura <a class="linkref" href="capitulo7.html#figcap7-agentproc">7.14</a>.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="pdfcap7-agentproc1" src="img/pdfCap7-AgentProc1.png"> 
+</div> 
+<figcaption> Figura 7.15 - O objetivo final é conectar os agentes.</figcaption> 
+ </div> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="pdfcap7-agentproc2" src="img/pdfCap7-AgentProc2.png"> 
+</div> 
+<figcaption> Figura 7.16 - Informações disponíveis a serem usadas.</figcaption> 
+ </div> 
+ <div id="figcap7-agentproc" class="col-md-12 text-center"> 
+ Figura - 7.14 - Estratificação do processo para dois agentes. </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Note que você tem acesso, ou pode encontrar, todas as variáveis que precisa, basta dividir o problema em etapas. Um último detalhe que deve ser esclarecido é que, apesar da figura <a class="linkref" href="capitulo7.html#figcap7-agentproc">7.14</a> contemplar apenas dois agentes, na realidade existe um número qualquer de elementos simultaneamente próximos. Desta forma, para cada agente que estiver analisando, você deve comparar com todos os demais e calcular a distância entre eles. Se essa distância for menor que certo valor então você deverá traçar uma reta unindo eles, caso contrário não. Você pode cobrir todos esses casos se utilizar de uma estrutura de repetição aninhada, conforme visto nas seções anteriores. No código abaixo é mostrado como incrementar o <i>loop</i> de atualização dos agentes com uma nova funcionalidade que realiza as comparações de distância entre os agentes e os desenho das retas de conexão:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 7.5 - <button class="btnn" onclick="copyDivToClipboard('codcap7-686')">Copiar código</button></h1></header> 
+ <section id="codcap7-686"> <span class="myCodeBro"><span class="f">for</span>(<span class="v">int </span>i = 0; i &lt; ags.<span class="j">length</span>; i++) {</span> <br> 
+ <span class="myCodeBro">  ags[i].detectaBordas();</span> <br> 
+ <span class="myCodeBro">  ags[i].atualizar();</span> <br> 
+ <span class="myCodeBro">  ags[i].exibirComoReta();</span> <br> 
+ <br> 
+ <span class="myCodeBro">  <span class="v">float </span>distMaxima = 50;</span> <br> 
+ <span class="myCodeBro">  <span class="f">for</span>(<span class="v">int </span>j = i + 1; j &lt; ags.<span class="j">length</span>; j++) {</span> <br> 
+ <span class="myCodeBro"><span class="m">    // Calcula a distância entre dois agentes:</span></span> <br> 
+ <span class="myCodeBro">    <span class="v">float </span><span class="y">dist</span>EntreAgentes = <span class="y">dist</span>(ags[i].posX,ags[i].posY,ags[j].posX,ags[j].posY);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">    // Se a distância entre os agentes for menor que 50 pixels,</span></span> <br> 
+ <span class="myCodeBro"><span class="m">    // conectamos eles através de uma reta:</span></span> <br> 
+ <span class="myCodeBro">    <span class="f">if</span>(distEntreAgentes &lt; distMaxima) {</span> <br> 
+ <span class="myCodeBro">      <span class="y">line</span>(ags[i].posX,ags[i].posY,ags[j].posX,ags[j].posY);</span> <br> 
+ <span class="myCodeBro">    }</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Essa solução se resume a ter um olhar puramente matemático, em que os agentes não passam de pontos num espaço bidimensional cuja distância é calculada através da fórmula da distância Euclidiana. No Processing, você pode encontrar a separação entre dois pontos quaisquer através da função <a class="codef">dist()</a> que recebe como argumentos as coordenadas x e y de cada um deles.</p>
+<p>Fique atento a um outro fator importante, a segunda estrutura de repetição não começa do zero. Isto é feito para otimizar<a id="processoestudodecaso%conexao%otimizacaode"></a> o desenho das linhas que conectam os agentes, evitando desenhar conexões sobrepostas que apenas deixariam sua simulação mais lenta. Tal ajuste permite que o programa se abstenha de desenhar linhas entre os mesmos agentes, por exemplo i = 1 e j = 1, e linhas entre agentes já conectados anteriormente, como i = 1 e j = 2 e, posteriormente, i = 2 e j = 1. Execute o código e veja a concepção visual, figura <a class="linkref" href="capitulo7.html#figcap7-agentrend">7.17</a>, do seu processo.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap7-agentrend" src="img/pdfCap7-AgentRend.png"> 
+</div> 
+<figcaption> Figura 7.17 - Processo emergente através da interação entre agentes.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>A figura não é representativa no livro uma vez que ela é estática, mas na animação você deve ter percebido que sempre que um ponto se aproxima de outro surge uma linha conectando os dois. Essa é a prova que o seu processo está tecnicamente e funcionalmente perfeito. Observe que não programamos um <i>comportamento</i> emergente em si, já que as decisões tomadas por um agente não sofrem influências dos demais. Todavia, esta é uma <i>visualização</i> emergente, com uma estética particular, que se manifesta progressivamente, fruto das relações imprevisíveis entre os agentes.</p>
+<p><span class="sec">7.3 Extrapolação</span> <a id="seccap7-formatacao" class="labup"></a></p>
+<p>Os agentes e o processo das seções anteriores naturalmente se fundem em um resultado emergente que é melhor observado ao longo do tempo em vez de instantaneamente. A sua representação visual é revelada quando aumentamos a escala da simulação, tanto referente ao número de elementos quanto ao tempo. Retorne à função <a class="codef">setup()</a> e altere os campos mostrados para os valores abaixo:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 7.6 - <button class="btnn" onclick="copyDivToClipboard('codcap7-636')">Copiar código</button></h1></header> 
+ <section id="codcap7-636"> <span class="myCodeBro"><span class="y">size</span>(700,200);</span> <br> 
+ <span class="myCodeBro"><span class="v">int </span>numAgentes = 50;</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>aproveite e comente a exibição dos agentes por retas:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 7.7 - <button class="btnn" onclick="copyDivToClipboard('codcap7-842')">Copiar código</button></h1></header> 
+ <section id="codcap7-842"> <span class="myCodeBro"><span class="m">// ags[i].exibirComoReta();</span></span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Desta forma o acúmulo de desenhos gera uma imagem cuja complexidade não está somente ligada ao número de agentes, mas também ao tempo total de execução. Ironicamente, se você permitir que essa simulação execute por muito tempo, irá obter uma imagem que decepciona, algo parecido com um borrão preto, tal como a figura <a class="linkref" href="capitulo7.html#figcap7-agentnoformat">7.18</a>. A etapa de formatação é mais uma vez essencial para resolver esse problema. O código que você escreveu até agora considera apenas a parte técnica dos agentes e do processo, na qual são usadas as cores e transparências padrões do Processing que estão limitadas à visualização básica das formas através de linhas pretas. Dependendo da complexidade, do número de elementos da simulação e como eles interagem entre si, o resultado não fará jus ao que está realmente acontecendo.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap7-agentnoformat" src="img/figCap7-AgentNoFormat.png"> 
+</div> 
+<figcaption> Figura 7.18 - Processo após executar 1000 frames.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Você já aprendeu a apreciar o poder de uma formatação bem pensada e poderá aplicar neste caso para agregar riqueza visual ao seu processo. O principal guia nesta etapa deve ser a criatividade do programador e artista, algo que novamente abre espaço para inúmeras possibilidades, além de ser muito difícil padronizar ou justificar tecnicamente. O que pode, e será feito, é identificar certos estilos de formatação e expor como programá-los usando o Processing.</p>
+<p>O primeiro tipo de formatação, a dualidade, é um dos mais simples, e costuma funcionar relativamente bem em processos densos ou com muitos desenhos. Ela consiste em usar formatações que são opostas uma da outra para criar contrastes visuais. Por exemplo, desenhar linhas finas e grossas, pontos grandes e pequenos ou, neste caso em específico, a dualidade de cores<a id="processoestudodecaso%dualidadedecores"></a>. O preto e o branco são as cores extremas mais clássicas, mas você poderia escolher o azul e o vermelho, ou qualquer outra combinação contrastante. Você pode aplicá-la em seu código adicionando linhas que alterem a cor do desenho, internas à estrutura <a class="codef">for</a> aninhada responsável pelo desenho das conexões:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 7.8 - <button class="btnn" onclick="copyDivToClipboard('codcap7-303')">Copiar código</button></h1></header> 
+ <section id="codcap7-303"> <span class="myCodeBro"><span class="f">for</span>(<span class="v">int </span>j = i + 1; j &lt; ags.<span class="j">length</span>; j++) {</span> <br> 
+ <span class="myCodeBro">  </span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span><span class="y">dist</span>EntreAgentes = <span class="y">dist</span>(ags[i].posX,ags[i].posY,ags[j].posX,ags[j].posY);</span> <br> 
+ <span class="myCodeBro">  </span> <br> 
+ <span class="myCodeBro">  <span class="f">if</span>(distEntreAgentes &lt; distMaxima) {</span> <br> 
+ <span class="myCodeBro">    <span class="f">if</span>(<span class="y">random</span>(1) &lt; 0.5) {</span> <br> 
+ <span class="myCodeBro">      <span class="y">stroke</span>(255);</span> <br> 
+ <span class="myCodeBro">    }</span> <br> 
+ <span class="myCodeBro">    <span class="f">else</span> {</span> <br> 
+ <span class="myCodeBro">      <span class="y">stroke</span>(0);</span> <br> 
+ <span class="myCodeBro">    }</span> <br> 
+ <span class="myCodeBro">    <span class="y">line</span>(ags[i].posX,ags[i].posY,ags[j].posX,ags[j].posY);</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Atualmente nosso processo conta com um número relativamente elevado de agentes, determinando que seja usada uma proporção balanceada de cores para as conexões: metade das vezes ela deve ser preta e metade branca. Lembrando que se você quisesse uma maior proporção de linhas brancas (ou pretas), poderia alterar a condição que define a probabilidade desse evento acontecer.</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 7.9 - <button class="btnn" onclick="copyDivToClipboard('codcap7-70')">Copiar código</button></h1></header> 
+ <section id="codcap7-70"> <span class="myCodeBro">(<span class="y">random</span>(1) &lt; 0.50) <span class="m">// 50% das linhas serão brancas.</span></span> <br> 
+ <span class="myCodeBro">(<span class="y">random</span>(1) &lt; 0.60) <span class="m">// 60% das linhas serão brancas.</span></span> <br> 
+ <span class="myCodeBro">(<span class="y">random</span>(1) &lt; 0.95) <span class="m">// 95% das linhas serão brancas. etc.</span></span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>O resultado dessa formatação pode ser visto na figura <a class="linkref" href="capitulo7.html#figcap7-dualcorsolid">7.19</a>. Perceba como a visualização do processo mudou, sendo possível ver reminiscências da posição e trajetória dos agentes. Nada mal, mas você pode deixar a formatação ainda melhor se em vez de usar cores completamente sólidas, você optar por certo grau de transparência<a id="processoestudodecaso%transparencia"></a> e suavidade. Para isso inclua o campo de alfa ao colorir os traços. O resultado é mostrado na figura <a class="linkref" href="capitulo7.html#figcap7-dualcortrans">7.20</a>.</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 7.10 - <button class="btnn" onclick="copyDivToClipboard('codcap7-252')">Copiar código</button></h1></header> 
+ <section id="codcap7-252"> <span class="myCodeBro"><span class="f">if</span>(<span class="y">random</span>(1) &lt; 0.5) {</span> <br> 
+ <span class="myCodeBro">  <span class="y">stroke</span>(255,50);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <span class="myCodeBro"><span class="f">else</span> {</span> <br> 
+ <span class="myCodeBro">  <span class="y">stroke</span>(0,50);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap7-dualcorsolid" src="img/figCap7-DualCorSolid.png"> 
+</div> 
+<figcaption> Figura 7.19 - Dualidade de cores sem transparência.</figcaption> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap7-dualcortrans" src="img/figCap7-DualCorTrans.png"> 
+</div> 
+<figcaption> Figura 7.20 - Dualidade de cores com transparência.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Agora, além do preto e do branco puros, existe o cinza, proveniente da combinação dessas cores. Isso reduz o contraste, mas adiciona uma maior profundidade visual de cores. Você ainda pode impor condições mais complexas de formatação. Por exemplo, quanto mais próximos dois agente estiverem, mais opaca deve ser a cor das linhas de conexão e, quanto mais longe, mais transparente. A função <a class="codef">map()</a> é novamente a protagonista para transformar a variável que definirá a formatação, que é a distância entre os elementos, em um valor de transparência.</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 7.11 - <button class="btnn" onclick="copyDivToClipboard('codcap7-410')">Copiar código</button></h1></header> 
+ <section id="codcap7-410"> <span class="myCodeBro"><span class="v">float </span>alpha = <span class="y">map</span>(distEntreAgentes,0,distMaxima,50,0);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="f">if</span>(<span class="y">random</span>(1) &lt; 0.5) {</span> <br> 
+ <span class="myCodeBro">  <span class="y">stroke</span>(255,alpha);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <span class="myCodeBro"><span class="f">else</span> {</span> <br> 
+ <span class="myCodeBro">  <span class="y">stroke</span>(0,alpha);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Ao escrever esse código, você está estabelecendo que a variável <a class="codef">distEntreAgentes</a>, que armazena a distância entre dois agentes e cujos valores podem estar entre <a class="codef">0</a> e <a class="codef">distMaxima</a>, agora será transformada em valores no intervalo <a class="codef">50</a> e <a class="codef">0</a> e passados para a variável alfa que representa a transparência da formatação. Execute o código modificado e sua janela de exibição se parecerá com a figura <a class="linkref" href="capitulo7.html#figcap7-dualcordist">7.21</a>.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap7-dualcordist" src="img/figCap7-DualCorDist.png"> 
+</div> 
+<figcaption> Figura 7.21 - Dualidade de cores com transparência em função da distância.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Formatações que não estão ligadas à forma também são válidas no ato de criar padrões visuais, em especial quando se trabalha com sistemas que possuem grandes números de elementos, sejam partículas ou um enxame de agentes autônomos. Uma delas é através do posicionamento inicial<a id="processoestudodecaso%posicaoinicial"></a> determinístico desses pontos no espaço. Em outras palavras, é você quem irá decidir onde os agentes começam em vez de delegar essa tarefa ao acaso. Esse raciocínio parece estar contra o princípio da arte gerativa, uma vez que a aleatoriedade e o ruído foram amplamente defendidos em seções anteriores devido a sua capacidade de emular o orgânico e criar imagens visualmente agradáveis. O grande dilema é que alguns processos podem ser fundamentalmente tão caóticos e carregados que dissolvem ou até mesmo eliminam o natural. Neste caso, possuir alguma figura familiar, como uma reta ou um círculo, contribui para atrair e direcionar o olhar, criando uma impressão de caos controlado, de união da forma e do processo, remetendo a padrões visualmente mais interessantes.</p>
+<p>A segunda etapa da formatação de nosso processo será focada no posicionamento iniciais dos agentes. Uma distribuição homogênea de pontos ao longo de uma reta horizontal pode ser feita ao instanciar os elementos da classe <a class="codef">Agente</a> sempre com a mesma coordenada y. No entanto esta ação não é suficiente para diminuir o caos uma vez que o ângulo das direções dos agentes ainda será aleatório e, portanto, cabe a você também fixá-lo. Neste exemplo consideramos que o espaço de distribuição é uma reta completamente horizontal com uma angulação de 0°. Você pode criar um efeito dos agentes partindo dessa reta ao designar que eles tenham uma direção perpendicular a ela, o que implica que os ângulos dos agentes devem ser de +90° ou -90°, salvo alguns poucos graus aleatórios para não deixar o processo completamente mecânico. Compilando essa estratégia, você pode alterar a etapa de criação dos agentes no programa, atualizando a função <a class="codef">setup()</a> para o código mostrado abaixo. O processo final está ilustrado em <a class="linkref" href="capitulo7.html#figcap7-poslinehoriz">7.22</a>.</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 7.12 - <button class="btnn" onclick="copyDivToClipboard('codcap7-63')">Copiar código</button></h1></header> 
+ <section id="codcap7-63"> <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">size</span>(700, 200);</span> <br> 
+ <span class="myCodeBro">  <span class="y">background</span>(255);</span> <br> 
+ <span class="myCodeBro">  </span> <br> 
+ <span class="myCodeBro">  <span class="v">int </span>numAgentes = 100;</span> <br> 
+ <span class="myCodeBro">  ags = <span class="j">new</span> Agente[numAgentes];</span> <br> 
+ <span class="myCodeBro">  </span> <br> 
+ <span class="myCodeBro">  <span class="f">for</span> (<span class="v">int </span>i = 0; i &lt; numAgentes; i++) {</span> <br> 
+ <span class="myCodeBro"><span class="m">    // 50% de chance do agente ir para cima ou para baixo.</span></span> <br> 
+ <span class="myCodeBro">    <span class="v">float </span>angulo;</span> <br> 
+ <span class="myCodeBro">    <span class="f">if</span> (<span class="y">random</span>(1) &lt; 0.5) {</span> <br> 
+ <span class="myCodeBro">      angulo = -90 + <span class="y">random</span>(-10, 10);</span> <br> 
+ <span class="myCodeBro">    }</span> <br> 
+ <span class="myCodeBro">    <span class="f">else</span> {</span> <br> 
+ <span class="myCodeBro">      angulo = 90 + <span class="y">random</span>(-10, 10);</span> <br> 
+ <span class="myCodeBro">    }</span> <br> 
+ <span class="myCodeBro">    ags[i] = <span class="j">new</span> Agente(<span class="y">random</span>(<span class="s">width</span>), <span class="s">height</span> / 2, angulo, 1);</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap7-poslinehoriz1" src="img/figCap7-PosLineHoriz1.png"> 
+</div> 
+<figcaption> Figura 7.23 - Passo constante dos agentes.</figcaption> 
+ </div> 
+ </div> 
+ <div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap7-poslinehoriz2" src="img/figCap7-PosLineHoriz2.png"> 
+</div> 
+<figcaption> Figura 7.24 - Passo variável dos agentes.</figcaption> 
+ </div> 
+ <div id="figcap7-poslinehoriz" class="col-md-12 text-center"> 
+ Figura - 7.22 - Distribuição inicial horizontal dos agentes. </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Você também pode experimentar impor uma distribuição circular inicial dos agentes, figura <a class="linkref" href="capitulo7.html#figcap7-poscirc">7.25</a>, obtida através das fórmulas do círculo, equações <a class="linkref" href="capitulo4.html#codcap4-circleeq">4.1</a>. A aplicação simultânea de todas essas técnicas é capaz de combinar os agentes, o processo e a visualização efetiva em incontáveis imagens que possuem o mesmo núcleo gerador, mas diferentes execuções. Na sua forma mais pura, você acabou de criar uma obra artística viva, gerativa e diferente a cada vez que você pressionar o botão para iniciar a simulação.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="figcap7-poscirc12" src="img/figCap7-PosCirc12.png"> 
+</div> 
+<figcaption> Figura 7.26 - Passo e posicionamento homogêneos.</figcaption> 
+ </div> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="figcap7-poscirc3" src="img/figCap7-PosCirc3.png"> 
+</div> 
+<figcaption> Figura 7.27 - Posicionamento em espiral.</figcaption> 
+ </div> 
+ </div> 
+ <div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="figcap7-poscirc2" src="img/figCap7-PosCirc2.png"> 
+</div> 
+<figcaption> Figura 7.28 - Passo aleatório.</figcaption> 
+ </div> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="figcap7-poscirc4" src="img/figCap7-PosCirc4.png"> 
+</div> 
+<figcaption> Figura 7.29 - Passo e posicionamento aleatórios.</figcaption> 
+ </div> 
+ <div id="figcap7-poscirc" class="col-md-12 text-center"> 
+ Figura - 7.25 - Distribuição inicial radial dos agentes. </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap7-agentesfinal1" src="img/figCap7-AgentesFinal1.png"> 
+</div> 
+<figcaption> Figura 7.30 - Distribuição circular com angulações desproporcionais.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p><span class="sec">7.4 Sumário</span> <a id="seccap7-end" class="labup"></a></p>
+<p>Neste capítulo foram explorados os conceitos de agentes autônomos e processos. Os agentes são uma estrutura de dados que emulam um ser responsivo dotado de forma, percepções e comportamentos. Eles tomam decisões locais baseadas em outros agentes ou de acordo com o próprio meio em que estão inseridos. Do ponto de vista técnico, você pôde perceber como as classes e objetos são importantes para modelar uma estrutura de dados complexa e unitária como é o caso dos agentes.</p>
+<p>Em uma escala macro, as interações entre os agentes e o meio são capazes de gerar um resultado global sem coordenação central, mas organizado e único. A isso se dá o nome de emergência. Neste capítulo você aprendeu como programar, passo a passo, um sistema desse tipo. Você também acompanhou, com detalhes, como efetuar a transformação de ideias abstratas em interações concretas. Por último, você usou a seu favor o caos e as técnicas de formatação para estampar um estilo único ao seu processo.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap7-000164aa" src="img/figCap7-000164AA.png"> 
+</div> 
+<figcaption> Figura 7.31 - Agente.</figcaption> 
+ </div> 
+ </div> 
+ <div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap7-000164pp" src="img/figCap7-000164PP.png"> 
+</div> 
+<figcaption> Figura 7.32 - Processo.</figcaption> 
+ </div> 
+ </div> 
+ <div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap7-000164r" src="img/figCap7-000164R.png"> 
+</div> 
+<figcaption> Figura 7.33 - Renderização.</figcaption> 
+ </div> 
+ <div id="figcap7-processoii" class="col-md-12 text-center"> 
+ Figura - 7.34 - Etapas do processo 000164APR. </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="pdfcap7-b74e10a" src="img/pdfCap7-b74e10A.png"> 
+</div> 
+<figcaption> Figura 7.35 - Agente.</figcaption> 
+ </div> 
+ </div> 
+ <div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap7-b74e10p" src="img/figCap7-b74e10P.png"> 
+</div> 
+<figcaption> Figura 7.36 - Processo.</figcaption> 
+ </div> 
+ </div> 
+ <div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap7-b74e10r" src="img/figCap7-b74e10R.png"> 
+</div> 
+<figcaption> Figura 7.37 - Renderização.</figcaption> 
+ </div> 
+ <div id="figcap7-processoiii" class="col-md-12 text-center"> 
+ Figura - 7.38 - Etapas do processo b74e10R. </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<hr>
+
+
+<p><a class="linkref" id="footnote-1" href="#fnote-1" title="Voltar ao texto.">[1]</a> Em <i>Process</i> Reas define apenas duas características: forma e comportamento. No entanto iremos trabalhar com três, pois a separação entre percepções e comportamentos é mais natural.</p>
+<p><a class="linkref" id="footnote-2" href="#fnote-2" title="Voltar ao texto.">[2]</a> Os vetores citados aqui são aqueles descritos na geometria analítica.</p>
+<p><a class="linkref" id="footnote-3" href="#fnote-3" title="Voltar ao texto.">[3]</a> O processo ilustrado é o mesmo do código <a class="linkref" href="capitulo7.html#codcap7-agentesautom">7.2</a>. Neste livro foram usadas cores apenas para evidenciar os agentes individualmente uma vez que a animação não é possível.</p>
+
+ <br> 
+
+              <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                      <img src="" class="imagepreview" style="width: 100%;" >
+                    </div>
+                  </div>
+                </div>
+              </div>
+</div>
+</div>
+</div>
+            <div class="custom-container">
+              <div class="row">
+                <div class="col">
+                  <div>
+                    <a href="capitulo6.html" class="btn btn-sm btn-secondary">&lt;&lt; Capítulo 6</a>
+                    <a href="capitulo8.html" class="btn btn-sm btnright btn-secondary">Capítulo 8 &gt;&gt;</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <button id="menu-toggle" class="btn btn-secondary btn-sm toggled">&#8649;<br>M<br>E<br>N<br>U<br>&#8649;</button>
+          </div>
+          <footer class="page-footer bg-dark text-light meufooter">
+            <div class="footer-copyright py-1">&copy; 2020
+              <a href="mailto:mateuspberruezo@gmail.com"> Mateus Berruezo</a>
+            </div>
+          </footer>
+        </div>
+      </div>
+    <script src="../js/jquery-3.2.1.slim.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/booko.js"></script>
+  </body>
+</html>

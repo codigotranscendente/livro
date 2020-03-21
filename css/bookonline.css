@@ -1,0 +1,538 @@
+/* Links */
+
+/* .black {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.black:hover {
+    color: #000000;
+} */
+
+.linkref:link {
+    color: #333741; 
+    text-decoration: underline;
+}
+
+.linkref:visited {
+    color: #807f7f;
+}
+
+.linkref:hover {
+    color: #000000;
+}
+
+.linkref:active {
+    color: #000000;
+}
+
+/* Customizado para que, quando o link seja clicado, a tela se mova para cima dele */
+/* .labup {
+    position:absolute; 
+    top:-100px;
+} */
+
+
+
+
+
+/* Capítulos */
+
+.capnbr {
+    font-size: 15px;  
+    color: rgb(110, 110, 110);
+    margin: 0 0 0 0;
+    display: inline-block;
+}
+
+.capnbrbot {
+    font-size: 15px;  
+    color: rgb(110, 110, 110);
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+@media screen and (min-width : 1200px) {
+    .capname {
+        font-size: 55px;  
+        color: rgb(143, 30, 30);
+        margin: 20px 0 20px 0;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width : 1200px) {
+    .capname {
+        font-size: 30px;  
+        color: rgb(143, 30, 30);
+        margin: 20px 0 20px 0;
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width : 1200px) {
+    .capprename {
+        font-size: 60px; 
+        color: rgb(87, 86, 86);
+        margin: 20px 0 90px 0;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width : 1200px) {
+    .capprename {
+        font-size: 40px; 
+        color: rgb(87, 86, 86);
+        margin: 20px 0 90px 0;
+        display: inline-block;
+    }
+}
+
+
+
+
+/* Seções */
+
+@media screen and (min-width : 1200px) {
+    .secpre {
+        font-size: 30px;
+        color: rgb(50, 0, 0);
+        margin-bottom: 10px;
+        margin-top: 50px;
+        display: inline-block;
+    }
+
+    .sec {
+        font-size: 25px;
+        color: rgb(50, 0, 0);
+        margin-bottom: 10px;
+        margin-top: 50px;
+        display: inline-block;
+    }
+
+    .secsub {
+        font-size: 30px;
+        color: rgb(25, 27, 43);
+        margin-bottom: 10px;
+        margin-top: 50px;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width : 1200px) {
+    .secpre {
+        font-size: 25px;
+        color: rgb(50, 0, 0);
+        margin-bottom: 10px;
+        margin-top: 50px;
+        display: inline-block;
+    }
+
+    .sec {
+        font-size: 25px;
+        color: rgb(50, 0, 0);
+        margin-bottom: 10px;
+        margin-top: 50px;
+        display: inline-block;
+    }
+
+    .secsub {
+        font-size: 25px;
+        color: rgb(25, 27, 43);
+        margin-bottom: 10px;
+        margin-top: 50px;
+        display: inline-block;
+    }
+}
+
+
+
+
+
+/* Partes */
+
+@media screen and (max-width : 600px) {
+    .parttext {
+        padding-top: 10%;
+        padding-bottom: 15%;
+    }
+}
+
+@media screen and (min-width : 1200px) {
+    .parttext {
+        padding-top: 10%;
+        padding-bottom: 15%;
+    }
+}
+
+.partauthor {
+    /* color: #000; */
+    font-size: 13px;
+    float: right;
+    font-weight: 600;
+}
+
+@media screen and (min-width : 1200px) {
+    .parttitle {
+        text-align: center;
+        font-size: 80px;
+        color: rgb(0, 0, 0);
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width : 1200px) {
+    .parttitle {
+        text-align: center;
+        font-size: 35px;
+        color: rgb(0, 0, 0);
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
+
+
+
+/* LINDEX */
+@media screen and (min-width : 1200px) {
+    .mainh {
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width : 1200px) {
+    .mainh {
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+
+/* Etc. */
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+  } 
+
+.ind {
+    text-indent: 25px;
+}
+
+.charIndice {
+    font-size: 50px;
+    color: rgb(25, 27, 43);
+}
+
+.isasecret {
+    color: transparent;
+}
+
+.btnright {
+    float: right;
+}
+
+.floater {
+    float: right;
+}
+
+.quoteAuth {
+    font-size: 13px;
+    float: right;
+}
+
+
+
+
+/* Índice Analítico */
+
+.ia {
+    font-weight: bold;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+}
+
+.ias {
+    text-indent: 25px;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+}
+
+.iass {
+    text-indent: 50px;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+}
+
+
+
+
+
+/* FIGURAS RESPONSIVAS */
+
+.imgspc {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.imgborder {
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+/* 1 por linha */
+.imgMax12 {
+    max-width: 800px;
+    /* max-height: 600px; */
+}
+
+/* 2 por linha */
+.imgMax6 {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+/* 3 por linha */
+.imgMax4 {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+/* 4 por linha */
+.imgMax3 {
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+/* 4 por linha */
+/* ORIGINAL - NÃO RESPONSIVO */
+/* .imgMax3 {
+    max-width: 150px;
+    width: auto;
+    height: auto;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+} */
+
+figcaption{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+
+/* CAIXA DE TEXTO DOS CÓDIGOS */
+
+.mymodal {
+    border: 1px solid #CCC;
+    box-shadow: 0 1px 5px #CCC;
+    border-radius: 5px;
+    font-family: verdana;
+    /* margin: 25px auto; */
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.mymodal header {
+    background: #f1f1f1;
+    background-image: -webkit-linear-gradient( top, #f1f1f1, #CCC );
+    background-image: -ms-linear-gradient( top, #f1f1f1, #CCC );
+    background-image: -moz-linear-gradient( top, #f1f1f1, #CCC );
+    background-image: -o-linear-gradient( top, #f1f1f1, #CCC );
+    box-shadow: 0 1px 2px #888;
+    padding: 10px;
+}
+
+.mymodal h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+    text-shadow: 0 1px 2px white;
+    color: #888;
+    text-align: center;
+}
+
+.mymodal section {
+    padding: 10px 30px; 
+    font-size: 16px;
+    /* line-height: 175%; */
+    line-height: 150%;
+    color: #333;
+}
+
+.h1beautiful {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+    text-shadow: 0 1px 2px white;
+    color: #888;
+    text-align: center;
+}
+
+.cbeautiful {
+    background: #f1f1f1;
+    background-image: -webkit-linear-gradient( top, #f1f1f1, #CCC );
+    background-image: -ms-linear-gradient( top, #f1f1f1, #CCC );
+    background-image: -moz-linear-gradient( top, #f1f1f1, #CCC );
+    background-image: -o-linear-gradient( top, #f1f1f1, #CCC );
+    box-shadow: 0 1px 2px #888;
+    font-family: monospace;
+    font-size: 16px;
+    padding: 0px;
+}
+
+
+
+
+
+
+
+
+
+/* FORMATAÇÃO PROCESSING */
+
+.btnn {
+    border-radius: 5px;
+    border: 1px solid rgb(92, 91, 91);
+    background-color: transparent;
+    color: #888;
+    padding: 2px 5px;
+    /* font-size: 16px; */
+    cursor: pointer;
+}
+
+.myCodeBro {
+    font-size: 15px;
+    font-family: monospace;
+    color: #000;
+    white-space: pre;
+}
+
+code { 
+    white-space: pre;
+    color: #000;
+}
+
+.m {
+    color: rgb(147,147,147);
+}
+
+.j {
+    color: rgb(51,153,126);
+}
+
+.c {
+    color: rgb(117,141,102);
+}
+
+.f {
+    color: rgb(102,153,0);
+}
+
+.v {
+    color: rgb(226,106,32);
+}
+
+.s {
+    color: rgb(217,74,122);
+}
+
+.x {
+    color: rgb(3,104,154);
+    font-weight: bold;
+}
+
+.y {
+    color: rgb(3,104,154);
+}
+
+
+
+
+
+/* EQUAÇÕES */
+
+.frac {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    letter-spacing: 0.001em;
+    text-align: center;
+}
+
+.frac > span {
+    display: block;
+    padding: 0.1em;
+}
+
+.frac span.bottom {
+    border-top: thin solid black;
+}
+
+.frac span.symbol {
+    display: none;
+} 
+
+.equation {
+    text-align: center;
+}
+
+.imgsubcaption {
+    font-size: 10px;
+}
+  
+
+
+
+
+/* SUMÁRIO */
+.sumi:link {
+    font-weight: bold;
+    color: #333741; 
+    text-decoration: underline;
+}
+.sumi:hover, .sumi:active, .sumi:visited {
+    color: #000000;
+}
+
+
+.sumii {
+    color: #333741; 
+    margin-left: 20px;
+}
+.sumii:hover, .sumii:active, .sumii:visited {
+    color: #000000;
+}
+
+
+.sumiii {
+    color: #333741;
+    margin-left: 40px;
+}
+.sumiii:hover, .sumiii:active, .sumiii:visited {
+    color: #000000;
+}
+
+
+
+
+
+
+/* TABELAS */
+
+.tabelaHeader {
+    color: darkred;
+}
+
+.tablefnt {
+    font-size: 10px;
+}

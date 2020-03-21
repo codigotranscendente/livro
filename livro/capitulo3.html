@@ -1,0 +1,712 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>OCT: Capitulo 3</title>
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="../css/bookonline.css" rel="stylesheet">
+</head>
+<body>
+  <div id="page-container">
+    <div id="content-wrap">
+      <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="mainNav">
+        <div class="container justify-content-center">
+          <a class="navbar-brand" href="../index.html">O CÓDIGO TRANSCENDENTE</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse align-items-center" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto nav-masthead align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="../book.html">Livro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../about.html">Autor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../faq.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../livro/lindex.html">Online</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="wrapper" class="toggled">
+        <div id="sidebar-wrapper">
+          <ul class="sidebar-nav">
+            <li class="sidebar-brand"></li>
+            <li><a href="lindex.html">LIVRO</a></li>
+            <li><a href="dedicatoria.html">DEDICATÓRIA</a></li>
+            <li><a href="sumario.html">SUMÁRIO</a></li>
+            <li><a href="cartaprefacio.html">CARTA-PREFÁCIO</a></li>
+            <li><a href="agradecimentos.html">AGRADECIMENTOS</a></li>
+            <li><a href="prefacio.html">PREFÁCIO</a></li>
+            <li><a href="introducao.html">INTRODUÇÃO</a></li>
+            <li><a href="parte1.html">I. ORIGEM</a></li>
+            <li><a class="ind" href="capitulo1.html">1. PRIMEIROS PASSOS</a></li>
+            <li><a class="ind" href="capitulo2.html">2. A ARTE DA PROGRAMAÇÃO</a></li>
+            <li><a href="parte2.html">II. EVOLUÇÃO</a></li>
+            <li><a class="ind" href="capitulo3.html">3. CAOS</a></li>
+            <li><a class="ind" href="capitulo4.html">4. ORDEM</a></li>
+            <li><a class="ind" href="capitulo5.html">5. ILUSÕES</a></li>
+            <li><a href="parte3.html">III. TRANSCENDÊNCIA</a></li>
+            <li><a class="ind" href="capitulo6.html">6. FRACTAIS</a></li>
+            <li><a class="ind" href="capitulo7.html">7. EMERGÊNCIA</a></li>
+            <li><a class="ind" href="capitulo8.html">8. O CÓDIGO TRANSCENDENTE</a></li>
+            <li><a href="final.html">O PROCESSO FINAL</a></li>
+            <li><a href="indicea.html">ÍNDICE</a></li>
+          </ul>
+        </div>
+        <div class="container-book vertical-book">
+<div class="custom-container">
+<div class="row">
+<div class="col-xl-12">
+
+<p><span class="capnbr">[ CAPÍTULO 3 ]</span><br><span class="capname">Caos</span><br><span class="capnbrbot">Aprendendo a abandonar o controle</span><br></p>
+<p>Na filosofia existe um princípio denominado determinismo<a id="determinismo"></a> que defende que todos os eventos que já aconteceram e irão suceder são resultados de estados e ações passadas. De certa forma, o que você realizou nos capítulos anteriores se encaixa nesse pensamento. Você aprendeu a posicionar, com precisão cirúrgica, figuras geométricas, assim como definir repetições e condicionais cujas consequências eram completamente conhecidas antes mesmo da execução do programa. Apesar de isso ser um feito incrível, sempre que você pressionar o botão de executar o resultado será o mesmo. Em pouco tempo o previsível se torna desinteressante.</p>
+<p>No espectro oposto desse raciocínio está o caos<a id="caos"></a>, em que é impossível prever qualquer consequência, pois elas são independentes e descorrelacionadas de todas e quaisquer ações. Aqui reina o imprevisível e a completa ausência de lógica. Um pandemônio que termina em indiferença.</p>
+<p>No centro dessa dualidade nasce o núcleo do que faz o mundo interessante. É o familiar, mas cheio de surpresas, o caos controlado. Na natureza é isso que faz as árvores terem forma de árvores, e nunca serem absolutamente iguais umas às outras. O mesmo vale para as nuvens, para os animais e as pessoas. Sucintamente, a <i>forma</i> é mantida, o conteúdo não. Neste capítulo você entenderá como aplicar esse conceitos para transformar a arte computacional na intrigante arte gerativa.</p>
+<p><span class="sec">3.1 Aleatoriedade</span> <a id="seccap3-random" class="labup"></a></p>
+<p>A arte gerativa está intrinsecamente ligada à falta de uniformidade e à capacidade de criar infinitas figuras e padrões usando microvariações presentes durante a execução do código. Uma maneira de forçar essas variações é parametrizando elementos do código tais como variáveis, condicionais e repetições e, de alguma forma, alterá-los. Existem dois grandes fatores que contribuem profundamente para uma boa arte gerativa:</p>
+<p>São eles o <i>"o que"</i> deve ser parametrizado<a id="artegerativa%parametrizacao"></a> no código e o <i>"como"</i> deve ser parametrizado.</p>
+<p>O <i>o que</i> deve ser parametrizado é usualmente definido na etapa de concepção da arte para criar uma forma<a id="forma"></a>, molde ou configuração distinguível na escala macro. No exemplo citado da árvore, consiste em saber que ela sempre possuirá um tronco, galhos, folhas e flores, mas não é estabelecido o número, tamanho ou cores desses elementos.</p>
+<p>O <i>como</i> deve ser parametrizado é normalmente definido na etapa de simulação para criar uma execução marcante na escala micro, evidenciada nos detalhes. Para a árvore, isso implicaria em definir que, quando ela tem entre 6 e 10 metros de altura, copa ampla de 3 a 6 metros e flores de 5 a 8 cm com diversos tons de amarelo ela possuirá uma estética deslumbrante <a class="linkref" href="capitulo3.html#figcap3-ipe">(3.1</a>). Na computação artística é ideal experimentar com esses valores durante ou após a execução do código, pois assim você pode ajustá-los sucessivamente até obter um resultado que goste.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap3-ipe" src="img/figCap3-Ipe.jpg"> 
+</div> 
+<figcaption> Figura 3.1 - Foto do majestoso Ipê Amarelo durante sua floração.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Um modo de alterar o valor dos elementos parametrizados é utilizando a aleatoriedade<a id="aleatoriedade"></a> para gerar números diferentes toda vez que o programa for executado. No entanto humanos não são muito bons nessa tarefa<sup><a class="linkref" id="fnote-1" href="#footnote-1" title="Rodapé.">[1]</a></sup> <sup><a class="linkref" id="fnote-2" href="#footnote-2" title="Rodapé.">[2]</a></sup> e diversas vezes tendem a se repetir, produzindo resultados similares. Por outro lado, máquinas são excelentes em gerar números imprevisíveis<sup><a class="linkref" id="fnote-3" href="#footnote-3" title="Rodapé.">[3]</a></sup> e por isso você usará o computador para automatizar as variações desejadas.</p>
+<p>O primeiro método para obter números aleatórios que você irá estudar é através da função <a class="codef">random()</a> <a id="randomfuncao"></a>, que gera um número qualquer, baseado em uma distribuição uniforme<sup><a class="linkref" id="fnote-4" href="#footnote-4" title="Rodapé.">[4]</a></sup> <a id="distribuicaouniforme"></a>, entre os argumentos fornecidos. Por exemplo:</p>
+</div>
+</div>
+<ul>
+ <li> <a class="codef">random(5,10)</a>: Gera um número aleatório entre 5 e 10. </li>
+ <li> <a class="codef">random(0,10)</a> ou <a class="codef">random(10)</a>: Gera um número aleatório entre 0 e 10. </li>
+ <li> <a class="codef">random(height)</a>: Gera um número aleatório entre 0 e a altura da janela de exibição. </li>
+ </ul>
+<div class="row">
+<div class="col-xl-12">
+<p>Note que a função <a class="codef">random(10)</a> é numericamente igual a função <a class="codef">10*random(1)</a> uma vez que <a class="codef">random(1)</a> gera um número entre 0 e 1 que, multiplicado por 10, resulta em número entre 0 e 10. Em alguns casos é mais interessante utilizar este segundo tipo de notação, uma vez que remete a funções de distribuição probabilística na matemática. Algumas funções equivalentes são:</p>
+</div>
+</div>
+<ul>
+ <li> <a class="codef">random(30)</a> &#8596; <a class="codef">30*random(1)</a>. </li>
+ <li> <a class="codef">random(5,20)</a> &#8596; <a class="codef">(5 + random(15))</a> &#8596; <a class="codef">(5 + 15*random(1))</a>. </li>
+ <li> Genericamente, <a class="codef">random(min,max)</a> é escrito como <a class="codef">(min + (max-min)*random(1))</a>. </li>
+ </ul>
+<div class="row">
+<div class="col-xl-12">
+<p>Se você quiser visualizar os números gerados pode escrever um código para exibí-los no console:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 3.1 - <button class="btnn" onclick="copyDivToClipboard('codcap3-722')">Copiar código</button></h1></header> 
+ <section id="codcap3-722"> <span class="myCodeBro"><span class="m">// Exibe no console cem números entre 0 e 1000:</span></span> <br> 
+ <span class="myCodeBro"><span class="f">for</span>(<span class="v">int </span>i = 0; i &lt; 100; i++) {</span> <br> 
+ <span class="myCodeBro">  <span class="y">println</span>(<span class="y">random</span>(1000));</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Transferindo para a tabela <a class="linkref" href="capitulo3.html#tabcap3-random">3.1</a> teríamos:</p>
+</div>
+</div>
+
+ <table class="table table-striped table-sm tablefnt"> 
+ <tr> <td> 645.9 </td> <td> 594.3 </td> <td> 071.9 </td> <td> 647.0 </td> <td> 743.5 </td> <td> 394.5 </td> <td> 357.1 </td> <td> 260.1 </td> <td> 699.1 </td> <td> 229.4 </td> </tr> 
+ <tr> <td> 422.8 </td> <td> 438.6 </td> <td> 764.0 </td> <td> 918.5 </td> <td> 814.5 </td> <td> 317.7 </td> <td> 362.5 </td> <td> 355.9 </td> <td> 966.2 </td> <td> 567.8 </td> </tr> 
+ <tr> <td> 231.0 </td> <td> 066.8 </td> <td> 399.8 </td> <td> 315.1 </td> <td> 800.0 </td> <td> 474.6 </td> <td> 687.1 </td> <td> 242.1 </td> <td> 317.1 </td> <td> 160.6 </td> </tr> 
+ <tr> <td> 521.6 </td> <td> 056.0 </td> <td> 513.2 </td> <td> 530.1 </td> <td> 742.6 </td> <td> 925.0 </td> <td> 145.2 </td> <td> 536.8 </td> <td> 159.2 </td> <td> 033.1 </td> </tr> 
+ <tr> <td> 212.3 </td> <td> 286.7 </td> <td> 553.5 </td> <td> 830.8 </td> <td> 682.9 </td> <td> 148.8 </td> <td> 394.0 </td> <td> 113.6 </td> <td> 052.1 </td> <td> 302.0 </td> </tr> 
+ <tr> <td> 004.5 </td> <td> 757.0 </td> <td> 278.3 </td> <td> 681.7 </td> <td> 192.4 </td> <td> 810.1 </td> <td> 636.1 </td> <td> 947.7 </td> <td> 499.8 </td> <td> 998.8 </td> </tr> 
+ <tr> <td> 740.6 </td> <td> 144.9 </td> <td> 194.2 </td> <td> 320.8 </td> <td> 607.3 </td> <td> 085.8 </td> <td> 113.0 </td> <td> 917.6 </td> <td> 741.3 </td> <td> 460.2 </td> </tr> 
+ <tr> <td> 329.6 </td> <td> 369.8 </td> <td> 222.0 </td> <td> 211.5 </td> <td> 965.7 </td> <td> 844.2 </td> <td> 839.0 </td> <td> 651.5 </td> <td> 060.8 </td> <td> 501.7 </td> </tr> 
+ <tr> <td> 032.2 </td> <td> 096.8 </td> <td> 268.4 </td> <td> 394.1 </td> <td> 617.8 </td> <td> 859.1 </td> <td> 924.7 </td> <td> 894.5 </td> <td> 691.6 </td> <td> 229.5 </td> </tr> 
+ <tr> <td> 169.3 </td> <td> 937.7 </td> <td> 267.0 </td> <td> 552.2 </td> <td> 839.3 </td> <td> 941.3 </td> <td> 943.2 </td> <td> 632.3 </td> <td> 667.4 </td> <td> 805.5 </td> </tr> 
+ <caption id="tabcap3-random">Tabela 3.1 -  Números gerados pela função <a class="codef">random()</a>.</caption> </table> 
+<div class="row">
+<div class="col-xl-12">
+<p>Em forma de texto<a id="aleatoriedade%visualizadaatravesde%texto"></a>, como a tabela <a class="linkref" href="capitulo3.html#tabcap3-random">3.1</a>, é difícil ver o quão significativo são ou não esses números. Felizmente o Processing é uma linguagem voltada para visualizações e é possível ver uma representação gráfica da função <a class="codef">random()</a>. Inicialmente vamos desenvolver um programa que, para cada pixel do eixo x (largura) dessa janela, seja gerado um ponto y aleatório e traçado uma reta ligando o ponto anterior gerado ao atual. Esta é uma análise unidimensional de uma distribuição aleatória, já que os pontos do eixo y são a única incógnita no ato da execução do programa. O código abaixo mostra como realizar isso e o resultado pode ser visto na figura <a class="linkref" href="capitulo3.html#figcap3-randomamp">3.2</a>.</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 3.2 - Distribuição aleatória - <button class="btnn" onclick="copyDivToClipboard('codcap3-randomdist')">Copiar código</button></h1></header> 
+ <section id="codcap3-randomdist"> <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">size</span>(400,200);</span> <br> 
+ <span class="myCodeBro">  <span class="y">background</span>(255);</span> <br> 
+ <br> 
+ <span class="myCodeBro">  <span class="v">float </span>xAnterior = 0;</span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>yAnterior = <span class="s">height</span>*<span class="y">random</span>(1);</span> <br> 
+ <br> 
+ <span class="myCodeBro">  <span class="f">for</span>(<span class="v">int </span>i = 1; i &lt; <span class="s">width</span>; i++) {</span> <br> 
+ <span class="myCodeBro">    <span class="v">float </span>y = <span class="s">height</span>*<span class="y">random</span>(1);</span> <br> 
+ <span class="myCodeBro">    <span class="y">line</span>(xAnterior,yAnterior,i,y);</span> <br> 
+ <span class="myCodeBro">    yAnterior = y;</span> <br> 
+ <span class="myCodeBro">    xAnterior = i;</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap3-randomamp" src="img/pdfCap3-RandomAmp.png"> 
+</div> 
+<figcaption> Figura 3.2 - Linhas ligando pontos aleatórios gerados por <a class="codef">random()</a>.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Imediatamente, o que você pode perceber é uma distribuição muito errática, uma curva<a id="aleatoriedade%visualizadaatravesde%curva"></a> abundante em picos e vales. Na prática, isso significa que cada vez que você chama a função <a class="codef">random()</a> ela retorna um número que não tem nenhuma relação com qualquer outro que foi ou será gerado por ela. Consequentemente nada impede que ocorram diferenças gigantescas entre números de iterações sequenciais. Por exemplo, se você chamar a função <a class="codef">random(1000)</a> duas vezes seguidas, na primeira pode obter 0.00 e na segunda 999.99, obtendo a maior amplitude possível do intervalo.</p>
+<p>Números puramente aleatórios podem ser usados de diversas formas para influenciar o comportamento de seu programa. Se usados para movimentar figuras, podem implicar em variações bruscas e descontínuas ou grandes alterações nas direções de objetos. Ao serem aplicados para colorir figuras, as cores raramente irão manter um tom harmônico, que pode ser bom ou ruim, depende do efeito que você deseja causar. Em geral, usar números fornecidos pela função <a class="codef">random()</a>, sem nenhum tipo de ajuste, pode resultar em uma impressão de <i>sintético</i> e <i>não naturalidade</i>, seja do movimento ou variação. Tal fato pode ser exemplificado pelo código abaixo, que dispõe figuras aleatóriamente na tela e as colore<a id="aleatoriedade%visualizadaatravesde%cores"></a> com a função <a class="codef">random()</a>. Veja a imagem gerada na figura <a class="linkref" href="capitulo3.html#figcap3-randomampvar">3.3</a>.</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 3.3 - Cores aleatórias - <button class="btnn" onclick="copyDivToClipboard('codcap3-randomcolor')">Copiar código</button></h1></header> 
+ <section id="codcap3-randomcolor"> <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">size</span>(400,150);</span> <br> 
+ <span class="myCodeBro">  <span class="y">noStroke</span>();</span> <br> 
+ <br> 
+ <span class="myCodeBro">  <span class="f">for</span>(<span class="v">int </span>i = 0; i &lt; 500; i++) {</span> <br> 
+ <span class="myCodeBro"><span class="m">    // Posição aleatória na janela:</span></span> <br> 
+ <span class="myCodeBro">    <span class="v">float </span>x = <span class="y">random</span>(<span class="s">width</span>);</span> <br> 
+ <span class="myCodeBro">    <span class="v">float </span>y = <span class="y">random</span>(<span class="s">height</span>);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">    // Cor aleatória:</span></span> <br> 
+ <span class="myCodeBro">    <span class="v">float </span>r = <span class="y">random</span>(255);</span> <br> 
+ <span class="myCodeBro">    <span class="v">float </span>g = <span class="y">random</span>(255);</span> <br> 
+ <span class="myCodeBro">    <span class="v">float </span>b = <span class="y">random</span>(255);</span> <br> 
+ <span class="myCodeBro">    <span class="y">fill</span>(r,g,b);</span> <br> 
+ <span class="myCodeBro">    <span class="y">rect</span>(x,y,30,30);</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap3-randomampvar" src="img/pdfCap3-RandomAmpVar.png"> 
+</div> 
+<figcaption> Figura 3.3 - Variando a cor de desenho de acordo com a função <a class="codef">random()</a>.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p><span class="sec">3.2 Distúrbios</span> <a id="seccap3-noise" class="labup"></a></p>
+<p>A aleatoriedade pura, introduzida na seção passada, tem um papel importante ao gerar números descorrelacionados. No entanto ela desaponta ao ser muito brusca e, ironicamente, muito imprevisível, podendo criar visuais mecânicos e frios. Foi devido a esse fenômeno que em 1983 o Dr. Ken Perlin<a id="PerlinKen"></a>, um professor de ciências da computação, inventou o ruído Perlin<sup><a class="linkref" id="fnote-5" href="#footnote-5" title="Rodapé.">[5]</a></sup> <a id="ruidoPerlin"></a>, um algoritmo capaz de gerar uma sequência naturalmente ordenada de números pseudo-aleatórios. Calma, essa frase complicada significa apenas que o Dr. Perlin conseguiu criar um algoritmo que gera números aleatórios com uma distribuição <i>suave</i>, <i>natural</i> e, ultimamente, <i>orgânica</i>. A linguagem Processing possuí esse algoritmo<sup><a class="linkref" id="fnote-6" href="#footnote-6" title="Rodapé.">[6]</a></sup> convenientemente programado através da função <a class="codef">noise()</a>.</p>
+<p>A chamada da função <a class="codef">noise()</a> <a id="noisefuncao"></a> não é tão direta quanto a <a class="codef">random()</a> e existem alguns detalhes que podem ser melhor consultados em sua referência. Os mais importantes para o seu funcionamento correto são:</p>
+</div>
+</div>
+<ul>
+ <li> A função <a class="codef">noise()</a> sempre devolve um número entre 0 e 1. </li>
+ <li> A função deve receber argumentos de entrada que estejam constantemente variando. Quanto menores as variações dos parâmetros entre as chamadas da função, menores serão as diferenças entre os números gerados. Um parâmetro fixo sempre fornecerá o mesmo valor de ruído. </li>
+ </ul>
+<div class="row">
+<div class="col-xl-12">
+<p>A forma mais básica de sua chamada é:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 3.4 - <button class="btnn" onclick="copyDivToClipboard('codcap3-806')">Copiar código</button></h1></header> 
+ <section id="codcap3-806"> <span class="myCodeBro"><span class="v">float </span>ruido = <span class="y">noise</span>(arg1);</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>O truque para entender essas peculiaridades está na maneira de enxergar essa função. Você deve imaginar a função <a class="codef">noise()</a> como um "observador" de uma curva aleatória<a id="noisefuncao%explicacaografica"></a>. Essa curva é completamente construída no início da execução do seu programa e, quando você passa um argumento para a função <a class="codef">noise()</a>, você simplesmente realiza uma consulta a um ponto dessa curva. As figuras <a class="linkref" href="capitulo3.html#figcap3-noisecurve0">3.4</a> e <a class="linkref" href="capitulo3.html#figcap3-noisecurve1">3.5</a> exemplificam essa ideia.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap3-noisecurve0" src="img/pdfCap3-NoiseCurve0.png"> 
+</div> 
+<figcaption> Figura 3.4 - Exemplo de curva do ruído (<i>noise</i>).</figcaption> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap3-noisecurve1" src="img/pdfCap3-NoiseCurve1.png"> 
+</div> 
+<figcaption> Figura 3.5 - Variações no argumento e o resultado do valor de ruído.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Essa interpretação também explica a necessidade dos parâmetros dessa função estarem sempre variando, caso contrário você estaria consultando sempre o mesmo "ponto" da curva e recebendo um valor estático.</p>
+<p>Para fazer a comparação com a função <a class="codef">random()</a>, iremos traçar a curva<a id="ruidoPerlin%visualizadoatravesde%curva"></a> da figura <a class="linkref" href="capitulo3.html#figcap3-randomamp">3.2</a> usando a função <a class="codef">noise()</a>. Será necessário criar uma variável auxiliar e incrementá-la antes de cada invocação da função para que a mesma retorne valores diferentes. Adaptando o código <a class="linkref" href="capitulo3.html#codcap3-randomdist">3.2</a> você pode escrever:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 3.5 - Distribuição ruidosa - <button class="btnn" onclick="copyDivToClipboard('codcap3-noisedist')">Copiar código</button></h1></header> 
+ <section id="codcap3-noisedist"> <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">size</span>(400,200);</span> <br> 
+ <span class="myCodeBro">  <span class="y">background</span>(255);</span> <br> 
+ <br> 
+ <span class="myCodeBro">  <span class="v">float </span>ruido = 0;</span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>amplitudeRuido = 1;</span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>xAnterior = 0;</span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>yAnterior = <span class="s">height</span>*<span class="y">noise</span>(ruido);</span> <br> 
+ <br> 
+ <span class="myCodeBro">  <span class="f">for</span>(<span class="v">int </span>i = 1; i &lt; <span class="s">width</span>; i++) {</span> <br> 
+ <span class="myCodeBro">    <span class="v">float </span>y = <span class="s">height</span>*<span class="y">noise</span>(ruido);</span> <br> 
+ <span class="myCodeBro">    <span class="y">line</span>(xAnterior,yAnterior,i,y);</span> <br> 
+ <span class="myCodeBro">    yAnterior = y;</span> <br> 
+ <span class="myCodeBro">    xAnterior = i;</span> <br> 
+ <span class="myCodeBro">    ruido += amplitudeRuido;</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap3-noiseamp" src="img/pdfCap3-NoiseAmp1.png"> 
+</div> 
+<figcaption> Figura 3.6 - Linhas ligando pontos aleatórios gerados por <a class="codef">noise()</a>.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Uma análise rápida da distribuição resultante, figura <a class="linkref" href="capitulo3.html#figcap3-noiseamp">3.6</a>, nos leva à conclusão de que a função <a class="codef">noise()</a> é ineficaz dado que comportamento da curva não mudou. A amplitude entre amostras adjacentes continua extremamente alta, sendo indesejado para criar sequências orgânicas. No entanto devemos ter cuidado com inferências precipitadas e, em caso de dúvidas, retornar à página de ajuda da linguagem.</p>
+<p>Lembre-se que a função <a class="codef">noise()</a> terá um comportamento que dependerá diretamente da variação em seus argumentos a cada vez que ela for chamada. Se o passo<a id="noisefuncao%passo"></a> (ou diferença) entre o argumento anterior e o próximo for muito alto você terá grandes amplitudes, e se for muito baixo, terá uma saída quase que constante. O segredo é experimentar com diversos valores até encontrar um se adapte com o tipo de resposta que você deseja obter. A referência do Processing sugere que variações contidas no intervalo de 0.005 a 0.03 entre chamadas da função <a class="codef">noise()</a> atendem a grande parte das aplicações. No código <a class="linkref" href="capitulo3.html#codcap3-noisedist">3.5</a> o passo foi parametrizado pela variável <a class="codef">amplitudeRuido</a>. Na figura <a class="linkref" href="capitulo3.html#figcap3-noiseampmult">3.7</a> é mostrado exatamente o mesmo programa com valores diferentes para essa variável.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="pdfcap3-noiseamp03" src="img/pdfCap3-NoiseAmp03.png"> 
+</div> 
+<figcaption> Figura 3.8 - <a class="codef">amplitudeRuido = 0.3</a></figcaption> 
+ </div> 
+ </div> 
+ <div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="pdfcap3-noiseamp005" src="img/pdfCap3-NoiseAmp005.png"> 
+</div> 
+<figcaption> Figura 3.9 - <a class="codef">amplitudeRuido = 0.05</a></figcaption> 
+ </div> 
+ </div> 
+ <div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="pdfcap3-noiseamp001" src="img/pdfCap3-NoiseAmp001.png"> 
+</div> 
+<figcaption> Figura 3.10 - <a class="codef">amplitudeRuido = 0.01</a></figcaption> 
+ </div> 
+ </div> 
+ <div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="pdfcap3-noiseamp0003" src="img/pdfCap3-NoiseAmp0003.png"> 
+</div> 
+<figcaption> Figura 3.11 - <a class="codef">amplitudeRuido = 0.003</a></figcaption> 
+ </div> 
+ <div id="figcap3-noiseampmult" class="col-md-12 text-center"> 
+ Figura - 3.7 - Curvas para os diferentes valores do passo da função <a class="codef">noise()</a>. </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Observe como o comportamento da curva foi alterado significativamente de acordo com o argumento da função. Perceba também uma amenização na turbulência das curvas em comparação com as da função <a class="codef">random()</a>. Quando esses valores forem usados para direcionar um movimento ou alterar uma cor, a ilusão criada será de uma variação orgânica e natural. O código abaixo é uma adaptação do <a class="linkref" href="capitulo3.html#codcap3-randomcolor">3.3</a>, e cria cores<a id="ruidoPerlin%visualizadoatravesde%cores"></a> com transições suaves, quase que contínuas, exibidas na figura <a class="linkref" href="capitulo3.html#figcap3-noiseampvar">3.12</a>.</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 3.6 - Cores ruidosas - <button class="btnn" onclick="copyDivToClipboard('codcap3-noisecolor')">Copiar código</button></h1></header> 
+ <section id="codcap3-noisecolor"> <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">size</span>(400,150);</span> <br> 
+ <span class="myCodeBro">  <span class="y">noStroke</span>();</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Variáveis que controlam o ruído das cores:</span></span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>nr = 0, ng = 100, nb = 200;</span> <br> 
+ <br> 
+ <span class="myCodeBro">  <span class="f">for</span>(<span class="v">int </span>i = 0; i &lt; 500; i++) {</span> <br> 
+ <span class="myCodeBro">    <span class="v">float </span>x = <span class="y">random</span>(<span class="s">width</span>);</span> <br> 
+ <span class="myCodeBro">    <span class="v">float </span>y = <span class="y">random</span>(<span class="s">height</span>);</span> <br> 
+ <span class="myCodeBro">    <span class="v">float </span>r = 255*<span class="y">noise</span>(nr);</span> <br> 
+ <span class="myCodeBro">    <span class="v">float </span>g = 255*<span class="y">noise</span>(ng);</span> <br> 
+ <span class="myCodeBro">    <span class="v">float </span>b = 255*<span class="y">noise</span>(nb);</span> <br> 
+ <span class="myCodeBro">    <span class="y">fill</span>(r,g,b);</span> <br> 
+ <span class="myCodeBro">    <span class="y">rect</span>(x,y,30,30);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">    // Incremento das variáveis para produzir ruídos distintos:</span></span> <br> 
+ <span class="myCodeBro">    nr += 0.01;</span> <br> 
+ <span class="myCodeBro">    ng += 0.01;</span> <br> 
+ <span class="myCodeBro">    nb += 0.01;</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap3-noiseampvar" src="img/pdfCap3-NoiseAmpVar.png"> 
+</div> 
+<figcaption> Figura 3.12 - Variando a cor de desenho de acordo com a função <a class="codef">noise()</a>.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p><span class="sec">3.3 Ruídos multidimensionais</span> <a id="seccap3-noise2d" class="labup"></a></p>
+<p>Nas duas primeiras seções deste capítulo você observou como as funções <a class="codef">random()</a> e <a class="codef">noise()</a> são peças fundamentais para incluir o caos em seus programas. Nos dois códigos, <a class="linkref" href="capitulo3.html#codcap3-randomdist">3.2</a> e <a class="linkref" href="capitulo3.html#codcap3-noisedist">3.5</a>, foram geradas visualizações bidimensionais de uma variação unidimensional, referente à análise da diferença entre um número aleatório e o seu sucessor. O objetivo de tais figuras foi facilitar a comparação do aspecto brusco ou suave proveniente dessas funções.</p>
+<p>Uma segunda maneira de criar um padrão visual e simultaneamente comparar as funções <a class="codef">random()</a> e <a class="codef">noise()</a> é através de uma distribuição e figura verdadeiramente bidimensional, formada por um plano de duas dimensões: a janela de saída. Definindo uma janela do tipo <a class="codef">size(300,150)</a>, existirão um total de 45000 pixels que podem ser coloridos conforme nossa vontade. Você pode automatizar a tarefa de referenciar os pixels sequencialmente se criar duas estruturas de repetição aninhadas (seção <a class="linkref" href="capitulo2.html#seccap2-repetnested">2.5.2</a>) projetadas para percorrer a largura e a altura da tela. Assim, para cada índice gerado pelas repetições, você pode colorir o respectivo pixel usando a escala de cinza cuja cor será fornecida tanto pela função <a class="codef">random()</a> quanto pela <a class="codef">noise()</a>. O aninhamento de repetições para o primeiro caso pode ser escrito como:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 3.7 - <button class="btnn" onclick="copyDivToClipboard('codcap3-583')">Copiar código</button></h1></header> 
+ <section id="codcap3-583"> <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">size</span>(300,150);</span> <br> 
+ <span class="myCodeBro">  <span class="y">background</span>(255);</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Varre todos os pixels da janela e os preenche com uma cor aleatória:</span></span> <br> 
+ <span class="myCodeBro">  <span class="f">for</span>(<span class="v">int </span>i = 0; i &lt; <span class="s">width</span>; i++) {</span> <br> 
+ <span class="myCodeBro">    <span class="f">for</span>(<span class="v">int </span>j = 0; j &lt; <span class="s">height</span>; j++) {</span> <br> 
+ <span class="myCodeBro">      <span class="y">stroke</span>(<span class="y">color</span>(<span class="y">random</span>(255)));</span> <br> 
+ <span class="myCodeBro">      <span class="y">point</span>(i,j);</span> <br> 
+ <span class="myCodeBro">    }</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>A função <a class="codef">noise()</a> requer sua versão correspondente de dois argumentos, com elementos declarados e incrementados individualmente. Também deve-se atentar ao cuidado de "reiniciar" uma das dimensões do ruído quando for dado um passo na repetição mais externa. O preenchimento da janela é feito a seguir:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 3.8 - <button class="btnn" onclick="copyDivToClipboard('codcap3-734')">Copiar código</button></h1></header> 
+ <section id="codcap3-734"> <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">size</span>(300,150);</span> <br> 
+ <span class="myCodeBro">  <span class="y">background</span>(255);</span> <br> 
+ <span class="myCodeBro">  </span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>amplitudeRuido = 0.05;</span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>ruidoX = 0;</span> <br> 
+ <span class="myCodeBro">  <span class="v">float </span>ruidoY = 100;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">  // Varre todos os pixels da janela e os preenche com uma cor ruidosa:</span></span> <br> 
+ <span class="myCodeBro">  <span class="f">for</span>(<span class="v">int </span>i = 0; i &lt; <span class="s">width</span>; i++) {</span> <br> 
+ <span class="myCodeBro">    <span class="f">for</span>(<span class="v">int </span>j = 0; j &lt; <span class="s">height</span>; j++) {</span> <br> 
+ <span class="myCodeBro">      ruidoY += amplitudeRuido;</span> <br> 
+ <span class="myCodeBro">      <span class="y">stroke</span>(<span class="y">color</span>(255*<span class="y">noise</span>(ruidoX,ruidoY)));</span> <br> 
+ <span class="myCodeBro">      <span class="y">point</span>(i,j);</span> <br> 
+ <span class="myCodeBro">    }</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="m">    // Reinicia a variável ruidoY para seu valor inicial, e incrementa ruidoX:</span></span> <br> 
+ <span class="myCodeBro">    ruidoY = 100;</span> <br> 
+ <span class="myCodeBro">    ruidoX += amplitudeRuido;</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>A figura <a class="linkref" href="capitulo3.html#figcap3-random2d">3.13</a> mostra o resultado para a função <a class="codef">random()</a> e a figura <a class="linkref" href="capitulo3.html#figcap3-noise2d">3.14</a> para a função <a class="codef">noise()</a>. Vamos analisar as imagens de acordo com o que foi explicado nas seções anteriores. A imagem produzida pela função <a class="codef">random()</a> se assimila a uma estática de televisão. Isso era esperado uma vez que essa função gera elementos aleatórios independentes um do outro, sendo muito provável que a amplitude entre o máximo e o mínimo de uma cor seja alta, produzindo pixels claros (cores próximas a 255) e escuros (cores próximas a 0) lado a lado, correspondendo ao efeito visual de estática. Por sua vez a função <a class="codef">noise()</a> também gera valores aleatórios, no entanto eles não variam muito entre si (dependendo do passo) gerando uma figura muito mais suave, algo parecido com uma neblina, nuvem, mármore ou floresta. Essa classe de ruído permite criar texturas gerativas e foi justamente por esse tipo de efeito visual que o Dr. Perlin recebeu o <i>Academy Award for Technical Achievement</i> em efeitos especiais em 1997, uma espécie de Oscar técnico da indústria cinematográfica.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="figcap3-random2d" src="img/figCap3-Random2D.png"> 
+</div> 
+<figcaption> Figura 3.13 - Utilizando a função <a class="codef">random()</a>.</figcaption> 
+ </div> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="figcap3-noise2d" src="img/figCap3-Noise2D.png"> 
+</div> 
+<figcaption> Figura 3.14 - Utilizando a função <a class="codef">noise()</a>.</figcaption> 
+ </div> 
+ <div id="figcap3-694" class="col-md-12 text-center"> 
+ Figura - 3.15 - Janela de saída completamente preenchida. </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>Você pode confirmar que essas imagens bidimensionais não passam de uma extensão das amostras exemplificadas nas figuras e <a class="linkref" href="capitulo3.html#figcap3-randomamp">3.2</a> e <a class="linkref" href="capitulo3.html#figcap3-noiseampmult">3.7</a> se traçar a amplitude da cor dos pixels em forma de curva. Veja as figuras <a class="linkref" href="capitulo3.html#figcap3-random2dline">3.16</a> e <a class="linkref" href="capitulo3.html#figcap3-noise2dline">3.17</a>.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap3-random2dline" src="img/pdfCap3-Random2DLine.png"> 
+</div> 
+<figcaption> Figura 3.16 - Análise de uma linha da imagem <a class="linkref" href="capitulo3.html#figcap3-random2d">3.13</a>, formada pela função <a class="codef">random()</a>.</figcaption> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap3-noise2dline" src="img/pdfCap3-Noise2DLine.png"> 
+</div> 
+<figcaption> Figura 3.17 - Análise de uma linha da imagem <a class="linkref" href="capitulo3.html#figcap3-noise2d">3.14</a>, formada pela função <a class="codef">noise()</a>.</figcaption> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap3-noise3d" src="img/figCap3-Noise3D.png"> 
+</div> 
+<figcaption> Figura 3.18 - Ruído representado em três dimensões.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p><span class="sec">3.4 Sob o controle do acaso</span> <a id="seccap3-prob" class="labup"></a></p>
+<p>Um conceito que costuma ser referenciado paralelamente quando se trata de acaso é o de probabilidade<a id="probabilidade"></a>, definida como a chance de um evento ocorrer, em um experimento aleatório, dentre todas as possibilidades. Matematicamente a probabilidade pode ser escrita como uma fórmula<a id="probabilidade%formula"></a></p>
+</div>
+</div>
+<div id="eqcap3-eq7397" class="equation"> 
+               <div>
+                <span>Probabilidade(%) = 100 * </span>
+                <div class="frac">
+                  <span>Chance de ocorrer o evento</span>
+                  <span class="symbol">/</span>
+                  <span class="bottom">Todas as possibilidades</span>
+                </div>
+              </div>
+ </div><div class="row">
+<div class="col-xl-12">
+<p>Por exemplo, se você jogar uma moeda para cima e aguardar ela cair só existem duas opções<sup><a class="linkref" id="fnote-7" href="#footnote-7" title="Rodapé.">[7]</a></sup>, cara ou coroa, portanto o universo de possibilidades é dois. Quanto as probabilidades, temos 50% (ou metade, 1/2) de chance da "cara" estar voltada para cima e 50% de chance da "coroa" estar voltada para cima. Mentalize um segundo cenário em você joga um dado de seis lados, ele sempre cairá em uma das seis faces, ou seja, existe 16.667% (ou 1/6) de chance dele cair no número 1, ou no 2 e assim por diante. E qual a chance de um número ser menor que 3? Bem, o dado possuí 6 lados (todas as possibilidades), e dois desses números (1 e 2) são estritamente menores que três. Usando a definição de probabilidade, a chance é de 2/6, ou 0.333... que equivale a 33.3%.</p>
+<p>Na arte computacional a probabilidade<a id="probabilidade%naartecomputacional"></a> tem um papel semelhante ao da aleatoriedade: adicionar o elemento da surpresa, mutação e variedade. Em um exemplo concreto, suponha que você desenvolva um algoritmo que crie um ramo central que, aleatóriamente, se derive em ramos secundários e terciários e assim sucessivamente. O que ocorreria se a probabilidade de derivar esses ramos fosse alterada? A figura seria diferente? Em <a class="linkref" href="capitulo3.html#figcap3-probvein">3.19</a> está mostrado, visualmente, a resposta dessa pergunta através de um algoritmo inspirado na venação foliar<sup><a class="linkref" id="fnote-8" href="#footnote-8" title="Rodapé.">[8]</a></sup>. As diferenças são claramente explícitas mesmo estando vinculadas a poucos coeficientes que controlam as chances de ocorrerem ramificações.</p>
+</div>
+</div>
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="figcap3-probvein5" src="img/figCap3-ProbVein5.png"> 
+</div> 
+<figcaption> Figura 3.20 - 5%.</figcaption> 
+ </div> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="figcap3-probvein10" src="img/figCap3-ProbVein10.png"> 
+</div> 
+<figcaption> Figura 3.21 - 10%.</figcaption> 
+ </div> 
+ </div> 
+ <div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="figcap3-probvein20" src="img/figCap3-ProbVein20.png"> 
+</div> 
+<figcaption> Figura 3.22 - 25%.</figcaption> 
+ </div> 
+ <div class="col-md-6"> 
+ <div class="pop imgMax6"> 
+<img class="img-fluid imgborder" id="figcap3-probvein50" src="img/figCap3-ProbVein50.png"> 
+</div> 
+<figcaption> Figura 3.23 - 50%.</figcaption> 
+ </div> 
+ <div id="figcap3-probvein" class="col-md-12 text-center"> 
+ Figura - 3.19 - Curvas para as diferentes probabilidades de ramificações. </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>No Processing<a id="probabilidade%noProcessing"></a> a maneira mais fácil de se criar uma verificação de probabilidade é através de um condicional usando a função <a class="codef">random()</a>. As probabilidades podem ser balanceadas ou não, e isso costuma ser usado para priorizar um evento em relação a outro. O código abaixo mostra a implementação de uma probabilidade qualquer no Processing:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 3.9 - <button class="btnn" onclick="copyDivToClipboard('codcap3-708')">Copiar código</button></h1></header> 
+ <section id="codcap3-708"> <span class="myCodeBro"><span class="v">float </span>probabilidade = 0.8;</span> <br> 
+ <span class="myCodeBro"><span class="f">if</span>(<span class="y">random</span>(1) &lt; probabilidade) {</span> <br> 
+ <span class="myCodeBro"><span class="m">  // O código aqui tem 80% de chance de ser executado.</span></span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ <span class="myCodeBro"><span class="f">else</span> {</span> <br> 
+ <span class="myCodeBro"><span class="m">  // O código aqui tem 20% de chance de ser executado.</span></span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>O ponto chave da probabilidade está na expressão:</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 3.1 - <button class="btnn" onclick="copyDivToClipboard('codcap3-722')">Copiar código</button></h1></header> 
+ <section id="codcap3-722"> <span class="myCodeBro"><span class="y">random</span>(1) &lt; probabilidade</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>A função <a class="codef">random(1)</a> fornece uma distribuição uniforme entre zero e um, logo a chance de gerar qualquer número menor que 0.8 é de 80% uma vez que todo número de 0.0 até 0.7999 é considerado menor que 0.8. Este caso é similar ao exemplo relativo ao jogar do dado do início deste capítulo. Se você quiser adicionar múltiplos testes envolvendo probabilidades também é possível, mas terá de usar o mesmo número gerado para todos os testes. Neste caso os condicionais deverão ser feitos da menor probabilidade para a maior, além de estarem contidos dentro de estruturas <a class="codef">else</a>. Isto é ilustrado no código a seguir, que preenche a tela, figura <a class="linkref" href="capitulo3.html#figcap3-probfig">3.24</a>, com cores baseadas em diferentes probabilidades. Em seguida, para confirmar nosso algoritmo, foi escrito no console, <a class="linkref" href="capitulo3.html#figcap3-probfigcon">3.25</a>, o percentual de quadrados de cada cor em relação ao número total.</p>
+</div>
+</div>
+<div class="row"> 
+ <div class="col-xs-12 w-100"> 
+ <div class="mymodal"> 
+ <header><h1>Código 3.10 - <button class="btnn" onclick="copyDivToClipboard('codcap3-630')">Copiar código</button></h1></header> 
+ <section id="codcap3-630"> <span class="myCodeBro"><span class="m">// Contador de número de quadrados da respectiva cor:</span></span> <br> 
+ <span class="myCodeBro"><span class="v">int </span>vermelho = 0, verde = 0, azul = 0;</span> <br> 
+ <br> 
+ <span class="myCodeBro"><span class="j">void</span> <span class="x">setup</span>() {</span> <br> 
+ <span class="myCodeBro">  <span class="y">size</span>(800,300);</span> <br> 
+ <span class="myCodeBro">  <span class="y">background</span>(255);</span> <br> 
+ <span class="myCodeBro">  <span class="y">noStroke</span>();</span> <br> 
+ <span class="myCodeBro">  </span> <br> 
+ <span class="myCodeBro">  <span class="f">for</span>(<span class="v">int </span>i = 0; i &lt; <span class="s">width</span>/5; i++) {</span> <br> 
+ <span class="myCodeBro">    <span class="f">for</span>(<span class="v">int </span>j = 0; j &lt; <span class="s">height</span>/5; j++) {</span> <br> 
+ <span class="myCodeBro">      </span> <br> 
+ <span class="myCodeBro"><span class="m">      // Número qualquer entre 0 e 1</span></span> <br> 
+ <span class="myCodeBro">      <span class="v">float </span>prob = <span class="y">random</span>(1);</span> <br> 
+ <span class="myCodeBro">      </span> <br> 
+ <span class="myCodeBro">      <span class="f">if</span>(prob &lt; 0.2) { <span class="m">// 20% de chance do quadrado ser pintado de vermelho.</span></span> <br> 
+ <span class="myCodeBro">        <span class="y">fill</span>(255,0,0);</span> <br> 
+ <span class="myCodeBro">        vermelho++;</span> <br> 
+ <span class="myCodeBro">      }</span> <br> 
+ <span class="myCodeBro">      <span class="f">else</span> {</span> <br> 
+ <span class="myCodeBro">        <span class="f">if</span>(prob &lt; 0.5) { <span class="m">// 30% de chance do quadrado ser pintado de verde.</span></span> <br> 
+ <span class="myCodeBro">          <span class="y">fill</span>(0,255,0);</span> <br> 
+ <span class="myCodeBro">          verde++;</span> <br> 
+ <span class="myCodeBro">        }</span> <br> 
+ <span class="myCodeBro">        <span class="f">else</span> { <span class="m">// 50% de chance do quadrado ser pintado de azul.</span></span> <br> 
+ <span class="myCodeBro">          <span class="y">fill</span>(0,0,255);</span> <br> 
+ <span class="myCodeBro">          azul++;</span> <br> 
+ <span class="myCodeBro">        }</span> <br> 
+ <span class="myCodeBro">      }</span> <br> 
+ <span class="myCodeBro">      <span class="y">rect</span>(i*5,j*5,5,5);</span> <br> 
+ <span class="myCodeBro">      </span> <br> 
+ <span class="myCodeBro">    }</span> <br> 
+ <span class="myCodeBro">  }</span> <br> 
+ <span class="myCodeBro">  </span> <br> 
+ <span class="myCodeBro">  <span class="v">int </span>total = vermelho+verde+azul;</span> <br> 
+ <span class="myCodeBro">  </span> <br> 
+ <span class="myCodeBro">  <span class="y">println</span>(&quot;Número total de quadrados:&quot;, total);</span> <br> 
+ <span class="myCodeBro">  <span class="y">println</span>(&quot;Percentual de quadrados vermelhos:&quot;, 100.0*vermelho/total, &quot;%&quot;);</span> <br> 
+ <span class="myCodeBro">  <span class="y">println</span>(&quot;Percentual de quadrados verdes:&quot;, 100.0*verde/total, &quot;%&quot;);</span> <br> 
+ <span class="myCodeBro">  <span class="y">println</span>(&quot;Percentual de quadrados azuis:&quot;, 100.0*azul/total, &quot;%&quot;);</span> <br> 
+ <span class="myCodeBro">}</span> <br> 
+ </section> </div> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap3-probfig" src="img/pdfCap3-ProbFig.png"> 
+</div> 
+<figcaption> Figura 3.24 - Figuras coloridas com diferentes probabilidades.</figcaption> 
+ </div> 
+ </div> 
+<div class="row justify-content-center align-items-center text-center imgspc"> 
+ <div class="col-md-12 imgMax12"> 
+ <div class="pop"> 
+<img class="img-fluid imgborder" id="figcap3-probfigcon" src="img/figCap3-ProbFig.png"> 
+</div> 
+<figcaption> Figura 3.25 - Percentual de quadrados de cada cor.</figcaption> 
+ </div> 
+ </div> 
+<div class="row">
+<div class="col-xl-12">
+<p>No caso específico de probabilidades não é vantajoso usar a função <a class="codef">noise()</a> dada que ela não fornece números verdadeiramente descorrelacionados e introduziria um viés na possibilidade de um evento ocorrer. Existem outros tipos de distribuições probabilísticas além da uniforme que você acabou de aprender, mas no final todas têm o objetivo de diminuir a monotonia através da manipulação de ocorrências.</p>
+<p><span class="sec">3.5 Sumário</span> <a id="seccap3-end" class="labup"></a></p>
+<p>Neste capítulo foi explicado como utilizar o Processing para gerar números aleatórios, tanto independentes quanto correlacionados. Quando usados para alterar o valor de variáveis parametrizadas no código elas originam uma variedade infinita de padrões a cada execução do seu programa. Brevemente, você aprendeu sobre:</p>
+</div>
+</div>
+<ul>
+ <li> <b>Função <a class="codef">random()</a></b>: Responsável por devolver números aleatórios totalmente descorrelacionados dos números gerados anteriormente. Pode ser usado para criar variações e efeitos bruscos ou repentinos. </li>
+ <li> <b>Função <a class="codef">noise()</a></b>: Permite gerar números aleatórios baseados em uma variação numérica. Quanto maior essa variação, maior a semelhança dessa função com a aleatoriedade pura. Quanto menor essa variação, menor a amplitude entre amostras, gerando distribuições suaves e naturais. </li>
+ <li> <b>Probabilidades</b>: Importante para direcionar e moldar o fluxo ou característica do programa. Enfatiza elementos que devem ser repetidos com mais frequência e introduz eventos ocasionais capazes de impactar significativamente no resultado final da obra. </li>
+ </ul>
+<div class="row">
+<div class="col-xl-12">
+<p>O principal ponto desta seção é que o caos, na arte gerativa, deve ser moldado e direcionado até o ponto que você deseje que ele atue. Uma vez que esse ponto é atingido você deve aceitá-lo e deixar que ele se expanda através de uma dança anárquica que florescerá em imagens, padrões ou figuras verdadeiramente únicas e belas.</p>
+<p>No próximo capítulo você descobrirá como o oposto do que você acabou de estudar também pode ser surpreendentemente cativante. A matemática, personificação das leis que regem o universo, está muitas vezes oculta sobre mantos densos de fórmulas, letras e números, mas uma vez desvelada você compreenderá porque ela sempre fascinou a humanidade.</p>
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<hr>
+
+
+<p><a class="linkref" id="footnote-1" href="#fnote-1" title="Voltar ao texto.">[1]</a> Wagenaar, W. A. (1972). "<i>Generation of random sequences by human subjects: a critical survey of the literature</i>". Psychological Bulletin 77: pags.65-72.</p>
+<p><a class="linkref" id="footnote-2" href="#fnote-2" title="Voltar ao texto.">[2]</a> Brugger, P. (1997). "<i>Variables that influence the generation of random sequences: An update</i>". Perceptual and Motor Skills 84(2): pags.627-661.</p>
+<p><a class="linkref" id="footnote-3" href="#fnote-3" title="Voltar ao texto.">[3]</a> Na verdade, um computador não consegue gerar números verdadeiramente aleatórios e sim pseudo-aleatórios. Ênfase no pseudo, pois eles são gerados de acordo com parâmetros do computador como <i>clock</i>, ou através de algoritmos como o Gerador Congruente Linear. O problema da pseudo-aleatoriedade é que uma vez descoberto como os números são gerados eles se tornam determinísticos. Mas não se preocupe, isso é muito mais significativo para a área de criptografia do que para a arte computacional.</p>
+<p><a class="linkref" id="footnote-4" href="#fnote-4" title="Voltar ao texto.">[4]</a> Uma distribuição uniforme, ou retangular, é aquela contida entre um máximo e um mínimo de tal forma que a chance de qualquer número ser escolhido dentro dela é a mesma.</p>
+<p><a class="linkref" id="footnote-5" href="#fnote-5" title="Voltar ao texto.">[5]</a> Do inglês, <i>Perlin noise</i>.</p>
+<p><a class="linkref" id="footnote-6" href="#fnote-6" title="Voltar ao texto.">[6]</a> A versão do Processing é uma simplificação do verdadeiro ruído Perlin.</p>
+<p><a class="linkref" id="footnote-7" href="#fnote-7" title="Voltar ao texto.">[7]</a> É muito improvável da moeda cair exatamente "em pé", por isso esse evento foi desconsiderado.</p>
+<p><a class="linkref" id="footnote-8" href="#fnote-8" title="Voltar ao texto.">[8]</a> Algoritmo desenvolvido com base no artigo Reunions A. <i>et al</i> (2005). <i>Modeling and visualization of leaf venation patterns</i>. ACM Transactions on Graphics 24(3): pags. 702-711</p>
+
+ <br> 
+
+              <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                      <img src="" class="imagepreview" style="width: 100%;" >
+                    </div>
+                  </div>
+                </div>
+              </div>
+</div>
+</div>
+</div>
+            <div class="custom-container">
+              <div class="row">
+                <div class="col">
+                  <div>
+                    <a href="parte2.html" class="btn btn-sm btn-secondary">&lt;&lt; Parte II</a>
+                    <a href="capitulo4.html" class="btn btn-sm btnright btn-secondary">Capítulo 4 &gt;&gt;</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <button id="menu-toggle" class="btn btn-secondary btn-sm toggled">&#8649;<br>M<br>E<br>N<br>U<br>&#8649;</button>
+          </div>
+          <footer class="page-footer bg-dark text-light meufooter">
+            <div class="footer-copyright py-1">&copy; 2020
+              <a href="mailto:mateuspberruezo@gmail.com"> Mateus Berruezo</a>
+            </div>
+          </footer>
+        </div>
+      </div>
+    <script src="../js/jquery-3.2.1.slim.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/booko.js"></script>
+  </body>
+</html>
