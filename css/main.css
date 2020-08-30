@@ -256,6 +256,7 @@ li {
   .custom-container {
     padding-right: 15%;
     padding-left: 7%;
+    font-family: "OpenSans", arial, helvetica, sans-serif;
   }
 }
 
@@ -263,6 +264,7 @@ li {
   .custom-container {
     padding-right: 000px;
     padding-left: 000px;
+    font-family: "OpenSans", arial, helvetica, sans-serif;
   }
 }
 
